@@ -412,29 +412,32 @@ function wvc_get_image_dominant_color( $attachment_id ) {
 	$filename = $upload_dir['basedir'] . '/' . $metadata['file'];
 	$ext = strtolower( pathinfo( $filename, PATHINFO_EXTENSION ) );
 
-	if ( 'jpg' == $ext || 'jpeg' == $ext ) {
+	if ( is_file( $filename ) ) {
 
-		$image = imagecreatefromjpeg( $filename );
+		if ( 'jpg' == $ext || 'jpeg' == $ext ) {
 
-	} elseif ( 'png' == $ext ) {
+			$image = imagecreatefromjpeg( $filename );
 
-		$image = imagecreatefrompng( $filename );
+		} elseif ( 'png' == $ext ) {
 
-	} elseif ( 'gif' == $ext ) {
+			$image = imagecreatefrompng( $filename );
 
-		$image = imagecreatefromgif( $filename );
+		} elseif ( 'gif' == $ext ) {
 
-	} else {
-		return 'transparent';
+			$image = imagecreatefromgif( $filename );
+
+		} else {
+			return 'transparent';
+		}
+
+		$thumb = imagecreatetruecolor( 1,1 );
+		imagecopyresampled( $thumb, $image, 0, 0, 0, 0, 1, 1, imagesx( $image ), imagesy( $image ) );
+		$main_color = dechex( imagecolorat( $thumb, 0, 0 ) );
+
+		$main_color = ( 6 === strlen( $main_color ) ) ? '#' . $main_color : 'transparent';
+
+		return $main_color;
 	}
-
-	$thumb = imagecreatetruecolor( 1,1 );
-	imagecopyresampled( $thumb, $image, 0, 0, 0, 0, 1, 1, imagesx( $image ), imagesy( $image ) );
-	$main_color = dechex( imagecolorat( $thumb, 0, 0 ) );
-
-	$main_color = ( 6 === strlen( $main_color ) ) ? '#' . $main_color : 'transparent';
-
-	return $main_color;
 }
 
 /**
@@ -517,12 +520,12 @@ function wvc_get_first_category_url( $post_id = null ) {
  */
 function wvc_element_aos_animation_data_attr( $atts ) {
 	$data = '';
-	
+
 	if ( isset( $atts['css_animation'] ) && 'none' !== $atts['css_animation'] ) {
-		
+
 		$css_animation = esc_attr( $atts['css_animation'] );
 		$css_animation_delay = ( isset( $atts['css_animation_delay'] ) ) ? absint( $atts['css_animation_delay'] ) : '';
-		
+
 		if ( wvc_is_new_animation( $css_animation ) ) {
 			wp_enqueue_style( 'aos' );
 			wp_enqueue_script( 'aos' );
@@ -532,7 +535,7 @@ function wvc_element_aos_animation_data_attr( $atts ) {
 			if ( ! wvc_do_fullpage() ) {
 				$data .= ' data-aos-once="true"';
 			}
-	
+
 			if ( $css_animation_delay ) {
 				$data .= ' data-aos-delay="' . $css_animation_delay . '"';
 			}
@@ -814,7 +817,7 @@ function wvc_get_post_title() {
 	if ( ! is_404() && ! wvc_is_woocommerce_page() ) {
 
 	 	if ( wvc_is_blog() ) {
-			
+
 			if ( is_category() ) {
 
 				$title = single_cat_title( '', false );
@@ -824,7 +827,7 @@ function wvc_get_post_title() {
 				$title   = single_tag_title( '', false );
 
 			} elseif ( is_author() ) {
-				
+
 				$title = get_the_author();
 
 			} elseif ( is_day() ) {
@@ -846,7 +849,7 @@ function wvc_get_post_title() {
 			}
 
 		} elseif ( is_tax() ) {
-			
+
 			$queried_object = get_queried_object();
 
 			if ( is_object( $queried_object ) && isset( $queried_object->name ) ) {
@@ -854,16 +857,16 @@ function wvc_get_post_title() {
 			}
 
 		} elseif ( is_single() ) {
-			
+
 			$title = get_the_title();
 		}
 
 	} elseif ( wvc_is_woocommerce_page() ) { // shop title
 
 		if ( is_shop() || is_product_taxonomy() ) {
-			
+
 			$title = ( function_exists( 'woocommerce_page_title' ) ) ? woocommerce_page_title( false ) : '';
-		
+
 		} else {
 			$title = get_the_title();
 		}
@@ -942,7 +945,7 @@ function wvc_get_color_tone( $hex, $index = 215 ) {
  * @return string
   */
 function wvc_format_minutes_to_iso( $minutes ) {
-	
+
 	$seconds = $minutes * 60;
 	$formatted_time = 'PT';
 	$units = array(
@@ -962,13 +965,13 @@ function wvc_format_minutes_to_iso( $minutes ) {
 }
 
 /**
- * Convert minutes to nice display time with hours 
+ * Convert minutes to nice display time with hours
  *
  * @param int $minutes
  * @return string
   */
 function wvc_format_minutes_to_text( $minutes ) {
-	
+
 	$seconds = $minutes * 60;
 	$hours = floor( $seconds / 3600 );
 	$minutes = floor( ( $seconds / 60 ) % 60 );
@@ -981,7 +984,7 @@ if ( ! function_exists( 'wvc_get_user_country_code' ) ) {
 	 * Get user country code
 	 */
 	function wvc_get_user_country_code() {
-		
+
 		if ( ! class_exists( 'WC_Geolocation' ) ) {
 			return;
 		}
@@ -1000,7 +1003,7 @@ if ( ! function_exists( 'wvc_user_country_code_is_in_eu' ) ) {
 	 * Get user country code
 	 */
 	function wvc_user_country_code_is_in_eu( $country_code = null ) {
-		
+
 		$country_code = ( $country_code ) ? $country_code : wwcs_get_user_country_code();
 
 		$eu_countries = array(
