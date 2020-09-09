@@ -193,7 +193,7 @@ function wvc_register_scripts() {
 	wp_register_script( 'wvc-twentytwenty', WVC_JS . $folder . '/twentytwenty' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-countdown', WVC_JS . $folder . '/countdown' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-counter', WVC_JS . $folder . '/counter' . $suffix . '.js', array( 'jquery' ), $version, true );
-	
+
 	wp_register_script( 'wvc-fullpage', WVC_JS . $folder . '/fullpage' . $suffix . '.js', array( 'jquery' ), $version, true );
 
 	wp_register_script( 'wvc-mailchimp', WVC_JS . $folder . '/mailchimp' . $suffix . '.js', array( 'jquery' ), $version, true );
@@ -334,7 +334,7 @@ function wvc_force_enqueue_scripts() {
 		// 3rd party
 		wp_enqueue_script( 'bandsintown', 'https://widget.bandsintown.com/main.min.js', array(), false, true );
 
-		$google_api_key = wolf_vc_get_option( 'google-map', 'google_maps_api_key' );
+		$google_api_key = apply_filters( 'wvc_google_maps_api_key', wolf_vc_get_option( 'google-map', 'google_maps_api_key' ) );
 
 		if ( $google_api_key ) {
 			wp_enqueue_script( 'google-maps-api', '//maps.googleapis.com/maps/api/js?key=' . $google_api_key, array(), false, true );
@@ -384,7 +384,7 @@ add_action( 'wp_enqueue_scripts', 'wvc_enqueue_fullpage_scripts', 44 );
  * Overwrite isotope
  */
 function wvc_overwrite_vc_scripts() {
-	
+
 	wp_deregister_script( 'isotope' );
 	wp_register_script( 'isotope', WVC_JS . '/lib/isotope.pkgd.min.js', array( 'jquery' ), '3.0.6', true );
 }

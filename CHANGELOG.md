@@ -1,5 +1,9 @@
 # Changelog
 
+#### 9th September 2020 - Version 3.3.0
+
+-   Tweak: Added wvc_google_maps_api_key filter
+
 #### 26th August 2020 - Version 3.2.9
 
 -   Tweak: Unbrand plugin name

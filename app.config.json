@@ -1,14 +1,14 @@
 {
-	"version": "3.2.9",
-	"updated": "2020-08-26",
+	"version": "3.3.0",
+	"updated": "2020-09-09",
 	"slug": "wolf-visual-composer",
 	"name": "WPBakery Page Builder Extension",
 	"packagename": "WolfWPBakeryPageBuilderExtension",
 	"created": "2017-06-01",
 	"createdNice": "2st June 2017",
 	"description": "A WordPress plugin that extends WPBakery Page Builder for Wolf Themes.",
-	"link": "http://wolfthemes.com/plugin/wolf-visual-composer",
-	"shortlink": "http://wlfthm.es/wolf-visual-composer",
+	"link": "https://github.com/wolfthemes/wolf-visual-composer",
+	"shortlink": "https://wlfthm.es/wpbpb-extension",
 	"author": "WolfThemes",
-	"authorURI": "http://wolfthemes.com"
+	"authorURI": "https://wolfthemes.com"
 }

@@ -3,7 +3,7 @@
 A WordPress plugin that extends WPBakery Page Builder for Wolf Themes.
 
 ## Plugin page
-http://wolfthemes.com/plugin/wolf-visual-composer
+https://github.com/wolfthemes/wolf-visual-composer
 
 ## Support
 Verified customers who have purchased a premium theme on [ThemeForest](http://wlfthm.es/tf)
