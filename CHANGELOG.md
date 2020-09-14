@@ -1,7 +1,8 @@
 # Changelog
 
-#### 14th September 2020 - Version 3.3.1
+#### 14th September 2020 - Version 3.3.2
 
+-   Fix: Interactive links hover
 -   Fix: Custom progress bar color bug
 
 #### 9th September 2020 - Version 3.3.0
