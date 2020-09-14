@@ -1,5 +1,9 @@
 # Changelog
 
+#### 14th September 2020 - Version 3.3.1
+
+-   Fix: Custom progress bar color bug
+
 #### 9th September 2020 - Version 3.3.0
 
 -   Tweak: Added wvc_google_maps_api_key filter

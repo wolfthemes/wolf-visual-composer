@@ -90,13 +90,13 @@ foreach ( $values as $data ) {
 	$new_line = $data;
 	$new_line['value'] = isset( $data['value'] ) ? $data['value'] : 0;
 	$new_line['label'] = isset( $data['label'] ) ? $data['label'] : '';
-	$new_line['bgcolor'] = isset( $data['color'] ) && 'custom' !== $data['color'] ? '' : $custombgcolor;
-	$new_line['txtcolor'] = isset( $data['color'] ) && 'custom' !== $data['color'] ? '' : $customtxtcolor;
-	
-	if ( isset( $data['customcolor'] ) && ( ! isset( $data['color'] ) || 'custom' === $data['color'] ) ) {
+	$new_line['bgcolor'] = isset( $data['bgcolor'] ) && 'custom' !== $data['bgcolor'] ? '' : $custombgcolor;
+	$new_line['txtcolor'] = isset( $data['txtcolor'] ) && 'custom' !== $data['txtcolor'] ? '' : $customtxtcolor;
+
+	if ( isset( $data['customcolor'] ) && ( ! isset( $data['bgcolor'] ) || 'custom' === $data['bgcolor'] ) ) {
 		$new_line['bgcolor'] = ' style="background-color: ' . esc_attr( $data['customcolor'] ) . ';"';
 	}
-	if ( isset( $data['customtxtcolor'] ) && ( ! isset( $data['color'] ) || 'custom' === $data['color'] ) ) {
+	if ( isset( $data['customtxtcolor'] ) && ( ! isset( $data['txtcolor'] ) || 'custom' === $data['txtcolor'] ) ) {
 		$new_line['txtcolor'] = ' style="color: ' . esc_attr( $data['customtxtcolor'] ) . ';"';
 	}
 
@@ -129,9 +129,9 @@ foreach ( $graph_lines_data as $line ) {
 	//debug( $line );
 
 	if ( isset( $line['color'] ) && 'default' !== $line['color'] ) {
-		
+
 		$bgcolor = 'wvc-background-color-' . $line['color'];
-	
+
 	}
 
 	$output .= '<span class="wvc_bar_color_filler ' . $bgcolor . '"></span>';
