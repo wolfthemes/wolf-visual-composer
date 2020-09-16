@@ -90,8 +90,8 @@ vc_map(
 				'type'        => 'wvc_textfield',
 				'heading'     => esc_html__( 'Image Size', 'wolf-visual-composer' ),
 				'param_name'  => 'img_size',
-				'placeholder' => apply_filters( 'wvc_default_album_disc_img_size', '450x450' ),
-				'std'         => apply_filters( 'wvc_default_album_disc_img_size', '450x450' ),
+				'placeholder' => apply_filters( 'wvc_default_album_disc_img_size', '375x375' ),
+				'std'         => apply_filters( 'wvc_default_album_disc_img_size', '375x375' ),
 			),
 
 			array(

@@ -1,7 +1,8 @@
 # Changelog
 
-#### 16th September 2020 - Version 3.3.3
+#### 16th September 2020 - Version 3.3.4
 
+- Tweak: Set default album disc image size
 - Tweak: Added album disc image size option
 
 #### 14th September 2020 - Version 3.3.2

@@ -22,7 +22,7 @@ extract( // phpcs:ignore
 			'rotation_speed'      => '',
 			'cover_image'         => '',
 			'disc_image'          => '',
-			'img_size'            => '450x450',
+			'img_size'            => '375x375',
 			'link'                => '',
 			'css_animation'       => '',
 			'css_animation_delay' => '',
