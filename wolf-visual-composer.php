@@ -3,7 +3,7 @@
  * Plugin Name: WPBakery Page Builder Extension
  * Plugin URI: http://wolfthemes.com/plugin/wolf-visual-composer
  * Description: A WordPress plugin that extends WPBakery Page Builder for Wolf Themes.
- * Version: 3.3.0
+ * Version: 3.3.3
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
  * Requires at least: 5.0
@@ -30,7 +30,7 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 	 * Contains the main functions for Wolf_Visual_Composer
 	 *
 	 * @class Wolf_Visual_Composer
-	 * @version 3.3.0
+	 * @version 3.3.3
 	 * @since 1.0.0
 	 */
 	class Wolf_Visual_Composer {
@@ -38,7 +38,7 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '3.3.0';
+		public $version = '3.3.3';
 
 		/**
 		 * @var WPBakery Page Builder Extension The single instance of the class
@@ -86,9 +86,7 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 				return;
 			}
 
-			include_once( 'inc/admin/auth.php' );
-
-			//var_dump( wvc_is_activated() );
+			include_once 'inc/admin/auth.php';
 
 			if ( ! wvc_is_activated() ) {
 				add_action( 'admin_notices', 'wvc_activation_notice' );
@@ -123,10 +121,10 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 			add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
 			add_action( 'init', array( $this, 'init' ), 0 );
 
-			// Includes element after init hook to allow filtering by theme
+			// Includes element after init hook to allow filtering by theme.
 			add_action( 'init', array( $this, 'include_elements' ) );
 
-			// Plugin update notifications
+			// Plugin update notifications.
 			add_action( 'admin_init', array( $this, 'plugin_update' ) );
 		}
 
@@ -134,8 +132,6 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 		 * Activation function
 		 */
 		public function activate() {
-
-			//do_action( 'vc_restore_default_settings_preset', null, 'vc_section' );
 
 			if ( ! get_transient( 'wvc_activation_notice' ) && ! get_option( 'wvc_activation_notice_set' ) ) {
 				set_transient( 'wvc_activation_notice', true, 30 * DAY_IN_SECONDS );

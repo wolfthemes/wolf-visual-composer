@@ -8447,6 +8447,10 @@ span.wvc-highlight-green {
   max-width: 750px;
 }
 
+.wvc-ad-cover-img {
+  width: 100%;
+}
+
 .wvc-ad-align-left {
   margin-left: 0;
 }
@@ -8501,7 +8505,7 @@ span.wvc-highlight-green {
   right: 0;
   background: transparent url("../img/album-disc/cd-cover-border.png") left top no-repeat;
   background-size: cover;
-  opacity: .88;
+  opacity: 0.88;
 }
 
 .wvc-ad-worn-border-no .wvc-ad-cover-border {
@@ -8534,7 +8538,7 @@ span.wvc-highlight-green {
   background: transparent url("../img/album-disc/cd-disc-circular-text.png") left top no-repeat;
   transform: translate3d(0, 0, 0);
   background-size: cover;
-  opacity: .88;
+  opacity: 0.88;
   margin: -2px;
 }
 

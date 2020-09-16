@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.3.0\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.3.3\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-09-09 06:57:55+00:00\n"
+"POT-Creation-Date: 2020-09-16 14:15:03+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -598,7 +598,7 @@ msgstr ""
 
 #: inc/admin/auth.php:52 pack/wolf-visual-composer/inc/admin/auth.php:52
 #: pack/wolf-visual-composer/wolf-visual-composer.php:412
-#: wolf-visual-composer.php:412
+#: wolf-visual-composer.php:408
 msgid ""
 "<strong>%s</strong> requires <strong><a href=\"%s\" "
 "target=\"_blank\">%s</a></strong> plugin to be installed."
@@ -3795,7 +3795,26 @@ msgstr ""
 msgid "Always"
 msgstr ""
 
-#: inc/elements/album-disc.php:91
+#: inc/elements/album-disc.php:91 inc/elements/audio.php:40
+#: inc/elements/cards-gallery.php:31 inc/elements/comparison_slider.php:38
+#: inc/elements/gallery.php:72 inc/elements/image-device-slider.php:37
+#: inc/elements/image-link.php:30 inc/elements/item-price.php:86
+#: inc/elements/single-image.php:42 inc/elements/team-member.php:29
+#: inc/elements/wc-categories.php:66
+#: pack/wolf-visual-composer/inc/elements/audio.php:40
+#: pack/wolf-visual-composer/inc/elements/cards-gallery.php:31
+#: pack/wolf-visual-composer/inc/elements/comparison_slider.php:38
+#: pack/wolf-visual-composer/inc/elements/gallery.php:72
+#: pack/wolf-visual-composer/inc/elements/image-device-slider.php:37
+#: pack/wolf-visual-composer/inc/elements/image-link.php:30
+#: pack/wolf-visual-composer/inc/elements/item-price.php:86
+#: pack/wolf-visual-composer/inc/elements/single-image.php:42
+#: pack/wolf-visual-composer/inc/elements/team-member.php:29
+#: pack/wolf-visual-composer/inc/elements/wc-categories.php:66
+msgid "Image Size"
+msgstr ""
+
+#: inc/elements/album-disc.php:99
 #: pack/wolf-visual-composer/inc/elements/album-disc.php:91
 msgid "Disc Rotation Speed (in ms)"
 msgstr ""
@@ -4260,24 +4279,6 @@ msgstr ""
 #: inc/elements/audio.php:18
 #: pack/wolf-visual-composer/inc/elements/audio.php:18
 msgid "WordPress Audio Shortcode"
-msgstr ""
-
-#: inc/elements/audio.php:40 inc/elements/cards-gallery.php:31
-#: inc/elements/comparison_slider.php:38 inc/elements/gallery.php:72
-#: inc/elements/image-device-slider.php:37 inc/elements/image-link.php:30
-#: inc/elements/item-price.php:86 inc/elements/single-image.php:42
-#: inc/elements/team-member.php:29 inc/elements/wc-categories.php:66
-#: pack/wolf-visual-composer/inc/elements/audio.php:40
-#: pack/wolf-visual-composer/inc/elements/cards-gallery.php:31
-#: pack/wolf-visual-composer/inc/elements/comparison_slider.php:38
-#: pack/wolf-visual-composer/inc/elements/gallery.php:72
-#: pack/wolf-visual-composer/inc/elements/image-device-slider.php:37
-#: pack/wolf-visual-composer/inc/elements/image-link.php:30
-#: pack/wolf-visual-composer/inc/elements/item-price.php:86
-#: pack/wolf-visual-composer/inc/elements/single-image.php:42
-#: pack/wolf-visual-composer/inc/elements/team-member.php:29
-#: pack/wolf-visual-composer/inc/elements/wc-categories.php:66
-msgid "Image Size"
 msgstr ""
 
 #: inc/elements/audio.php:43 inc/elements/banner-gallery.php:92
