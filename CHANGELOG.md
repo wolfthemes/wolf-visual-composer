@@ -1,9 +1,10 @@
 # Changelog
 
-#### 16th September 2020 - Version 3.3.4
+#### 17th September 2020 - Version 3.3.5
 
 - Tweak: Set default album disc image size
 - Tweak: Added album disc image size option
+- Tweak: Added wvc_google_maps_api_key to template files
 
 #### 14th September 2020 - Version 3.3.2
 
