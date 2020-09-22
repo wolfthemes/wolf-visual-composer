@@ -11,7 +11,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit; // Exit if accessed directly.
 }
 
 /**
@@ -25,41 +25,41 @@ function wvc_get_js_params() {
 	$modal_window_delay = $modal_window_delay * 1000;
 
 	$js_params = array(
-		'themeSlug' => wvc_get_theme_slug(),
-		'ajaxUrl' => esc_url( WVC()->ajax_url() ),
-		'WvcUrl' => esc_url( WVC_URI ),
-		'lightbox' => apply_filters( 'wvc_lightbox', 'swipebox' ),
-		'isMobile' => wp_is_mobile(),
-		'WOWAnimationOffset' => apply_filters( 'wvc_wow_animation_offset', 0 ),
-		'forceAnimationMobile' => apply_filters( 'wvc_force_animation_mobile', false ),
-		'smoothScrollSpeed' => apply_filters( 'wvc_smooth_scroll_speed', 900 ),
-		'smoothScrollEase' => apply_filters( 'wvc_smooth_scroll_ease', 'swing' ),
-		'pieChartLineWidth' => apply_filters( 'wvc_default_pie_chart_line_width', 5 ),
-		'parallaxNoIos' => apply_filters( 'wvc_parallax_no_ios', true ),
-		'parallaxNoAndroid' => apply_filters( 'wvc_parallax_no_android', true ),
-		'parallaxNoSmallScreen' => apply_filters( 'wvc_parallax_no_small_screen', true ),
-		'googleMapApiKey' => wolf_vc_get_option( 'google-map', 'google_maps_api_key' ),
-		'fullPage' => apply_filters( 'wvc_do_fullpage', wvc_do_fullpage() ),
-		'fullPageContainer' => '.page-entry-content',
-		'fpTransitionEffect' => apply_filters( 'wvc_fp_transition_effect', 'mix' ),
-		'fpAnimTime' => apply_filters( 'wvc_fp_animtime', 900 ),
-		'fpEasing' => apply_filters( 'wvc_fp_easing', 'swing' ),
-		'fullPageContainer' => '.page-entry-content',
-		'audioButtonPlayText' => esc_html__( 'Play', 'wolf-visual-composer' ),
-		'audioButtonPauseText' => esc_html__( 'Pause', 'wolf-visual-composer' ),
-		'modalWindowDelay' => $modal_window_delay,
-		'modalWindowShowOnce' => apply_filters( 'wvc_modal_show_once', wolf_vc_get_option( 'modal_window', 'show_once' ) ),
-		'modalWindowCookieTime' => apply_filters( 'wvc_modal_cookie_time', wolf_vc_get_option( 'modal_window', 'cookie_time', 1 ) ),
-		'modalWindowNavigateAway' => apply_filters( 'wvc_modal_show_navigate_away', wolf_vc_get_option( 'modal_window', 'show_navigate_away' ) ),
-		'language' => get_locale(),
-		'accentColor' => apply_filters( 'wvc_theme_accent_color', '#0073AA' ),
+		'themeSlug'                 => wvc_get_theme_slug(),
+		'ajaxUrl'                   => esc_url( WVC()->ajax_url() ),
+		'WvcUrl'                    => esc_url( WVC_URI ),
+		'lightbox'                  => apply_filters( 'wvc_lightbox', 'swipebox' ),
+		'isMobile'                  => wp_is_mobile(),
+		'WOWAnimationOffset'        => apply_filters( 'wvc_wow_animation_offset', 0 ),
+		'forceAnimationMobile'      => apply_filters( 'wvc_force_animation_mobile', false ),
+		'smoothScrollSpeed'         => apply_filters( 'wvc_smooth_scroll_speed', 900 ),
+		'smoothScrollEase'          => apply_filters( 'wvc_smooth_scroll_ease', 'swing' ),
+		'pieChartLineWidth'         => apply_filters( 'wvc_default_pie_chart_line_width', 5 ),
+		'parallaxNoIos'             => apply_filters( 'wvc_parallax_no_ios', true ),
+		'parallaxNoAndroid'         => apply_filters( 'wvc_parallax_no_android', true ),
+		'parallaxNoSmallScreen'     => apply_filters( 'wvc_parallax_no_small_screen', true ),
+		'googleMapApiKey'           => apply_filters( 'wvc_google_maps_api_key', wolf_vc_get_option( 'google-map', 'google_maps_api_key' ) ),
+		'fullPage'                  => apply_filters( 'wvc_do_fullpage', wvc_do_fullpage() ),
+		'fullPageContainer'         => '.page-entry-content',
+		'fpTransitionEffect'        => apply_filters( 'wvc_fp_transition_effect', 'mix' ),
+		'fpAnimTime'                => apply_filters( 'wvc_fp_animtime', 900 ),
+		'fpEasing'                  => apply_filters( 'wvc_fp_easing', 'swing' ),
+		'fullPageContainer'         => '.page-entry-content',
+		'audioButtonPlayText'       => esc_html__( 'Play', 'wolf-visual-composer' ),
+		'audioButtonPauseText'      => esc_html__( 'Pause', 'wolf-visual-composer' ),
+		'modalWindowDelay'          => $modal_window_delay,
+		'modalWindowShowOnce'       => apply_filters( 'wvc_modal_show_once', wolf_vc_get_option( 'modal_window', 'show_once' ) ),
+		'modalWindowCookieTime'     => apply_filters( 'wvc_modal_cookie_time', wolf_vc_get_option( 'modal_window', 'cookie_time', 1 ) ),
+		'modalWindowNavigateAway'   => apply_filters( 'wvc_modal_show_navigate_away', wolf_vc_get_option( 'modal_window', 'show_navigate_away' ) ),
+		'language'                  => get_locale(),
+		'accentColor'               => apply_filters( 'wvc_theme_accent_color', '#0073AA' ),
 		'fullHeightRowDoWPMOffsset' => apply_filters( 'wvc_fullheight_row_do_wpm_offset', true ),
-		'isRTL' => apply_filters( 'wvc_is_rtl', true ),
-		'printStylesheet' => WVC_CSS . '/print.min.css',
-		'l10n' => array(
-			'emptyFields' => esc_html__( 'Please fill all fields.', 'wolf-visual-composer' ),
-			'unknownError' => esc_html__( 'Something went wrong while submuitting the form, please try again later.', 'wolf-visual-composer' ),
-			'processingMessage' => esc_html__( 'Loading', 'wolf-visual-composer' ) . '<span class="wvc-hellip">.</span><span class="wvc-hellip">.</span><span class="wvc-hellip">.</span>',
+		'isRTL'                     => apply_filters( 'wvc_is_rtl', true ),
+		'printStylesheet'           => WVC_CSS . '/print.min.css',
+		'l10n'                      => array(
+			'emptyFields'           => esc_html__( 'Please fill all fields.', 'wolf-visual-composer' ),
+			'unknownError'          => esc_html__( 'Something went wrong while submuitting the form, please try again later.', 'wolf-visual-composer' ),
+			'processingMessage'     => esc_html__( 'Loading', 'wolf-visual-composer' ) . '<span class="wvc-hellip">.</span><span class="wvc-hellip">.</span><span class="wvc-hellip">.</span>',
 			'BMICProcessingMessage' => esc_html__( 'Calculating', 'wolf-visual-composer' ) . '<span class="wvc-hellip">.</span><span class="wvc-hellip">.</span><span class="wvc-hellip">.</span>',
 		),
 	);
@@ -77,8 +77,8 @@ function wvc_get_js_params() {
 function wvc_register_scripts() {
 
 	$version = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? time() : WVC_VERSION;
-	$folder = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '/min';
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+	$folder  = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '/min';
+	$suffix  = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
 	// Don't serve minified JS files if Autoptimize plugin is activated
 	if ( defined( 'AUTOPTIMIZE_PLUGIN_DIR' ) ) {
@@ -86,7 +86,7 @@ function wvc_register_scripts() {
 		$folder = '';
 	}
 
-	// Lightbox
+	/* Lightbox */
 	wp_register_script( 'swipebox', WVC_JS . '/lib/jquery.swipebox.min.js', array( 'jquery' ), '1.2.9', true );
 
 	// Parallax background
@@ -103,17 +103,17 @@ function wvc_register_scripts() {
 	wp_register_script( 'bigtext', WVC_JS . '/lib/jquery.bigtext.min.js', array( 'jquery' ), '1.0.0', true );
 
 	// Waypoint
-	wp_deregister_script( 'waypoints' ); // deregister waypoints from VC
+	wp_deregister_script( 'waypoints' ); // deregister waypoints from VC.
 	wp_register_script( 'waypoints', WVC_JS . '/lib/jquery.waypoints.min.js', array( 'jquery' ), '1.6.2', true );
 
 	// Froogaloop
-	wp_register_script( 'froogaloop', WVC_JS . '/lib/froogaloop.js', array( 'jquery' ), '1.6.2', true ); // deprecated
+	wp_register_script( 'froogaloop', WVC_JS . '/lib/froogaloop.js', array( 'jquery' ), '1.6.2', true ); // deprecated.
 
 	// Vimeo
 	wp_register_script( 'vimeo-player', WVC_JS . '/lib/player.min.js', array(), '2.6.1', true );
 
 	// Easypiechart
-	wp_deregister_script( 'vc_pie' ); // deregister vc_pie from VC
+	wp_deregister_script( 'vc_pie' ); // deregister vc_pie from VC.
 	wp_register_script( 'easypiechart', WVC_JS . '/lib/jquery.easypiechart.min.js', array( 'jquery' ), '2.1.7', true );
 
 	// Flex images
@@ -132,12 +132,12 @@ function wvc_register_scripts() {
 	wp_register_script( 'inview', WVC_JS . '/lib/jquery.inview.min.js', array( 'jquery' ), '1.1.2', true );
 
 	// Visible
-	//wp_register_script( 'visible', WVC_JS . '/lib/jquery.visible.min.js', array( 'jquery' ), '1.3.0', true );
+	// wp_register_script( 'visible', WVC_JS . '/lib/jquery.visible.min.js', array( 'jquery' ), '1.3.0', true );
 
 	/* Full Page */
 	wp_register_script( 'scrolloverflow', WVC_JS . '/lib/scrolloverflow.min.js', array(), '0.0.5', true );
 	wp_register_script( 'fullpage', WVC_JS . '/lib/jquery.fullpage.min.js', array(), '2.9.6', true );
-	//wp_register_script( 'fullpage-extensions', WVC_JS . '/lib/jquery.fullpage.extensions.min.js', array(), '0.1.4', true );
+	// wp_register_script( 'fullpage-extensions', WVC_JS . '/lib/jquery.fullpage.extensions.min.js', array(), '0.1.4', true );
 
 	/* Particles */
 	wp_register_script( 'particles', WVC_JS . '/lib/particles.min.js', array(), '0.4.0', false );
@@ -240,7 +240,7 @@ function wvc_register_scripts() {
 	wp_register_script( 'wvc-functions', WVC_JS . $folder . '/functions' . $suffix . '.js', array( 'jquery' ), $version, true );
 
 	wp_enqueue_script( 'wvc-wavesurfer', WVC_LIB . '/wavesurfer/wavesurfer.js', array(), '3.3.3', false );
-wp_enqueue_script( 'wvc-wavesurfer-regions', WVC_LIB . '/wavesurfer/wavesurfer.regions.js', array(), '3.3.3', false );
+	wp_enqueue_script( 'wvc-wavesurfer-regions', WVC_LIB . '/wavesurfer/wavesurfer.regions.js', array(), '3.3.3', false );
 }
 add_action( 'wp_enqueue_scripts', 'wvc_register_scripts' );
 
@@ -252,7 +252,7 @@ add_action( 'wp_enqueue_scripts', 'wvc_register_scripts' );
 function wvc_enqueue_common_scripts() {
 
 	// Moderniszr
-	//wp_enqueue_script( 'wvc-modernizr' );
+	// wp_enqueue_script( 'wvc-modernizr' );
 
 	if ( apply_filters( 'wvc_force_enqueue_scripts', false ) ) {
 		return;
@@ -264,21 +264,21 @@ function wvc_enqueue_common_scripts() {
 
 	wp_enqueue_script( 'lazyloadxt' );
 
-	//wp_enqueue_script( 'flickity' ); // carousels
-	//wp_enqueue_script( 'wow' );
-	//wp_enqueue_script( 'aos' );
-	//wp_enqueue_script( 'waypoints' ); // from VC
-	//wp_enqueue_script( 'jarallax' );
-	//wp_enqueue_script( 'jarallax-video' );
+	// wp_enqueue_script( 'flickity' ); // carousels
+	// wp_enqueue_script( 'wow' );
+	// wp_enqueue_script( 'aos' );
+	// wp_enqueue_script( 'waypoints' ); // from VC
+	// wp_enqueue_script( 'jarallax' );
+	// wp_enqueue_script( 'jarallax-video' );
 
 	if ( wvc_is_edge() ) {
 		wp_enqueue_script( 'object-fit-images' );
 	}
 
-	// Plugin common scripts
-	wp_enqueue_script( 'wvc-functions' ); // common functions
+	// Plugin common scripts.
+	wp_enqueue_script( 'wvc-functions' ); // common functions.
 
-	// add JS global variables
+	// add JS global variables.
 	wp_localize_script( 'wvc-functions', 'WVCParams', wvc_get_js_params() );
 }
 add_action( 'wp_enqueue_scripts', 'wvc_enqueue_common_scripts' );
@@ -307,10 +307,10 @@ function wvc_force_enqueue_scripts() {
 		wp_dequeue_script( 'typed' );
 		wp_dequeue_script( 'wow' );
 		wp_dequeue_script( 'aos' );
-		//wp_dequeue_script( 'waypoints' );
+		// wp_dequeue_script( 'waypoints' );
 		wp_dequeue_script( 'lity' );
 		wp_dequeue_script( 'vivus' );
-		//wp_dequeue_script( 'particles' );
+		// wp_dequeue_script( 'particles' );
 
 		// Lazyload
 		wp_enqueue_script( 'lazyloadxt' );
@@ -353,8 +353,10 @@ function wvc_force_enqueue_scripts() {
 
 		// Add MailChimp JS global variables
 		wp_localize_script(
-			'wvc-mailchimp', 'WVCMailchimpParams', array(
-				'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+			'wvc-mailchimp',
+			'WVCMailchimpParams',
+			array(
+				'ajaxUrl'      => admin_url( 'admin-ajax.php' ),
 				'unknownError' => esc_html__( 'An unknown error occured.', 'wolf-visual-composer' ),
 			)
 		);
@@ -369,7 +371,7 @@ function wvc_enqueue_fullpage_scripts() {
 
 	if ( wvc_do_fullpage() ) {
 		// FullPage
-		//wp_enqueue_style( 'fullpage-style', WVC_CSS. '/lib/jquery.fullpage.min.css', array(), '2.9.6' );
+		// wp_enqueue_style( 'fullpage-style', WVC_CSS. '/lib/jquery.fullpage.min.css', array(), '2.9.6' );
 
 		wp_enqueue_script( 'waypoints' );
 		wp_enqueue_script( 'scrolloverflow' );

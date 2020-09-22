@@ -11,7 +11,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit; // Exit if accessed directly.
 }
 
 /**
@@ -23,12 +23,14 @@ function wvc_output_colors_inline_css() {
 
 	$colors_css = '';
 
-	/*----------------------------------------------------
+	/*
+	----------------------------------------------------
 
 	BACKGROUND
 
-	-------------------------------------------------------*/
-	foreach( $colors as $color => $hex ) {
+	-------------------------------------------------------
+	*/
+	foreach ( $colors as $color => $hex ) {
 
 		/* Background */
 		$colors_css .= "
@@ -45,7 +47,7 @@ function wvc_output_colors_inline_css() {
 		";
 
 		/* Button */
-		$colors_css .="
+		$colors_css .= "
 			.wvc-button-background-color-$color{
 				background-color:$hex;
 				color:$hex;
@@ -59,7 +61,7 @@ function wvc_output_colors_inline_css() {
 		";
 
 		/* Icons */
-		$colors_css .="
+		$colors_css .= "
 			.wvc-icon-color-$color{
 				color:$hex;
 			}
@@ -82,7 +84,7 @@ function wvc_output_colors_inline_css() {
 		";
 
 		/* Text */
-		$colors_css .="
+		$colors_css .= "
 			.wvc-text-color-$color{
 				color:$hex!important;
 			}
