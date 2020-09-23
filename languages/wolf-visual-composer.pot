@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.3.5\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.3.6\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-09-17 12:03:54+00:00\n"
+"POT-Creation-Date: 2020-09-23 13:35:18+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -598,7 +598,6 @@ msgstr ""
 
 #: inc/admin/auth.php:52 pack/wolf-visual-composer/inc/admin/auth.php:52
 #: pack/wolf-visual-composer/wolf-visual-composer.php:412
-#: wolf-visual-composer.php:408
 msgid ""
 "<strong>%s</strong> requires <strong><a href=\"%s\" "
 "target=\"_blank\">%s</a></strong> plugin to be installed."
@@ -8603,7 +8602,7 @@ msgstr ""
 msgid "Calculating"
 msgstr ""
 
-#: inc/frontend/scripts.php:358
+#: inc/frontend/scripts.php:360
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:358
 msgid "An unknown error occured."
 msgstr ""
@@ -9681,7 +9680,7 @@ msgid ""
 "that the file you download is safe."
 msgstr ""
 
-#: inc/utility-functions.php:876
+#: inc/utility-functions.php:872
 #: pack/wolf-visual-composer/inc/utility-functions.php:876
 msgid "Search results for %s"
 msgstr ""
@@ -9779,13 +9778,13 @@ msgstr ""
 
 #: pack/wolf-visual-composer/templates/wvc_bandsintown_events.php:83
 #: pack/wolf-visual-composer/templates/wvc_bandsintown_tracking_button.php:88
-#: templates/wvc_bandsintown_events.php:83
+#: templates/wvc_bandsintown_events.php:86
 #: templates/wvc_bandsintown_tracking_button.php:88
 msgid "Please set an artist."
 msgstr ""
 
 #: pack/wolf-visual-composer/templates/wvc_bandsintown_events.php:85
-#: templates/wvc_bandsintown_events.php:85
+#: templates/wvc_bandsintown_events.php:88
 msgid "No event scheduled."
 msgstr ""
 
@@ -10039,6 +10038,12 @@ msgid ""
 "settings</a>. You can get your Google Map API <a "
 "style=\"text-decoration:underline;\" href=\"%3$s\" "
 "target=\"_blank\">here</a>.<p>"
+msgstr ""
+
+#: wolf-visual-composer.php:419
+msgid ""
+"<strong>%1$s</strong> requires <strong><a href=\"%2$s\" "
+"target=\"_blank\">%3$s</a></strong> plugin to be installed."
 msgstr ""
 
 #. Plugin Name of the plugin/theme

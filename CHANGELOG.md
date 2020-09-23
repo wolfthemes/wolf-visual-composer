@@ -1,5 +1,9 @@
 # Changelog
 
+#### 23th September 2020 - Version 3.3.6
+
+- Tweak: Added wvc_get_post_title and wvc_get_post_subheading filters
+
 #### 17th September 2020 - Version 3.3.5
 
 - Tweak: Set default album disc image size
