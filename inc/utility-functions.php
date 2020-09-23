@@ -621,14 +621,13 @@ function wvc_color_brightness( $hex, $percent ) {
  *
  * This function is mainy used for heading. It allows users to use a short tag {{post_title}} to display the curent page/page title
  *
- * @param string $string
+ * @param string $string The post title.
  * @return string $string
  */
 function wvc_sanitize_heading( $string ) {
 
-	$post_title = wvc_get_post_title();
+	$post_title = apply_filters( 'wvc_get_post_title', wvc_get_post_title() );
 	$site_title = get_bloginfo( 'name' );
-	//$post_title = get_the_title();
 
 	$short_tags = array(
 		'{{post_title}}' => $post_title,
