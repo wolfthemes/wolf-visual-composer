@@ -647,13 +647,12 @@ function wvc_sanitize_heading( $string ) {
  *
  * This function is mainy used for text_block. It allows users to use a short tag {{post_text_block}} to display the curent page/page text_block
  *
- * @param string $string
- * @return string $string
+ * @param string $string The post subheading.
+ * @return string
  */
 function wvc_sanitize_text_block( $string ) {
 
-	$subheading = wvc_get_post_subheading();
-	//$post_title = get_the_title();
+	$subheading = apply_filters( 'wvc_get_post_subheading', wvc_get_post_subheading() );
 
 	$short_tags = array(
 		'{{post_subheading}}' => $subheading,
