@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.3.8\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.3.9\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-09-26 15:52:11+00:00\n"
+"POT-Creation-Date: 2020-09-26 16:34:57+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4214,7 +4214,7 @@ msgstr ""
 msgid "Text Alignment"
 msgstr ""
 
-#: inc/elements/audio-button.php:38 inc/frontend/scripts.php:48
+#: inc/elements/audio-button.php:38 inc/frontend/scripts.php:46
 #: pack/wolf-visual-composer/inc/elements/audio-button.php:38
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:48
 #: pack/wolf-visual-composer/templates/wvc_audio_button.php:19
@@ -8577,32 +8577,32 @@ msgstr ""
 msgid "obese"
 msgstr ""
 
-#: inc/frontend/scripts.php:49
+#: inc/frontend/scripts.php:47
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:49
 msgid "Pause"
 msgstr ""
 
-#: inc/frontend/scripts.php:60
+#: inc/frontend/scripts.php:58
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:60
 msgid "Please fill all fields."
 msgstr ""
 
-#: inc/frontend/scripts.php:61
+#: inc/frontend/scripts.php:59
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:61
 msgid "Something went wrong while submuitting the form, please try again later."
 msgstr ""
 
-#: inc/frontend/scripts.php:62
+#: inc/frontend/scripts.php:60
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:62
 msgid "Loading"
 msgstr ""
 
-#: inc/frontend/scripts.php:63
+#: inc/frontend/scripts.php:61
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:63
 msgid "Calculating"
 msgstr ""
 
-#: inc/frontend/scripts.php:360
+#: inc/frontend/scripts.php:358
 #: pack/wolf-visual-composer/inc/frontend/scripts.php:358
 msgid "An unknown error occured."
 msgstr ""

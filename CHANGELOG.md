@@ -1,7 +1,8 @@
 # Changelog
 
-#### 26th September 2020 - Version 3.3.8
+#### 26th September 2020 - Version 3.3.9
 
+- Tweak: Updated flickity (carousel JS plugin)
 - Tweak: Resize video background after "wvc_resized" event.
 - Tweak: Decreased wvc-privacy-policy-message-container z-index to 999
 
