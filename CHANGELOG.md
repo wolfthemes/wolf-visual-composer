@@ -1,5 +1,9 @@
 # Changelog
 
+#### 26th September 2020 - Version 3.3.7
+
+- Tweak: Decreased wvc-privacy-policy-message-container z-index to 999
+
 #### 23th September 2020 - Version 3.3.6
 
 - Tweak: Added wvc_get_post_title and wvc_get_post_subheading filters
