@@ -10,9 +10,7 @@
  * @version 3.2.8
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Enqueue CSS
@@ -45,8 +43,8 @@ function wvc_enqueue_styles() {
 	wp_enqueue_style( 'swipebox', WVC_CSS . '/lib/swipebox.min.css', array(), '1.3.0' );
 
 	// Libraries.
-	wp_enqueue_style( 'flexslider' ); // be sure that flexslider CSS file is enqueue BEFORE our plugin styles
-	wp_enqueue_style( 'flickity', WVC_CSS . '/lib/flickity.min.css', array(), '2.2.0' );
+	wp_enqueue_style( 'flexslider' ); // be sure that flexslider CSS file is enqueue BEFORE our plugin styles.
+	wp_enqueue_style( 'flickity', WVC_CSS . '/lib/flickity.min.css', array(), '2.2.1' );
 	// wp_enqueue_style( 'owlcarousel', WVC_CSS . '/lib/owl.carousel.min.css', array(), '2.2.1' );
 	wp_enqueue_style( 'lity', WVC_CSS . '/lib/lity.min.css', array(), '2.2.2' );
 

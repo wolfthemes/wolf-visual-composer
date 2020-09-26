@@ -10,9 +10,7 @@
  * @version 3.2.8
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * JS params
@@ -168,7 +166,7 @@ function wvc_register_scripts() {
 	wp_register_script( 'countdown', WVC_JS . '/lib/jquery.countdown.min.js', array( 'jquery' ), '2.0.1', true );
 	wp_register_script( 'countup', WVC_JS . '/lib/countUp.min.js', array(), '1.9.3', true );
 	wp_register_script( 'fittext', WVC_JS . '/lib/jquery.fittext.min.js', array( 'jquery' ), '1.2.0', true );
-	wp_register_script( 'flickity', WVC_JS . '/lib/flickity.pkgd.min.js', array( 'jquery' ), '2.2.0', true );
+	wp_register_script( 'flickity', WVC_JS . '/lib/flickity.pkgd.min.js', array( 'jquery' ), '2.2.1', true );
 	wp_register_script( 'typed', WVC_JS . '/lib/typed.min.js', array( 'jquery' ), '2.0.1', true );
 	wp_register_script( 'wow', WVC_JS . '/lib/wow.min.js', array( 'jquery' ), '1.3.0', true );
 	wp_register_script( 'aos', WVC_JS . '/lib/aos.js', array( 'jquery' ), '2.3.0', true );
