@@ -1250,7 +1250,6 @@ body[data-aos-delay='5000'] [data-aos].aos-animate, [data-aos][data-aos][data-ao
   top: 0;
   left: 0;
   overflow: hidden;
-  object-fit: cover;
 }
 .wvc-video-bg-container embed,
 .wvc-video-bg-container iframe,
@@ -3934,7 +3933,7 @@ cite.wvc-testimonial-cite {
 }
 
 @media screen and (max-width: 800px) {
-  .wvc-separator {
+  .wvc-mobile-align-center .wvc-separator {
     margin-left: auto !important;
     margin-right: auto !important;
   }

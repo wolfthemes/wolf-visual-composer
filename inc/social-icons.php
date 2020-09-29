@@ -13,54 +13,57 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Returns social icons
  *
- * @param array $atts
+ * @param array $atts The shortcode attributes.
  */
 function wvc_socials( $atts ) {
 
-	$atts = wp_parse_args( $atts, array(
-		'services' 		=> '',
-		'target' 			=> '_blank',
-		'rel' => '',
-		'alignment' 		=> 'center',
-		'direction' 		=> 'horizontal',
-		'color'			=> 'default',
-		'custom_color'		=> '',
-		'background_style'	=> 'none',
-		'background_color'	=> '',
-		'custom_background_color'	=> '',
-		'size'              	=> '',
-		'hover_effect'		=> 'opacity',
-		'css_animation' 	=> '',
-		'css_animation_delay' => '',
-		'css_animation_each' => '',
-		'el_class' 		=> '',
-		'hide_class' => '',
-		'css' 			=> '',
-		'inline_style' 		=> '',
-		'add_spotify_follow_button' => '',
-	) );
+	$atts = wp_parse_args(
+		$atts,
+		array(
+			'services'                  => '',
+			'target'                    => '_blank',
+			'rel'                       => '',
+			'alignment'                 => 'center',
+			'direction'                 => 'horizontal',
+			'color'                     => 'default',
+			'custom_color'              => '',
+			'background_style'          => 'none',
+			'background_color'          => '',
+			'custom_background_color'   => '',
+			'size'                      => '',
+			'hover_effect'              => 'opacity',
+			'css_animation'             => '',
+			'css_animation_delay'       => '',
+			'css_animation_each'        => '',
+			'el_class'                  => '',
+			'hide_class'                => '',
+			'css'                       => '',
+			'inline_style'              => '',
+			'add_spotify_follow_button' => '',
+		)
+	);
 
 	extract( $atts );
 
 	$output = $icon_class = $icon_style = $icon_box_class = $icon_box_style = $icon_container_style = $icon_container_class = $icon_filler_style = '';
 
-	$class = $el_class;
-	$inline_style = wvc_sanitize_css_field( $inline_style );
+	$class         = $el_class;
+	$inline_style  = wvc_sanitize_css_field( $inline_style );
 	$inline_style .= wvc_shortcode_custom_style( $css );
 
 	if ( $hide_class ) {
 		$class .= ' ' . $hide_class;
 	}
 
-
 	$target = ( $target ) ? $target : '_blank';
-	/*Animate */
+	/*
+	Animate */
 	// if ( $css_animation ) {
-	// 	$class .= " wow $css_animation";
+	// $class .= " wow $css_animation";
 	// }
 
 	// if ( $css_animation_delay && 'none' != $css_animation ) {
-	// 	$box_style .= 'animation-delay:' . absint( $css_animation_delay ) / 1000 . 's;-webkit-animation-delay:' . absint( $css_animation_delay ) / 1000 . 's;';
+	// $box_style .= 'animation-delay:' . absint( $css_animation_delay ) / 1000 . 's;-webkit-animation-delay:' . absint( $css_animation_delay ) / 1000 . 's;';
 	// }
 
 	/*Animate */
@@ -69,27 +72,26 @@ function wvc_socials( $atts ) {
 		if ( ! wvc_is_new_animation( $css_animation ) ) {
 			$icon_box_class .= wvc_get_css_animation( $css_animation );
 		}
-
 	} else {
 		if ( ! wvc_is_new_animation( $css_animation ) ) {
 			$class .= wvc_get_css_animation( $css_animation );
 		}
 	}
 
-	$class .= " wvc-socials-container wvc-si-size-$size wvc-text-$alignment wvc-si-direction-$direction wvc-element";
-	$icon_box_class .= " wvc-social-icon wvc-icon-box wvc-icon-background-style-$background_style wvc-icon-hover-$hover_effect";
+	$class                .= " wvc-socials-container wvc-si-size-$size wvc-text-$alignment wvc-si-direction-$direction wvc-element";
+	$icon_box_class       .= " wvc-social-icon wvc-icon-box wvc-icon-background-style-$background_style wvc-icon-hover-$hover_effect";
 	$icon_container_class .= " wvc-icon-background-color-$background_color";
-	$icon_container_class .= ' wvc-icon-container ' .  $size;
+	$icon_container_class .= ' wvc-icon-container ' . $size;
 
 	if ( 'normal' != $background_style ) {
 		$icon_container_class .= ' fa-stack';
 	}
 
-	$output = '<div class="' . wvc_sanitize_html_classes( $class ) .'" style="' . wvc_esc_style_attr( $inline_style ) . '"';
+	$output = '<div class="' . wvc_sanitize_html_classes( $class ) . '" style="' . wvc_esc_style_attr( $inline_style ) . '"';
 
 	if ( ! $css_animation_each ) {
 		$output .= wvc_element_aos_animation_data_attr( $atts );
-		
+
 	}
 
 	$output .= '>';
@@ -106,16 +108,16 @@ function wvc_socials( $atts ) {
 
 	/* Icon color */
 	if ( 'custom' === $color ) {
-		$color = $custom_color;
+		$color       = $custom_color;
 		$icon_style .= 'color:' . wvc_sanitize_color( $color ) . ';';
 	}
 
 	/* Background color */
 	if ( 'custom' === $background_color ) {
-		$background_color = $custom_background_color;
-		$bg_color = wvc_sanitize_color( $background_color );
-		$icon_container_style .="background-color:$bg_color;border-color:$bg_color;box-shadow-color:$bg_color;";
-		$icon_filler_style .="background-color:$bg_color;box-shadow-color:$bg_color;";
+		$background_color      = $custom_background_color;
+		$bg_color              = wvc_sanitize_color( $background_color );
+		$icon_container_style .= "background-color:$bg_color;border-color:$bg_color;box-shadow-color:$bg_color;";
+		$icon_filler_style    .= "background-color:$bg_color;box-shadow-color:$bg_color;";
 	}
 
 	$wvc_socials = wvc_get_socials();
@@ -134,29 +136,109 @@ function wvc_socials( $atts ) {
 	}
 
 	$wolf_icon_array = array( 'bandsintown', 'evernote', 'grooveshark', 'mailchimp' );
-	$socicon_array = array(
-		'8tracks', 'airbnb', 'alliance', 'amplement', 'appnet',
-		//'bandcamp',
-		'baidu', 'battlenet', 'beam', 'bebee',
-		'blizzard', 'buffer', 'coderwall', 'curse', 'dailymotion', 'deezer', 'diablo', 'discord', 'disqus', 'douban',
-		'draugiem', 'endomondo', 'filmweb',
-		'envato', 'etsy', 'facebook', 'flattr', 'forrst', 'friendfeed', 'goodreads', 'formulr',
-		'googlegroups', 'hackerrank', 'hearthstone', 'hellocoton', 'heroes', 'hitbox', 'horde', 'houzz', 'icq',
+	$socicon_array   = array(
+		'8tracks',
+		'airbnb',
+		'alliance',
+		'amplement',
+		'appnet',
+		// 'bandcamp',
+		'baidu',
+		'battlenet',
+		'beam',
+		'bebee',
+		'blizzard',
+		'buffer',
+		'coderwall',
+		'curse',
+		'dailymotion',
+		'deezer',
+		'diablo',
+		'discord',
+		'disqus',
+		'douban',
+		'draugiem',
+		'endomondo',
+		'filmweb',
+		'envato',
+		'etsy',
+		'facebook',
+		'flattr',
+		'forrst',
+		'friendfeed',
+		'goodreads',
+		'formulr',
+		'googlegroups',
+		'hackerrank',
+		'hearthstone',
+		'hellocoton',
+		'heroes',
+		'hitbox',
+		'horde',
+		'houzz',
+		'icq',
 		'identica',
 		'instagram',
-		//'imdb',
+		// 'imdb',
 		'issuu',
 		'istock',
-		'itunes', 'keybase', 'lanyrd', 'line', 'livejournal', 'lyft', 'macos', 'medium', 'meetup', 'messenger',
-		'modelmayhem', 'mumble', 'newsvine', 'nintendo', 'npm',
-		'odnoklassniki', 'openid', 'overwatch', 'patreon', 'periscope', 'persona', 'player', 'raidcall', 'ravelry',
-		'researchgate', 'residentadvisor', 'reverbnation', 'smugmug', 'songkick',
-		'starcraft', 'stayfriends', 'storehouse', 'strava', 'streamjar', 'swarm', 'teamspeak', 'teamviewer',
-		'technorati', 'telegram',
-		'twitch', 'tripit', 'triplej', 'uber', 'ventrilo', 'viber', 'viewbug', 'warcraft', 'wykop', 'yammer', 'yandex',
-		'yelp', 'younow',
+		'itunes',
+		'keybase',
+		'lanyrd',
+		'line',
+		'livejournal',
+		'lyft',
+		'macos',
+		'medium',
+		'meetup',
+		'messenger',
+		'modelmayhem',
+		'mumble',
+		'newsvine',
+		'nintendo',
+		'npm',
+		'odnoklassniki',
+		'openid',
+		'overwatch',
+		'patreon',
+		'periscope',
+		'persona',
+		'player',
+		'raidcall',
+		'ravelry',
+		'researchgate',
+		'residentadvisor',
+		'reverbnation',
+		'smugmug',
+		'songkick',
+		'starcraft',
+		'stayfriends',
+		'storehouse',
+		'strava',
+		'streamjar',
+		'swarm',
+		'teamspeak',
+		'teamviewer',
+		'technorati',
+		'telegram',
+		'twitch',
+		'tripit',
+		'triplej',
+		'uber',
+		'ventrilo',
+		'viber',
+		'viewbug',
+		'warcraft',
+		'wykop',
+		'yammer',
+		'yandex',
+		'yelp',
+		'younow',
 		'youtube',
-		'zapier', 'zerply', 'zomato', 'zynga',
+		'zapier',
+		'zerply',
+		'zomato',
+		'zynga',
 	);
 
 	$fab_array = array( 'tiktok' );
@@ -206,16 +288,16 @@ function wvc_socials( $atts ) {
 
 				if ( $css_animation_each ) {
 					$atts['css_animation_delay'] = $single_animation_delay;
-					$output .= wvc_element_aos_animation_data_attr( $atts );
+					$output                     .= wvc_element_aos_animation_data_attr( $atts );
 				}
 
 				$output .= '>';
-				
+
 				$output .= '<div class="' . wvc_sanitize_html_classes( $icon_container_class ) . '" style="' . wvc_esc_style_attr( $icon_container_style ) . '"><div class="wvc-icon-background-fill ' . wvc_esc_style_attr( $icon_filler_style ) . '"></div>';
 
 				if ( 'none' === $background_style ) {
 
-					$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa '. esc_attr( $icon ) . '"><a title="' . esc_attr( $service ) . '" class="wvc-social-icon-link" target="' . esc_attr( $target ) .  '"';
+					$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa ' . esc_attr( $icon ) . '"><a title="' . esc_attr( $service ) . '" class="wvc-social-icon-link" target="' . esc_attr( $target ) . '"';
 
 					if ( '_blank' === $target && $rel ) {
 						$output .= ' rel="noreferrer, noopener"';
@@ -225,7 +307,7 @@ function wvc_socials( $atts ) {
 
 				} else {
 
-					$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa '. esc_attr( $icon ) . ' fa-stack-1x"><a title="' . esc_attr( $service ) . '" class="wvc-social-icon-link" target="' . esc_attr( $target ) .  '"';
+					$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa ' . esc_attr( $icon ) . ' fa-stack-1x"><a title="' . esc_attr( $service ) . '" class="wvc-social-icon-link" target="' . esc_attr( $target ) . '"';
 
 					if ( '_blank' === $target && $rel ) {
 						$output .= ' rel="noreferrer, noopener"';
@@ -245,7 +327,7 @@ function wvc_socials( $atts ) {
 				continue;
 			}
 
-			$icon_box_style = 'animation-delay:' . absint( $single_animation_delay ) . 'ms;';
+			$icon_box_style         = 'animation-delay:' . absint( $single_animation_delay ) . 'ms;';
 			$single_animation_delay = $single_animation_delay + 100;
 
 			if ( in_array( $service, $wolf_icon_array ) ) {
@@ -268,7 +350,7 @@ function wvc_socials( $atts ) {
 
 			if ( 'none' === $background_style ) {
 
-				$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa '. esc_attr( $icon ) . '"><a title="' . esc_attr( $service ) . '" target="' . esc_attr( $target ) .  '"';
+				$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa ' . esc_attr( $icon ) . '"><a title="' . esc_attr( $service ) . '" target="' . esc_attr( $target ) . '"';
 
 				if ( '_blank' === $target && $rel ) {
 					$output .= ' rel="noreferrer, noopener"';
@@ -278,13 +360,13 @@ function wvc_socials( $atts ) {
 
 			} else {
 
-				$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa '. esc_attr( $icon ) . ' fa-stack-1x"><a title="' . esc_attr( $service ) . '" target="' . esc_attr( $target ) .  '"';
+				$output .= '<i style="' . wvc_esc_style_attr( $icon_style ) . '" class="wvc-icon-color-' . $color . ' wvc-icon fa ' . esc_attr( $icon ) . ' fa-stack-1x"><a title="' . esc_attr( $service ) . '" target="' . esc_attr( $target ) . '"';
 
 				if ( '_blank' === $target && $rel ) {
 					$output .= ' rel="noreferrer, noopener"';
 				}
 
-				$output .= ' href="' .  $link . '"></a></i>';
+				$output .= ' href="' . $link . '"></a></i>';
 			}
 
 			$output .= '</div>'; // end icon container
@@ -293,9 +375,9 @@ function wvc_socials( $atts ) {
 		}
 	}
 
-	//$output .= ob_start();
+	// $output .= ob_start();
 	$output .= apply_filters( 'wvc_social_icons_end', '', $atts );
-	//$output .= ob_get_clean();
+	// $output .= ob_get_clean();
 
 	$output .= '</div><!-- .wvc-socials-container -->';
 

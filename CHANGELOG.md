@@ -1,5 +1,9 @@
 # Changelog
 
+#### 29th September 2020 - Version 3.4.0
+
+- Fix: Separator alignment on mobile
+
 #### 26th September 2020 - Version 3.3.9
 
 - Tweak: Updated flickity (carousel JS plugin)
