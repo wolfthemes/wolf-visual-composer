@@ -12,51 +12,56 @@ defined( 'ABSPATH' ) || exit;
 
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 
-extract( shortcode_atts( array(
-	'title' => '',
-	'image' => '',
-	'img_size' => '',
-	'custom_img_size' => '',
-	'shape' => '',
-	'border' => '',
-	'shadow' => '',
-	'hover_effect' => '',
-	'add_caption' => '',
-	'alignment' => '',
-	'text_align_mobile' => '',
-	'full_width' => '',
-	'max_width' => '',
-	'onclick' => '',
-	'opacity' => 100,
-	'link' => '',
-	'animated_svg' => true,
-	'add_overlay' => false,
-	'overlay_color' => 'black',
-	'overlay_custom_color' => '',
-	'overlay_text_color' => '',
-	'overlay_text_custom_color' => '',
-	'overlay_opacity' => 40,
-	'overlay_content' => '',
-	'overlay_content_type' => '',
-	'title_tag' => 'h5',
-	'title_font_family' => '',
-	'title_font_weight' => '',
-	'title_font_size' => '',
-	'title_font_style' => '',
-	'title_text_transform' => '',
-	'title_letter_spacing' => 0,
-	'css_animation' => '',
-	'css_animation_delay' => '',
-	'hide_class' => '',
-	'el_class' => '',
-	'css' => '',
-	'inline_style' => '',
-), $atts ) );
+extract(
+	shortcode_atts(
+		array(
+			'title'                     => '',
+			'image'                     => '',
+			'img_size'                  => '',
+			'custom_img_size'           => '',
+			'shape'                     => '',
+			'border'                    => '',
+			'shadow'                    => '',
+			'hover_effect'              => '',
+			'add_caption'               => '',
+			'alignment'                 => '',
+			'text_align_mobile'         => '',
+			'full_width'                => '',
+			'max_width'                 => '',
+			'onclick'                   => '',
+			'opacity'                   => 100,
+			'link'                      => '',
+			'animated_svg'              => true,
+			'add_overlay'               => false,
+			'overlay_color'             => 'black',
+			'overlay_custom_color'      => '',
+			'overlay_text_color'        => '',
+			'overlay_text_custom_color' => '',
+			'overlay_opacity'           => 40,
+			'overlay_content'           => '',
+			'overlay_content_type'      => '',
+			'title_tag'                 => 'h5',
+			'title_font_family'         => '',
+			'title_font_weight'         => '',
+			'title_font_size'           => '',
+			'title_font_style'          => '',
+			'title_text_transform'      => '',
+			'title_letter_spacing'      => 0,
+			'css_animation'             => '',
+			'css_animation_delay'       => '',
+			'hide_class'                => '',
+			'el_class'                  => '',
+			'css'                       => '',
+			'inline_style'              => '',
+		),
+		$atts
+	)
+);
 
 $output = $container_class = $container_style = $img_class = $link_start = $link_end = $overlay_style = $text_style = '';
 
-$class = $el_class;
-$inline_style = wvc_sanitize_css_field( $inline_style );
+$class            = $el_class;
+$inline_style     = wvc_sanitize_css_field( $inline_style );
 $container_style .= wvc_shortcode_custom_style( $css );
 
 $class .= " $hide_class"; // device visibility class
@@ -65,7 +70,7 @@ $class .= ' wvc-mobile-text-align-' . $text_align_mobile;
 
 /*Animate */
 if ( ! wvc_is_new_animation( $css_animation ) ) {
-	$class .= wvc_get_css_animation( $css_animation );
+	$class        .= wvc_get_css_animation( $css_animation );
 	$inline_style .= wvc_get_css_animation_delay( $css_animation_delay );
 }
 
@@ -78,7 +83,7 @@ $img_id = $image;
 
 $large_img_src = wvc_get_url_from_attachment_id( $img_id, 'wvc-XL' );
 
-$pretty_rel_random = ' data-rel="prettyPhoto[rel-' . get_the_ID() . '-' . rand() . ']"';
+$pretty_rel_random   = ' data-rel="prettyPhoto[rel-' . get_the_ID() . '-' . rand() . ']"';
 $swipebox_rel_random = ' data-rel="swipebox[rel-' . get_the_ID() . '-' . rand() . ']"';
 $lightbox_rel_random = ' data-rel="lightbox[rel-' . get_the_ID() . '-' . rand() . ']"';
 
@@ -87,25 +92,25 @@ if ( 'link_image' === $onclick ) {
 	wp_enqueue_script( 'prettyphoto' );
 	wp_enqueue_style( 'prettyphoto' );
 
-} elseif ( 'swipebox' === $onclick) {
+} elseif ( 'swipebox' === $onclick ) {
 
 	wp_enqueue_script( 'swipebox' );
 	wp_enqueue_style( 'swipebox' );
 
-} elseif ( 'lightbox' === $onclick) {
+} elseif ( 'lightbox' === $onclick ) {
 
 	wp_enqueue_script( 'swipebox' );
 	wp_enqueue_style( 'swipebox' );
 }
 
 
-$attachment = get_post( $img_id );
+$attachment          = get_post( $img_id );
 $attachment_page_url = ( $attachment ) ? get_attachment_link( $img_id ) : '#';
-$title_attr = ( is_object( $attachment ) ) ? wptexturize( $attachment->post_title ) : '';
-$caption = ( is_object( $attachment ) ) ? wptexturize( $attachment->post_excerpt ) : '';
+$title_attr          = ( is_object( $attachment ) ) ? wptexturize( $attachment->post_title ) : '';
+$caption             = ( is_object( $attachment ) ) ? wptexturize( $attachment->post_excerpt ) : '';
 
 if ( $max_width ) {
-	$max_width = wvc_sanitize_css_value( $max_width );
+	$max_width     = wvc_sanitize_css_value( $max_width );
 	$inline_style .= "max-width:$max_width;";
 }
 
@@ -114,52 +119,52 @@ if ( $full_width ) {
 }
 
 if ( $opacity ) {
-	$opacity = absint( $opacity ) / 100;
+	$opacity       = absint( $opacity ) / 100;
 	$inline_style .= "opacity:$opacity;";
 }
 
 // Link
-$link = vc_build_link( $link );
-$link_url = ( isset( $link['url'] ) ) ? esc_url( $link['url'] ) : '#';
+$link        = vc_build_link( $link );
+$link_url    = ( isset( $link['url'] ) ) ? esc_url( $link['url'] ) : '#';
 $link_target = ( isset( $link['target'] ) && $link['target'] ) ? esc_attr( trim( $link['target'] ) ) : '_self';
-$link_title = ( isset( $link['title'] ) ) ? esc_attr( $link['title'] ) : '';
-$nofollow = ( isset( $link['rel'] ) && 'nofollow' === $link['rel'] ) ? 'rel="nofollow"' : '';
+$link_title  = ( isset( $link['title'] ) ) ? esc_attr( $link['title'] ) : '';
+$nofollow    = ( isset( $link['rel'] ) && 'nofollow' === $link['rel'] ) ? 'rel="nofollow"' : '';
 
 switch ( $onclick ) {
 
 	case 'none':
-		//$link_start = '<span class="wvc-img wvc-si-link" data-title="' . esc_attr( $title_attr ) . '">';
-		//$link_end = '</span>';
+		// $link_start = '<span class="wvc-img wvc-si-link" data-title="' . esc_attr( $title_attr ) . '">';
+		// $link_end = '</span>';
 		break;
 
 	case 'attachment_page':
 		$link_start = '<a class="wvc-si-link" href="' . esc_url( $attachment_page_url ) . '" data-title="' . esc_attr( $title_attr ) . '">';
-		$link_end = '</a>';
+		$link_end   = '</a>';
 		break;
 
 	case 'img_link_large':
 		$link_start = '<a class="wvc-si-link" href="' . esc_url( $large_img_src ) . '" data-title="' . esc_attr( $title_attr ) . '">';
-		$link_end = '</a>';
+		$link_end   = '</a>';
 		break;
 
 	case 'link_image':
 		$link_start = '<a class="wvc-si-link" class="prettyphoto" href="' . esc_url( $large_img_src ) . '"' . $pretty_rel_random . ' data-title="' . esc_attr( $title_attr ) . '">';
-		$link_end = '</a>';
+		$link_end   = '</a>';
 		break;
 
 	case 'custom_link':
 		$link_start = '<a ' . $nofollow . ' target="' . esc_attr( $link_target ) . '" class="wvc-si-link" href="' . esc_url( $link_url ) . '" data-title="' . esc_attr( $link_title ) . '">';
-		$link_end = '</a>';
+		$link_end   = '</a>';
 		break;
 
 	case 'swipebox':
 		$link_start = '<a class="wvc-si-link wvc-swipebox" href="' . esc_url( $large_img_src ) . '"' . $swipebox_rel_random . ' data-title="' . esc_attr( $title_attr ) . '">';
-		$link_end = '</a>';
+		$link_end   = '</a>';
 		break;
 
 	case 'lightbox':
 		$link_start = '<a class="wvc-si-link wvc-lightbox" href="' . esc_url( $large_img_src ) . '"' . $lightbox_rel_random . ' data-title="' . esc_attr( $title_attr ) . '" data-caption="' . esc_attr( $caption ) . '">';
-		$link_end = '</a>';
+		$link_end   = '</a>';
 		break;
 }
 
@@ -182,35 +187,41 @@ if ( $title ) {
 
 $output .= '<figure class="' . wvc_sanitize_html_classes( $class ) . '" style="' . wvc_esc_style_attr( $inline_style ) . '">';
 
-if ( ! $add_overlay ) {
-	$output .= $link_start;
-} else {
+if ( $add_overlay && ! wp_is_mobile() ) {
 	$output .= '<span class="wvc-si-img-inner">';
+} else {
+	$output .= $link_start;
 }
 
-$image = wvc_get_url_from_attachment_id( $img_id );
+$image    = wvc_get_url_from_attachment_id( $img_id );
 $filetype = wp_check_filetype( $image );
 
-if ( isset( $filetype['ext'] ) && 'svg' === $filetype['ext'] ) { //  is SVG
+if ( isset( $filetype['ext'] ) && 'svg' === $filetype['ext'] ) { // is SVG
 
 	wp_enqueue_script( 'vivus' );
 	wp_enqueue_script( 'wvc-vivus' );
 
-	$rand = 'wvc-svg-' . rand( 0, 999 ); //unique ID
+	$rand = 'wvc-svg-' . rand( 0, 999 ); // unique ID
 
 	if ( $animated_svg ) {
-		
-		$output .= wvc_animated_svg( $image, array( 'class' => 'wow', 'animation_duration' => 200, ) );
-	
+
+		$output .= wvc_animated_svg(
+			$image,
+			array(
+				'class'              => 'wow',
+				'animation_duration' => 200,
+			)
+		);
+
 	} else {
-		
+
 		$output .= wvc_file_get_contents( esc_url( $image ) );
 	}
 
-	//$output .= '<div style="visibility:hidden;" id="' . esc_attr( $rand ) . '" data-animation-duration="200" class="wvc-vivus" data-file="' . esc_url( $image ) . '"></div>';
+	// $output .= '<div style="visibility:hidden;" id="' . esc_attr( $rand ) . '" data-animation-duration="200" class="wvc-vivus" data-file="' . esc_url( $image ) . '"></div>';
 
 } else {
-	
+
 	if ( ! $add_overlay ) {
 		$output .= '<span class="wvc-img wvc-img-hover-effect-' . $hover_effect . '">';
 	}
@@ -219,18 +230,19 @@ if ( isset( $filetype['ext'] ) && 'svg' === $filetype['ext'] ) { //  is SVG
 	if ( ! in_array( $img_size, array( 'thumbnail', 'medium', 'large', 'wvc-XL', 'full' ) ) ) {
 
 		if ( wp_attachment_is_image( $img_id ) ) {
-				
-			$img = wpb_getImageBySize( array(
-				'attach_id' => $img_id,
-				'thumb_size' => $img_size,
-				'class' => $img_class,
-			) );
+
+			$img = wpb_getImageBySize(
+				array(
+					'attach_id'  => $img_id,
+					'thumb_size' => $img_size,
+					'class'      => $img_class,
+				)
+			);
 
 			$output .= $img['thumbnail'];
 		} else {
 			$output .= wvc_placeholder_img( $img_size, $img_class );
 		}
-
 	} else {
 		if ( wp_attachment_is_image( $img_id ) ) {
 			$output .= wp_get_attachment_image( $img_id, $img_size, false, array( 'class' => $img_class ) );
@@ -244,17 +256,17 @@ if ( isset( $filetype['ext'] ) && 'svg' === $filetype['ext'] ) { //  is SVG
 	}
 }
 
-if ( ! $add_overlay ) {
-	$output .= $link_end;
-} else {
+if ( $add_overlay && ! wp_is_mobile() ) {
 	$output .= '</span>';
+} else {
+	$output .= $link_end;
 }
 
 if ( $add_overlay ) {
 
 	/* Title font */
 	$title_text_transform = esc_attr( $title_text_transform );
-	$title_font_weight = ( $title_font_weight ) ? absint( $title_font_weight ) : '';
+	$title_font_weight    = ( $title_font_weight ) ? absint( $title_font_weight ) : '';
 	$title_letter_spacing = preg_replace( '/[^0-9-.,]/', '', $title_letter_spacing );
 
 	if ( $title_font_family && 'default' !== $title_font_family ) {
@@ -292,32 +304,33 @@ if ( $add_overlay ) {
 
 	$output .= wvc_background_overlay(
 		array(
-			'overlay_color' => $overlay_color,
+			'overlay_color'        => $overlay_color,
 			'overlay_custom_color' => $overlay_custom_color,
-			'overlay_opacity' => $overlay_opacity,
-			'overlay_tag' => 'span',
-		) );
+			'overlay_opacity'      => $overlay_opacity,
+			'overlay_tag'          => 'span',
+		)
+	);
 
-	
+
 	// Caption
 
 	if ( $overlay_content_type ) {
 
 		$text_color_style_attr = '';
-		$text_color_class = '';
+		$text_color_class      = '';
 
 		if ( $overlay_text_color ) {
 			$text_color_class = "wvc-text-color-$overlay_text_color";
 
 			$text_color = wvc_convert_color_class_to_hex_value( $overlay_text_color, $overlay_text_custom_color );
 			if ( $text_color ) {
-				$text_style .= 'color:' . wvc_sanitize_color( $text_color ) . ';';
+				$text_style           .= 'color:' . wvc_sanitize_color( $text_color ) . ';';
 				$text_color_style_attr = 'color:' . wvc_sanitize_color( $text_color ) . ';';
 			}
 		}
 
 		$output .= '<span class="wvc-single-image-overlay-content">';
-		
+
 			$output .= str_replace( 'wvc-si-link', '', $link_start ); // remove link class
 
 		if ( $title_attr ) {
@@ -334,7 +347,7 @@ if ( $add_overlay ) {
 
 			$output .= "<span>$caption</span>";
 
-			$output .= "</span>";
+			$output .= '</span>';
 		}
 
 			$output .= $link_end;
@@ -346,14 +359,14 @@ if ( $add_overlay ) {
 }
 
 if ( $add_caption ) {
-	
+
 	if ( $caption ) {
 		$output .= '<figcaption class="wvc-single-image-caption">';
-		
+
 		$output .= esc_attr( $title_attr );
 		$output .= '<br>';
 		$output .= esc_attr( $caption );
-		
+
 		$output .= '</figcaption>';
 	}
 }

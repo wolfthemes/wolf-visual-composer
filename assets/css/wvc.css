@@ -4088,10 +4088,14 @@ cite.wvc-testimonial-cite {
 }
 .wvc-single-image-overlay-true .wvc-single-image-overlay {
   opacity: 0;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
 }
 .wvc-single-image-overlay-true:hover .wvc-single-image-overlay {
   opacity: 1;
+}
+
+.wvc-is-mobile .wvc-single-image-overlay-true .wvc-si-link {
+  position: relative;
 }
 
 .wvc-single-image-overlay-content {

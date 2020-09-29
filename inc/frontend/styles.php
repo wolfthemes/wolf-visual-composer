@@ -34,7 +34,7 @@ function wvc_enqueue_styles() {
 	wp_register_style( 'animate-css', WVC_CSS . '/lib/animate.min.css', array(), '3.3.0' );
 
 	/*
-	* aos
+	* AOS
 	* @link https://github.com/michalsnik/aos
 	*/
 	wp_register_style( 'aos', WVC_CSS . '/lib/aos.css', array(), '2.3.0' );
@@ -45,11 +45,10 @@ function wvc_enqueue_styles() {
 	// Libraries.
 	wp_enqueue_style( 'flexslider' ); // be sure that flexslider CSS file is enqueue BEFORE our plugin styles.
 	wp_enqueue_style( 'flickity', WVC_CSS . '/lib/flickity.min.css', array(), '2.2.1' );
-	// wp_enqueue_style( 'owlcarousel', WVC_CSS . '/lib/owl.carousel.min.css', array(), '2.2.1' );
 	wp_enqueue_style( 'lity', WVC_CSS . '/lib/lity.min.css', array(), '2.2.2' );
 
 	// Font awesome back compat.
-	wp_enqueue_style( 'fontawesome', WVC_CSS . '/lib/fontawesome/fontawesome.css', array(), '4.7.0' );
+	wp_enqueue_style( 'font-awesome', WVC_CSS . '/lib/fontawesome/fontawesome.css', array(), '4.7.0' );
 
 	// VC styles.
 	if ( apply_filters( 'wvc_force_enqueue_scripts', false ) ) {
