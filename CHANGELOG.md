@@ -1,7 +1,8 @@
 # Changelog
 
-#### 29th September 2020 - Version 3.4.0
+#### 30th September 2020 - Version 3.4.1
 
+- Fix: Single image overlay on mobile
 - Fix: Separator alignment on mobile
 
 #### 26th September 2020 - Version 3.3.9
