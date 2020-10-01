@@ -1,7 +1,8 @@
 # Changelog
 
-#### 30th September 2020 - Version 3.4.1
+#### 1st October 2020 - Version 3.4.2
 
+- Fix: wvc_enable_privacy_policy_message filter
 - Fix: Single image overlay on mobile
 - Fix: Separator alignment on mobile
 

@@ -28,7 +28,7 @@ function wvc_privacy_policy_message( $atts = array() ) {
 
 	$enabled = apply_filters( 'wvc_enable_privacy_policy_message', ( 'enabled' === $status ) );
 
-	if ( ! $status || '' === $status || 'disabled' === $status ) {
+	if ( ! $status || '' === $status || 'disabled' === $status || ! $enabled ) {
 		return;
 	}
 
