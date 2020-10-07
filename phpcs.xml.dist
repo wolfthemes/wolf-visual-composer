@@ -39,7 +39,7 @@
 		</properties>
 	</rule>
 	<!-- Check all globals have the expected prefix. -->
-	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+	<!-- <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
 				<element value="CHILD_THEME"/>
@@ -54,7 +54,7 @@
 				<element value="mptt_"/>
 			</property>
 		</properties>
-	</rule>
+	</rule> -->
 	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
 		<properties>
 			<!-- No need to adjust alignment of large arrays when the item with the largest key is removed. -->

@@ -31,15 +31,15 @@ function wvc_get_the_ID() {
 
 		$post_id = get_option( 'woocommerce_shop_page_id' );
 
-	// Get post ID outside the loop
+		// Get post ID outside the loop
 	} elseif ( is_object( $wp_query ) && isset( $wp_query->queried_object ) && isset( $wp_query->queried_object->ID ) ) {
-		
+
 		$post_id = $wp_query->queried_object->ID;
-	
+
 	} else {
 		$post_id = get_the_ID();
 	}
-	
+
 	return $post_id;
 }
 
@@ -59,14 +59,14 @@ function wvc_get_theme_slug() {
  * @return array $mimes
  */
 function wvc_mime_types( $mimes ) {
-	$mimes['svg'] = 'image/svg+xml';
+	$mimes['svg']  = 'image/svg+xml';
 	$mimes['svgz'] = 'image/svg+xml';
 	$mimes['webp'] = 'image/webp';
-	$mimes['csv'] = 'text/csv';
+	$mimes['csv']  = 'text/csv';
 
 	if ( class_exists( 'PixProofPlugin' ) ) {
 		$mimes['zip'] = 'application/zip';
-		$mimes['gz'] = 'application/x-gzip';
+		$mimes['gz']  = 'application/x-gzip';
 	}
 
 	return $mimes;
@@ -82,7 +82,7 @@ function wvc_disable_gutenberg() {
 	add_filter( 'use_block_editor_for_page', '__return_false', 10 );
 	add_filter( 'use_block_editor_for_post_type', '__return_false', 10 );
 }
-//add_action( 'init', 'wvc_disable_gutenberg' );
+// add_action( 'init', 'wvc_disable_gutenberg' );
 
 /**
  * Add image sizes
@@ -91,16 +91,16 @@ function wvc_disable_gutenberg() {
  */
 function wvc_add_image_sizes() {
 
-	// Extra Large for background
-	add_image_size( 'wvc-XL', 2000, 3000, false ); // XL
+	// Extra Large for background.
+	add_image_size( 'wvc-XL', 2000, 3000, false );
 
-	// Slides
+	// Slides.
 	add_image_size( 'wvc-slide', 1200, 700, true );
 
-	// Masonry
+	// Masonry.
 	add_image_size( 'wvc-masonry', 500, 2000, false );
 
-	// Horizontal photo
+	// Horizontal photo.
 	add_image_size( 'wvc-photo', 500, 500, false );
 }
 add_action( 'init', 'wvc_add_image_sizes' );
@@ -118,17 +118,17 @@ function wvc_get_element_list() {
 		'admin-helper-text',
 		'advanced-slider',
 		'advanced-slide',
-		//'albums',
-		//'album-disc',
-		//'album-tracklist',
-		//'album-tracklist-item',
+		// 'albums',
+		// 'album-disc',
+		// 'album-tracklist',
+		// 'album-tracklist-item',
 		'anchor',
-		//'anything-slider',
-		//'anything-slide',
+		// 'anything-slider',
+		// 'anything-slide',
 		'audio',
 		'audio-embed',
 		'bandsintown-events',
-		//'bandsintown-tracking-button',
+		// 'bandsintown-tracking-button',
 		'banner-gallery',
 		'banner-product',
 		'banner',
@@ -136,7 +136,7 @@ function wvc_get_element_list() {
 		'bit-artist',
 		'breadcrumb',
 		'button',
-		//'cards-gallery',
+		// 'cards-gallery',
 		'cta',
 		'column',
 		'column-inner',
@@ -148,11 +148,11 @@ function wvc_get_element_list() {
 		'counter',
 		'current-year',
 		'custom-heading',
-		//'discography',
+		// 'discography',
 		'dropcap',
 		'embed-video',
 		'empty-space',
-		//'events',
+		// 'events',
 		'facebook-page-box',
 		'gallery',
 		'gmaps',
@@ -162,7 +162,7 @@ function wvc_get_element_list() {
 		'hoverbox',
 		'icon',
 		'iframe-opener',
-		//'image-link',
+		// 'image-link',
 		'image-device-slider',
 		'info-table',
 		'instagram-gallery',
@@ -170,10 +170,10 @@ function wvc_get_element_list() {
 		'instagram',
 		'interactive-links',
 		'interactive-link-item',
-		//'interactive-overlays',
-		//'interactive-overlay-item',
+		// 'interactive-overlays',
+		// 'interactive-overlay-item',
 		'item-price',
-		//'last-posts',
+		// 'last-posts',
 		'post-slider',
 		'list',
 		'mailchimp',
@@ -181,11 +181,11 @@ function wvc_get_element_list() {
 		'music-network',
 		'next-month',
 		'oembed-gist',
-		//'old-instagram',
+		// 'old-instagram',
 		'parallax-holder',
 		'pie',
 		'playlist',
-		//'portfolio',
+		// 'portfolio',
 		'pricing-table',
 		'process-container',
 		'process-item',
@@ -193,7 +193,7 @@ function wvc_get_element_list() {
 		'rev-slider-vc',
 		'row',
 		'row-inner',
-		//'section',
+		// 'section',
 		'sb-instagram-feed',
 		'separator',
 		'service-table',
@@ -216,9 +216,9 @@ function wvc_get_element_list() {
 		'video',
 		'video-opener',
 		'video-self-hosted',
-		//'videos-carousel', //  last videos from plugin carousel
-		//'videos',
-		//'waveform-player',
+		// 'videos-carousel', //  last videos from plugin carousel
+		// 'videos',
+		// 'waveform-player',
 		'wc-categories',
 		'youtube',
 		'zigzag',
@@ -247,7 +247,7 @@ function wvc_add_third_party_plugins_elements( $elements ) {
 
 	return $elements;
 }
-//add_filter( 'wvc_element_list', 'wvc_add_third_party_plugins_elements' );
+// add_filter( 'wvc_element_list', 'wvc_add_third_party_plugins_elements' );
 
 /**
  * Get blog URL
@@ -289,28 +289,28 @@ function wvc_is_blog_index() {
 function wvc_get_shared_colors() {
 
 	$wvc_shared_colors = array(
-		esc_html__( 'Black', 'wolf-visual-composer' ) => 'black', // black
+		esc_html__( 'Black', 'wolf-visual-composer' )      => 'black',
 		esc_html__( 'Light Grey', 'wolf-visual-composer' ) => 'lightergrey',
-		esc_html__( 'Dark Grey', 'wolf-visual-composer' ) => 'darkgrey',
-		esc_html__( 'White', 'wolf-visual-composer' ) => 'white', // white
-		esc_html__( 'Orange', 'wolf-visual-composer' ) => 'orange', // orange
-		esc_html__( 'Green', 'wolf-visual-composer' ) => 'green', // green
-		esc_html__( 'Turquoise', 'wolf-visual-composer' ) => 'turquoise',
-		esc_html__( 'Violet', 'wolf-visual-composer' ) => 'violet',
-		esc_html__( 'Pink', 'wolf-visual-composer' ) => 'pink',
-		esc_html__( 'Grey blue', 'wolf-visual-composer' ) => 'greyblue',
-		esc_html__( 'Red', 'wolf-visual-composer' ) => 'red',
-		esc_html__( 'Yellow', 'wolf-visual-composer' ) => 'yellow',
-		esc_html__( 'Blue', 'wolf-visual-composer' ) => 'blue',
-		esc_html__( 'Peacoc', 'js_composer' ) => 'peacoc',
-		esc_html__( 'Chino', 'js_composer' ) => 'chino',
-		esc_html__( 'Mulled Wine', 'js_composer' ) => 'mulled-wine',
-		esc_html__( 'Vista Blue', 'js_composer' ) => 'vista-blue',
-		esc_html__( 'Grey', 'js_composer' ) => 'grey',
-		esc_html__( 'Sky', 'js_composer' ) => 'sky',
-		esc_html__( 'Juicy pink', 'js_composer' ) => 'juicy-pink',
-		esc_html__( 'Sandy brown', 'js_composer' ) => 'sandy-brown',
-		esc_html__( 'Purple', 'js_composer' ) => 'purple',
+		esc_html__( 'Dark Grey', 'wolf-visual-composer' )  => 'darkgrey',
+		esc_html__( 'White', 'wolf-visual-composer' )      => 'white',
+		esc_html__( 'Orange', 'wolf-visual-composer' )     => 'orange',
+		esc_html__( 'Green', 'wolf-visual-composer' )      => 'green',
+		esc_html__( 'Turquoise', 'wolf-visual-composer' )  => 'turquoise',
+		esc_html__( 'Violet', 'wolf-visual-composer' )     => 'violet',
+		esc_html__( 'Pink', 'wolf-visual-composer' )       => 'pink',
+		esc_html__( 'Grey blue', 'wolf-visual-composer' )  => 'greyblue',
+		esc_html__( 'Red', 'wolf-visual-composer' )        => 'red',
+		esc_html__( 'Yellow', 'wolf-visual-composer' )     => 'yellow',
+		esc_html__( 'Blue', 'wolf-visual-composer' )       => 'blue',
+		esc_html__( 'Peacoc', 'js_composer' )              => 'peacoc',
+		esc_html__( 'Chino', 'js_composer' )               => 'chino',
+		esc_html__( 'Mulled Wine', 'js_composer' )         => 'mulled-wine',
+		esc_html__( 'Vista Blue', 'js_composer' )          => 'vista-blue',
+		esc_html__( 'Grey', 'js_composer' )                => 'grey',
+		esc_html__( 'Sky', 'js_composer' )                 => 'sky',
+		esc_html__( 'Juicy pink', 'js_composer' )          => 'juicy-pink',
+		esc_html__( 'Sandy brown', 'js_composer' )         => 'sandy-brown',
+		esc_html__( 'Purple', 'js_composer' )              => 'purple',
 	);
 
 	// apply filters
@@ -325,29 +325,29 @@ function wvc_get_shared_colors() {
 function wvc_get_shared_colors_hex() {
 
 	$wvc_shared_colors_hex = array(
-		'black' => '#000000',
+		'black'       => '#000000',
 		'lightergrey' => '#f7f7f7',
-		'darkgrey' => '#444444',
-		'white' => '#ffffff',
-		'orange' => '#F7BE68',
-		'green' => '#6DAB3C',
-		'turquoise' => '#49afcd',
-		'violet' => '#8D6DC4',
-		'pink' => '#FE6C61',
-		'greyblue' => '#49535a',
-		'red' => '#da4f49',
-		'yellow' => '#e6ae48',
-		'blue' => '#75D69C',
-		'peacoc' => '#4CADC9',
-		'chino' => '#CEC2AB',
+		'darkgrey'    => '#444444',
+		'white'       => '#ffffff',
+		'orange'      => '#F7BE68',
+		'green'       => '#6DAB3C',
+		'turquoise'   => '#49afcd',
+		'violet'      => '#8D6DC4',
+		'pink'        => '#FE6C61',
+		'greyblue'    => '#49535a',
+		'red'         => '#da4f49',
+		'yellow'      => '#e6ae48',
+		'blue'        => '#75D69C',
+		'peacoc'      => '#4CADC9',
+		'chino'       => '#CEC2AB',
 		'mulled-wine' => '#50485B',
-		'vista-blue' => '#75D69C',
-		'grey' => '#EBEBEB',
-		'sky' => '#5AA1E3',
-		'juicy-pink' => '#F4524D',
+		'vista-blue'  => '#75D69C',
+		'grey'        => '#EBEBEB',
+		'sky'         => '#5AA1E3',
+		'juicy-pink'  => '#F4524D',
 		'sandy-brown' => '#F79468',
-		'purple' => '#B97EBB',
-		'accent' => apply_filters( 'wvc_theme_accent_color', '#0073AA' ),
+		'purple'      => '#B97EBB',
+		'accent'      => apply_filters( 'wvc_theme_accent_color', '#0073AA' ),
 	);
 
 	// apply filters
@@ -361,10 +361,10 @@ function wvc_get_shared_colors_hex() {
  */
 function wvc_get_shape_divider_options() {
 	$options = array(
-		'tilt' => esc_html__( 'Angle', 'wolf-visual-composer' ),
-		//'tilt_opacity' => esc_html__( 'Angle Opacity', 'wolf-visual-composer' ),
-		'curve' => esc_html__( 'Curve', 'wolf-visual-composer' ),
-		//'curve_opacity' => esc_html__( 'Curve Opacity', 'wolf-visual-composer' ),
+		'tilt'           => esc_html__( 'Angle', 'wolf-visual-composer' ),
+		// 'tilt_opacity' => esc_html__( 'Angle Opacity', 'wolf-visual-composer' ),
+		'curve'          => esc_html__( 'Curve', 'wolf-visual-composer' ),
+		// 'curve_opacity' => esc_html__( 'Curve Opacity', 'wolf-visual-composer' ),
 		'grunge_border1' => esc_html__( 'Grunge Border', 'wolf-visual-composer' ),
 	);
 
@@ -375,31 +375,32 @@ function wvc_get_shape_divider_options() {
 
 /**
  * Add animations
+ *
+ * @param array $animations Animation array.
+ * @return array
  */
 function wvc_add_animations( $animations ) {
 
-	//debug( $animations );
-
 	$animations[] = array(
-		'label' => esc_html__( 'Custom Animations', 'wolf-visual-composer' ),
+		'label'  => esc_html__( 'Custom Animations', 'wolf-visual-composer' ),
 		'values' => array(
-			'uncoverXLeft' => array(
+			'uncoverXLeft'   => array(
 				'value' => 'uncoverXLeft',
-				'type' => 'new'
+				'type'  => 'new',
 			),
-			'uncoverXRight' => array(
+			'uncoverXRight'  => array(
 				'value' => 'uncoverXRight',
-				'type' => 'new'
+				'type'  => 'new',
 			),
 
-			'uncoverYTop' => array(
+			'uncoverYTop'    => array(
 				'value' => 'uncoverYTop',
-				'type' => 'new'
+				'type'  => 'new',
 			),
 
 			'uncoverYBottom' => array(
 				'value' => 'uncoverYBottom',
-				'type' => 'new'
+				'type'  => 'new',
 			),
 		),
 	);
@@ -413,39 +414,45 @@ add_filter( 'vc_param_animation_style_list', 'wvc_add_animations' );
  */
 function wvc_get_aos_animations() {
 	return array(
-		'fade' => esc_html__( 'Fade', 'wolf-visual-composer' ),
-		'fade-up' => esc_html__( 'Fade Up', 'wolf-visual-composer' ),
-		'fade-down' => esc_html__( 'Fade Down', 'wolf-visual-composer' ),
-		'fade-left' => esc_html__( 'Fade Left', 'wolf-visual-composer' ),
-		'fade-right' => esc_html__( 'Fade Right', 'wolf-visual-composer' ),
-		'fade-up-right' => esc_html__( 'Fade Up Right', 'wolf-visual-composer' ),
-		'fade-up-left' => esc_html__( 'Fade Up Left', 'wolf-visual-composer' ),
+		'fade'            => esc_html__( 'Fade', 'wolf-visual-composer' ),
+		'fade-up'         => esc_html__( 'Fade Up', 'wolf-visual-composer' ),
+		'fade-down'       => esc_html__( 'Fade Down', 'wolf-visual-composer' ),
+		'fade-left'       => esc_html__( 'Fade Left', 'wolf-visual-composer' ),
+		'fade-right'      => esc_html__( 'Fade Right', 'wolf-visual-composer' ),
+		'fade-up-right'   => esc_html__( 'Fade Up Right', 'wolf-visual-composer' ),
+		'fade-up-left'    => esc_html__( 'Fade Up Left', 'wolf-visual-composer' ),
 		'fade-down-right' => esc_html__( 'Fade Down Right', 'wolf-visual-composer' ),
-		'fade-down-left' => esc_html__( 'Fade Down Left', 'wolf-visual-composer' ),
+		'fade-down-left'  => esc_html__( 'Fade Down Left', 'wolf-visual-composer' ),
 
-		'flip-up' => esc_html__( 'Flip Up', 'wolf-visual-composer' ),
-		'flip-down' => esc_html__( 'Flip Down', 'wolf-visual-composer' ),
-		'flip-left' => esc_html__( 'Flip Left', 'wolf-visual-composer' ),
-		'flip-right' => esc_html__( 'Flip Right', 'wolf-visual-composer' ),
+		'flip-up'         => esc_html__( 'Flip Up', 'wolf-visual-composer' ),
+		'flip-down'       => esc_html__( 'Flip Down', 'wolf-visual-composer' ),
+		'flip-left'       => esc_html__( 'Flip Left', 'wolf-visual-composer' ),
+		'flip-right'      => esc_html__( 'Flip Right', 'wolf-visual-composer' ),
 
-		'slide-up' => esc_html__( 'Slide Up', 'wolf-visual-composer' ),
-		'slide-down' => esc_html__( 'Slide Down', 'wolf-visual-composer' ),
-		'slide-left' => esc_html__( 'Slide Left', 'wolf-visual-composer' ),
-		'slide-right' => esc_html__( 'Slide Right', 'wolf-visual-composer' ),
+		'slide-up'        => esc_html__( 'Slide Up', 'wolf-visual-composer' ),
+		'slide-down'      => esc_html__( 'Slide Down', 'wolf-visual-composer' ),
+		'slide-left'      => esc_html__( 'Slide Left', 'wolf-visual-composer' ),
+		'slide-right'     => esc_html__( 'Slide Right', 'wolf-visual-composer' ),
 
-		'zoom-in' => esc_html__( 'Zoom In', 'wolf-visual-composer' ),
-		'zoom-in-up' => esc_html__( 'Zoom In Up', 'wolf-visual-composer' ),
-		'zoom-in-down' => esc_html__( 'Zoom In Down', 'wolf-visual-composer' ),
-		'zoom-in-left' => esc_html__( 'Zoom In Left', 'wolf-visual-composer' ),
-		'zoom-in-right' => esc_html__( 'Zoom In Right', 'wolf-visual-composer' ),
-		'zoom-out' => esc_html__( 'Zoom Out', 'wolf-visual-composer' ),
-		'zoom-out-up' => esc_html__( 'Zoom Out Up', 'wolf-visual-composer' ),
-		'zoom-out-down' => esc_html__( 'Zoom Out Down', 'wolf-visual-composer' ),
-		'zoom-out-left' => esc_html__( 'Zoom Out Left', 'wolf-visual-composer' ),
-		'zoom-out-right' => esc_html__( 'Zoom Out Right', 'wolf-visual-composer' ),
+		'zoom-in'         => esc_html__( 'Zoom In', 'wolf-visual-composer' ),
+		'zoom-in-up'      => esc_html__( 'Zoom In Up', 'wolf-visual-composer' ),
+		'zoom-in-down'    => esc_html__( 'Zoom In Down', 'wolf-visual-composer' ),
+		'zoom-in-left'    => esc_html__( 'Zoom In Left', 'wolf-visual-composer' ),
+		'zoom-in-right'   => esc_html__( 'Zoom In Right', 'wolf-visual-composer' ),
+		'zoom-out'        => esc_html__( 'Zoom Out', 'wolf-visual-composer' ),
+		'zoom-out-up'     => esc_html__( 'Zoom Out Up', 'wolf-visual-composer' ),
+		'zoom-out-down'   => esc_html__( 'Zoom Out Down', 'wolf-visual-composer' ),
+		'zoom-out-left'   => esc_html__( 'Zoom Out Left', 'wolf-visual-composer' ),
+		'zoom-out-right'  => esc_html__( 'Zoom Out Right', 'wolf-visual-composer' ),
 	);
 }
 
+/**
+ * Check is if neww animation engine (AOS)
+ *
+ * @param string $animation_name Tha animation name.
+ * @return bool
+ */
 function wvc_is_new_animation( $animation_name ) {
 	$new_animations = wvc_get_aos_animations();
 
@@ -459,21 +466,20 @@ function wvc_is_new_animation( $animation_name ) {
  */
 function wvc_filter_animation_styles( $animation_syles ) {
 
-
 	$new_animations = array(
 		array(
-			//'label' => esc_html__( 'New Animations', 'wolf-visual-composer' ),
+			// 'label' => esc_html__( 'New Animations', 'wolf-visual-composer' ),
 			'values' => array_flip( array( 'none' => esc_html__( 'None', 'wolf-visual-composer' ) ) ),
 		),
 		array(
-			'label' => esc_html__( 'New Animation Engine (beta)', 'wolf-visual-composer' ),
+			'label'  => esc_html__( 'New Animation Engine (beta)', 'wolf-visual-composer' ),
 			'values' => array_flip( wvc_get_aos_animations() ),
-		)
+		),
 	);
 
-	//$animation_syles[] = $new_animations;
+	// $animation_syles[] = $new_animations;
 
-	//debug( $animation_syles );
+	// debug( $animation_syles );
 
 	$animation_syles = $new_animations + $animation_syles;
 
@@ -512,14 +518,14 @@ function wvc_get_image_sizes() {
 
 	$wvc_image_sizes = array(
 		esc_html__( 'Landscape', 'wolf-visual-composer' ) => apply_filters( 'wvc_landscape_thumbnail_size', '600x360' ),
-		esc_html__( 'Square', 'wolf-visual-composer' ) => apply_filters( 'wvc_square_thumbnail_size', '600x600' ),
-		esc_html__( 'Portrait', 'wolf-visual-composer' ) => apply_filters( 'wvc_portrait_thumbnail_size', '300x537' ),
+		esc_html__( 'Square', 'wolf-visual-composer' )    => apply_filters( 'wvc_square_thumbnail_size', '600x600' ),
+		esc_html__( 'Portrait', 'wolf-visual-composer' )  => apply_filters( 'wvc_portrait_thumbnail_size', '300x537' ),
 		esc_html__( 'Extra large', 'wolf-visual-composer' ) => 'wvc-XL',
-		esc_html__( 'Large', 'wolf-visual-composer' ) => 'large',
-		esc_html__( 'Medium', 'wolf-visual-composer' ) => 'medium',
+		esc_html__( 'Large', 'wolf-visual-composer' )     => 'large',
+		esc_html__( 'Medium', 'wolf-visual-composer' )    => 'medium',
 		esc_html__( 'Thumbnail', 'wolf-visual-composer' ) => 'thumbnail',
-		esc_html__( 'Full', 'wolf-visual-composer' ) => 'full',
-		esc_html__( 'Custom', 'wolf-visual-composer' ) => 'custom',
+		esc_html__( 'Full', 'wolf-visual-composer' )      => 'full',
+		esc_html__( 'Custom', 'wolf-visual-composer' )    => 'custom',
 	);
 
 	// apply filters
@@ -537,15 +543,15 @@ function wvc_get_hover_effects() {
 
 	$wvc_hover_effects = array(
 		esc_html__( 'Theme Default', 'wolf-visual-composer' ) => 'default',
-		esc_html__( 'Opacity', 'wolf-visual-composer' ) => 'opacity',
+		esc_html__( 'Opacity', 'wolf-visual-composer' )    => 'opacity',
 		esc_html__( 'Opacity Reversed', 'wolf-visual-composer' ) => 'opacity-reverse',
-		esc_html__( 'Zoom In', 'wolf-visual-composer' ) => 'zoomin',
-		esc_html__( 'Zoom Out', 'wolf-visual-composer' ) => 'zoomout',
-		esc_html__( 'Move Left', 'wolf-visual-composer' ) => 'move-left',
+		esc_html__( 'Zoom In', 'wolf-visual-composer' )    => 'zoomin',
+		esc_html__( 'Zoom Out', 'wolf-visual-composer' )   => 'zoomout',
+		esc_html__( 'Move Left', 'wolf-visual-composer' )  => 'move-left',
 		esc_html__( 'Move Right', 'wolf-visual-composer' ) => 'move-right',
-		esc_html__( 'Move Up', 'wolf-visual-composer' ) => 'move-up',
-		esc_html__( 'Move Down', 'wolf-visual-composer' ) => 'move-down',
-		esc_html__( 'Up', 'wolf-visual-composer' ) => 'up',
+		esc_html__( 'Move Up', 'wolf-visual-composer' )    => 'move-up',
+		esc_html__( 'Move Down', 'wolf-visual-composer' )  => 'move-down',
+		esc_html__( 'Up', 'wolf-visual-composer' )         => 'up',
 		esc_html__( 'Black and white to colored', 'wolf-visual-composer' ) => 'greyscale',
 		esc_html__( 'Colored to Black and white', 'wolf-visual-composer' ) => 'to-greyscale',
 	);
@@ -561,8 +567,8 @@ function wvc_get_hover_effects() {
  */
 function wvc_get_order_by_category_values() {
 	return array(
-		esc_html__( 'Count', 'wolf-visual-composer' ) => 'count',
-		esc_html__( 'Name', 'wolf-visual-composer' ) => 'name',
+		esc_html__( 'Count', 'wolf-visual-composer' )  => 'count',
+		esc_html__( 'Name', 'wolf-visual-composer' )   => 'name',
 		esc_html__( 'Random', 'wolf-visual-composer' ) => 'rand',
 	);
 }
@@ -573,7 +579,7 @@ function wvc_get_order_by_category_values() {
 function wvc_get_order_way_category_values() {
 	return array(
 		esc_html__( 'Descending', 'wolf-visual-composer' ) => 'DESC',
-		esc_html__( 'Ascending', 'wolf-visual-composer' ) => 'ASC',
+		esc_html__( 'Ascending', 'wolf-visual-composer' )  => 'ASC',
 	);
 }
 
@@ -581,16 +587,21 @@ function wvc_get_order_way_category_values() {
  * Get metro pattern options
  */
 function wvc_get_metro_patterns() {
-	return array_flip( apply_filters( 'wvc_metro_pattern_options', array(
-		'auto' => esc_html__( 'Auto', 'wolf-visual-composer' ),
-		'pattern-1' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 1, 6 ),
-		'pattern-2' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 2, 8 ),
-		'pattern-3' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 3, 10 ),
-		'pattern-4' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 4, 8 ),
-		'pattern-5' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 5, 5 ),
-		'pattern-6' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 6, 5 ),
-		'pattern-7' => sprintf( esc_html__( 'Pattern %d (loop of %d)', 'wolf-visual-composer' ), 7, 6 ),
-	) ) );
+	return array_flip(
+		apply_filters(
+			'wvc_metro_pattern_options',
+			array(
+				'auto'      => esc_html__( 'Auto', 'wolf-visual-composer' ),
+				'pattern-1' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 1, 6 ),
+				'pattern-2' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 2, 8 ),
+				'pattern-3' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 3, 10 ),
+				'pattern-4' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 4, 8 ),
+				'pattern-5' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 5, 5 ),
+				'pattern-6' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 6, 5 ),
+				'pattern-7' => sprintf( esc_html__( 'Pattern %1$d (loop of %2$d)', 'wolf-visual-composer' ), 7, 6 ),
+			)
+		)
+	);
 }
 
 /**
@@ -599,7 +610,7 @@ function wvc_get_metro_patterns() {
  * Get image size depending on metro pattern
  *
  * @param string $pattern
- * @param int $index
+ * @param int    $index
  * @return string $img_size
  */
 function wvc_get_metro_img_size( $pattern = 'auto', $i = 0 ) {
@@ -607,47 +618,44 @@ function wvc_get_metro_img_size( $pattern = 'auto', $i = 0 ) {
 	$img_size = 'medium';
 
 	if ( 'auto' === $pattern ) {
-		
-		//if ( 0 === $i ) {
+
+		// if ( 0 === $i ) {
 			$img_size = 'large';
-		//}
-	
+		// }
+
 	} elseif ( 'pattern-1' === $pattern ) {
 
-		if ( 0 === $i || $i%6 == 0 || $i%6 == 3 ) {
+		if ( 0 === $i || $i % 6 == 0 || $i % 6 == 3 ) {
 			$img_size = 'large';
 		}
-
 	} elseif ( 'pattern-2' === $pattern ) {
 
-		if ( 0 === $i || $i%8 == 1 || $i%8 == 2 || $i%8 == 4 || $i%8 == 5 ) {
+		if ( 0 === $i || $i % 8 == 1 || $i % 8 == 2 || $i % 8 == 4 || $i % 8 == 5 ) {
 			$img_size = 'large';
 		}
-
 	} elseif ( 'pattern-3' === $pattern ) {
-		
-		if ( $i%10 === 4 || $i%10 === 8 ) {
+
+		if ( $i % 10 === 4 || $i % 10 === 8 ) {
 			$img_size = 'large';
 		}
-
 	} elseif ( 'pattern-4' === $pattern ) {
-		
-		if ( 0 === $i || $i%8 === 0 || $i%8 === 2 || $i%8 === 6 || $i%8 === 7 ) {
+
+		if ( 0 === $i || $i % 8 === 0 || $i % 8 === 2 || $i % 8 === 6 || $i % 8 === 7 ) {
 			$img_size = 'large';
 		}
 	} elseif ( 'pattern-5' === $pattern ) {
-		
-		if ( 0 === $i || $i%5 === 0 ) {
+
+		if ( 0 === $i || $i % 5 === 0 ) {
 			$img_size = 'large';
 		}
 	} elseif ( 'pattern-6' === $pattern ) {
-		
-		if ( 0 === $i || $i%5 === 2 ) {
+
+		if ( 0 === $i || $i % 5 === 2 ) {
 			$img_size = 'large';
 		}
 	} elseif ( 'pattern-7' === $pattern ) {
-		
-		if ( 0 === $i || $i%6 === 0 || $i%6 === 1 ) {
+
+		if ( 0 === $i || $i % 6 === 0 || $i % 6 === 1 ) {
 			$img_size = 'large';
 		}
 	}
@@ -668,19 +676,19 @@ function wvc_get_socials() {
 		'8tracks',
 		'airbnb',
 		'amazon',
-		//'amplement',
+		// 'amplement',
 		'apple', // iTunes
 		'bandcamp',
 		'bandsintown',
 		'behance',
-		//'bitbucket',
+		// 'bitbucket',
 		'codepen',
 		'dailymotion',
 		'deviantart',
 		'digg',
 		'dribbble',
-		//'dropbox',
-		//'email',
+		// 'dropbox',
+		// 'email',
 		'envato',
 		'etsy',
 		'facebook',
@@ -701,9 +709,9 @@ function wvc_get_socials() {
 		'mixcloud',
 		'imdb',
 		'lastfm',
-		//'path',
+		// 'path',
 		'pinterest',
-		//'jsfiddle',
+		// 'jsfiddle',
 		'tumblr',
 		'tripadvisor',
 		'skype',
@@ -711,12 +719,12 @@ function wvc_get_socials() {
 		'itunes',
 		'delicious',
 		'stumbleupon',
-		//'forrst',
-		//'evernote',
-		//'rss',
+		// 'forrst',
+		// 'evernote',
+		// 'rss',
 		'reddit',
-		//'stack-exchange',
-		//'stack-overflow',
+		// 'stack-exchange',
+		// 'stack-overflow',
 		'residentadvisor',
 		'reverbnation',
 		'snapchat',
@@ -728,16 +736,16 @@ function wvc_get_socials() {
 		'vine',
 		'tiktok',
 		'twitch',
-		//'qq',
-		//'wechat',
-		//'weibo',
-		//'weixin',
-		//'whatsapp',
-		//'windows',
+		// 'qq',
+		// 'wechat',
+		// 'weibo',
+		// 'weixin',
+		// 'whatsapp',
+		// 'windows',
 		'wordpress',
-		//'renren',
-		//'tencent-weibo',
-		//'xing',
+		// 'renren',
+		// 'tencent-weibo',
+		// 'xing',
 		'yelp',
 		'zomato',
 		'zerply',
@@ -755,7 +763,7 @@ function wvc_get_socials() {
 
 	$wvc_socials = array_unique( $wvc_socials ); // remove duplicates
 
-	//var_dump( $wvc_socials );
+	// var_dump( $wvc_socials );
 
 	return $wvc_socials;
 }
@@ -786,7 +794,7 @@ function wvc_get_team_member_socials() {
 	$wvc_team_member_socials = apply_filters( 'wvc_team_member_socials', $wvc_team_member_socials );
 
 	array_unique( $wvc_team_member_socials );
-	//sort( $wvc_team_member_socials );
+	// sort( $wvc_team_member_socials );
 
 	return $wvc_team_member_socials;
 }
@@ -816,7 +824,6 @@ function wolf_vc_get_option( $index = 'settings', $name, $default = null ) {
 
 			return $default;
 		}
-
 	} elseif ( $default ) {
 
 		return $default;
@@ -833,13 +840,13 @@ function wolf_vc_get_option( $index = 'settings', $name, $default = null ) {
  */
 function wvc_locate_shortcode_template( $filename ) {
 
-	if ( is_file( get_stylesheet_directory() . '/' . WVC()->shortcode_template_path() . '/' .untrailingslashit( $filename ) ) ) {
+	if ( is_file( get_stylesheet_directory() . '/' . WVC()->shortcode_template_path() . '/' . untrailingslashit( $filename ) ) ) {
 
-		$file = get_stylesheet_directory() . '/' . WVC()->shortcode_template_path() . '/' .untrailingslashit( $filename );
+		$file = get_stylesheet_directory() . '/' . WVC()->shortcode_template_path() . '/' . untrailingslashit( $filename );
 
-	} elseif ( is_file( get_template_directory() . '/' . WVC()->shortcode_template_path() . '/' .untrailingslashit( $filename ) ) ) {
+	} elseif ( is_file( get_template_directory() . '/' . WVC()->shortcode_template_path() . '/' . untrailingslashit( $filename ) ) ) {
 
-		$file = get_template_directory() . '/' . WVC()->shortcode_template_path() . '/' .untrailingslashit( $filename );
+		$file = get_template_directory() . '/' . WVC()->shortcode_template_path() . '/' . untrailingslashit( $filename );
 
 	} else {
 		$file = WVC()->plugin_path() . '/' . untrailingslashit( $filename );
@@ -852,7 +859,7 @@ function wvc_locate_shortcode_template( $filename ) {
 /**
  * Get the URL of an attachment from its id
  *
- * @param int $id
+ * @param int    $id
  * @param string $size
  * @return string $url
  */
@@ -876,7 +883,7 @@ function wvc_get_twitter_usename() {
 	$default_twitter_username = wolf_vc_get_option( 'socials', 'twitter' );
 
 	if ( $default_twitter_username ) {
-		if ( preg_match( '/twitter.com\/[a-zA-Z0-9_]+/', $default_twitter_username, $match) ) {
+		if ( preg_match( '/twitter.com\/[a-zA-Z0-9_]+/', $default_twitter_username, $match ) ) {
 			$default_twitter_username = str_replace( 'twitter.com/', '', $match[0] );
 			return $default_twitter_username;
 		}
@@ -888,10 +895,13 @@ function wvc_get_twitter_usename() {
  */
 function wvc_animated_svg( $file, $args = array() ) {
 
-	$args = wp_parse_args( $args, array(
-		'class' => '',
-		'animation_duration' => '',
-	) );
+	$args = wp_parse_args(
+		$args,
+		array(
+			'class'              => '',
+			'animation_duration' => '',
+		)
+	);
 
 	wp_enqueue_script( 'vivus' );
 	wp_enqueue_script( 'wvc-vivus' );
@@ -976,10 +986,10 @@ function wvc_get_hero_image_id() {
  * Get placeholder image URL
  */
 function wvc_placeholder_img_url( $img_size ) {
-	
+
 	if ( in_array( $img_size, array( 'thumbnail', 'medium', 'large', 'wvc-XL', 'wvc-photo', 'full' ) ) ) {
 
-		switch( $img_size ) {
+		switch ( $img_size ) {
 			case 'wvc-XL':
 				$img_size = '2000x1500';
 				break;
@@ -1012,7 +1022,7 @@ function wvc_placeholder_img_url( $img_size ) {
  */
 function wvc_get_current_url() {
 	global $wp;
-	return esc_url( home_url( add_query_arg( array(),$wp->request ) ) );
+	return esc_url( home_url( add_query_arg( array(), $wp->request ) ) );
 }
 
 /**
@@ -1028,13 +1038,13 @@ function wvc_placeholder_img( $img_size, $class = '' ) {
 /**
  * Add to cart tag
  *
- * @param int $product_id
+ * @param int    $product_id
  * @param string $text link text content
  * @param string $class button class
  * @return string
  */
 function wvc_add_to_cart( $product_id, $classes = '', $text = '' ) {
-	//<a rel="nofollow" href="/factory/retine/shop/shop-boxed/?add-to-cart=60" data-quantity="1" data-product_id="60" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart"><span>Add to cart</span></a>
+	// <a rel="nofollow" href="/factory/retine/shop/shop-boxed/?add-to-cart=60" data-quantity="1" data-product_id="60" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart"><span>Add to cart</span></a>
 	$wc_url = untrailingslashit( wvc_get_current_url() ) . '/?add-to-cart=' . absint( $product_id );
 
 	$classes .= ' product_type_simple add_to_cart_button ajax_add_to_cart';
@@ -1058,16 +1068,16 @@ function wvc_get_revslider_id_by_alias( $alias ) {
 	$slider_id = null;
 
 	if ( class_exists( 'RevSlider' ) ) {
-		
+
 		$theslider = new RevSlider();
-		
+
 		$arrSliders = $theslider->getArrSliders();
-		
-		foreach( $arrSliders as $slider ){
+
+		foreach ( $arrSliders as $slider ) {
 			$current_alias = $slider->getAlias();
-			//$current_title = $slider->getTitle();
+			// $current_title = $slider->getTitle();
 			$current_id = $slider->getId();
-			
+
 			if ( esc_attr( $alias ) === $slider->getAlias() ) {
 				$slider_id = $slider->getId();
 				break;
@@ -1100,8 +1110,8 @@ function wvc_get_first_revslider_id( $content ) {
 }
 
 /**
-* Breadcrumb function
-*/
+ * Breadcrumb function
+ */
 function wvc_breadcrumb() {
 
 	global $post, $wp_query;
@@ -1110,10 +1120,10 @@ function wvc_breadcrumb() {
 
 	if ( ! is_front_page() ) {
 
-		$position = 1;
+		$position  = 1;
 		$delimiter = '<span class="wvc-breadcrumb-delimiter">' . apply_filters( 'wvc_breadcrumb_delimiter', '/' ) . '</span>';
-		$before = '';
-		$after = '';
+		$before    = '';
+		$after     = '';
 
 		$output .= '<ol class="wvc-breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">';
 
@@ -1122,7 +1132,7 @@ function wvc_breadcrumb() {
        itemprop="item" href="';
 		$output .= esc_url( home_url( '/' ) );
 		$output .= '"><span itemprop="name">';
-		//$output .= esc_html__( 'Home', 'wolf-visual-composer' );
+		// $output .= esc_html__( 'Home', 'wolf-visual-composer' );
 		if ( get_option( 'page_on_front' ) ) {
 			$output .= get_the_title( get_option( 'page_on_front' ) );
 		} else {
@@ -1132,7 +1142,7 @@ function wvc_breadcrumb() {
 
 		if ( 'post' == get_post_type() && ! wvc_is_blog_index() ) {
 
-			$output .= '<li itemprop="itemListElement" itemscope
+			$output     .= '<li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . wvc_get_blog_url() . '"><span itemprop="name">' . get_the_title( get_option( 'page_for_posts' ) ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>';
 				$output .= $delimiter;
 		}
@@ -1147,54 +1157,54 @@ function wvc_breadcrumb() {
 		if ( wvc_is_woocommerce_page() && is_product_category() ) {
 
 			$shop_page_id = wc_get_page_id( 'shop' );
-			
+
 			$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wc_get_page_id( 'shop' ) ) . '" ><span itemprop="name">' . get_the_title( $shop_page_id ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>' . $delimiter;
 
 			$current_term = $wp_query->get_queried_object();
-			$ancestors = array_reverse( get_ancestors( $current_term->term_id, 'product_cat' ) );
+			$ancestors    = array_reverse( get_ancestors( $current_term->term_id, 'product_cat' ) );
 
 			foreach ( $ancestors as $ancestor ) {
-				
+
 				$ancestor = get_term( $ancestor, 'product_cat' );
-				
+
 				$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_term_link( $ancestor ) . '"><span itemprop="name">' . esc_html( $ancestor->name ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>' . $delimiter;
 			}
 
-			$output .=  '<li itemprop="itemListElement" itemscope
+			$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><span itemprop="name">' . sanitize_text_field( $before . esc_html( $current_term->name ) . $after ) . '</span><meta itemprop="position" content="' . $position++ . '" /></li>';
-	
-		} else if ( wvc_is_woocommerce_page() && is_product_tag() ) {
+
+		} elseif ( wvc_is_woocommerce_page() && is_product_tag() ) {
 
 			$shop_page_id = wc_get_page_id( 'shop' );
-			$output .= '<li itemprop="itemListElement" itemscope
+			$output      .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( $shop_page_id ) . '"><span itemprop="name">' . get_the_title( $shop_page_id ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>' . $delimiter;
-			
+
 			$queried_object = $wp_query->get_queried_object();
-			
+
 			$output .= $before . esc_html__( 'Products tagged &ldquo;', 'wolf-visual-composer' ) . $queried_object->name . '&rdquo;' . $after;
-		
+
 		} elseif ( wvc_is_woocommerce_page() && ! is_singular( 'product' ) && ! is_shop() ) {
 
 			$shop_page_id = wc_get_page_id( 'shop' );
-			$output .= '<li itemprop="itemListElement" itemscope
+			$output      .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wc_get_page_id( 'shop' ) ) . '"><span itemprop="name">' . get_the_title( $shop_page_id ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>';
-			$output .= $delimiter;
+			$output      .= $delimiter;
 		}
 
 		if ( is_category() ) {
 
-			$cat_obj = $wp_query->get_queried_object();
+			$cat_obj       = $wp_query->get_queried_object();
 			$this_category = get_category( $cat_obj->term_id );
 
 			if ( 0 != $this_category->parent ) {
 				$parent_category = get_category( $this_category->parent );
-				if ( ( $parents = get_category_parents( $parent_category, TRUE, $after . $delimiter . $before ) ) && ! is_wp_error( $parents ) ) {
-					
+				if ( ( $parents = get_category_parents( $parent_category, true, $after . $delimiter . $before ) ) && ! is_wp_error( $parents ) ) {
+
 					$output .= '<li itemprop="itemListElement" itemscope
-      				itemtype="https://schema.org/ListItem"><span itemprop="name">' . sanitize_text_field( $before . rtrim( $parents, $after . $delimiter . $before ) . $after  ) . '</span>
-    <meta itemprop="position" content="' . $position++ . '" /></li>' .  $delimiter;
+      				itemtype="https://schema.org/ListItem"><span itemprop="name">' . sanitize_text_field( $before . rtrim( $parents, $after . $delimiter . $before ) . $after ) . '</span>
+    <meta itemprop="position" content="' . $position++ . '" /></li>' . $delimiter;
 				}
 			}
 
@@ -1204,7 +1214,7 @@ function wvc_breadcrumb() {
 
 		} elseif ( is_tag() ) {
 
-			$output .= get_the_tag_list( '', $delimiter);
+			$output .= get_the_tag_list( '', $delimiter );
 
 		} elseif ( is_author() ) {
 
@@ -1225,7 +1235,7 @@ function wvc_breadcrumb() {
 		} elseif ( is_tax( 'work_type' ) ) {
 
 			$portfolio_page_id = wolf_portfolio_get_page_id();
-			$output .= '<a href="' . get_permalink( $portfolio_page_id ) . '">' . get_the_title( $portfolio_page_id ) . '</a>' . $delimiter;
+			$output           .= '<a href="' . get_permalink( $portfolio_page_id ) . '">' . get_the_title( $portfolio_page_id ) . '</a>' . $delimiter;
 
 			$the_tax = get_taxonomy( get_query_var( 'taxonomy' ) );
 			if ( $the_tax && $wp_query && isset( $wp_query->queried_object->name ) ) {
@@ -1234,11 +1244,10 @@ function wvc_breadcrumb() {
       				itemtype="https://schema.org/ListItem"><span itemprop="name">' . sanitize_text_field( $wp_query->queried_object->name ) . '</span>
     <meta itemprop="position" content="' . $position++ . '" />';
 			}
-
 		} elseif ( is_tax( 'gallery_type' ) ) {
 
 			$albums_page_id = wolf_albums_get_page_id();
-			$output .= '<li itemprop="itemListElement" itemscope
+			$output        .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item href="' . get_permalink( $albums_page_id ) . '"><span itemprop="name">' . get_the_title( $albums_page_id ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>' . $delimiter;
 
 			$the_tax = get_taxonomy( get_query_var( 'taxonomy' ) );
@@ -1248,11 +1257,10 @@ function wvc_breadcrumb() {
       				itemtype="https://schema.org/ListItem"><span itemprop="name">' . sanitize_text_field( $wp_query->queried_object->name ) . '</span>
     <meta itemprop="position" content="' . $position++ . '" /></li>';
 			}
-
 		} elseif ( is_tax( 'video_type' ) ) {
 
 			$videos_page_id = wolf_videos_get_page_id();
-			$output .= '<li itemprop="itemListElement" itemscope
+			$output        .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item href="' . get_permalink( $videos_page_id ) . '"><span itemprop="name">' . get_the_title( $videos_page_id ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>' . $delimiter;
 
 			$the_tax = get_taxonomy( get_query_var( 'taxonomy' ) );
@@ -1262,11 +1270,10 @@ function wvc_breadcrumb() {
       				itemtype="https://schema.org/ListItem"><span itemprop="name">' . sanitize_text_field( $wp_query->queried_object->name ) . '</span>
     <meta itemprop="position" content="' . $position++ . '" />';
 			}
-
 		} elseif ( is_tax( 'plugin_cat' ) ) {
 
 			$plugins_page_id = wolf_plugins_get_page_id();
-			$output .= '<a href="' . get_permalink( $plugins_page_id ) . '">' . get_the_title( $plugins_page_id ) . '</a>' . $delimiter;
+			$output         .= '<a href="' . get_permalink( $plugins_page_id ) . '">' . get_the_title( $plugins_page_id ) . '</a>' . $delimiter;
 
 			$the_tax = get_taxonomy( get_query_var( 'taxonomy' ) );
 			if ( $the_tax && $wp_query && isset( $wp_query->queried_object->name ) ) {
@@ -1274,11 +1281,10 @@ function wvc_breadcrumb() {
 				$output .= sanitize_text_field( $wp_query->queried_object->name );
 
 			}
-
 		} elseif ( is_tax( 'theme_cat' ) ) {
 
 			$themes_page_id = wolf_themes_get_page_id();
-			$output .= '<a href="' . get_permalink( $themes_page_id ) . '">' . get_the_title( $themes_page_id ) . '</a>' . $delimiter;
+			$output        .= '<a href="' . get_permalink( $themes_page_id ) . '">' . get_the_title( $themes_page_id ) . '</a>' . $delimiter;
 
 			$the_tax = get_taxonomy( get_query_var( 'taxonomy' ) );
 			if ( $the_tax && $wp_query && isset( $wp_query->queried_object->name ) ) {
@@ -1286,7 +1292,6 @@ function wvc_breadcrumb() {
 				$output .= esc_attr( $wp_query->queried_object->name );
 
 			}
-
 		} elseif ( is_tax() && ! is_tax( 'product_cat' ) && ! is_tax( 'product_tag' ) ) {
 
 			$the_tax = get_taxonomy( get_query_var( 'taxonomy' ) );
@@ -1297,42 +1302,41 @@ function wvc_breadcrumb() {
     <meta itemprop="position" content="' . $position++ . '" /></li>';
 
 			}
-
-		} elseif ( is_search() )  {
+		} elseif ( is_search() ) {
 
 			if ( wvc_is_woocommerce_page() ) {
 				$output .= $delimiter;
 			}
 
-			//$output .= '<a href="' . get_permalink( $post->post_parent ) . '">';
+			// $output .= '<a href="' . get_permalink( $post->post_parent ) . '">';
 			$output .= esc_html__( 'Search', 'wolf-visual-composer' );
 		}
 
 		if ( is_attachment() ) {
 
 			esc_html_e( 'Attachment', 'wolf-visual-composer' );
-			
+
 			$output .= $delimiter;
-			
+
 			$output .= empty( $post->post_parent ) ? get_the_title() : '<a href="' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a>' . $delimiter . get_the_title();
 
 		} elseif ( is_page() ) {
 
 			if ( ! empty( $post->post_parent ) && ! wvc_is_woocommerce_page() ) {
-					
+
 				$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( $post->post_parent ) . '"><span itemprop="name">' . get_the_title( $post->post_parent ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>';
 				$output .= $delimiter;
-			
+
 			}
 
 			$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><span itemprop="name">' . get_the_title() . '</span><meta itemprop="position" content="' . $position++ . '" /></li>';
-		
+
 		} elseif ( is_search() ) {
 
 			$output .= $delimiter;
-			
+
 			$output .= ( isset( $_GET['s'] ) ) ? esc_attr( $_GET['s'] ) : esc_html__( 'Search results', 'wolf-visual-composer' );
 		}
 
@@ -1344,11 +1348,11 @@ function wvc_breadcrumb() {
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wolf_portfolio_get_page_id() ) . '"><span itemprop="name">' . get_the_title( wolf_portfolio_get_page_id() ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>';
 				$output .= $delimiter;
 
-				$output .= get_the_term_list( $post->ID, 'work_type', '', $delimiter, '');
+				$output .= get_the_term_list( $post->ID, 'work_type', '', $delimiter, '' );
 
-				if ( has_term( '', 'work_type' ) )
+				if ( has_term( '', 'work_type' ) ) {
 					$output .= $delimiter;
-
+				}
 			} elseif ( is_singular( 'video' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
@@ -1357,22 +1361,22 @@ function wvc_breadcrumb() {
 
 				$output .= get_the_term_list( $post->ID, 'video_type', '', $delimiter, '' );
 
-				if ( has_term( '', 'video_type' ) )
+				if ( has_term( '', 'video_type' ) ) {
 					$output .= $delimiter;
-
+				}
 			} elseif ( is_singular( 'gallery' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wolf_albums_get_page_id() ) . '"><span itemprop="name"' . get_the_title( wolf_albums_get_page_id() ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>';
-				
+
 				$output .= $delimiter;
 
 				$output .= get_the_term_list( $post->ID, 'gallery_type', '', $delimiter, '' );
 
-				if ( has_term( '', 'gallery_type' ) )
-					
-					$output .= $delimiter;
+				if ( has_term( '', 'gallery_type' ) ) {
 
+					$output .= $delimiter;
+				}
 			} elseif ( is_singular( 'plugin' ) ) {
 
 				$output .= '<a href="' . get_permalink( wolf_plugins_get_page_id() ) . '">' . get_the_title( wolf_plugins_get_page_id() ) . '</a>';
@@ -1380,18 +1384,25 @@ function wvc_breadcrumb() {
 
 				$output .= get_the_term_list( $post->ID, 'plugin_cat', '', $delimiter, '' );
 
-			//	if ( has_term( '', 'plugin_cat' ) ) {
+				// if ( has_term( '', 'plugin_cat' ) ) {
 					$output .= $delimiter;
-			//	}
+				// }
 
 			} elseif ( is_singular( 'product' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
       				itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wc_get_page_id( 'shop' ) ) . '"><span itemprop="name">' . get_the_title( wc_get_page_id( 'shop' ) ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /></li>';
-				
+
 				$output .= $delimiter;
 
-				if ( $terms = wc_get_product_terms( $post->ID, 'product_cat', array( 'orderby' => 'parent', 'order' => 'DESC' ) ) ) {
+				if ( $terms = wc_get_product_terms(
+					$post->ID,
+					'product_cat',
+					array(
+						'orderby' => 'parent',
+						'order'   => 'DESC',
+					)
+				) ) {
 					$main_term = $terms[0];
 					$ancestors = get_ancestors( $main_term->term_id, 'product_cat' );
 					$ancestors = array_reverse( $ancestors );
@@ -1408,7 +1419,6 @@ function wvc_breadcrumb() {
 					$output .= '<li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_term_link( $main_term ) . '"><span itemprop="name">' . $main_term->name . '</span></a><meta itemprop="position" content="' . $position++ . '" /><li>' . $delimiter;
 				}
-
 			} elseif ( is_singular( 'event' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
@@ -1421,44 +1431,44 @@ function wvc_breadcrumb() {
 				// $output .= get_the_term_list( $post->ID, 'gallery_type', '', $delimiter, '');
 
 				// if ( has_term( '', 'gallery_type' ) )
-				// 	$output .= $delimiter;
+				// $output .= $delimiter;
 
 			} elseif ( is_singular( 'release' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wolf_discography_get_page_id() ) . '"><span itemprop="name">' . get_the_title( wolf_discography_get_page_id() ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /><li>';
-				
+
 				if ( has_term( '', 'band' ) ) {
 					$output .= $delimiter;
 				}
 
 				$output .= get_the_term_list( $post->ID, 'band', '', $delimiter, '' );
 
-				//if ( has_term( '', 'band' ) ) {
+				// if ( has_term( '', 'band' ) ) {
 					$output .= $delimiter;
-			//	}
+				// }
 
 			} elseif ( is_singular( 'artist' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem"><a itemprop="item" href="' . get_permalink( wolf_artists_get_page_id() ) . '"><span itemprop="name">' . get_the_title( wolf_artists_get_page_id() ) . '</span></a><meta itemprop="position" content="' . $position++ . '" /><li>';
-				
+
 				if ( has_term( '', 'artist_genre' ) ) {
 					$output .= $delimiter;
 				}
 
 				$output .= get_the_term_list( $post->ID, 'artist_genre', '', $delimiter, '' );
 
-				//if ( has_term( '', 'band' ) ) {
+				// if ( has_term( '', 'band' ) ) {
 					$output .= $delimiter;
-			//	}
+				// }
 
 			} elseif ( is_singular( 'wvc_content_block' ) ) {
 
 				$output .= '<li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem"><span itemprop="name">' . esc_html__( 'Content Block', 'wolf-visual-composer' ) . '</span>
     <meta itemprop="position" content="' . $position++ . '" /></li>';
-				
+
 				$output .= $delimiter;
 
 			} elseif ( is_singular( 'wpm_playlist' ) ) {
@@ -1496,28 +1506,28 @@ function wvc_breadcrumb() {
  * @see js_composer/include/classes/vendors/class-vc-vendor-woocommerce.php
  *
  * @param $parent_id
- * @param array $array
+ * @param array     $array
  * @param $level
- * @param array $dropdown - passed by  reference
+ * @param array     $dropdown - passed by  reference
  */
 function wvc_get_category_childs_full( $parent_id, $array, $level, &$dropdown ) {
 	$keys = array_keys( $array );
-	$i = 0;
+	$i    = 0;
 	while ( $i < count( $array ) ) {
-		$key = $keys[ $i ];
+		$key  = $keys[ $i ];
 		$item = $array[ $key ];
 		$i ++;
 		if ( $item->category_parent == $parent_id ) {
-			$name = str_repeat( '- ', $level ) . $item->name;
-			$value = $item->term_id;
+			$name       = str_repeat( '- ', $level ) . $item->name;
+			$value      = $item->term_id;
 			$dropdown[] = array(
 				'label' => $name . ' (' . $item->term_id . ')',
 				'value' => $value,
 			);
 			unset( $array[ $key ] );
 			$array = wvc_get_category_childs_full( $item->term_id, $array, $level + 1, $dropdown );
-			$keys = array_keys( $array );
-			$i = 0;
+			$keys  = array_keys( $array );
+			$i     = 0;
 		}
 	}
 
@@ -1528,21 +1538,21 @@ function wvc_get_category_childs_full( $parent_id, $array, $level, &$dropdown ) 
  * Get product category dropdown options
  */
 function wvc_get_product_cat_dropdown_options() {
-	
+
 	$product_categories_dropdown = array();
-	$product_cat_args = array(
-		'type' => 'post',
-		'child_of' => 0,
-		'parent' => '',
-		'orderby' => 'name',
-		'order' => 'ASC',
-		'hide_empty' => false,
+	$product_cat_args            = array(
+		'type'         => 'post',
+		'child_of'     => 0,
+		'parent'       => '',
+		'orderby'      => 'name',
+		'order'        => 'ASC',
+		'hide_empty'   => false,
 		'hierarchical' => 1,
-		'exclude' => '',
-		'include' => '',
-		'number' => '',
-		'taxonomy' => 'product_cat',
-		'pad_counts' => false,
+		'exclude'      => '',
+		'include'      => '',
+		'number'       => '',
+		'taxonomy'     => 'product_cat',
+		'pad_counts'   => false,
 
 	);
 

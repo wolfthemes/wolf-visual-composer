@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.4.3\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.4.4\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-10-07 12:27:42+00:00\n"
+"POT-Creation-Date: 2020-10-07 13:26:38+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -596,7 +596,7 @@ msgid ""
 "You won't have to activate anything else after that."
 msgstr ""
 
-#: inc/admin/auth.php:51 wolf-visual-composer.php:419
+#: inc/admin/auth.php:51 wolf-visual-composer.php:417
 msgid ""
 "<strong>%1$s</strong> requires <strong><a href=\"%2$s\" "
 "target=\"_blank\">%3$s</a></strong> plugin to be installed."
@@ -740,7 +740,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: inc/admin/class-options.php:335 inc/core-functions.php:1313
+#: inc/admin/class-options.php:335 inc/core-functions.php:1317
 #: pack/wolf-visual-composer/inc/admin/class-options.php:335
 #: pack/wolf-visual-composer/inc/core-functions.php:1313
 msgid "Attachment"
@@ -926,7 +926,7 @@ msgid "black/white theme color on hover"
 msgstr ""
 
 #: inc/admin/tinymce/popup/button.php:19 inc/admin/tinymce/popup/socials.php:31
-#: inc/core-functions.php:515 inc/elements/social-icons-custom.php:64
+#: inc/core-functions.php:521 inc/elements/social-icons-custom.php:64
 #: inc/elements/social-icons.php:71 inc/params/button-params.php:117
 #: inc/params/icon-params.php:374
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:19
@@ -946,7 +946,7 @@ msgid "Round"
 msgstr ""
 
 #: inc/admin/tinymce/popup/button.php:24 inc/admin/tinymce/popup/socials.php:41
-#: inc/core-functions.php:519 inc/elements/process-container.php:76
+#: inc/core-functions.php:525 inc/elements/process-container.php:76
 #: inc/elements/social-icons-custom.php:138 inc/elements/social-icons.php:145
 #: inc/params/icon-params.php:511
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:24
@@ -979,7 +979,7 @@ msgstr ""
 #: inc/admin/tinymce/popup/button.php:26
 #: inc/admin/tinymce/popup/mailchimp.php:27
 #: inc/admin/tinymce/popup/socials.php:42 inc/class-widget-mailchimp.php:167
-#: inc/core-functions.php:518 inc/elements/advanced-slide.php:419
+#: inc/core-functions.php:524 inc/elements/advanced-slide.php:419
 #: inc/elements/bandsintown-tracking-button.php:34
 #: inc/elements/process-container.php:78
 #: inc/elements/social-icons-custom.php:139 inc/elements/social-icons.php:146
@@ -2143,12 +2143,12 @@ msgstr ""
 msgid "Grunge Border"
 msgstr ""
 
-#: inc/core-functions.php:384
+#: inc/core-functions.php:385
 #: pack/wolf-visual-composer/inc/core-functions.php:384
 msgid "Custom Animations"
 msgstr ""
 
-#: inc/core-functions.php:416 inc/elements/testimonial-slider.php:43
+#: inc/core-functions.php:417 inc/elements/testimonial-slider.php:43
 #: inc/vc-additional-params.php:175
 #: pack/wolf-visual-composer/inc/core-functions.php:416
 #: pack/wolf-visual-composer/inc/elements/testimonial-slider.php:43
@@ -2156,139 +2156,139 @@ msgstr ""
 msgid "Fade"
 msgstr ""
 
-#: inc/core-functions.php:417
+#: inc/core-functions.php:418
 #: pack/wolf-visual-composer/inc/core-functions.php:417
 msgid "Fade Up"
 msgstr ""
 
-#: inc/core-functions.php:418
+#: inc/core-functions.php:419
 #: pack/wolf-visual-composer/inc/core-functions.php:418
 msgid "Fade Down"
 msgstr ""
 
-#: inc/core-functions.php:419
+#: inc/core-functions.php:420
 #: pack/wolf-visual-composer/inc/core-functions.php:419
 msgid "Fade Left"
 msgstr ""
 
-#: inc/core-functions.php:420
+#: inc/core-functions.php:421
 #: pack/wolf-visual-composer/inc/core-functions.php:420
 msgid "Fade Right"
 msgstr ""
 
-#: inc/core-functions.php:421
+#: inc/core-functions.php:422
 #: pack/wolf-visual-composer/inc/core-functions.php:421
 msgid "Fade Up Right"
 msgstr ""
 
-#: inc/core-functions.php:422
+#: inc/core-functions.php:423
 #: pack/wolf-visual-composer/inc/core-functions.php:422
 msgid "Fade Up Left"
 msgstr ""
 
-#: inc/core-functions.php:423
+#: inc/core-functions.php:424
 #: pack/wolf-visual-composer/inc/core-functions.php:423
 msgid "Fade Down Right"
 msgstr ""
 
-#: inc/core-functions.php:424
+#: inc/core-functions.php:425
 #: pack/wolf-visual-composer/inc/core-functions.php:424
 msgid "Fade Down Left"
 msgstr ""
 
-#: inc/core-functions.php:426
+#: inc/core-functions.php:427
 #: pack/wolf-visual-composer/inc/core-functions.php:426
 msgid "Flip Up"
 msgstr ""
 
-#: inc/core-functions.php:427
+#: inc/core-functions.php:428
 #: pack/wolf-visual-composer/inc/core-functions.php:427
 msgid "Flip Down"
 msgstr ""
 
-#: inc/core-functions.php:428
+#: inc/core-functions.php:429
 #: pack/wolf-visual-composer/inc/core-functions.php:428
 msgid "Flip Left"
 msgstr ""
 
-#: inc/core-functions.php:429
+#: inc/core-functions.php:430
 #: pack/wolf-visual-composer/inc/core-functions.php:429
 msgid "Flip Right"
 msgstr ""
 
-#: inc/core-functions.php:431
+#: inc/core-functions.php:432
 #: pack/wolf-visual-composer/inc/core-functions.php:431
 msgid "Slide Up"
 msgstr ""
 
-#: inc/core-functions.php:432
+#: inc/core-functions.php:433
 #: pack/wolf-visual-composer/inc/core-functions.php:432
 msgid "Slide Down"
 msgstr ""
 
-#: inc/core-functions.php:433
+#: inc/core-functions.php:434
 #: pack/wolf-visual-composer/inc/core-functions.php:433
 msgid "Slide Left"
 msgstr ""
 
-#: inc/core-functions.php:434
+#: inc/core-functions.php:435
 #: pack/wolf-visual-composer/inc/core-functions.php:434
 msgid "Slide Right"
 msgstr ""
 
-#: inc/core-functions.php:436 inc/core-functions.php:542
+#: inc/core-functions.php:437 inc/core-functions.php:548
 #: pack/wolf-visual-composer/inc/core-functions.php:436
 #: pack/wolf-visual-composer/inc/core-functions.php:542
 msgid "Zoom In"
 msgstr ""
 
-#: inc/core-functions.php:437
+#: inc/core-functions.php:438
 #: pack/wolf-visual-composer/inc/core-functions.php:437
 msgid "Zoom In Up"
 msgstr ""
 
-#: inc/core-functions.php:438
+#: inc/core-functions.php:439
 #: pack/wolf-visual-composer/inc/core-functions.php:438
 msgid "Zoom In Down"
 msgstr ""
 
-#: inc/core-functions.php:439
+#: inc/core-functions.php:440
 #: pack/wolf-visual-composer/inc/core-functions.php:439
 msgid "Zoom In Left"
 msgstr ""
 
-#: inc/core-functions.php:440
+#: inc/core-functions.php:441
 #: pack/wolf-visual-composer/inc/core-functions.php:440
 msgid "Zoom In Right"
 msgstr ""
 
-#: inc/core-functions.php:441 inc/core-functions.php:543
+#: inc/core-functions.php:442 inc/core-functions.php:549
 #: pack/wolf-visual-composer/inc/core-functions.php:441
 #: pack/wolf-visual-composer/inc/core-functions.php:543
 msgid "Zoom Out"
 msgstr ""
 
-#: inc/core-functions.php:442
+#: inc/core-functions.php:443
 #: pack/wolf-visual-composer/inc/core-functions.php:442
 msgid "Zoom Out Up"
 msgstr ""
 
-#: inc/core-functions.php:443
+#: inc/core-functions.php:444
 #: pack/wolf-visual-composer/inc/core-functions.php:443
 msgid "Zoom Out Down"
 msgstr ""
 
-#: inc/core-functions.php:444
+#: inc/core-functions.php:445
 #: pack/wolf-visual-composer/inc/core-functions.php:444
 msgid "Zoom Out Left"
 msgstr ""
 
-#: inc/core-functions.php:445
+#: inc/core-functions.php:446
 #: pack/wolf-visual-composer/inc/core-functions.php:445
 msgid "Zoom Out Right"
 msgstr ""
 
-#: inc/core-functions.php:466 inc/elements/advanced-slide.php:362
+#: inc/core-functions.php:472 inc/elements/advanced-slide.php:362
 #: inc/elements/album-disc.php:85 inc/elements/album-tracklist-item.php:78
 #: inc/elements/audio.php:60 inc/elements/breadcrumb.php:64
 #: inc/elements/column-inner.php:42 inc/elements/column-inner.php:69
@@ -2353,12 +2353,12 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: inc/core-functions.php:469
+#: inc/core-functions.php:475
 #: pack/wolf-visual-composer/inc/core-functions.php:469
 msgid "New Animation Engine (beta)"
 msgstr ""
 
-#: inc/core-functions.php:492 inc/elements/accordion-tab.php:62
+#: inc/core-functions.php:498 inc/elements/accordion-tab.php:62
 #: inc/elements/counter.php:139 inc/elements/counter.php:167
 #: inc/elements/counter.php:195 inc/params/bigtext-params.php:45
 #: inc/params/heading-params.php:98
@@ -2372,12 +2372,12 @@ msgstr ""
 msgid "Gradient Red"
 msgstr ""
 
-#: inc/core-functions.php:493
+#: inc/core-functions.php:499
 #: pack/wolf-visual-composer/inc/core-functions.php:493
 msgid "Gradient Red 2"
 msgstr ""
 
-#: inc/core-functions.php:494 inc/elements/accordion-tab.php:63
+#: inc/core-functions.php:500 inc/elements/accordion-tab.php:63
 #: inc/elements/counter.php:140 inc/elements/counter.php:168
 #: inc/elements/counter.php:196 inc/params/bigtext-params.php:46
 #: inc/params/heading-params.php:99
@@ -2391,47 +2391,47 @@ msgstr ""
 msgid "Gradient Green"
 msgstr ""
 
-#: inc/core-functions.php:495
+#: inc/core-functions.php:501
 #: pack/wolf-visual-composer/inc/core-functions.php:495
 msgid "Gradient Green Circle"
 msgstr ""
 
-#: inc/core-functions.php:496
+#: inc/core-functions.php:502
 #: pack/wolf-visual-composer/inc/core-functions.php:496
 msgid "Gradient Orange"
 msgstr ""
 
-#: inc/core-functions.php:497
+#: inc/core-functions.php:503
 #: pack/wolf-visual-composer/inc/core-functions.php:497
 msgid "Gradient Violet"
 msgstr ""
 
-#: inc/core-functions.php:514
+#: inc/core-functions.php:520
 #: pack/wolf-visual-composer/inc/core-functions.php:514
 msgid "Landscape"
 msgstr ""
 
-#: inc/core-functions.php:516
+#: inc/core-functions.php:522
 #: pack/wolf-visual-composer/inc/core-functions.php:516
 msgid "Portrait"
 msgstr ""
 
-#: inc/core-functions.php:517
+#: inc/core-functions.php:523
 #: pack/wolf-visual-composer/inc/core-functions.php:517
 msgid "Extra large"
 msgstr ""
 
-#: inc/core-functions.php:520
+#: inc/core-functions.php:526
 #: pack/wolf-visual-composer/inc/core-functions.php:520
 msgid "Thumbnail"
 msgstr ""
 
-#: inc/core-functions.php:521
+#: inc/core-functions.php:527
 #: pack/wolf-visual-composer/inc/core-functions.php:521
 msgid "Full"
 msgstr ""
 
-#: inc/core-functions.php:522 inc/elements/column-inner.php:48
+#: inc/core-functions.php:528 inc/elements/column-inner.php:48
 #: inc/elements/column-inner.php:60 inc/elements/column-inner.php:79
 #: inc/elements/column-inner.php:87 inc/elements/column.php:49
 #: inc/elements/column.php:61 inc/elements/column.php:80
@@ -2468,12 +2468,12 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: inc/core-functions.php:539
+#: inc/core-functions.php:545
 #: pack/wolf-visual-composer/inc/core-functions.php:539
 msgid "Theme Default"
 msgstr ""
 
-#: inc/core-functions.php:540 inc/elements/single-image.php:177
+#: inc/core-functions.php:546 inc/elements/single-image.php:177
 #: inc/elements/social-icons-custom.php:150 inc/elements/social-icons.php:157
 #: inc/params/button-params.php:187 inc/params/icon-params.php:452
 #: pack/wolf-visual-composer/inc/core-functions.php:540
@@ -2485,48 +2485,48 @@ msgstr ""
 msgid "Opacity"
 msgstr ""
 
-#: inc/core-functions.php:541
+#: inc/core-functions.php:547
 #: pack/wolf-visual-composer/inc/core-functions.php:541
 msgid "Opacity Reversed"
 msgstr ""
 
-#: inc/core-functions.php:544
+#: inc/core-functions.php:550
 #: pack/wolf-visual-composer/inc/core-functions.php:544
 msgid "Move Left"
 msgstr ""
 
-#: inc/core-functions.php:545
+#: inc/core-functions.php:551
 #: pack/wolf-visual-composer/inc/core-functions.php:545
 msgid "Move Right"
 msgstr ""
 
-#: inc/core-functions.php:546
+#: inc/core-functions.php:552
 #: pack/wolf-visual-composer/inc/core-functions.php:546
 msgid "Move Up"
 msgstr ""
 
-#: inc/core-functions.php:547
+#: inc/core-functions.php:553
 #: pack/wolf-visual-composer/inc/core-functions.php:547
 msgid "Move Down"
 msgstr ""
 
-#: inc/core-functions.php:548 inc/params/button-params.php:189
+#: inc/core-functions.php:554 inc/params/button-params.php:189
 #: pack/wolf-visual-composer/inc/core-functions.php:548
 #: pack/wolf-visual-composer/inc/params/button-params.php:189
 msgid "Up"
 msgstr ""
 
-#: inc/core-functions.php:549
+#: inc/core-functions.php:555
 #: pack/wolf-visual-composer/inc/core-functions.php:549
 msgid "Black and white to colored"
 msgstr ""
 
-#: inc/core-functions.php:550
+#: inc/core-functions.php:556
 #: pack/wolf-visual-composer/inc/core-functions.php:550
 msgid "Colored to Black and white"
 msgstr ""
 
-#: inc/core-functions.php:564 inc/elements/albums.php:29
+#: inc/core-functions.php:570 inc/elements/albums.php:29
 #: inc/elements/albums.php:63 inc/elements/discography.php:29
 #: inc/elements/events.php:28 inc/elements/last-posts.php:17
 #: inc/elements/portfolio.php:28 inc/elements/post-slider.php:58
@@ -2547,7 +2547,7 @@ msgstr ""
 msgid "Count"
 msgstr ""
 
-#: inc/core-functions.php:565 inc/elements/google-maps.php:38
+#: inc/core-functions.php:571 inc/elements/google-maps.php:38
 #: inc/elements/google-maps.php:46 inc/elements/meal-item.php:23
 #: inc/elements/team-member.php:119
 #: inc/elements/workout-program-exercice.php:23
@@ -2560,22 +2560,22 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: inc/core-functions.php:566
+#: inc/core-functions.php:572
 #: pack/wolf-visual-composer/inc/core-functions.php:566
 msgid "Random"
 msgstr ""
 
-#: inc/core-functions.php:575
+#: inc/core-functions.php:581
 #: pack/wolf-visual-composer/inc/core-functions.php:575
 msgid "Descending"
 msgstr ""
 
-#: inc/core-functions.php:576
+#: inc/core-functions.php:582
 #: pack/wolf-visual-composer/inc/core-functions.php:576
 msgid "Ascending"
 msgstr ""
 
-#: inc/core-functions.php:585 inc/elements/advanced-slide.php:215
+#: inc/core-functions.php:594 inc/elements/advanced-slide.php:215
 #: inc/elements/anything-slide.php:157 inc/elements/audio.php:61
 #: inc/elements/banner-gallery.php:137 inc/elements/banner-gallery.php:161
 #: inc/elements/banner-product.php:98 inc/elements/banner-product.php:122
@@ -2602,46 +2602,39 @@ msgstr ""
 msgid "Auto"
 msgstr ""
 
-#: inc/core-functions.php:586 inc/core-functions.php:587
-#: inc/core-functions.php:588 inc/core-functions.php:589
-#: inc/core-functions.php:590 inc/core-functions.php:591
-#: inc/core-functions.php:592
-#: pack/wolf-visual-composer/inc/core-functions.php:586
-#: pack/wolf-visual-composer/inc/core-functions.php:587
-#: pack/wolf-visual-composer/inc/core-functions.php:588
-#: pack/wolf-visual-composer/inc/core-functions.php:589
-#: pack/wolf-visual-composer/inc/core-functions.php:590
-#: pack/wolf-visual-composer/inc/core-functions.php:591
-#: pack/wolf-visual-composer/inc/core-functions.php:592
-msgid "Pattern %d (loop of %d)"
+#: inc/core-functions.php:595 inc/core-functions.php:596
+#: inc/core-functions.php:597 inc/core-functions.php:598
+#: inc/core-functions.php:599 inc/core-functions.php:600
+#: inc/core-functions.php:601
+msgid "Pattern %1$d (loop of %2$d)"
 msgstr ""
 
-#: inc/core-functions.php:1024
+#: inc/core-functions.php:1034
 #: pack/wolf-visual-composer/inc/core-functions.php:1024
 msgid "Image is missing"
 msgstr ""
 
-#: inc/core-functions.php:1129
+#: inc/core-functions.php:1139
 #: pack/wolf-visual-composer/inc/core-functions.php:1129
 msgid "Home"
 msgstr ""
 
-#: inc/core-functions.php:1176
+#: inc/core-functions.php:1186
 #: pack/wolf-visual-composer/inc/core-functions.php:1176
 msgid "Products tagged &ldquo;"
 msgstr ""
 
-#: inc/core-functions.php:1308
+#: inc/core-functions.php:1312
 #: pack/wolf-visual-composer/inc/core-functions.php:1308
 msgid "Search"
 msgstr ""
 
-#: inc/core-functions.php:1336
+#: inc/core-functions.php:1340
 #: pack/wolf-visual-composer/inc/core-functions.php:1336
 msgid "Search results"
 msgstr ""
 
-#: inc/core-functions.php:1459 inc/elements/content-block.php:33
+#: inc/core-functions.php:1469 inc/elements/content-block.php:33
 #: inc/elements/content-block.php:42
 #: pack/wolf-visual-composer/inc/core-functions.php:1459
 #: pack/wolf-visual-composer/inc/elements/content-block.php:33
@@ -2649,7 +2642,7 @@ msgstr ""
 msgid "Content Block"
 msgstr ""
 
-#: inc/core-functions.php:1466
+#: inc/core-functions.php:1476
 #: pack/wolf-visual-composer/inc/core-functions.php:1466
 msgid "Playlists"
 msgstr ""
@@ -9764,6 +9757,16 @@ msgid ""
 "didn't change the theme's name in the %s file or the theme's folder "
 "name</strong>.<br>If you want to customize the theme's name, you can use a "
 "<a target=\"_blank\" href=\"%s\">child theme</a>."
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/core-functions.php:586
+#: pack/wolf-visual-composer/inc/core-functions.php:587
+#: pack/wolf-visual-composer/inc/core-functions.php:588
+#: pack/wolf-visual-composer/inc/core-functions.php:589
+#: pack/wolf-visual-composer/inc/core-functions.php:590
+#: pack/wolf-visual-composer/inc/core-functions.php:591
+#: pack/wolf-visual-composer/inc/core-functions.php:592
+msgid "Pattern %d (loop of %d)"
 msgstr ""
 
 #: pack/wolf-visual-composer/templates/rev_slider.php:49

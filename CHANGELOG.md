@@ -1,8 +1,9 @@
 # Changelog
 
-#### 7th October 2020 - Version 3.4.3
+#### 7th October 2020 - Version 3.4.4
 
 -   Tweak: Added config files
+-   Fix: Carousel image cut on page load
 
 #### 1st October 2020 - Version 3.4.2
 

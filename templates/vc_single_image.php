@@ -58,13 +58,20 @@ extract(
 	)
 );
 
-$output = $container_class = $container_style = $img_class = $link_start = $link_end = $overlay_style = $text_style = '';
+$output          = '';
+$container_class = '';
+$container_style = '';
+$img_class       = '';
+$link_start      = '';
+$link_end        = '';
+$overlay_style   = '';
+$text_style      = '';
 
 $class            = $el_class;
 $inline_style     = wvc_sanitize_css_field( $inline_style );
 $container_style .= wvc_shortcode_custom_style( $css );
 
-$class .= " $hide_class"; // device visibility class
+$class .= " $hide_class"; // device visibility class.
 
 $class .= ' wvc-mobile-text-align-' . $text_align_mobile;
 
@@ -83,9 +90,9 @@ $img_id = $image;
 
 $large_img_src = wvc_get_url_from_attachment_id( $img_id, 'wvc-XL' );
 
-$pretty_rel_random   = ' data-rel="prettyPhoto[rel-' . get_the_ID() . '-' . rand() . ']"';
-$swipebox_rel_random = ' data-rel="swipebox[rel-' . get_the_ID() . '-' . rand() . ']"';
-$lightbox_rel_random = ' data-rel="lightbox[rel-' . get_the_ID() . '-' . rand() . ']"';
+$pretty_rel_random   = ' data-rel="prettyPhoto[rel-' . get_the_ID() . '-' . wp_rand() . ']"';
+$swipebox_rel_random = ' data-rel="swipebox[rel-' . get_the_ID() . '-' . wp_rand() . ']"';
+$lightbox_rel_random = ' data-rel="lightbox[rel-' . get_the_ID() . '-' . wp_rand() . ']"';
 
 if ( 'link_image' === $onclick ) {
 
@@ -170,7 +177,7 @@ switch ( $onclick ) {
 
 $container_class .= " wvc-single-image-alignement-$alignment wvc-single-image-shape-$shape wvc-element";
 
-$container_class .= " $hide_class"; // device visibility class
+$container_class .= " $hide_class"; // device visibility class.
 
 $class .= " wvc-single-image wvc-single-image-overlay-$add_overlay wvc-single-image-hover-effect-$hover_effect wvc-single-image-border-$border wvc-single-image-shadow-$shadow wvc-single-image-add-caption-$add_caption";
 
@@ -181,7 +188,7 @@ $output .= wvc_element_aos_animation_data_attr( $atts );
 $output .= '>';
 
 if ( $title ) {
-	// Title
+	// Title.
 	$output .= '<h3 class="wvc-single-image-title">' . esc_attr( $title ) . '</h3>';
 }
 
@@ -226,7 +233,7 @@ if ( isset( $filetype['ext'] ) && 'svg' === $filetype['ext'] ) { // is SVG
 		$output .= '<span class="wvc-img wvc-img-hover-effect-' . $hover_effect . '">';
 	}
 
-	// Image
+	// Image.
 	if ( ! in_array( $img_size, array( 'thumbnail', 'medium', 'large', 'wvc-XL', 'full' ) ) ) {
 
 		if ( wp_attachment_is_image( $img_id ) ) {
@@ -312,7 +319,7 @@ if ( $add_overlay ) {
 	);
 
 
-	// Caption
+	// Caption.
 
 	if ( $overlay_content_type ) {
 
@@ -331,7 +338,7 @@ if ( $add_overlay ) {
 
 		$output .= '<span class="wvc-single-image-overlay-content">';
 
-			$output .= str_replace( 'wvc-si-link', '', $link_start ); // remove link class
+			$output .= str_replace( 'wvc-si-link', '', $link_start ); // remove link class.
 
 		if ( $title_attr ) {
 
@@ -355,7 +362,7 @@ if ( $add_overlay ) {
 		$output .= '</span>';
 	}
 
-	$output .= '</span>'; // img overlay
+	$output .= '</span>'; // img overlay.
 }
 
 if ( $add_caption ) {
@@ -375,4 +382,4 @@ $output .= '</figure>';
 
 $output .= '</div>';
 
-echo $output;
+echo $output; // WCS XSS ok.
