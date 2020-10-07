@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.4.2\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.4.3\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-10-01 13:22:28+00:00\n"
+"POT-Creation-Date: 2020-10-07 12:27:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -587,37 +587,37 @@ msgstr ""
 msgid "New window"
 msgstr ""
 
-#: inc/admin/auth.php:32 pack/wolf-visual-composer/inc/admin/auth.php:32
+#: inc/admin/auth.php:31
 msgid ""
-"Hey there, thanks a lot for using our awesome <strong>%s</strong> theme! To "
-"ensure that it will work for verified customers only, you just need to "
-"enter your <a href=\"%s\" target=\"_blank\" title=\"Find your purchase "
-"code\">theme purchase code</a> within the next <strong>%d days</strong>. "
+"Hey there, thanks a lot for using our awesome <strong>%1$s</strong> theme! "
+"To ensure that it will work for verified customers only, you just need to "
+"enter your <a href=\"%2$s\" target=\"_blank\" title=\"Find your purchase "
+"code\">theme purchase code</a> within the next <strong>%3$d days</strong>. "
 "You won't have to activate anything else after that."
 msgstr ""
 
-#: inc/admin/auth.php:52 pack/wolf-visual-composer/inc/admin/auth.php:52
-#: pack/wolf-visual-composer/wolf-visual-composer.php:412
+#: inc/admin/auth.php:51 wolf-visual-composer.php:419
 msgid ""
-"<strong>%s</strong> requires <strong><a href=\"%s\" "
-"target=\"_blank\">%s</a></strong> plugin to be installed."
+"<strong>%1$s</strong> requires <strong><a href=\"%2$s\" "
+"target=\"_blank\">%3$s</a></strong> plugin to be installed."
 msgstr ""
 
-#: inc/admin/auth.php:74 pack/wolf-visual-composer/inc/admin/auth.php:74
+#: inc/admin/auth.php:72
 msgid ""
-"<strong>%s</strong> only works for verified customers who purchased a theme "
-"from the <a href=\"%s\" target=\"_blank\">%s</a> team. Please enter your "
-"theme <a href=\"%s\" target=\"_blank\" title=\"Find your purchase "
-"code\">purchase code</a> in the plugin settings to unlock all features."
+"<strong>%1$s</strong> only works for verified customers who purchased a "
+"theme from the <a href=\"%2$s\" target=\"_blank\">%3$s</a> team. Please "
+"enter your theme <a href=\"%4$s\" target=\"_blank\" title=\"Find your "
+"purchase code\">purchase code</a> in the plugin settings to unlock all "
+"features."
 msgstr ""
 
-#: inc/admin/auth.php:93 pack/wolf-visual-composer/inc/admin/auth.php:93
+#: inc/admin/auth.php:91
 msgid ""
-"Sorry, but <strong>%s</strong> only works with compatible <a "
-"target=\"_blank\" href=\"%s\">%s themes</a>.<br><strong>Be sure that you "
-"didn't change the theme's name in the %s file or the theme's folder "
+"Sorry, but <strong>%1$s</strong> only works with compatible <a "
+"target=\"_blank\" href=\"%2$s\">%3$s themes</a>.<br><strong>Be sure that "
+"you didn't change the theme's name in the %4$s file or the theme's folder "
 "name</strong>.<br>If you want to customize the theme's name, you can use a "
-"<a target=\"_blank\" href=\"%s\">child theme</a>."
+"<a target=\"_blank\" href=\"%5$s\">child theme</a>."
 msgstr ""
 
 #: inc/admin/class-admin.php:62
@@ -9733,6 +9733,39 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
+#: pack/wolf-visual-composer/inc/admin/auth.php:32
+msgid ""
+"Hey there, thanks a lot for using our awesome <strong>%s</strong> theme! To "
+"ensure that it will work for verified customers only, you just need to "
+"enter your <a href=\"%s\" target=\"_blank\" title=\"Find your purchase "
+"code\">theme purchase code</a> within the next <strong>%d days</strong>. "
+"You won't have to activate anything else after that."
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/auth.php:52
+#: pack/wolf-visual-composer/wolf-visual-composer.php:412
+msgid ""
+"<strong>%s</strong> requires <strong><a href=\"%s\" "
+"target=\"_blank\">%s</a></strong> plugin to be installed."
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/auth.php:74
+msgid ""
+"<strong>%s</strong> only works for verified customers who purchased a theme "
+"from the <a href=\"%s\" target=\"_blank\">%s</a> team. Please enter your "
+"theme <a href=\"%s\" target=\"_blank\" title=\"Find your purchase "
+"code\">purchase code</a> in the plugin settings to unlock all features."
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/auth.php:93
+msgid ""
+"Sorry, but <strong>%s</strong> only works with compatible <a "
+"target=\"_blank\" href=\"%s\">%s themes</a>.<br><strong>Be sure that you "
+"didn't change the theme's name in the %s file or the theme's folder "
+"name</strong>.<br>If you want to customize the theme's name, you can use a "
+"<a target=\"_blank\" href=\"%s\">child theme</a>."
+msgstr ""
+
 #: pack/wolf-visual-composer/templates/rev_slider.php:49
 #: pack/wolf-visual-composer/templates/rev_slider_vc.php:49
 #: templates/rev_slider.php:49 templates/rev_slider_vc.php:49
@@ -10038,12 +10071,6 @@ msgid ""
 "settings</a>. You can get your Google Map API <a "
 "style=\"text-decoration:underline;\" href=\"%3$s\" "
 "target=\"_blank\">here</a>.<p>"
-msgstr ""
-
-#: wolf-visual-composer.php:419
-msgid ""
-"<strong>%1$s</strong> requires <strong><a href=\"%2$s\" "
-"target=\"_blank\">%3$s</a></strong> plugin to be installed."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
