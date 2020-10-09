@@ -55,7 +55,7 @@ function wvc_get_theme_slug() {
 /**
  * Allow SVG files
  *
- * @param array $mimes
+ * @param array $mimes Additional allowed file types.
  * @return array $mimes
  */
 function wvc_mime_types( $mimes ) {
@@ -216,7 +216,7 @@ function wvc_get_element_list() {
 		'video',
 		'video-opener',
 		'video-self-hosted',
-		// 'videos-carousel', //  last videos from plugin carousel
+		// 'videos-carousel', //  last videos from plugin carousel.
 		// 'videos',
 		// 'waveform-player',
 		'wc-categories',
@@ -224,10 +224,10 @@ function wvc_get_element_list() {
 		'zigzag',
 	);
 
-	// apply filters
+	// apply filters.
 	$wvc_elements = apply_filters( 'wvc_element_list', $wvc_elements );
 
-	// sort by alphabetical order
+	// sort by alphabetical order.
 	sort( $wvc_elements );
 
 	return $wvc_elements;
@@ -236,7 +236,7 @@ function wvc_get_element_list() {
 /**
  * Add supportted 3rd party plugin elements
  *
- * @param array
+ * @param array Elements array.
  * @return array
  */
 function wvc_add_third_party_plugins_elements( $elements ) {
@@ -313,7 +313,6 @@ function wvc_get_shared_colors() {
 		esc_html__( 'Purple', 'js_composer' )              => 'purple',
 	);
 
-	// apply filters
 	$wvc_shared_colors = apply_filters( 'wvc_shared_colors', $wvc_shared_colors );
 
 	return $wvc_shared_colors;
@@ -350,7 +349,6 @@ function wvc_get_shared_colors_hex() {
 		'accent'      => apply_filters( 'wvc_theme_accent_color', '#0073AA' ),
 	);
 
-	// apply filters
 	$wvc_shared_colors_hex = apply_filters( 'wvc_shared_colors_hex', $wvc_shared_colors_hex );
 
 	return $wvc_shared_colors_hex;
@@ -463,6 +461,9 @@ function wvc_is_new_animation( $animation_name ) {
 
 /**
  * Filter animation style
+ *
+ * @param array $animation_syles WPBPB animations.
+ * @return array
  */
 function wvc_filter_animation_styles( $animation_syles ) {
 
@@ -503,7 +504,6 @@ function wvc_get_shared_gradient_colors() {
 		esc_html__( 'Gradient Violet', 'wolf-visual-composer' ) => 'gradient-color-b900b4',
 	);
 
-	// apply filters
 	$wvc_shared_gradient_colors = apply_filters( 'wvc_shared_gradient_colors', $wvc_shared_gradient_colors );
 
 	return $wvc_shared_gradient_colors;
@@ -677,7 +677,7 @@ function wvc_get_socials() {
 		'airbnb',
 		'amazon',
 		// 'amplement',
-		'apple', // iTunes
+		'apple', // iTunes.
 		'bandcamp',
 		'bandsintown',
 		'behance',
@@ -755,15 +755,13 @@ function wvc_get_socials() {
 
 	sort( $wvc_socials );
 
-	// Insert most used at the beggining
+	// Insert most used at the beggining.
 	array_unshift( $wvc_socials, 'facebook', 'twitter', 'instagram', 'messenger', 'flickr', 'behance', 'dribbble', 'linkedin', 'youtube', 'vimeo', 'bandcamp', 'spotify', 'soundcloud', 'bandsintown' );
 
-	$wvc_socials[] = 'rss'; // push rss at the end
-	$wvc_socials[] = 'email'; // push email at the end
+	$wvc_socials[] = 'rss'; // push rss at the end.
+	$wvc_socials[] = 'email'; // push email at the end.
 
-	$wvc_socials = array_unique( $wvc_socials ); // remove duplicates
-
-	// var_dump( $wvc_socials );
+	$wvc_socials = array_unique( $wvc_socials ); // remove duplicates.
 
 	return $wvc_socials;
 }
@@ -794,7 +792,6 @@ function wvc_get_team_member_socials() {
 	$wvc_team_member_socials = apply_filters( 'wvc_team_member_socials', $wvc_team_member_socials );
 
 	array_unique( $wvc_team_member_socials );
-	// sort( $wvc_team_member_socials );
 
 	return $wvc_team_member_socials;
 }
@@ -816,7 +813,7 @@ function wolf_vc_get_option( $index = 'settings', $name, $default = null ) {
 
 	if ( isset( $wvc_settings[ $index ] ) && is_array( $wvc_settings[ $index ] ) ) {
 
-		if ( isset( $wvc_settings[ $index ][ $name ] ) && '' != $wvc_settings[ $index ][ $name ] ) {
+		if ( isset( $wvc_settings[ $index ][ $name ] ) && '' !== $wvc_settings[ $index ][ $name ] ) {
 
 			return $wvc_settings[ $index ][ $name ];
 
