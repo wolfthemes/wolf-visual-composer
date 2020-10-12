@@ -1,5 +1,9 @@
 # Changelog
 
+#### 12th October 2020 - Version 3.4.5
+
+-   Tweak: Added Mailchimp API key and default list ID filters
+
 #### 7th October 2020 - Version 3.4.4
 
 -   Tweak: Added config files

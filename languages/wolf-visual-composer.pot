@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.4.4\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.4.5\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-10-07 13:26:38+00:00\n"
+"POT-Creation-Date: 2020-10-12 14:14:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,66 +66,66 @@ msgstr ""
 msgid "Need more social services? Send us an email! %s"
 msgstr ""
 
-#: inc/admin/admin-options.php:83
-#: pack/wolf-visual-composer/inc/admin/admin-options.php:83
-msgid "Google Map"
+#: inc/admin/admin-options.php:83 inc/elements/gmaps.php:16
+#: inc/elements/google-maps.php:16
+#: pack/wolf-visual-composer/inc/elements/gmaps.php:16
+#: pack/wolf-visual-composer/inc/elements/google-maps.php:16
+msgid "Google Maps"
 msgstr ""
 
 #: inc/admin/admin-options.php:90
-#: pack/wolf-visual-composer/inc/admin/admin-options.php:90
-msgid "Google Map API key"
+msgid "Google Maps API key"
 msgstr ""
 
 #: inc/admin/admin-options.php:92
-#: pack/wolf-visual-composer/inc/admin/admin-options.php:92
-msgid "You can get a Google Map API key <a href=\"%s\" target=\"_blank\">here</a>."
+msgid "You can get a Google Maps API key <a href=\"%s\" target=\"_blank\">here</a>."
 msgstr ""
 
-#: inc/admin/admin-options.php:100 inc/elements/mailchimp.php:52
+#: inc/admin/admin-options.php:101 inc/elements/mailchimp.php:52
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:100
 #: pack/wolf-visual-composer/inc/elements/mailchimp.php:52
 msgid "MailChimp"
 msgstr ""
 
-#: inc/admin/admin-options.php:107
+#: inc/admin/admin-options.php:108
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:107
 msgid "MailChimp API key"
 msgstr ""
 
-#: inc/admin/admin-options.php:109
+#: inc/admin/admin-options.php:110
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:109
 msgid "You can get a MailChimp API key <a href=\"%s\" target=\"_blank\">here</a>."
 msgstr ""
 
-#: inc/admin/admin-options.php:117
+#: inc/admin/admin-options.php:119
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:117
 msgid "Default MailChimp list ID"
 msgstr ""
 
-#: inc/admin/admin-options.php:119
+#: inc/admin/admin-options.php:121
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:119
 msgid "<a href=\"%s\" target=\"_blank\">Find Your List ID</a>."
 msgstr ""
 
-#: inc/admin/admin-options.php:127
+#: inc/admin/admin-options.php:130
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:127
 msgid "Newsletter form title"
 msgstr ""
 
-#: inc/admin/admin-options.php:128 inc/admin/class-options.php:400
+#: inc/admin/admin-options.php:131 inc/admin/class-options.php:400
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:128
 #: pack/wolf-visual-composer/inc/admin/class-options.php:400
 msgid "Subscribe to our newsletter"
 msgstr ""
 
-#: inc/admin/admin-options.php:134
+#: inc/admin/admin-options.php:137
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:134
 msgid "\"Subscribe\" button text"
 msgstr ""
 
-#: inc/admin/admin-options.php:135 inc/admin/class-options.php:401
+#: inc/admin/admin-options.php:138 inc/admin/class-options.php:401
 #: inc/elements/mailchimp.php:129 inc/elements/mailchimp.php:130
-#: inc/mailchimp.php:31
+#: inc/mailchimp.php:33
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:135
 #: pack/wolf-visual-composer/inc/admin/class-options.php:401
 #: pack/wolf-visual-composer/inc/elements/mailchimp.php:129
@@ -136,83 +136,83 @@ msgstr ""
 msgid "Subscribe"
 msgstr ""
 
-#: inc/admin/admin-options.php:141
+#: inc/admin/admin-options.php:144
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:141
 msgid "Form first name input placeholder"
 msgstr ""
 
-#: inc/admin/admin-options.php:142 inc/admin/class-options.php:402
-#: inc/mailchimp.php:39
+#: inc/admin/admin-options.php:145 inc/admin/class-options.php:402
+#: inc/mailchimp.php:41
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:142
 #: pack/wolf-visual-composer/inc/admin/class-options.php:402
 #: pack/wolf-visual-composer/inc/mailchimp.php:39
 msgid "Your first name"
 msgstr ""
 
-#: inc/admin/admin-options.php:148
+#: inc/admin/admin-options.php:151
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:148
 msgid "Form last name input placeholder"
 msgstr ""
 
-#: inc/admin/admin-options.php:149 inc/admin/class-options.php:403
-#: inc/mailchimp.php:40
+#: inc/admin/admin-options.php:152 inc/admin/class-options.php:403
+#: inc/mailchimp.php:42
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:149
 #: pack/wolf-visual-composer/inc/admin/class-options.php:403
 #: pack/wolf-visual-composer/inc/mailchimp.php:40
 msgid "Your last name"
 msgstr ""
 
-#: inc/admin/admin-options.php:155
+#: inc/admin/admin-options.php:158
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:155
 msgid "Form email input placeholder"
 msgstr ""
 
-#: inc/admin/admin-options.php:156 inc/admin/class-options.php:404
+#: inc/admin/admin-options.php:159 inc/admin/class-options.php:404
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:156
 #: pack/wolf-visual-composer/inc/admin/class-options.php:404
 msgid "Your email"
 msgstr ""
 
-#: inc/admin/admin-options.php:162
+#: inc/admin/admin-options.php:165
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:162
 msgid "Thank you message"
 msgstr ""
 
-#: inc/admin/admin-options.php:163 inc/mailchimp.php:76
+#: inc/admin/admin-options.php:166 inc/mailchimp.php:83
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:163
 #: pack/wolf-visual-composer/inc/mailchimp.php:76
 msgid "Thanks for subscribing"
 msgstr ""
 
-#: inc/admin/admin-options.php:169
+#: inc/admin/admin-options.php:172
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:169
 msgid "Background image"
 msgstr ""
 
-#: inc/admin/admin-options.php:176
+#: inc/admin/admin-options.php:179
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:176
 msgid "Fonts Loader"
 msgstr ""
 
-#: inc/admin/admin-options.php:183
+#: inc/admin/admin-options.php:186
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:183
 msgid "Google fonts"
 msgstr ""
 
-#: inc/admin/admin-options.php:185
+#: inc/admin/admin-options.php:189
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:185
 msgid ""
 "You can get your fonts on the <a href=\"%s\" target=\"_blank\">Google "
 "Fonts</a> website."
 msgstr ""
 
-#: inc/admin/admin-options.php:193
+#: inc/admin/admin-options.php:198
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:193
 msgid "Social Profiles"
 msgstr ""
 
-#: inc/admin/admin-options.php:205 inc/admin/admin-options.php:336
-#: inc/admin/admin-options.php:360 inc/params/row-params.php:278
+#: inc/admin/admin-options.php:210 inc/admin/admin-options.php:342
+#: inc/admin/admin-options.php:366 inc/params/row-params.php:278
 #: inc/params/row-params.php:470
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:205
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:336
@@ -222,34 +222,34 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
-#: inc/admin/admin-options.php:212
+#: inc/admin/admin-options.php:217
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:212
 msgid "No Content Block Yet"
 msgstr ""
 
-#: inc/admin/admin-options.php:216
+#: inc/admin/admin-options.php:221
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:216
 msgid "Modal Window"
 msgstr ""
 
-#: inc/admin/admin-options.php:224
+#: inc/admin/admin-options.php:229
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:224
 msgid "Modal Window Content"
 msgstr ""
 
-#: inc/admin/admin-options.php:227
+#: inc/admin/admin-options.php:232
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:227
 msgid ""
 "Choose a <a href=\"%s\" target=\"_blank\">content block</a> to display in "
 "your modal window."
 msgstr ""
 
-#: inc/admin/admin-options.php:234
+#: inc/admin/admin-options.php:240
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:234
 msgid "Modal Window Type"
 msgstr ""
 
-#: inc/admin/admin-options.php:236 inc/elements/gmaps.php:50
+#: inc/admin/admin-options.php:242 inc/elements/gmaps.php:50
 #: inc/elements/google-maps.php:74 inc/elements/last-posts.php:112
 #: inc/elements/team-member.php:49 inc/elements/testimonials.php:54
 #: inc/params/button-params.php:115
@@ -263,22 +263,22 @@ msgstr ""
 msgid "Standard"
 msgstr ""
 
-#: inc/admin/admin-options.php:237
+#: inc/admin/admin-options.php:243
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:237
 msgid "Non-Intrusive (bottom right corner)"
 msgstr ""
 
-#: inc/admin/admin-options.php:244
+#: inc/admin/admin-options.php:250
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:244
 msgid "Exclude MailChimp subscribers"
 msgstr ""
 
-#: inc/admin/admin-options.php:250
+#: inc/admin/admin-options.php:256
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:250
 msgid "Pop-up Delay"
 msgstr ""
 
-#: inc/admin/admin-options.php:252
+#: inc/admin/admin-options.php:258
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:252
 msgid ""
 "The time before the modal window pops up in seconds.<br>You can set a very "
@@ -286,70 +286,70 @@ msgid ""
 "be open via a link (see the \"info\" section at the bottom of this page)."
 msgstr ""
 
-#: inc/admin/admin-options.php:258
+#: inc/admin/admin-options.php:264
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:258
 msgid "Show Only Once"
 msgstr ""
 
-#: inc/admin/admin-options.php:259
+#: inc/admin/admin-options.php:265
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:259
 msgid ""
 "Don't show the pop-up again once it is closed. If this option is not "
 "checked, an opt-out link will be displayed below the window."
 msgstr ""
 
-#: inc/admin/admin-options.php:265
+#: inc/admin/admin-options.php:271
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:265
 msgid "Show When Navigates Away"
 msgstr ""
 
-#: inc/admin/admin-options.php:266
+#: inc/admin/admin-options.php:272
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:266
 msgid ""
 "The window will pop up only when the mouse leave the main window. The "
 "pop-up delay will still be applied."
 msgstr ""
 
-#: inc/admin/admin-options.php:272
+#: inc/admin/admin-options.php:278
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:272
 msgid "Cookie Persistency"
 msgstr ""
 
-#: inc/admin/admin-options.php:274
+#: inc/admin/admin-options.php:280
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:274
 msgid "How long the browser will remember the user opt-out action (in days)."
 msgstr ""
 
-#: inc/admin/admin-options.php:280
+#: inc/admin/admin-options.php:286
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:280
 msgid "Modal Window Width"
 msgstr ""
 
-#: inc/admin/admin-options.php:287
+#: inc/admin/admin-options.php:293
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:287
 msgid "Exclude Post Types"
 msgstr ""
 
-#: inc/admin/admin-options.php:289
+#: inc/admin/admin-options.php:295
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:289
 msgid ""
 "The modal window will NOT popup in these specific post types. Separate each "
 "post type by a comma."
 msgstr ""
 
-#: inc/admin/admin-options.php:295
+#: inc/admin/admin-options.php:301
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:295
 msgid "Include Post Types"
 msgstr ""
 
-#: inc/admin/admin-options.php:297
+#: inc/admin/admin-options.php:303
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:297
 msgid ""
 "The modal window will popup ONLY in these specific post types. Separate "
 "each post type by a comma."
 msgstr ""
 
-#: inc/admin/admin-options.php:303 inc/elements/last-posts.php:32
+#: inc/admin/admin-options.php:309 inc/elements/last-posts.php:32
 #: inc/elements/post-slider.php:171 inc/elements/testimonials.php:68
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:303
 #: pack/wolf-visual-composer/inc/elements/last-posts.php:32
@@ -358,96 +358,94 @@ msgstr ""
 msgid "Exclude Post IDs"
 msgstr ""
 
-#: inc/admin/admin-options.php:305
+#: inc/admin/admin-options.php:311
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:305
 msgid ""
 "The modal window will NOT popup in these specific posts. Separate each ID "
 "by a comma."
 msgstr ""
 
-#: inc/admin/admin-options.php:311
+#: inc/admin/admin-options.php:317
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:311
 msgid "Include Post IDs"
 msgstr ""
 
-#: inc/admin/admin-options.php:313
+#: inc/admin/admin-options.php:319
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:313
 msgid ""
 "The modal window will popup ONLY in these specific posts. Separate each ID "
 "by a comma."
 msgstr ""
 
-#: inc/admin/admin-options.php:319
+#: inc/admin/admin-options.php:325
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:319
 msgid "Close Button Color"
 msgstr ""
 
-#: inc/admin/admin-options.php:325 inc/elements/message.php:27
+#: inc/admin/admin-options.php:331 inc/elements/message.php:27
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:325
 #: pack/wolf-visual-composer/inc/elements/message.php:27
 msgid "Info"
 msgstr ""
 
-#: inc/admin/admin-options.php:327
-#: pack/wolf-visual-composer/inc/admin/admin-options.php:327
+#: inc/admin/admin-options.php:333
 msgid ""
-"You can add the <strong>\"%s\"</strong> class to any link to use it as "
-"pop-up window \"close\" button.<br>Also add the <strong>\"%s\"</strong> "
+"You can add the <strong>\"%1$s\"</strong> class to any link to use it as "
+"pop-up window \"close\" button.<br>Also add the <strong>\"%2$s\"</strong> "
 "class to use it as opt-out button. (\"Don't show this message again\" "
 "link)<br>Additionally, if you need a link that open the modal window, you "
-"can use the <strong>\"%s\"</strong> class."
+"can use the <strong>\"%3$s\"</strong> class."
 msgstr ""
 
-#: inc/admin/admin-options.php:349 inc/admin/admin-options.php:370
+#: inc/admin/admin-options.php:355 inc/admin/admin-options.php:376
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:349
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:370
 msgid "Privacy Policy Message"
 msgstr ""
 
-#: inc/admin/admin-options.php:358
+#: inc/admin/admin-options.php:364
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:358
 msgid "Status"
 msgstr ""
 
-#: inc/admin/admin-options.php:361
+#: inc/admin/admin-options.php:367
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:361
 msgid "Enabled"
 msgstr ""
 
-#: inc/admin/admin-options.php:362
+#: inc/admin/admin-options.php:368
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:362
 msgid "Enabled for EU users only"
 msgstr ""
 
-#: inc/admin/admin-options.php:364
-#: pack/wolf-visual-composer/inc/admin/admin-options.php:364
+#: inc/admin/admin-options.php:370
 msgid ""
-"If the \"Enabled for EU users only\" is selected, %s must be activated and "
-"a %s License key must be set to enable localisation."
+"If the \"Enabled for EU users only\" is selected, %1$s must be activated "
+"and a %2$s License key must be set to enable localisation."
 msgstr ""
 
-#: inc/admin/admin-options.php:376
+#: inc/admin/admin-options.php:382
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:376
 msgid "Privacy Policy Page"
 msgstr ""
 
-#: inc/admin/admin-options.php:378
+#: inc/admin/admin-options.php:384
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:378
 msgid "If a page is set, a link to the Privacy Policy Page will be displayed."
 msgstr ""
 
-#: inc/admin/admin-options.php:384
+#: inc/admin/admin-options.php:390
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:384
 msgid "Link Text"
 msgstr ""
 
-#: inc/admin/admin-options.php:385 inc/privacy-policy-message.php:22
+#: inc/admin/admin-options.php:391 inc/privacy-policy-message.php:22
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:385
 #: pack/wolf-visual-composer/inc/privacy-policy-message.php:22
 msgid "Read more"
 msgstr ""
 
-#: inc/admin/admin-options.php:391 inc/elements/advanced-slide.php:113
+#: inc/admin/admin-options.php:397 inc/elements/advanced-slide.php:113
 #: inc/elements/advanced-slide.php:129 inc/elements/anything-slide.php:41
 #: inc/elements/anything-slide.php:57
 #: inc/elements/bandsintown-tracking-button.php:54
@@ -471,7 +469,7 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: inc/admin/admin-options.php:397 inc/elements/advanced-slide.php:263
+#: inc/admin/admin-options.php:403 inc/elements/advanced-slide.php:263
 #: inc/elements/row-inner.php:37
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:397
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:263
@@ -718,7 +716,7 @@ msgstr ""
 
 #: inc/admin/class-options.php:315 inc/admin/tinymce/popup/button.php:60
 #: inc/admin/tinymce/popup/mailchimp.php:23
-#: inc/admin/tinymce/popup/socials.php:37 inc/class-widget-mailchimp.php:169
+#: inc/admin/tinymce/popup/socials.php:37 inc/class-widget-mailchimp.php:178
 #: inc/elements/bandsintown-tracking-button.php:31
 #: inc/elements/mailchimp.php:105 inc/elements/process-container.php:72
 #: inc/elements/social-icons-custom.php:133 inc/elements/social-icons.php:140
@@ -740,7 +738,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: inc/admin/class-options.php:335 inc/core-functions.php:1317
+#: inc/admin/class-options.php:335 inc/core-functions.php:1314
 #: pack/wolf-visual-composer/inc/admin/class-options.php:335
 #: pack/wolf-visual-composer/inc/core-functions.php:1313
 msgid "Attachment"
@@ -978,7 +976,7 @@ msgstr ""
 
 #: inc/admin/tinymce/popup/button.php:26
 #: inc/admin/tinymce/popup/mailchimp.php:27
-#: inc/admin/tinymce/popup/socials.php:42 inc/class-widget-mailchimp.php:167
+#: inc/admin/tinymce/popup/socials.php:42 inc/class-widget-mailchimp.php:176
 #: inc/core-functions.php:524 inc/elements/advanced-slide.php:419
 #: inc/elements/bandsintown-tracking-button.php:34
 #: inc/elements/process-container.php:78
@@ -1326,7 +1324,7 @@ msgid "Your mailchimp list ID."
 msgstr ""
 
 #: inc/admin/tinymce/popup/mailchimp.php:26
-#: inc/admin/tinymce/popup/socials.php:29 inc/class-widget-mailchimp.php:166
+#: inc/admin/tinymce/popup/socials.php:29 inc/class-widget-mailchimp.php:175
 #: inc/elements/mailchimp.php:109
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/mailchimp.php:26
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:29
@@ -1403,38 +1401,38 @@ msgstr ""
 msgid "Plugin reactivated successfully."
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:75
+#: inc/ajax/ajax-functions.php:80
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:75
 msgid "Please insert your name"
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:79
+#: inc/ajax/ajax-functions.php:84
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:79
 msgid "Please insert a valid email"
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:175
+#: inc/ajax/ajax-functions.php:180
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:175
 msgid "You height value seems incorrect. Please enter a valid number."
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:180
+#: inc/ajax/ajax-functions.php:185
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:180
 msgid "You age seems incorrect. Please enter a valid number."
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:185
+#: inc/ajax/ajax-functions.php:190
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:185
 msgid "Please select your sex."
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:189 inc/ajax/ajax-functions.php:206
+#: inc/ajax/ajax-functions.php:194 inc/ajax/ajax-functions.php:211
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:189
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:206
 msgid "Something went wrong while submitting the form, please try again later."
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:197
+#: inc/ajax/ajax-functions.php:202
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:197
 msgid ""
 "<strong>You are %1$s *.</strong> Your BMI is <strong>%2$s</strong>. Your "
@@ -1442,7 +1440,7 @@ msgid ""
 "<strong>%4$s</strong>."
 msgstr ""
 
-#: inc/ajax/ajax-functions.php:199
+#: inc/ajax/ajax-functions.php:204
 #: pack/wolf-visual-composer/inc/ajax/ajax-functions.php:199
 msgid ""
 "This calculation does not take into account factors which may affect a "
@@ -1477,7 +1475,7 @@ msgstr ""
 msgid "Newsletter signup form"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:134 inc/class-widget-socials.php:101
+#: inc/class-widget-mailchimp.php:143 inc/class-widget-socials.php:101
 #: inc/elements/accordion-tab.php:45 inc/elements/accordion.php:62
 #: inc/elements/advanced-slide.php:311 inc/elements/album-tracklist-item.php:25
 #: inc/elements/banner-gallery.php:213 inc/elements/banner.php:197
@@ -1512,7 +1510,7 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:138 inc/elements/recipe.php:100
+#: inc/class-widget-mailchimp.php:147 inc/elements/recipe.php:100
 #: inc/elements/team-member.php:139
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:138
 #: pack/wolf-visual-composer/inc/elements/recipe.php:100
@@ -1520,20 +1518,20 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:142 inc/elements/mailchimp.php:61
+#: inc/class-widget-mailchimp.php:151 inc/elements/mailchimp.php:61
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:142
 #: pack/wolf-visual-composer/inc/elements/mailchimp.php:61
 msgid "List ID"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:145
+#: inc/class-widget-mailchimp.php:154
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:145
 msgid ""
 "Can be found in your mailchimp account -> Lists -> Your List Name -> "
 "Settings -> List Name & default"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:150 inc/class-widget-mailchimp.php:158
+#: inc/class-widget-mailchimp.php:159 inc/class-widget-mailchimp.php:167
 #: inc/elements/advanced-slide.php:205 inc/elements/album-disc.php:71
 #: inc/elements/album-tracklist.php:29 inc/elements/anything-slide.php:147
 #: inc/elements/bandsintown-events.php:43
@@ -1570,12 +1568,12 @@ msgstr ""
 #: inc/params/row-params.php:338 inc/params/row-params.php:418
 #: inc/params/row-params.php:514 inc/params/row-params.php:530
 #: inc/params/row-params.php:610 inc/params/section-params.php:47
-#: inc/vc-additional-params.php:153 inc/vc-additional-params.php:163
-#: inc/vc-additional-params.php:191 inc/vc-additional-params.php:201
-#: inc/vc-additional-params.php:433 inc/vc-additional-params.php:444
-#: inc/vc-additional-params.php:462 inc/vc-additional-params.php:473
-#: inc/vc-additional-params.php:527 inc/vc-additional-params.php:553
-#: inc/vc-additional-params.php:579
+#: inc/vc-additional-params.php:159 inc/vc-additional-params.php:169
+#: inc/vc-additional-params.php:197 inc/vc-additional-params.php:207
+#: inc/vc-additional-params.php:448 inc/vc-additional-params.php:459
+#: inc/vc-additional-params.php:477 inc/vc-additional-params.php:488
+#: inc/vc-additional-params.php:545 inc/vc-additional-params.php:571
+#: inc/vc-additional-params.php:597
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:150
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:158
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:205
@@ -1659,7 +1657,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:151 inc/class-widget-mailchimp.php:159
+#: inc/class-widget-mailchimp.php:160 inc/class-widget-mailchimp.php:168
 #: inc/elements/advanced-slide.php:204 inc/elements/album-disc.php:72
 #: inc/elements/album-tracklist.php:30 inc/elements/anything-slide.php:146
 #: inc/elements/bandsintown-events.php:42
@@ -1688,12 +1686,12 @@ msgstr ""
 #: inc/params/background-params.php:366 inc/params/row-params.php:321
 #: inc/params/row-params.php:337 inc/params/row-params.php:419
 #: inc/params/row-params.php:513 inc/params/row-params.php:529
-#: inc/params/row-params.php:611 inc/vc-additional-params.php:154
-#: inc/vc-additional-params.php:164 inc/vc-additional-params.php:192
-#: inc/vc-additional-params.php:202 inc/vc-additional-params.php:434
-#: inc/vc-additional-params.php:445 inc/vc-additional-params.php:463
-#: inc/vc-additional-params.php:474 inc/vc-additional-params.php:528
-#: inc/vc-additional-params.php:554 inc/vc-additional-params.php:580
+#: inc/params/row-params.php:611 inc/vc-additional-params.php:160
+#: inc/vc-additional-params.php:170 inc/vc-additional-params.php:198
+#: inc/vc-additional-params.php:208 inc/vc-additional-params.php:449
+#: inc/vc-additional-params.php:460 inc/vc-additional-params.php:478
+#: inc/vc-additional-params.php:489 inc/vc-additional-params.php:546
+#: inc/vc-additional-params.php:572 inc/vc-additional-params.php:598
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:151
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:159
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:204
@@ -1761,18 +1759,18 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:153
+#: inc/class-widget-mailchimp.php:162
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:153
 msgid "Show Background"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:161 inc/elements/mailchimp.php:93
+#: inc/class-widget-mailchimp.php:170 inc/elements/mailchimp.php:93
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:161
 #: pack/wolf-visual-composer/inc/elements/mailchimp.php:93
 msgid "Show Default Label"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:174 inc/elements/advanced-slide.php:406
+#: inc/class-widget-mailchimp.php:183 inc/elements/advanced-slide.php:406
 #: inc/elements/advanced-slide.php:432 inc/elements/album-disc.php:29
 #: inc/elements/artist-lineup.php:49 inc/elements/audio.php:107
 #: inc/elements/bandsintown-tracking-button.php:45
@@ -1846,7 +1844,7 @@ msgstr ""
 msgid "Center"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:175 inc/elements/advanced-slide.php:407
+#: inc/class-widget-mailchimp.php:184 inc/elements/advanced-slide.php:407
 #: inc/elements/advanced-slide.php:433 inc/elements/album-disc.php:28
 #: inc/elements/artist-lineup.php:50 inc/elements/audio.php:106
 #: inc/elements/bandsintown-tracking-button.php:46
@@ -1922,7 +1920,7 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:176 inc/elements/advanced-slide.php:408
+#: inc/class-widget-mailchimp.php:185 inc/elements/advanced-slide.php:408
 #: inc/elements/advanced-slide.php:434 inc/elements/album-disc.php:30
 #: inc/elements/artist-lineup.php:51 inc/elements/audio.php:108
 #: inc/elements/bandsintown-tracking-button.php:47
@@ -1998,7 +1996,7 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:178
+#: inc/class-widget-mailchimp.php:187
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:178
 msgid "Text alignement"
 msgstr ""
@@ -2128,167 +2126,167 @@ msgstr ""
 msgid "Purple"
 msgstr ""
 
-#: inc/core-functions.php:364
+#: inc/core-functions.php:362
 #: pack/wolf-visual-composer/inc/core-functions.php:364
 msgid "Angle"
 msgstr ""
 
-#: inc/core-functions.php:366
+#: inc/core-functions.php:364
 #: pack/wolf-visual-composer/inc/core-functions.php:366
 msgid "Curve"
 msgstr ""
 
-#: inc/core-functions.php:368
+#: inc/core-functions.php:366
 #: pack/wolf-visual-composer/inc/core-functions.php:368
 msgid "Grunge Border"
 msgstr ""
 
-#: inc/core-functions.php:385
+#: inc/core-functions.php:383
 #: pack/wolf-visual-composer/inc/core-functions.php:384
 msgid "Custom Animations"
 msgstr ""
 
-#: inc/core-functions.php:417 inc/elements/testimonial-slider.php:43
-#: inc/vc-additional-params.php:175
+#: inc/core-functions.php:415 inc/elements/testimonial-slider.php:43
+#: inc/vc-additional-params.php:181
 #: pack/wolf-visual-composer/inc/core-functions.php:416
 #: pack/wolf-visual-composer/inc/elements/testimonial-slider.php:43
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:175
 msgid "Fade"
 msgstr ""
 
-#: inc/core-functions.php:418
+#: inc/core-functions.php:416
 #: pack/wolf-visual-composer/inc/core-functions.php:417
 msgid "Fade Up"
 msgstr ""
 
-#: inc/core-functions.php:419
+#: inc/core-functions.php:417
 #: pack/wolf-visual-composer/inc/core-functions.php:418
 msgid "Fade Down"
 msgstr ""
 
-#: inc/core-functions.php:420
+#: inc/core-functions.php:418
 #: pack/wolf-visual-composer/inc/core-functions.php:419
 msgid "Fade Left"
 msgstr ""
 
-#: inc/core-functions.php:421
+#: inc/core-functions.php:419
 #: pack/wolf-visual-composer/inc/core-functions.php:420
 msgid "Fade Right"
 msgstr ""
 
-#: inc/core-functions.php:422
+#: inc/core-functions.php:420
 #: pack/wolf-visual-composer/inc/core-functions.php:421
 msgid "Fade Up Right"
 msgstr ""
 
-#: inc/core-functions.php:423
+#: inc/core-functions.php:421
 #: pack/wolf-visual-composer/inc/core-functions.php:422
 msgid "Fade Up Left"
 msgstr ""
 
-#: inc/core-functions.php:424
+#: inc/core-functions.php:422
 #: pack/wolf-visual-composer/inc/core-functions.php:423
 msgid "Fade Down Right"
 msgstr ""
 
-#: inc/core-functions.php:425
+#: inc/core-functions.php:423
 #: pack/wolf-visual-composer/inc/core-functions.php:424
 msgid "Fade Down Left"
 msgstr ""
 
-#: inc/core-functions.php:427
+#: inc/core-functions.php:425
 #: pack/wolf-visual-composer/inc/core-functions.php:426
 msgid "Flip Up"
 msgstr ""
 
-#: inc/core-functions.php:428
+#: inc/core-functions.php:426
 #: pack/wolf-visual-composer/inc/core-functions.php:427
 msgid "Flip Down"
 msgstr ""
 
-#: inc/core-functions.php:429
+#: inc/core-functions.php:427
 #: pack/wolf-visual-composer/inc/core-functions.php:428
 msgid "Flip Left"
 msgstr ""
 
-#: inc/core-functions.php:430
+#: inc/core-functions.php:428
 #: pack/wolf-visual-composer/inc/core-functions.php:429
 msgid "Flip Right"
 msgstr ""
 
-#: inc/core-functions.php:432
+#: inc/core-functions.php:430
 #: pack/wolf-visual-composer/inc/core-functions.php:431
 msgid "Slide Up"
 msgstr ""
 
-#: inc/core-functions.php:433
+#: inc/core-functions.php:431
 #: pack/wolf-visual-composer/inc/core-functions.php:432
 msgid "Slide Down"
 msgstr ""
 
-#: inc/core-functions.php:434
+#: inc/core-functions.php:432
 #: pack/wolf-visual-composer/inc/core-functions.php:433
 msgid "Slide Left"
 msgstr ""
 
-#: inc/core-functions.php:435
+#: inc/core-functions.php:433
 #: pack/wolf-visual-composer/inc/core-functions.php:434
 msgid "Slide Right"
 msgstr ""
 
-#: inc/core-functions.php:437 inc/core-functions.php:548
+#: inc/core-functions.php:435 inc/core-functions.php:548
 #: pack/wolf-visual-composer/inc/core-functions.php:436
 #: pack/wolf-visual-composer/inc/core-functions.php:542
 msgid "Zoom In"
 msgstr ""
 
-#: inc/core-functions.php:438
+#: inc/core-functions.php:436
 #: pack/wolf-visual-composer/inc/core-functions.php:437
 msgid "Zoom In Up"
 msgstr ""
 
-#: inc/core-functions.php:439
+#: inc/core-functions.php:437
 #: pack/wolf-visual-composer/inc/core-functions.php:438
 msgid "Zoom In Down"
 msgstr ""
 
-#: inc/core-functions.php:440
+#: inc/core-functions.php:438
 #: pack/wolf-visual-composer/inc/core-functions.php:439
 msgid "Zoom In Left"
 msgstr ""
 
-#: inc/core-functions.php:441
+#: inc/core-functions.php:439
 #: pack/wolf-visual-composer/inc/core-functions.php:440
 msgid "Zoom In Right"
 msgstr ""
 
-#: inc/core-functions.php:442 inc/core-functions.php:549
+#: inc/core-functions.php:440 inc/core-functions.php:549
 #: pack/wolf-visual-composer/inc/core-functions.php:441
 #: pack/wolf-visual-composer/inc/core-functions.php:543
 msgid "Zoom Out"
 msgstr ""
 
-#: inc/core-functions.php:443
+#: inc/core-functions.php:441
 #: pack/wolf-visual-composer/inc/core-functions.php:442
 msgid "Zoom Out Up"
 msgstr ""
 
-#: inc/core-functions.php:444
+#: inc/core-functions.php:442
 #: pack/wolf-visual-composer/inc/core-functions.php:443
 msgid "Zoom Out Down"
 msgstr ""
 
-#: inc/core-functions.php:445
+#: inc/core-functions.php:443
 #: pack/wolf-visual-composer/inc/core-functions.php:444
 msgid "Zoom Out Left"
 msgstr ""
 
-#: inc/core-functions.php:446
+#: inc/core-functions.php:444
 #: pack/wolf-visual-composer/inc/core-functions.php:445
 msgid "Zoom Out Right"
 msgstr ""
 
-#: inc/core-functions.php:472 inc/elements/advanced-slide.php:362
+#: inc/core-functions.php:473 inc/elements/advanced-slide.php:362
 #: inc/elements/album-disc.php:85 inc/elements/album-tracklist-item.php:78
 #: inc/elements/audio.php:60 inc/elements/breadcrumb.php:64
 #: inc/elements/column-inner.php:42 inc/elements/column-inner.php:69
@@ -2353,12 +2351,12 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: inc/core-functions.php:475
+#: inc/core-functions.php:476
 #: pack/wolf-visual-composer/inc/core-functions.php:469
 msgid "New Animation Engine (beta)"
 msgstr ""
 
-#: inc/core-functions.php:498 inc/elements/accordion-tab.php:62
+#: inc/core-functions.php:499 inc/elements/accordion-tab.php:62
 #: inc/elements/counter.php:139 inc/elements/counter.php:167
 #: inc/elements/counter.php:195 inc/params/bigtext-params.php:45
 #: inc/params/heading-params.php:98
@@ -2372,12 +2370,12 @@ msgstr ""
 msgid "Gradient Red"
 msgstr ""
 
-#: inc/core-functions.php:499
+#: inc/core-functions.php:500
 #: pack/wolf-visual-composer/inc/core-functions.php:493
 msgid "Gradient Red 2"
 msgstr ""
 
-#: inc/core-functions.php:500 inc/elements/accordion-tab.php:63
+#: inc/core-functions.php:501 inc/elements/accordion-tab.php:63
 #: inc/elements/counter.php:140 inc/elements/counter.php:168
 #: inc/elements/counter.php:196 inc/params/bigtext-params.php:46
 #: inc/params/heading-params.php:99
@@ -2391,17 +2389,17 @@ msgstr ""
 msgid "Gradient Green"
 msgstr ""
 
-#: inc/core-functions.php:501
+#: inc/core-functions.php:502
 #: pack/wolf-visual-composer/inc/core-functions.php:495
 msgid "Gradient Green Circle"
 msgstr ""
 
-#: inc/core-functions.php:502
+#: inc/core-functions.php:503
 #: pack/wolf-visual-composer/inc/core-functions.php:496
 msgid "Gradient Orange"
 msgstr ""
 
-#: inc/core-functions.php:503
+#: inc/core-functions.php:504
 #: pack/wolf-visual-composer/inc/core-functions.php:497
 msgid "Gradient Violet"
 msgstr ""
@@ -2441,7 +2439,7 @@ msgstr ""
 #: inc/elements/row-inner.php:101 inc/elements/row.php:175
 #: inc/elements/row.php:187 inc/elements/row.php:206 inc/elements/row.php:214
 #: inc/params/section-params.php:124 inc/params/style-params.php:22
-#: inc/vc-additional-params.php:401 inc/vc-additional-params.php:408
+#: inc/vc-additional-params.php:413 inc/vc-additional-params.php:420
 #: pack/wolf-visual-composer/inc/core-functions.php:522
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:48
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:60
@@ -2609,32 +2607,32 @@ msgstr ""
 msgid "Pattern %1$d (loop of %2$d)"
 msgstr ""
 
-#: inc/core-functions.php:1034
+#: inc/core-functions.php:1031
 #: pack/wolf-visual-composer/inc/core-functions.php:1024
 msgid "Image is missing"
 msgstr ""
 
-#: inc/core-functions.php:1139
+#: inc/core-functions.php:1136
 #: pack/wolf-visual-composer/inc/core-functions.php:1129
 msgid "Home"
 msgstr ""
 
-#: inc/core-functions.php:1186
+#: inc/core-functions.php:1183
 #: pack/wolf-visual-composer/inc/core-functions.php:1176
 msgid "Products tagged &ldquo;"
 msgstr ""
 
-#: inc/core-functions.php:1312
+#: inc/core-functions.php:1309
 #: pack/wolf-visual-composer/inc/core-functions.php:1308
 msgid "Search"
 msgstr ""
 
-#: inc/core-functions.php:1340
+#: inc/core-functions.php:1337
 #: pack/wolf-visual-composer/inc/core-functions.php:1336
 msgid "Search results"
 msgstr ""
 
-#: inc/core-functions.php:1469 inc/elements/content-block.php:33
+#: inc/core-functions.php:1466 inc/elements/content-block.php:33
 #: inc/elements/content-block.php:42
 #: pack/wolf-visual-composer/inc/core-functions.php:1459
 #: pack/wolf-visual-composer/inc/elements/content-block.php:33
@@ -2642,7 +2640,7 @@ msgstr ""
 msgid "Content Block"
 msgstr ""
 
-#: inc/core-functions.php:1476
+#: inc/core-functions.php:1473
 #: pack/wolf-visual-composer/inc/core-functions.php:1466
 msgid "Playlists"
 msgstr ""
@@ -3338,7 +3336,7 @@ msgstr ""
 #: inc/elements/row-inner.php:42 inc/elements/row.php:85
 #: inc/elements/row.php:255 inc/elements/wc-categories.php:108
 #: inc/elements/wc-categories.php:237 inc/elements/wc-categories.php:249
-#: inc/vc-additional-params.php:212
+#: inc/vc-additional-params.php:218
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:266
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:28
 #: pack/wolf-visual-composer/inc/elements/column.php:28
@@ -3367,7 +3365,7 @@ msgstr ""
 #: inc/elements/row-inner.php:41 inc/elements/row.php:86
 #: inc/elements/row.php:254 inc/elements/wc-categories.php:107
 #: inc/elements/wc-categories.php:238 inc/elements/wc-categories.php:250
-#: inc/vc-additional-params.php:213
+#: inc/vc-additional-params.php:219
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:267
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:29
 #: pack/wolf-visual-composer/inc/elements/column.php:29
@@ -4356,8 +4354,8 @@ msgstr ""
 
 #: inc/elements/audio.php:68 inc/elements/gallery.php:172
 #: inc/elements/instagram-gallery.php:115 inc/elements/video-self-hosted.php:48
-#: inc/elements/wc-categories.php:165 inc/vc-additional-params.php:150
-#: inc/vc-additional-params.php:430
+#: inc/elements/wc-categories.php:165 inc/vc-additional-params.php:156
+#: inc/vc-additional-params.php:445
 #: pack/wolf-visual-composer/inc/elements/audio.php:68
 #: pack/wolf-visual-composer/inc/elements/gallery.php:172
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:115
@@ -4916,7 +4914,7 @@ msgstr ""
 
 #: inc/elements/column-inner.php:85 inc/elements/column.php:86
 #: inc/elements/row-inner.php:99 inc/elements/row.php:212
-#: inc/vc-additional-params.php:406
+#: inc/vc-additional-params.php:418
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:85
 #: pack/wolf-visual-composer/inc/elements/column.php:86
 #: pack/wolf-visual-composer/inc/elements/row-inner.php:99
@@ -4927,7 +4925,7 @@ msgstr ""
 
 #: inc/elements/column-inner.php:88 inc/elements/column.php:89
 #: inc/elements/row-inner.php:102 inc/elements/row.php:215
-#: inc/vc-additional-params.php:409
+#: inc/vc-additional-params.php:421
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:88
 #: pack/wolf-visual-composer/inc/elements/column.php:89
 #: pack/wolf-visual-composer/inc/elements/row-inner.php:102
@@ -4945,7 +4943,7 @@ msgstr ""
 #: inc/elements/column-inner.php:97 inc/elements/column.php:98
 #: inc/elements/column.php:106 inc/elements/column.php:115
 #: inc/params/button-params.php:237 inc/params/button-params.php:246
-#: inc/vc-additional-params.php:129 inc/vc-additional-params.php:509
+#: inc/vc-additional-params.php:132 inc/vc-additional-params.php:527
 #: pack/wolf-visual-composer/inc/elements/column-inner.php:97
 #: pack/wolf-visual-composer/inc/elements/column.php:98
 #: pack/wolf-visual-composer/inc/elements/column.php:106
@@ -5506,8 +5504,8 @@ msgstr ""
 
 #: inc/elements/gallery.php:97 inc/elements/instagram-gallery.php:97
 #: inc/elements/sb-instagram-feed.php:77 inc/elements/wc-categories.php:93
-#: inc/vc-additional-params.php:524 inc/vc-additional-params.php:550
-#: inc/vc-additional-params.php:576
+#: inc/vc-additional-params.php:542 inc/vc-additional-params.php:568
+#: inc/vc-additional-params.php:594
 #: pack/wolf-visual-composer/inc/elements/gallery.php:97
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:97
 #: pack/wolf-visual-composer/inc/elements/sb-instagram-feed.php:77
@@ -5602,10 +5600,10 @@ msgstr ""
 
 #: inc/elements/gallery.php:166 inc/elements/instagram-gallery.php:109
 #: inc/elements/social-icons-custom.php:181 inc/elements/social-icons.php:188
-#: inc/elements/wc-categories.php:159 inc/vc-additional-params.php:298
-#: inc/vc-additional-params.php:300 inc/vc-additional-params.php:309
-#: inc/vc-additional-params.php:536 inc/vc-additional-params.php:562
-#: inc/vc-additional-params.php:588
+#: inc/elements/wc-categories.php:159 inc/vc-additional-params.php:307
+#: inc/vc-additional-params.php:309 inc/vc-additional-params.php:318
+#: inc/vc-additional-params.php:554 inc/vc-additional-params.php:580
+#: inc/vc-additional-params.php:606
 #: pack/wolf-visual-composer/inc/elements/gallery.php:166
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:109
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:181
@@ -5636,9 +5634,9 @@ msgstr ""
 #: inc/elements/wc-categories.php:183 inc/elements/wc-categories.php:192
 #: inc/elements/wc-categories.php:204 inc/elements/wc-categories.php:216
 #: inc/elements/wc-categories.php:228 inc/elements/wc-categories.php:240
-#: inc/elements/wc-categories.php:252 inc/vc-additional-params.php:436
-#: inc/vc-additional-params.php:447 inc/vc-additional-params.php:454
-#: inc/vc-additional-params.php:465 inc/vc-additional-params.php:476
+#: inc/elements/wc-categories.php:252 inc/vc-additional-params.php:451
+#: inc/vc-additional-params.php:462 inc/vc-additional-params.php:469
+#: inc/vc-additional-params.php:480 inc/vc-additional-params.php:491
 #: pack/wolf-visual-composer/inc/elements/gallery.php:178
 #: pack/wolf-visual-composer/inc/elements/gallery.php:190
 #: pack/wolf-visual-composer/inc/elements/gallery.php:199
@@ -5673,8 +5671,8 @@ msgid "Carousel Settings"
 msgstr ""
 
 #: inc/elements/gallery.php:184 inc/elements/instagram-gallery.php:127
-#: inc/elements/wc-categories.php:177 inc/vc-additional-params.php:160
-#: inc/vc-additional-params.php:441
+#: inc/elements/wc-categories.php:177 inc/vc-additional-params.php:166
+#: inc/vc-additional-params.php:456
 #: pack/wolf-visual-composer/inc/elements/gallery.php:184
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:127
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:177
@@ -5684,8 +5682,8 @@ msgid "Pause on Hover (if autoplay)"
 msgstr ""
 
 #: inc/elements/gallery.php:196 inc/elements/instagram-gallery.php:139
-#: inc/elements/wc-categories.php:189 inc/vc-additional-params.php:181
-#: inc/vc-additional-params.php:451
+#: inc/elements/wc-categories.php:189 inc/vc-additional-params.php:187
+#: inc/vc-additional-params.php:466
 #: pack/wolf-visual-composer/inc/elements/gallery.php:196
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:139
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:189
@@ -5695,8 +5693,8 @@ msgid "Slideshow Speed in ms"
 msgstr ""
 
 #: inc/elements/gallery.php:205 inc/elements/instagram-gallery.php:148
-#: inc/elements/wc-categories.php:198 inc/vc-additional-params.php:188
-#: inc/vc-additional-params.php:459
+#: inc/elements/wc-categories.php:198 inc/vc-additional-params.php:194
+#: inc/vc-additional-params.php:474
 #: pack/wolf-visual-composer/inc/elements/gallery.php:205
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:148
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:198
@@ -5706,8 +5704,8 @@ msgid "Show Navigation Bullets"
 msgstr ""
 
 #: inc/elements/gallery.php:217 inc/elements/instagram-gallery.php:160
-#: inc/elements/wc-categories.php:210 inc/vc-additional-params.php:198
-#: inc/vc-additional-params.php:470
+#: inc/elements/wc-categories.php:210 inc/vc-additional-params.php:204
+#: inc/vc-additional-params.php:485
 #: pack/wolf-visual-composer/inc/elements/gallery.php:217
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:160
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:210
@@ -5738,12 +5736,6 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:196
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:246
 msgid "Navigation Dots Tone"
-msgstr ""
-
-#: inc/elements/gmaps.php:16 inc/elements/google-maps.php:16
-#: pack/wolf-visual-composer/inc/elements/gmaps.php:16
-#: pack/wolf-visual-composer/inc/elements/google-maps.php:16
-msgid "Google Maps"
 msgstr ""
 
 #: inc/elements/gmaps.php:20 inc/elements/google-maps.php:20
@@ -8175,13 +8167,13 @@ msgstr ""
 msgid "Show the feedbacks submitted by your happy customers"
 msgstr ""
 
-#: inc/elements/testimonial-slider.php:39 inc/vc-additional-params.php:170
+#: inc/elements/testimonial-slider.php:39 inc/vc-additional-params.php:176
 #: pack/wolf-visual-composer/inc/elements/testimonial-slider.php:39
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:170
 msgid "Transition"
 msgstr ""
 
-#: inc/elements/testimonial-slider.php:42 inc/vc-additional-params.php:174
+#: inc/elements/testimonial-slider.php:42 inc/vc-additional-params.php:180
 #: pack/wolf-visual-composer/inc/elements/testimonial-slider.php:42
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:174
 msgid "Slide"
@@ -8628,22 +8620,23 @@ msgstr ""
 msgid "Lost your password?"
 msgstr ""
 
-#: inc/mailchimp.php:41 pack/wolf-visual-composer/inc/mailchimp.php:41
+#: inc/mailchimp.php:43 pack/wolf-visual-composer/inc/mailchimp.php:41
 msgid "Enter your email address"
 msgstr ""
 
-#: inc/mailchimp.php:158 pack/wolf-visual-composer/inc/mailchimp.php:158
+#: inc/mailchimp.php:167
 msgid ""
 "<p class=\"wvc-text-center\">You must set a MailChimp API key in the <a "
-"href=\"%s\" target=\"_blank\">Wolf WPBakery Page Builder Extension</a>. You "
-"can get your MailChimp API <a href=\"%s\" target=\"_blank\">here</a>.<p>"
+"href=\"%1$s\" target=\"_blank\">Wolf WPBakery Page Builder Extension</a>. "
+"You can get your MailChimp API <a href=\"%2$s\" "
+"target=\"_blank\">here</a>.<p>"
 msgstr ""
 
-#: inc/mailchimp.php:166 pack/wolf-visual-composer/inc/mailchimp.php:166
+#: inc/mailchimp.php:175 pack/wolf-visual-composer/inc/mailchimp.php:166
 msgid "You must set a list ID."
 msgstr ""
 
-#: inc/mailchimp.php:175 pack/wolf-visual-composer/inc/mailchimp.php:175
+#: inc/mailchimp.php:184 pack/wolf-visual-composer/inc/mailchimp.php:175
 msgid "Subscription to our newsletter open soon."
 msgstr ""
 
@@ -9317,7 +9310,7 @@ msgid "Insert the row minimum height in pixel."
 msgstr ""
 
 #: inc/params/row-inner-params.php:118 inc/params/row-params.php:184
-#: inc/params/section-params.php:93 inc/vc-additional-params.php:499
+#: inc/params/section-params.php:93 inc/vc-additional-params.php:517
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:118
 #: pack/wolf-visual-composer/inc/params/row-params.php:184
 #: pack/wolf-visual-composer/inc/params/section-params.php:93
@@ -9326,7 +9319,7 @@ msgid "Visibility"
 msgstr ""
 
 #: inc/params/row-inner-params.php:121 inc/params/row-params.php:187
-#: inc/params/section-params.php:96 inc/vc-additional-params.php:502
+#: inc/params/section-params.php:96 inc/vc-additional-params.php:520
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:121
 #: pack/wolf-visual-composer/inc/params/row-params.php:187
 #: pack/wolf-visual-composer/inc/params/section-params.php:96
@@ -9335,7 +9328,7 @@ msgid "Always visible"
 msgstr ""
 
 #: inc/params/row-inner-params.php:122 inc/params/row-params.php:188
-#: inc/params/section-params.php:97 inc/vc-additional-params.php:503
+#: inc/params/section-params.php:97 inc/vc-additional-params.php:521
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:122
 #: pack/wolf-visual-composer/inc/params/row-params.php:188
 #: pack/wolf-visual-composer/inc/params/section-params.php:97
@@ -9344,7 +9337,7 @@ msgid "Hide on tablet and mobile"
 msgstr ""
 
 #: inc/params/row-inner-params.php:123 inc/params/row-params.php:189
-#: inc/params/section-params.php:98 inc/vc-additional-params.php:504
+#: inc/params/section-params.php:98 inc/vc-additional-params.php:522
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:123
 #: pack/wolf-visual-composer/inc/params/row-params.php:189
 #: pack/wolf-visual-composer/inc/params/section-params.php:98
@@ -9353,7 +9346,7 @@ msgid "Hide on mobile"
 msgstr ""
 
 #: inc/params/row-inner-params.php:124 inc/params/row-params.php:190
-#: inc/params/section-params.php:99 inc/vc-additional-params.php:505
+#: inc/params/section-params.php:99 inc/vc-additional-params.php:523
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:124
 #: pack/wolf-visual-composer/inc/params/row-params.php:190
 #: pack/wolf-visual-composer/inc/params/section-params.php:99
@@ -9362,7 +9355,7 @@ msgid "Show on tablet and mobile only"
 msgstr ""
 
 #: inc/params/row-inner-params.php:125 inc/params/row-params.php:191
-#: inc/params/section-params.php:100 inc/vc-additional-params.php:506
+#: inc/params/section-params.php:100 inc/vc-additional-params.php:524
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:125
 #: pack/wolf-visual-composer/inc/params/row-params.php:191
 #: pack/wolf-visual-composer/inc/params/section-params.php:100
@@ -9371,7 +9364,7 @@ msgid "Show on mobile only"
 msgstr ""
 
 #: inc/params/row-inner-params.php:126 inc/params/row-params.php:192
-#: inc/params/section-params.php:101 inc/vc-additional-params.php:507
+#: inc/params/section-params.php:101 inc/vc-additional-params.php:525
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:126
 #: pack/wolf-visual-composer/inc/params/row-params.php:192
 #: pack/wolf-visual-composer/inc/params/section-params.php:101
@@ -9380,7 +9373,7 @@ msgid "Always hidden"
 msgstr ""
 
 #: inc/params/row-inner-params.php:133 inc/params/row-params.php:233
-#: inc/params/section-params.php:108 inc/vc-additional-params.php:125
+#: inc/params/section-params.php:108 inc/vc-additional-params.php:128
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:133
 #: pack/wolf-visual-composer/inc/params/row-params.php:233
 #: pack/wolf-visual-composer/inc/params/section-params.php:108
@@ -9389,7 +9382,7 @@ msgid "Extra class name"
 msgstr ""
 
 #: inc/params/row-inner-params.php:135 inc/params/row-params.php:235
-#: inc/params/section-params.php:110 inc/vc-additional-params.php:127
+#: inc/params/section-params.php:110 inc/vc-additional-params.php:130
 #: pack/wolf-visual-composer/inc/params/row-inner-params.php:135
 #: pack/wolf-visual-composer/inc/params/row-params.php:235
 #: pack/wolf-visual-composer/inc/params/section-params.php:110
@@ -9678,10 +9671,10 @@ msgstr ""
 msgid "Search results for %s"
 msgstr ""
 
-#: inc/vc-additional-params.php:156 inc/vc-additional-params.php:166
-#: inc/vc-additional-params.php:177 inc/vc-additional-params.php:184
-#: inc/vc-additional-params.php:194 inc/vc-additional-params.php:204
-#: inc/vc-additional-params.php:215
+#: inc/vc-additional-params.php:162 inc/vc-additional-params.php:172
+#: inc/vc-additional-params.php:183 inc/vc-additional-params.php:190
+#: inc/vc-additional-params.php:200 inc/vc-additional-params.php:210
+#: inc/vc-additional-params.php:221
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:156
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:166
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:177
@@ -9692,22 +9685,22 @@ msgstr ""
 msgid "Slider Settings"
 msgstr ""
 
-#: inc/vc-additional-params.php:173
+#: inc/vc-additional-params.php:179
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:173
 msgid "Auto (fade by default and slide on touchable devices)"
 msgstr ""
 
-#: inc/vc-additional-params.php:209
+#: inc/vc-additional-params.php:215
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:209
 msgid "Navigation Tone"
 msgstr ""
 
-#: inc/vc-additional-params.php:306
+#: inc/vc-additional-params.php:315
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:306
 msgid "Animation Delay (in ms)"
 msgstr ""
 
-#: inc/vc-additional-params.php:399
+#: inc/vc-additional-params.php:411
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:399
 msgid "Css"
 msgstr ""
@@ -9724,6 +9717,33 @@ msgstr ""
 
 #: pack/assets/bandsintown/bandsintown.php:60
 msgid "Save Settings"
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/admin-options.php:83
+msgid "Google Map"
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/admin-options.php:90
+msgid "Google Map API key"
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/admin-options.php:92
+msgid "You can get a Google Map API key <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/admin-options.php:327
+msgid ""
+"You can add the <strong>\"%s\"</strong> class to any link to use it as "
+"pop-up window \"close\" button.<br>Also add the <strong>\"%s\"</strong> "
+"class to use it as opt-out button. (\"Don't show this message again\" "
+"link)<br>Additionally, if you need a link that open the modal window, you "
+"can use the <strong>\"%s\"</strong> class."
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/admin/admin-options.php:364
+msgid ""
+"If the \"Enabled for EU users only\" is selected, %s must be activated and "
+"a %s License key must be set to enable localisation."
 msgstr ""
 
 #: pack/wolf-visual-composer/inc/admin/auth.php:32
@@ -9767,6 +9787,13 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/core-functions.php:591
 #: pack/wolf-visual-composer/inc/core-functions.php:592
 msgid "Pattern %d (loop of %d)"
+msgstr ""
+
+#: pack/wolf-visual-composer/inc/mailchimp.php:158
+msgid ""
+"<p class=\"wvc-text-center\">You must set a MailChimp API key in the <a "
+"href=\"%s\" target=\"_blank\">Wolf WPBakery Page Builder Extension</a>. You "
+"can get your MailChimp API <a href=\"%s\" target=\"_blank\">here</a>.<p>"
 msgstr ""
 
 #: pack/wolf-visual-composer/templates/rev_slider.php:49

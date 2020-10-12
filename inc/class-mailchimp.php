@@ -72,8 +72,10 @@ if ( ! class_exists( 'WVC_Mailchimp' ) ) {
 		 */
 		private function api_key() {
 
-			if ( wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' ) ) {
-				return wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' );
+			$api_key = apply_filters( 'wvc_mailchimp_api_key', wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' ) );
+
+			if ( $api_key ) {
+				return $api_key;
 			}
 		}
 

@@ -33,13 +33,16 @@ class WVC_Widget_Mailchimp extends WP_Widget {
 	public function __construct() {
 
 		/* Widget variable settings. */
-		$this->wvc_widget_name 	= 'Mailchimp';
+		$this->wvc_widget_name        = 'Mailchimp';
 		$this->wvc_widget_description = esc_html__( 'Newsletter signup form', 'wolf-visual-composer' );
-		$this->wvc_widget_cssclass 	= 'widget_mailchimp';
-		$this->wvc_widget_idbase 	= 'widget_mailchimp';
+		$this->wvc_widget_cssclass    = 'widget_mailchimp';
+		$this->wvc_widget_idbase      = 'widget_mailchimp';
 
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => $this->wvc_widget_cssclass, 'description' => $this->wvc_widget_description );
+		$widget_ops = array(
+			'classname'   => $this->wvc_widget_cssclass,
+			'description' => $this->wvc_widget_description,
+		);
 
 		/* Create the widget. */
 		parent::__construct( $this->wvc_widget_idbase, $this->wvc_widget_name, $widget_ops );
@@ -56,22 +59,26 @@ class WVC_Widget_Mailchimp extends WP_Widget {
 		wp_enqueue_script( 'wpb-mailchimp', WVC_JS . '/min/mailchimp.min.js', array( 'jquery' ), WVC_VERSION, true );
 		// add JS global variables
 		wp_localize_script(
-			'wpb-mailchimp', 'WPBMailchimpParams', array(
+			'wpb-mailchimp',
+			'WPBMailchimpParams',
+			array(
 				'ajaxUrl' => esc_url( admin_url( 'admin-ajax.php' ) ),
 			)
 		);
 		extract( $args );
 
-		$title = ( isset( $instance['title'] ) ) ? sanitize_text_field( $instance['title'] ) : '';
-		$title = apply_filters( 'widget_title', $title );
-		$description = ( isset( $instance['description'] ) ) ? sanitize_text_field( $instance['description'] ) : '';
-		$list = ( isset( $instance['list'] ) ) ? esc_attr( $instance['list'] ) : null;
-		$show_bg = ( isset( $instance['show_bg'] ) ) ? esc_attr( $instance['show_bg'] ) : 'yes';
-		$show_label = ( isset( $instance['show_label'] ) ) ? esc_attr( $instance['show_label'] ) : 'yes';
-		$size = ( isset( $instance['size'] ) ) ? esc_attr( $instance['size'] ) : 'large';
+		$title           = ( isset( $instance['title'] ) ) ? sanitize_text_field( $instance['title'] ) : '';
+		$title           = apply_filters( 'widget_title', $title );
+		$description     = ( isset( $instance['description'] ) ) ? sanitize_text_field( $instance['description'] ) : '';
+		$list            = ( isset( $instance['list'] ) ) ? esc_attr( $instance['list'] ) : null;
+		$show_bg         = ( isset( $instance['show_bg'] ) ) ? esc_attr( $instance['show_bg'] ) : 'yes';
+		$show_label      = ( isset( $instance['show_label'] ) ) ? esc_attr( $instance['show_label'] ) : 'yes';
+		$size            = ( isset( $instance['size'] ) ) ? esc_attr( $instance['size'] ) : 'large';
 		$text_alignement = ( isset( $instance['text_alignement'] ) ) ? esc_attr( $instance['text_alignement'] ) : 'center';
 		echo $before_widget;
-		if ( ! empty( $title ) ) echo $before_title . $title . $after_title;
+		if ( ! empty( $title ) ) {
+			echo $before_title . $title . $after_title;
+		}
 
 		if ( ! empty( $description ) ) {
 			echo '<p>';
@@ -79,13 +86,15 @@ class WVC_Widget_Mailchimp extends WP_Widget {
 			echo '</p>';
 		}
 
-		echo wvc_mailchimp( array(
-			'list' => $list,
-			'show_bg' => $show_bg,
-			'show_label' => $show_label,
-			'size' => $size,
-			'text_alignement' => $text_alignement,
-		) );
+		echo wvc_mailchimp(
+			array(
+				'list'            => $list,
+				'show_bg'         => $show_bg,
+				'show_label'      => $show_label,
+				'size'            => $size,
+				'text_alignement' => $text_alignement,
+			)
+		);
 		echo $after_widget;
 	}
 
@@ -99,13 +108,13 @@ class WVC_Widget_Mailchimp extends WP_Widget {
 	 */
 	function update( $new_instance, $old_instance ) {
 
-		$instance = $old_instance;
-		$instance['title'] = esc_attr( $new_instance['title'] );
-		$instance['description'] = esc_attr( $new_instance['description'] );
-		$instance['list'] = esc_attr( $new_instance['list'] );
-		$instance['size'] = esc_attr( $new_instance['size'] );
-		$instance['show_bg'] = esc_attr( $new_instance['show_bg'] );
-		$instance['show_label'] = esc_attr( $new_instance['show_label'] );
+		$instance                    = $old_instance;
+		$instance['title']           = esc_attr( $new_instance['title'] );
+		$instance['description']     = esc_attr( $new_instance['description'] );
+		$instance['list']            = esc_attr( $new_instance['list'] );
+		$instance['size']            = esc_attr( $new_instance['size'] );
+		$instance['show_bg']         = esc_attr( $new_instance['show_bg'] );
+		$instance['show_label']      = esc_attr( $new_instance['show_label'] );
 		$instance['text_alignement'] = esc_attr( $new_instance['text_alignement'] );
 		return $instance;
 	}
@@ -120,15 +129,15 @@ class WVC_Widget_Mailchimp extends WP_Widget {
 
 		// Set up some default widget settings
 		$defaults = array(
-			'title' => '',
-			'description' => '',
-			'list' => wolf_vc_get_option( 'mailchimp', 'default_mailchimp_list_id' ),
-			'size' => 'large',
-			'show_bg' => 'yes',
-			'show_label' => 'yes',
+			'title'           => '',
+			'description'     => '',
+			'list'            => apply_filters( 'wvc_default_mailchimp_list_id', wolf_vc_get_option( 'mailchimp', 'default_mailchimp_list_id' ) ),
+			'size'            => 'large',
+			'show_bg'         => 'yes',
+			'show_label'      => 'yes',
 			'text_alignement' => 'center',
 		);
-		$instance = wp_parse_args( ( array ) $instance, $defaults);
+		$instance = wp_parse_args( (array) $instance, $defaults );
 		?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'wolf-visual-composer' ); ?>:</label>

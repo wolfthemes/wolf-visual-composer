@@ -15,14 +15,15 @@ defined( 'ABSPATH' ) || exit;
  *
  * Stores the result in user meta
  *
- * @param string
- * @param object
+ * @param string $user_login Username.
+ * @param object $user user object.
+ * @return void
  */
 function wvc_get_subscriber_mailchimp_status( $user_login, $user ) {
 
-	$api_key = wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' );
-	$list_id = wolf_vc_get_option( 'mailchimp', 'default_mailchimp_list_id' );
-	$us = null;
+	$api_key = apply_filters( 'wvc_mailchimp_api_key', wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' ) );
+	$list_id = apply_filters( 'wvc_default_mailchimp_list_id', wolf_vc_get_option( 'mailchimp', 'default_mailchimp_list_id' ) );
+	$us      = null;
 
 	if ( ! $api_key ) {
 		return;
@@ -42,41 +43,41 @@ function wvc_get_subscriber_mailchimp_status( $user_login, $user ) {
 		return;
 	}
 
-	$args = array(
-		'headers'     => array(
-			'Authorization' => 'Basic ' . base64_encode( 'user:' . $api_key ),
+	$args          = array(
+		'headers' => array(
+			'Authorization'               => 'Basic ' . base64_encode( 'user:' . $api_key ),
 			'Access-Control-Allow-Origin' => '*',
 		),
 	);
 	$email_address = $user->user_email;
-	
+
 	$email_formatted = md5( strtolower( $email_address ) );
-	
-	$response = wp_remote_get( 'https://'. $us  .'.api.mailchimp.com/3.0/lists/'. $list_id .'/members/' . $email_formatted, $args );
-	
+
+	$response = wp_remote_get( 'https://' . $us . '.api.mailchimp.com/3.0/lists/' . $list_id . '/members/' . $email_formatted, $args );
+
 	if ( is_array( $response ) ) {
 
 		$body = json_decode( wp_remote_retrieve_body( $response ) );
-		
+
 		if ( $body && isset( $body->status ) ) {
 
 			$mailchimp_status = $body->status;
 
 			if ( $mailchimp_status == 'subscribed' ) {
-				
+
 				update_user_meta( $user->ID, 'user_mc_subscriber_status', 'yes' );
-			
+
 			} else {
-				
+
 				update_user_meta( $user->ID, 'user_mc_subscriber_status', 'no' );
-			}		
+			}
 		}
 	}
 }
 add_action( 'wp_login', 'wvc_get_subscriber_mailchimp_status', 10, 2 );
 
 
-function wvc_current_user_has_role( $role ){
+function wvc_current_user_has_role( $role ) {
 	return wvc_user_has_role_by_user_id( get_current_user_id(), $role );
 }
 
