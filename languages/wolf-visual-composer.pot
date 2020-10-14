@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.4.5\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.4.6\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-10-12 14:14:47+00:00\n"
+"POT-Creation-Date: 2020-10-14 15:53:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,7 +67,7 @@ msgid "Need more social services? Send us an email! %s"
 msgstr ""
 
 #: inc/admin/admin-options.php:83 inc/elements/gmaps.php:16
-#: inc/elements/google-maps.php:16
+#: inc/elements/google-maps.php:17
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:16
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:16
 msgid "Google Maps"
@@ -250,7 +250,7 @@ msgid "Modal Window Type"
 msgstr ""
 
 #: inc/admin/admin-options.php:242 inc/elements/gmaps.php:50
-#: inc/elements/google-maps.php:74 inc/elements/last-posts.php:112
+#: inc/elements/google-maps.php:84 inc/elements/last-posts.php:112
 #: inc/elements/team-member.php:49 inc/elements/testimonials.php:54
 #: inc/params/button-params.php:115
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:236
@@ -655,7 +655,7 @@ msgstr ""
 #: inc/admin/class-options.php:251 inc/elements/advanced-slide.php:279
 #: inc/elements/advanced-slide.php:287 inc/elements/audio.php:32
 #: inc/elements/banner-product.php:46 inc/elements/banner.php:63
-#: inc/elements/google-maps.php:122 inc/elements/image-link.php:24
+#: inc/elements/google-maps.php:135 inc/elements/image-link.php:24
 #: inc/elements/interactive-link-item.php:30
 #: inc/elements/interactive-link-item.php:80
 #: inc/elements/interactive-overlay-item.php:41 inc/elements/item-price.php:76
@@ -2434,7 +2434,7 @@ msgstr ""
 #: inc/elements/column-inner.php:87 inc/elements/column.php:49
 #: inc/elements/column.php:61 inc/elements/column.php:80
 #: inc/elements/column.php:88 inc/elements/countdown.php:50
-#: inc/elements/google-maps.php:86 inc/elements/row-inner.php:62
+#: inc/elements/google-maps.php:96 inc/elements/row-inner.php:62
 #: inc/elements/row-inner.php:74 inc/elements/row-inner.php:93
 #: inc/elements/row-inner.php:101 inc/elements/row.php:175
 #: inc/elements/row.php:187 inc/elements/row.php:206 inc/elements/row.php:214
@@ -2545,8 +2545,8 @@ msgstr ""
 msgid "Count"
 msgstr ""
 
-#: inc/core-functions.php:571 inc/elements/google-maps.php:38
-#: inc/elements/google-maps.php:46 inc/elements/meal-item.php:23
+#: inc/core-functions.php:571 inc/elements/google-maps.php:41
+#: inc/elements/google-maps.php:51 inc/elements/meal-item.php:23
 #: inc/elements/team-member.php:119
 #: inc/elements/workout-program-exercice.php:23
 #: pack/wolf-visual-composer/inc/core-functions.php:565
@@ -2669,7 +2669,7 @@ msgstr ""
 #: inc/elements/accordion-tab.php:61 inc/elements/countdown.php:96
 #: inc/elements/countdown.php:120 inc/elements/counter.php:138
 #: inc/elements/counter.php:166 inc/elements/counter.php:194
-#: inc/elements/gmaps.php:69 inc/elements/google-maps.php:137
+#: inc/elements/gmaps.php:69 inc/elements/google-maps.php:150
 #: inc/elements/list.php:69 inc/elements/social-icons-custom.php:79
 #: inc/elements/social-icons-custom.php:109 inc/elements/social-icons.php:86
 #: inc/elements/social-icons.php:116 inc/params/bigtext-params.php:44
@@ -2705,7 +2705,7 @@ msgstr ""
 #: inc/elements/column.php:46 inc/elements/countdown.php:98
 #: inc/elements/countdown.php:122 inc/elements/counter.php:141
 #: inc/elements/counter.php:169 inc/elements/counter.php:197
-#: inc/elements/gmaps.php:71 inc/elements/google-maps.php:139
+#: inc/elements/gmaps.php:71 inc/elements/google-maps.php:152
 #: inc/elements/hoverbox.php:104 inc/elements/list.php:73
 #: inc/elements/list.php:82 inc/elements/pie.php:25 inc/elements/pie.php:75
 #: inc/elements/process-item.php:119 inc/elements/progress-bar.php:72
@@ -2834,7 +2834,7 @@ msgstr ""
 #: inc/elements/countdown.php:19 inc/elements/counter.php:40
 #: inc/elements/cta.php:34 inc/elements/discography.php:23
 #: inc/elements/discography.php:63 inc/elements/events.php:22
-#: inc/elements/gmaps.php:19 inc/elements/google-maps.php:19
+#: inc/elements/gmaps.php:19 inc/elements/google-maps.php:20
 #: inc/elements/hours.php:19 inc/elements/info-table.php:20
 #: inc/elements/interactive-link-item.php:62
 #: inc/elements/interactive-links.php:22
@@ -3041,7 +3041,7 @@ msgstr ""
 #: inc/elements/bandsintown-tracking-button.php:57
 #: inc/elements/bandsintown-tracking-button.php:81
 #: inc/elements/breadcrumb.php:63 inc/elements/cta.php:94
-#: inc/elements/google-maps.php:114 inc/elements/interactive-links.php:89
+#: inc/elements/google-maps.php:127 inc/elements/interactive-links.php:89
 #: inc/elements/interactive-overlays.php:86 inc/elements/process-item.php:117
 #: inc/elements/progress-bar.php:69 inc/elements/separator.php:85
 #: inc/elements/service-table.php:100 inc/elements/service-table.php:132
@@ -3331,7 +3331,7 @@ msgstr ""
 #: inc/elements/advanced-slide.php:266 inc/elements/column-inner.php:28
 #: inc/elements/column.php:28 inc/elements/gallery.php:244
 #: inc/elements/gallery.php:256 inc/elements/gmaps.php:51
-#: inc/elements/google-maps.php:76 inc/elements/instagram-gallery.php:187
+#: inc/elements/google-maps.php:86 inc/elements/instagram-gallery.php:187
 #: inc/elements/instagram-gallery.php:199 inc/elements/playlist.php:64
 #: inc/elements/row-inner.php:42 inc/elements/row.php:85
 #: inc/elements/row.php:255 inc/elements/wc-categories.php:108
@@ -3360,7 +3360,7 @@ msgstr ""
 #: inc/elements/advanced-slide.php:267 inc/elements/column-inner.php:29
 #: inc/elements/column.php:29 inc/elements/gallery.php:245
 #: inc/elements/gallery.php:257 inc/elements/gmaps.php:53
-#: inc/elements/google-maps.php:78 inc/elements/instagram-gallery.php:188
+#: inc/elements/google-maps.php:88 inc/elements/instagram-gallery.php:188
 #: inc/elements/instagram-gallery.php:200 inc/elements/playlist.php:63
 #: inc/elements/row-inner.php:41 inc/elements/row.php:86
 #: inc/elements/row.php:254 inc/elements/wc-categories.php:107
@@ -3740,7 +3740,7 @@ msgid "Cover Image"
 msgstr ""
 
 #: inc/elements/album-disc.php:48 inc/elements/banner-gallery.php:76
-#: inc/elements/banner.php:66 inc/elements/google-maps.php:125
+#: inc/elements/banner.php:66 inc/elements/google-maps.php:138
 #: inc/elements/single-image.php:35
 #: pack/wolf-visual-composer/inc/elements/album-disc.php:48
 #: pack/wolf-visual-composer/inc/elements/banner-gallery.php:76
@@ -5738,7 +5738,7 @@ msgstr ""
 msgid "Navigation Dots Tone"
 msgstr ""
 
-#: inc/elements/gmaps.php:20 inc/elements/google-maps.php:20
+#: inc/elements/gmaps.php:20 inc/elements/google-maps.php:21
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:20
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:20
 msgid "Map block"
@@ -5764,7 +5764,7 @@ msgstr ""
 msgid "Coordinates (Latitude, Longitude)"
 msgstr ""
 
-#: inc/elements/gmaps.php:37 inc/elements/google-maps.php:58
+#: inc/elements/gmaps.php:37 inc/elements/google-maps.php:63
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:37
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:58
 msgid ""
@@ -5774,7 +5774,7 @@ msgid ""
 "in the field with the \"comma\" sign."
 msgstr ""
 
-#: inc/elements/gmaps.php:47 inc/elements/google-maps.php:71
+#: inc/elements/gmaps.php:47 inc/elements/google-maps.php:81
 #: inc/elements/playlist.php:60
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:47
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:71
@@ -5782,129 +5782,129 @@ msgstr ""
 msgid "Skin"
 msgstr ""
 
-#: inc/elements/gmaps.php:52 inc/elements/google-maps.php:77
+#: inc/elements/gmaps.php:52 inc/elements/google-maps.php:87
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:52
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:77
 msgid "Retro"
 msgstr ""
 
-#: inc/elements/gmaps.php:54 inc/elements/google-maps.php:79
+#: inc/elements/gmaps.php:54 inc/elements/google-maps.php:89
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:54
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:79
 msgid "Night"
 msgstr ""
 
-#: inc/elements/gmaps.php:55 inc/elements/google-maps.php:80
+#: inc/elements/gmaps.php:55 inc/elements/google-maps.php:90
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:55
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:80
 msgid "Aubergine"
 msgstr ""
 
-#: inc/elements/gmaps.php:56 inc/elements/google-maps.php:81
+#: inc/elements/gmaps.php:56 inc/elements/google-maps.php:91
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:56
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:81
 msgid "Ultra Light with Labels"
 msgstr ""
 
-#: inc/elements/gmaps.php:57 inc/elements/google-maps.php:82
+#: inc/elements/gmaps.php:57 inc/elements/google-maps.php:92
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:57
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:82
 msgid "Shades of Grey"
 msgstr ""
 
-#: inc/elements/gmaps.php:58 inc/elements/google-maps.php:83
+#: inc/elements/gmaps.php:58 inc/elements/google-maps.php:93
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:58
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:83
 msgid "Cool Grey"
 msgstr ""
 
-#: inc/elements/gmaps.php:59 inc/elements/google-maps.php:84
+#: inc/elements/gmaps.php:59 inc/elements/google-maps.php:94
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:59
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:84
 msgid "Pale Dawn"
 msgstr ""
 
-#: inc/elements/gmaps.php:66 inc/elements/google-maps.php:134
+#: inc/elements/gmaps.php:66 inc/elements/google-maps.php:147
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:66
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:134
 msgid "Marker Color"
 msgstr ""
 
-#: inc/elements/gmaps.php:74 inc/elements/google-maps.php:142
+#: inc/elements/gmaps.php:74 inc/elements/google-maps.php:155
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:74
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:142
 msgid "Select a marker color."
 msgstr ""
 
-#: inc/elements/gmaps.php:80 inc/elements/google-maps.php:152
+#: inc/elements/gmaps.php:80 inc/elements/google-maps.php:165
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:80
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:152
 msgid "Marker Custom Color"
 msgstr ""
 
-#: inc/elements/gmaps.php:90 inc/elements/google-maps.php:162
+#: inc/elements/gmaps.php:90 inc/elements/google-maps.php:175
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:90
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:162
 msgid "Map height"
 msgstr ""
 
-#: inc/elements/gmaps.php:98 inc/elements/google-maps.php:170
+#: inc/elements/gmaps.php:98 inc/elements/google-maps.php:183
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:98
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:170
 msgid "Address"
 msgstr ""
 
-#: inc/elements/gmaps.php:100 inc/elements/google-maps.php:172
+#: inc/elements/gmaps.php:100 inc/elements/google-maps.php:185
 #: pack/wolf-visual-composer/inc/elements/gmaps.php:100
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:172
 msgid "Insert the address here if you want it to be display below the map."
 msgstr ""
 
-#: inc/elements/google-maps.php:33
+#: inc/elements/google-maps.php:34
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:33
 msgid "Locations"
 msgstr ""
 
-#: inc/elements/google-maps.php:39 inc/elements/google-maps.php:53
+#: inc/elements/google-maps.php:42 inc/elements/google-maps.php:58
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:39
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:53
 msgid "Coordinates"
 msgstr ""
 
-#: inc/elements/google-maps.php:48
+#: inc/elements/google-maps.php:53
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:48
 msgid "Enter text the location name."
 msgstr ""
 
-#: inc/elements/google-maps.php:85
+#: inc/elements/google-maps.php:95
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:85
 msgid "Medium Green"
 msgstr ""
 
-#: inc/elements/google-maps.php:93
+#: inc/elements/google-maps.php:103
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:93
 msgid "Custom code"
 msgstr ""
 
-#: inc/elements/google-maps.php:95
+#: inc/elements/google-maps.php:105
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:95
 msgid ""
 "You can get a custom code from <a href=\"%s\" "
 "target=\"_blank\">https://snazzymaps.com</a> and paste it here"
 msgstr ""
 
-#: inc/elements/google-maps.php:101 inc/params/background-params.php:135
+#: inc/elements/google-maps.php:114 inc/params/background-params.php:135
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:101
 #: pack/wolf-visual-composer/inc/params/background-params.php:135
 msgid "Zoom"
 msgstr ""
 
-#: inc/elements/google-maps.php:111
+#: inc/elements/google-maps.php:124
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:111
 msgid "Marker"
 msgstr ""
 
-#: inc/elements/google-maps.php:115 inc/params/row-params.php:280
+#: inc/elements/google-maps.php:128 inc/params/row-params.php:280
 #: inc/params/row-params.php:472
 #: pack/wolf-visual-composer/inc/elements/google-maps.php:115
 #: pack/wolf-visual-composer/inc/params/row-params.php:280
