@@ -237,8 +237,8 @@ function wvc_register_scripts() {
 	wp_register_script( 'wvc-vimeo', WVC_JS . $folder . '/vimeo' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-functions', WVC_JS . $folder . '/functions' . $suffix . '.js', array( 'jquery' ), $version, true );
 
-	wp_enqueue_script( 'wvc-wavesurfer', WVC_LIB . '/wavesurfer/wavesurfer.js', array(), '3.3.3', false );
-	wp_enqueue_script( 'wvc-wavesurfer-regions', WVC_LIB . '/wavesurfer/wavesurfer.regions.js', array(), '3.3.3', false );
+	//wp_enqueue_script( 'wvc-wavesurfer', WVC_LIB . '/wavesurfer/wavesurfer.js', array(), '3.3.3', false );
+	//wp_enqueue_script( 'wvc-wavesurfer-regions', WVC_LIB . '/wavesurfer/wavesurfer.regions.js', array(), '3.3.3', false );
 }
 add_action( 'wp_enqueue_scripts', 'wvc_register_scripts' );
 
