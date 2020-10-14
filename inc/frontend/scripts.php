@@ -78,7 +78,7 @@ function wvc_register_scripts() {
 	$folder  = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '/min';
 	$suffix  = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
-	// Don't serve minified JS files if Autoptimize plugin is activated
+	// Don't serve minified JS files if Autoptimize plugin is activated.
 	if ( defined( 'AUTOPTIMIZE_PLUGIN_DIR' ) ) {
 		$suffix = '';
 		$folder = '';
@@ -87,49 +87,49 @@ function wvc_register_scripts() {
 	/* Lightbox */
 	wp_register_script( 'swipebox', WVC_JS . '/lib/jquery.swipebox.min.js', array( 'jquery' ), '1.2.9', true );
 
-	// Parallax background
+	// Parallax background.
 	wp_register_script( 'jarallax', WVC_JS . '/lib/jarallax/jarallax.min.js', array(), '1.10.6', false );
 	wp_register_script( 'jarallax-video', WVC_JS . '/lib/jarallax/jarallax-video.min.js', array(), '1.0.1', false );
 
-	// Parallax element
+	// Parallax element.
 	wp_register_script( 'parallax-scroll', WVC_JS . '/lib/jquery.parallax-scroll.min.js', array( 'jquery' ), '1.0.0b', true );
 
-	// Lazyload
+	// Lazyload.
 	wp_register_script( 'lazyloadxt', WVC_JS . '/lib/jquery.lazyloadxt.min.js', array( 'jquery' ), '1.1.0', true );
 
-	// BigText
+	// BigText.
 	wp_register_script( 'bigtext', WVC_JS . '/lib/jquery.bigtext.min.js', array( 'jquery' ), '1.0.0', true );
 
-	// Waypoint
+	// Waypoint.
 	wp_deregister_script( 'waypoints' ); // deregister waypoints from VC.
 	wp_register_script( 'waypoints', WVC_JS . '/lib/jquery.waypoints.min.js', array( 'jquery' ), '1.6.2', true );
 
-	// Froogaloop
+	// Froogaloop.
 	wp_register_script( 'froogaloop', WVC_JS . '/lib/froogaloop.js', array( 'jquery' ), '1.6.2', true ); // deprecated.
 
-	// Vimeo
+	// Vimeo.
 	wp_register_script( 'vimeo-player', WVC_JS . '/lib/player.min.js', array(), '2.6.1', true );
 
-	// Easypiechart
+	// Easypiechart.
 	wp_deregister_script( 'vc_pie' ); // deregister vc_pie from VC.
 	wp_register_script( 'easypiechart', WVC_JS . '/lib/jquery.easypiechart.min.js', array( 'jquery' ), '2.1.7', true );
 
-	// Flex images
+	// Flex images.
 	wp_register_script( 'flex-images', WVC_JS . '/lib/jquery.flex-images.min.js', array( 'jquery' ), '1.0.4', true );
 
-	// ImagesLoaded
+	// ImagesLoaded.
 	wp_register_script( 'imagesloaded', WVC_JS . '/assets/js/lib/imagesloaded.pkgd.min.js', array( 'jquery' ), '4.1.4', true );
 
-	// Sticky elements
+	// Sticky elements.
 	wp_register_script( 'sticky-kit', WVC_JS . '/lib/sticky-kit.min.js', array( 'jquery' ), '1.1.2', true );
 
-	// Mousewheel
+	// Mousewheel.
 	wp_register_script( 'mousewheel', WVC_JS . '/lib/jquery.mousewheel.min.js', array( 'jquery' ), '3.1.13', true );
 
-	// InView
+	// InView.
 	wp_register_script( 'inview', WVC_JS . '/lib/jquery.inview.min.js', array( 'jquery' ), '1.1.2', true );
 
-	// Visible
+	// Visible.
 	// wp_register_script( 'visible', WVC_JS . '/lib/jquery.visible.min.js', array( 'jquery' ), '1.3.0', true );
 
 	/* Full Page */
@@ -143,13 +143,13 @@ function wvc_register_scripts() {
 	/* Print */
 	wp_register_script( 'print', WVC_JS . '/lib/jQuery.print.min.js', array(), '1.6.0', true );
 
-	// Concat and minifed libraries for theme that use AJAX
+	// Concat and minifed libraries for theme that use AJAX.
 	wp_register_script( 'wvc-lib-min', WVC_JS . '/min/lib.min.js', array( 'jquery' ), WVC_VERSION, true );
 
-	// Concat and minifed scripts for theme that use AJAX
+	// Concat and minifed scripts for theme that use AJAX.
 	wp_register_script( 'wvc-scripts', WVC_JS . '/min/scripts.min.js', array( 'jquery' ), WVC_VERSION, true );
 
-	// Polyfill for Edge to support object-fit for images
+	// Polyfill for Edge to support object-fit for images.
 	wp_register_script( 'object-fit-images', WVC_JS . '/lib/ofi.min.js', array(), '3.2.3', true );
 
 	/*
@@ -176,10 +176,10 @@ function wvc_register_scripts() {
 
 	wp_register_script( 'packery-mode', WVC_JS . '/lib/packery-mode.pkgd.min.js', array( 'jquery', 'isotope' ), '2.0.1', true );
 
-	// JS Cookies
+	// JS Cookies.
 	wp_register_script( 'js-cookie', WVC_JS . '/lib/js.cookie.min.js', array( 'jquery' ), '2.1.4', true );
 
-	// Register scripts that can be enqueued conditionally
+	// Register scripts that can be enqueued conditionally.
 	wp_register_script( 'wvc-responsive', WVC_JS . $folder . '/responsive' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-accordion', WVC_JS . $folder . '/accordion' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-advanced-slider', WVC_JS . $folder . '/advanced-slider' . $suffix . '.js', array( 'jquery' ), $version, true );
@@ -214,25 +214,25 @@ function wvc_register_scripts() {
 	wp_register_script( 'wvc-modal-window', WVC_JS . $folder . '/modal-window' . $suffix . '.js', array( 'jquery', 'js-cookie' ), $version, true );
 	wp_register_script( 'wvc-privacy-policy-message', WVC_JS . $folder . '/privacy-policy-message' . $suffix . '.js', array( 'jquery', 'js-cookie' ), $version, true );
 
-	// Pie charts
+	// Pie charts.
 	wp_register_script( 'wvc-pie', WVC_JS . $folder . '/pie' . $suffix . '.js', array( 'jquery' ), $version, true );
 
-	// Interactive Links
+	// Interactive Links.
 	wp_register_script( 'wvc-interactive-links', WVC_JS . $folder . '/interactive-links' . $suffix . '.js', array( 'jquery' ), $version, true );
 
-	// Interactive Overlays
+	// Interactive Overlays.
 	wp_register_script( 'wvc-interactive-overlays', WVC_JS . $folder . '/interactive-overlays' . $suffix . '.js', array( 'jquery' ), $version, true );
 
-	// Video Switcher
+	// Video Switcher.
 	wp_register_script( 'wvc-video-switcher', WVC_JS . $folder . '/video-switcher' . $suffix . '.js', array( 'jquery' ), $version, true );
 
-	// Showcase vertical carousel
+	// Showcase vertical carousel.
 	wp_register_script( 'wvc-showcase-vertical-carousel', WVC_JS . $folder . '/showcase-vertical-carousel' . $suffix . '.js', array( 'jquery' ), $version, true );
 
-	// Print
+	// Print.
 	wp_register_script( 'wvc-print', WVC_JS . $folder . '/print' . $suffix . '.js', array( 'jquery', 'print' ), $version, true );
 
-	// Plugin scripts
+	// Plugin scripts.
 	wp_register_script( 'wvc-youtube-video-bg', WVC_JS . $folder . '/YT-video-bg' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-vimeo', WVC_JS . $folder . '/vimeo' . $suffix . '.js', array( 'jquery' ), $version, true );
 	wp_register_script( 'wvc-functions', WVC_JS . $folder . '/functions' . $suffix . '.js', array( 'jquery' ), $version, true );
