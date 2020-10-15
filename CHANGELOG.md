@@ -1,7 +1,8 @@
 # Changelog
 
-#### 15th October 2020 - Version 3.4.6
+#### 15th October 2020 - Version 3.4.7
 
+-   Fix: CSS min file
 -   Tweak: Clean up
 -   Tweak: Added Mailchimp API key and default list ID filters
 
