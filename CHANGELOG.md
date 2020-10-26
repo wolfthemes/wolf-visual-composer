@@ -1,5 +1,9 @@
 # Changelog
 
+#### 26th October 2020 - Version 3.4.8
+
+-   Fix: Column selfhosted video background in animated panel
+
 #### 15th October 2020 - Version 3.4.7
 
 -   Fix: CSS min file
