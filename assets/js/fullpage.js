@@ -1,7 +1,7 @@
 /*!
  * FullPage
  *
- * WPBakery Page Builder Extension 3.2.8 
+ * WPBakery Page Builder Extension 3.2.8
  */
 /* jshint -W062 */
 
@@ -47,7 +47,7 @@ var WVCFullPage = function( $ ) {
 		 * Prepare markup
 		 */
 		prepare : function() {
-			
+
 			setTimeout( function() {
 				window.scrollTo( 0, 0 );
 			}, 10 );
@@ -59,7 +59,7 @@ var WVCFullPage = function( $ ) {
 
 			/* Set row class and data */
 			$( this.rowSelector, this.$container ).each( function( index ) {
-				
+
 				var sectionName = $( this ).data( 'row-name' ) || 'Section ' + ( index + 1 );
 				_this.sectionNames.push( sectionName );
 
@@ -73,7 +73,7 @@ var WVCFullPage = function( $ ) {
 			} );
 
 			WVC.delayWow( this.rowSelector );
-			
+
 			//WVC.doAOS();
 			WVC.resetAOS();
 		},
@@ -82,7 +82,7 @@ var WVCFullPage = function( $ ) {
 		 * fullPage
 		 */
 		fullPage : function () {
-			
+
 			var _this = this,
 				$container = this.$container,
 				scrollBar = false,
@@ -101,7 +101,7 @@ var WVCFullPage = function( $ ) {
 				verticalCentered: true,
 				//anchors: noHistory ? false : _this.sectionNames,
 				//recordHistory: ! noHistory,
-				
+
 				afterRender: function() {
 
 					$( '.wvc-scroll-lock.active' ).addClass( 'wvc-scroll-active' );
@@ -127,7 +127,7 @@ var WVCFullPage = function( $ ) {
 
 					/* Move to section if a hash is found in the URL */
 					setTimeout( function() {
-						
+
 						hash = window.location.hash;
 
 						if ( '' !== hash ) {
@@ -144,13 +144,13 @@ var WVCFullPage = function( $ ) {
 
 					}, 1000 );
 				},
-				
+
 				onLeave: function( index, nextIndex, direction ) {
 
 					if ( WVCFullPage.isScrolling ) {
 						return false;
 					}
-					
+
 					WVCFullPage.isScrolling = true;
 
 					//var event = new CustomEvent( 'fp-slide-leave' );
@@ -160,7 +160,7 @@ var WVCFullPage = function( $ ) {
 					WVCFullPage.slideLeaveAnimation( index, nextIndex, direction );
 
 					if ( $( '.wvc-scroll-lock', this.$container ).eq( nextIndex + 1 ).hasClass( 'hidden-scroll' ) ) {
-						
+
 						if ( 'up' === direction ) {
 							$.fn.fullpage.moveTo( nextIndex - 1 );
 						} else {
@@ -184,7 +184,7 @@ var WVCFullPage = function( $ ) {
 				index;
 
 			$( document ).on( 'click', '.wvc-fp-nav-next, .wvc-arrow-down', function( event ) {
-				
+
 				event.preventDefault();
 
 				if ( _this.isScrolling ) {
@@ -207,13 +207,13 @@ var WVCFullPage = function( $ ) {
 				toIndex;
 
 			$( document ).on( 'click', '.wvc-fp-nav', function( event ) {
-				
+
 				event.preventDefault();
 
 				if ( _this.isScrolling ) {
 					return;
 				}
-				
+
 				href = $( this ).attr( 'href' ),
 					toIndex = $( '.fp-section' ).index( $( href ) );
 
@@ -227,20 +227,25 @@ var WVCFullPage = function( $ ) {
 		playActiveVideoBg : function( $container ) {
 
 			$container = $container || $( '.wvc-scroll-active' );
-			
+
 			var video, YTPlayerId, VimeoPlayerId, vimeoPlayer;
 
 			/* HTML video */
 			if ( $container.find( '.wvc-video-bg' ).length ) {
-				video = $container.find( '.wvc-video-bg' ).get(0);
 
-				if ( video.paused ) {
-					video.play();
-				}
-			
+				setTimeout( function() {
+
+					video = $container.find( '.wvc-video-bg' ).get(0);
+
+					if ( video.paused ) {
+						video.play();
+					}
+
+				}, 200 );
+
 			/* YT video */
 			} else if ( $container.find( '.wvc-youtube-player' ).length ) {
-				
+
 				setTimeout( function() {
 					$container.find( '.wvc-youtube-player' )[0].contentWindow.postMessage( '{"event":"command","func":"' + 'playVideo' + '", "args":""}', '*' );
 				}, 200 );
@@ -275,19 +280,19 @@ var WVCFullPage = function( $ ) {
 			// effect = fade|slide|zoom|parallax|curtain
 
 			if ( 'zoom' === this.fpTransitionEffect || 'mix' === this.fpTransitionEffect ) {
-			
+
 				effect = 'scaleDown';
-			
+
 			} else if ( 'parallax' === this.fpTransitionEffect ) {
-				
+
 				effect = 'moveparallax';
 
 			} else if ( 'fade' === this.fpTransitionEffect ) {
-				
+
 				effect = 'opacity';
-			
+
 			} else if ( 'slide' === this.fpTransitionEffect ) {
-				
+
 				effect = 'moveslide';
 
 			} else if ( 'curtain' === this.fpTransitionEffect ) {
@@ -310,13 +315,13 @@ var WVCFullPage = function( $ ) {
 			}
 
 			if ( 'zoom' === this.fpTransitionEffect ) {
-				
+
 				animOut = animIn + 'trid';
 				animIn = animOut + 'In';
 				animTime = animTime * 2;
-			
+
 			} else if ( 'fade' === this.fpTransitionEffect ) {
-				
+
 				animIn = effect + 'In';
 				animOut = effect + 'Out';
 			}
@@ -341,7 +346,7 @@ var WVCFullPage = function( $ ) {
 
 			//console.log( animIn );
 			//console.log( animOut );
-		
+
 			$nextSlide
 				.addClass( 'wvc-scroll-front' )
 				.addClass( 'wvc-scroll-active' )
@@ -408,10 +413,10 @@ var WVCFullPage = function( $ ) {
 					'will-change': 'auto'
 				} ).off( animationEnd )
 				.on( animationEnd, function( event ) {
-					
+
 					/* Hide Revslider */
 					$currentSlide.find( '.wvc-revslider-container' ).hide();
-					
+
 					if ( event.originalEvent.animationName === animOut ) {
 						$currentSlide.removeClass( 'wvc-scroll-animating-out' );
 					}
@@ -427,7 +432,7 @@ var WVCFullPage = function( $ ) {
 		 * Start revolution slider or redraw it if already started
 		 */
 		handleRevSlider : function ( $container ) {
-			
+
 			$container = $container || $( '.wvc-scroll-active' );
 
 			if ( $container.find( '.wvc-slider-revolution' ).length ) {
@@ -447,7 +452,7 @@ var WVCFullPage = function( $ ) {
 				} else {
 
 					console.log( 'redraw' );
-					
+
 					window['revapi' + revSliderId].revredraw();
 				}
 			}
@@ -505,18 +510,18 @@ var WVCFullPage = function( $ ) {
 			WVC.doWow();
 			Waypoint.refreshAll();
 			WVC.doAOS();
-			
+
 			event = new CustomEvent( 'fp-animation-end' );
 			window.dispatchEvent(event);
-			
+
 			clearTimeout( _this.animationEndTimeOut );
 
 			if ( $currentSlide.find( '.wvc-ad-disc-container' ).length ) {
 				$currentSlide.find( '.wvc-ad-disc-container' ).removeClass( 'animated' );
 			}
-			
+
 			_this.animationEndTimeOut = setTimeout( function() {
-				
+
 				_this.isScrolling = false;
 				$( window ).trigger( 'wvc_fullpage_changed' );
 
