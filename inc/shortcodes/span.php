@@ -14,18 +14,23 @@ if ( ! function_exists( 'wvc_shortcode_span' ) ) {
 	/**
 	 * Span shortcode
 	 *
-	 * @param array $atts
+	 * @param array $atts The shortcode attributes.
 	 * @return string
 	 */
 	function wvc_shortcode_span( $atts, $content = null ) {
 
-		extract( shortcode_atts( array(
-			'id' => '',
-			'class' => '',
-			'style' => '',
-		), $atts ) );
+		extract(
+			shortcode_atts(
+				array(
+					'id'    => '',
+					'class' => '',
+					'style' => '',
+				),
+				$atts
+			)
+		);
 
-		$output = '<span id="' . esc_attr( $id ) . '" class="' . wvc_sanitize_html_classes( $class ) . '" style="' . esc_attr( $style ) . '">' . do_shortcode( $content )  . '</span>';
+		$output = '<span data-span-text="' . esc_attr( $content ) . '" id="' . esc_attr( $id ) . '" class="' . wvc_sanitize_html_classes( $class ) . '" style="' . esc_attr( $style ) . '">' . do_shortcode( $content ) . '</span>';
 
 		return $output;
 	}

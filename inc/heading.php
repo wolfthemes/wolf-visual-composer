@@ -168,7 +168,8 @@ function wvc_heading( $atts ) {
 		$output .= ' id="' . sanitize_title( $el_id ) . '"';
 	}
 
-	$output .= ' style="' . wvc_esc_style_attr( $text_style ) . '" class="' . wvc_sanitize_html_classes( $class ) . '" data-heading-text="' . esc_attr( wvc_sanitize_heading( $text ) ) . '"
+	$output .= ' style="' . wvc_esc_style_attr( $text_style ) . '" class="' . wvc_sanitize_html_classes( $class ) . '"
+		data-heading-text="' . esc_attr( wvc_sanitize_heading( sanitize_text_field( $text ) ) ) . '"
 		data-max-font-size="' . absint( $font_size ) . '"
 		data-min-font-size="' . absint( $min_font_size ) . '">';
 
