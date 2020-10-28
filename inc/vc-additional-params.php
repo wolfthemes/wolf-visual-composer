@@ -419,7 +419,7 @@ foreach ( $stylable_elements as $stylable_element ) {
 				'param_name'  => 'inline_style',
 				'group'       => esc_html__( 'Custom', 'wolf-visual-composer' ),
 				'description' => sprintf( esc_html__( 'Additional inline CSS that will be applied to the element. (e.g: %s)', 'wolf-visual-composer' ), 'color:red;' ),
-				'weight'      => -100, // be sure it's at the end of the form
+				'weight'      => -100, // be sure it's at the end of the form.
 			),
 		)
 	);

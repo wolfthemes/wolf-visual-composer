@@ -1,7 +1,8 @@
 # Changelog
 
-#### 26th October 2020 - Version 3.4.8
+#### 27th October 2020 - Version 3.4.9
 
+-	Tweak: Added data-span-text to span shortcode
 -   Fix: Column selfhosted video background in animated panel
 
 #### 15th October 2020 - Version 3.4.7
