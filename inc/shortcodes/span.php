@@ -30,7 +30,13 @@ if ( ! function_exists( 'wvc_shortcode_span' ) ) {
 			)
 		);
 
-		$output = '<span data-span-text="' . esc_attr( $content ) . '" id="' . esc_attr( $id ) . '" class="' . wvc_sanitize_html_classes( $class ) . '" style="' . esc_attr( $style ) . '">' . do_shortcode( $content ) . '</span>';
+		$output = '<span data-span-text="' . esc_attr( $content ) . '" class="' . wvc_sanitize_html_classes( $class ) . '" style="' . esc_attr( $style ) . '"';
+
+		if ( ! empty( $id ) ) {
+			$output .= ' id="' . esc_attr( $id ) . '"';
+		}
+
+		$output .= '>' . do_shortcode( $content ) . '</span>';
 
 		return $output;
 	}

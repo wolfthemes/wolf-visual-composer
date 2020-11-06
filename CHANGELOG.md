@@ -1,5 +1,9 @@
 # Changelog
 
+#### 6th November 2020 - Version 3.5.0
+
+-	Tweak: Do not output span shortcode ID attribute if empty
+
 #### 27th October 2020 - Version 3.4.9
 
 -	Tweak: Added data-span-text to span shortcode
