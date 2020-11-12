@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Sackground params
+ * Background params
  */
 function wvc_background_params() {
 	return array(

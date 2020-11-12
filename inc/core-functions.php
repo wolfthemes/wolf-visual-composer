@@ -446,7 +446,7 @@ function wvc_get_aos_animations() {
 }
 
 /**
- * Check is if neww animation engine (AOS)
+ * Check is if new animation engine (AOS)
  *
  * @param string $animation_name Tha animation name.
  * @return bool
@@ -733,7 +733,7 @@ function wvc_get_socials() {
 		'triplej',
 		'viadeo',
 		'vk',
-		'vine',
+		'telegram',
 		'tiktok',
 		'twitch',
 		// 'qq',

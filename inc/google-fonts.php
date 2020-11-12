@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Get loaded google fonts as a clean array
+ * Get loaded Google fonts as a clean array
  *
  * @return array
  */
@@ -28,7 +28,7 @@ function wvc_get_google_fonts_options() {
 		$raw_fonts = explode( '|', preg_replace( '/\s+/', '', $font_option ) );
 
 		foreach ( $raw_fonts as $font ) {
-			
+
 			$font_name = preg_replace( '/:[,0-9]+/', '', $font ); // replace font weight
 			$font_name = str_replace( '+', ' ', $font_name );
 			$font_name = str_replace( array( 'italic' ), '', $font_name );
@@ -53,7 +53,7 @@ function wvc_get_google_fonts_file_url() {
 
 	$wvc_google_fonts = wvc_get_google_fonts_options();
 
-	if ( array() != $wvc_google_fonts ) {
+	if ( array() !== $wvc_google_fonts ) {
 
 		$subsets = 'latin,latin-ext';
 
@@ -74,10 +74,13 @@ function wvc_get_google_fonts_file_url() {
 			$subsets .= ',vietnamese';
 		}
 
-		$url = add_query_arg( array(
-			'family' => implode( urlencode( '|' ), $fonts ),
-			'subset' => $subsets,
-		), 'https://fonts.googleapis.com/css' );
+		$url = add_query_arg(
+			array(
+				'family' => implode( urlencode( '|' ), $fonts ),
+				'subset' => $subsets,
+			),
+			'https://fonts.googleapis.com/css'
+		);
 
 		return esc_url( $url );
 	}

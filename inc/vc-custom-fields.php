@@ -15,43 +15,46 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Numeric Slider
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_numeric_slider_settings_field( $settings, $value ) {
 	ob_start();
 	$name = $settings['param_name'];
 	$type = $settings['type'];
-	//wp_enqueue_script( 'wvc-numeric-slider' );
+	// wp_enqueue_script( 'wvc-numeric-slider' );
 	?>
 	<div class="wvc_numeric_slider">
 		<input name="<?php echo esc_attr( $settings['param_name'] ); ?>" class="wpb_vc_param_value wpb-textinput <?php echo esc_attr( $settings['param_name'] ); ?> <?php echo esc_attr( $settings['type'] ); ?>" type="hidden" value="<?php echo $value; ?>"/>
-	   		<span class="numeric-slider-helper-input"><?php echo esc_attr( $value ); ?></span>
-	   		<div class="wvc-numeric-slider <?php echo esc_attr( $settings['param_name'] ); ?>"
-	   		data-value="<?php echo esc_attr( $value ); ?>"
-	   		data-min="<?php echo esc_attr( $settings['min'] ); ?>"
-	   		data-max="<?php echo esc_attr( $settings['max'] ); ?>"
-	   		data-step="<?php echo esc_attr( $settings['step'] ); ?>"></div>
+			   <span class="numeric-slider-helper-input"><?php echo esc_attr( $value ); ?></span>
+			   <div class="wvc-numeric-slider <?php echo esc_attr( $settings['param_name'] ); ?>"
+			   data-value="<?php echo esc_attr( $value ); ?>"
+			   data-min="<?php echo esc_attr( $settings['min'] ); ?>"
+			   data-max="<?php echo esc_attr( $settings['max'] ); ?>"
+			   data-step="<?php echo esc_attr( $settings['step'] ); ?>"></div>
 	</div><!-- .wvc_numeric_slider -->
 	<?php
 	return ob_get_clean();
 }
-vc_add_shortcode_param( 'wvc_numeric_slider', 'wvc_numeric_slider_settings_field',
-	WVC_URI . '/assets/js/admin/numeric-slider.js' );
+vc_add_shortcode_param(
+	'wvc_numeric_slider',
+	'wvc_numeric_slider_settings_field',
+	WVC_URI . '/assets/js/admin/numeric-slider.js'
+);
 
 /**
  * Font family field
  *
  * Allow to choose a font from the font loader option
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_font_family_settings_field( $settings, $value ) {
 	ob_start();
-	$name = $settings['param_name'];
-	$type = $settings['type'];
-	$fonts = apply_filters( 'wvc_fonts', wvc_get_google_fonts_options() );
+	$name          = $settings['param_name'];
+	$type          = $settings['type'];
+	$fonts         = apply_filters( 'wvc_fonts', wvc_get_google_fonts_options() );
 	$default_style = ( $value ) ? 'font-family:' . $value . ';' : '';
 	?>
 	<div class="wvc_font_family">
@@ -73,7 +76,7 @@ vc_add_shortcode_param( 'wvc_font_family', 'wvc_font_family_settings_field' );
  *
  * A to display helper text or additional description
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_help_settings_field( $settings, $value ) {
@@ -88,12 +91,12 @@ vc_add_shortcode_param( 'wvc_help', 'wvc_help_settings_field' );
  *
  * A simple text field with placeholder
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_textfield_settings_field( $settings, $value ) {
 	return '<div class="wvc_textfield_block">'
-	.'<input placeholder="' . esc_attr( $settings['placeholder'] ) . '" name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
+	. '<input placeholder="' . esc_attr( $settings['placeholder'] ) . '" name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
 	esc_attr( $settings['param_name'] ) . ' ' .
 	esc_attr( $settings['type'] ) . '_field" type="text" value="' . esc_attr( $value ) . '" />' .
 	'</div>'; // This is html markup that will be outputted in content elements edit form
@@ -105,7 +108,7 @@ vc_add_shortcode_param( 'wvc_textfield', 'wvc_textfield_settings_field' );
  *
  * A simple text field with placeholder
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_textarea_html_settings_field( $settings, $value ) {
@@ -116,18 +119,18 @@ function wvc_textarea_html_settings_field( $settings, $value ) {
 	// '</div>'; // This is html markup that will be outputted in content elements edit form
 
 	$settings = array(
-		'editor_height' => 180,
+		'editor_height'    => 180,
 		'drag_drop_upload' => false,
-		'wpautop' => false,
-		'textarea_name' => esc_attr( $settings['param_name'] ),
-		'media_buttons' => false,
+		'wpautop'          => false,
+		'textarea_name'    => esc_attr( $settings['param_name'] ),
+		'media_buttons'    => false,
 	);
 
-	$value = 'test';
-	$editor_id =  'editorcontent'; // must the same ID as the param name.
-	
+	$value     = 'test';
+	$editor_id = 'editorcontent'; // must the same ID as the param name.
+
 	ob_start();
-	add_filter( 'wp_default_editor', create_function( '', 'return "tinymce";') );
+	add_filter( 'wp_default_editor', create_function( '', 'return "tinymce";' ) );
 
 	wp_editor( $value, $editor_id, $settings );
 	?>
@@ -136,21 +139,21 @@ function wvc_textarea_html_settings_field( $settings, $value ) {
 
 	return ob_get_clean();
 }
-//vc_add_shortcode_param( 'wvc_textarea_html', 'wvc_textarea_html_settings_field' );
+// vc_add_shortcode_param( 'wvc_textarea_html', 'wvc_textarea_html_settings_field' );
 
 /**
  * Custom text field
  *
  * A simple text field with placeholder
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_int_textfield_settings_field( $settings, $value ) {
-	
+
 	$value = ( $value ) ? absint( $value ) : '';
 	return '<div class="wvc_textfield_block">'
-	.'<input placeholder="' . esc_attr( $settings['placeholder'] ) . '" name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
+	. '<input placeholder="' . esc_attr( $settings['placeholder'] ) . '" name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
 	esc_attr( $settings['param_name'] ) . ' ' .
 	esc_attr( $settings['type'] ) . '_field" type="text" value="' . esc_attr( $value ) . '" />' .
 	'</div>'; // This is html markup that will be outputted in content elements edit form
@@ -162,12 +165,12 @@ vc_add_shortcode_param( 'wvc_int_textfield', 'wvc_int_textfield_settings_field' 
  *
  * A simple text field with a link to add an URL from the media library
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_video_url_textfield_settings_field( $settings, $value ) {
 	return '<div class="wvc_video_url">'
-		.'<input name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
+		. '<input name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
 		esc_attr( $settings['param_name'] ) . ' ' .
 		esc_attr( $settings['type'] ) . '_field" type="text" value="' . esc_attr( $value ) . '" />' .
 		'<a href="#" style="display:inline-block;margin-top:4px;" class="wvc-set-video-file">' . esc_html__( 'Media Library', 'wolf-visual-composer' ) . '</a></div>'; // This is html markup that will be outputted in content elements edit form
@@ -179,12 +182,12 @@ vc_add_shortcode_param( 'wvc_video_url', 'wvc_video_url_textfield_settings_field
  *
  * A simple text field with a link to add an URL from the media library
  *
- * @param array $settings
+ * @param array  $settings
  * @param string $value
  */
 function wvc_audio_url_textfield_settings_field( $settings, $value ) {
 	return '<div class="wvc_audio_url">'
-		.'<input name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
+		. '<input name="' . esc_attr( $settings['param_name'] ) . '" class="wpb_vc_param_value wpb-textinput ' .
 		esc_attr( $settings['param_name'] ) . ' ' .
 		esc_attr( $settings['type'] ) . '_field" type="text" value="' . esc_attr( $value ) . '" />' .
 		'<a href="#" style="display:inline-block;margin-top:4px;" class="wvc-set-audio-file">' . esc_html__( 'Media Library', 'wolf-visual-composer' ) . '</a></div>';
@@ -193,11 +196,11 @@ vc_add_shortcode_param( 'wvc_audio_url', 'wvc_audio_url_textfield_settings_field
 
 // Create multi dropdown param type
 function wvc_dropdown_multi_settings_field( $param, $value ) {
-	
+
 	$param_line = '';
-	
-	$param_line .= '<select multiple name="'. esc_attr( $param['param_name'] ).'" class="wpb_vc_param_value wpb-input wpb-select-multi '. esc_attr( $param['param_name'] ).' '. esc_attr( $param['type'] ).'">';
-	
+
+	$param_line .= '<select multiple name="' . esc_attr( $param['param_name'] ) . '" class="wpb_vc_param_value wpb-input wpb-select-multi ' . esc_attr( $param['param_name'] ) . ' ' . esc_attr( $param['type'] ) . '">';
+
 	foreach ( $param['value'] as $text_val => $val ) {
 		if ( is_numeric( $text_val ) && ( is_string( $val ) || is_numeric( $val ) ) ) {
 			$text_val = $val;
@@ -218,6 +221,6 @@ function wvc_dropdown_multi_settings_field( $param, $value ) {
 	}
 	$param_line .= '</select>';
 
-	return  $param_line;
+	return $param_line;
 }
 vc_add_shortcode_param( 'wvc_dropdown_multi', 'wvc_dropdown_multi_settings_field' );

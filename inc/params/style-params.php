@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Row custom params
+ * Style params
  */
 function wvc_style_params() {
 	return array(

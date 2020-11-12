@@ -29,8 +29,9 @@ function wvc_entry_meta( $echo = true ) {
 	$output  = '';
 	$post_id = get_the_ID();
 
-	if ( is_sticky() && is_home() && ! is_paged() )
+	if ( is_sticky() && is_home() && ! is_paged() ) {
 		$output .= '<span class="wvc-featured-post">' . esc_html__( 'Featured', 'wolf-visual-composer' ) . '</span>';
+	}
 
 	if ( 'post' === get_post_type() || is_search() ) {
 		$output .= wvc_entry_date( false );
@@ -40,7 +41,7 @@ function wvc_entry_meta( $echo = true ) {
 	if ( 'post' === get_post_type() && is_multi_author() ) {
 
 		$output .= '<span class="wvc-author-meta author-meta">';
-		$output .='<a class="wvc-author-link author-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" rel="author">';
+		$output .= '<a class="wvc-author-link author-link" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" rel="author">';
 		$output .= get_avatar( get_the_author_meta( 'user_email' ), 20 );
 		$output .= '</a>';
 
@@ -88,26 +89,33 @@ function wvc_entry_meta( $echo = true ) {
 		$output .= '<span class="wvc-tags-links tags-links">' . $tag_list . '</span>';
 	}
 
-	if ( $echo )
-		echo apply_filters( 'wvc_entry_meta' , wp_kses( $output, array(
-			'span' => array(
-				'class' => array(),
-			),
-			'a' => array(
-				'href' => array(),
-				'rel' => array(),
-				'class' => array(),
-			),
-			'time' => array(
-				'class' => array(),
-				'datetime' => array(),
-			),
+	if ( $echo ) {
+		echo apply_filters(
+			'wvc_entry_meta',
+			wp_kses(
+				$output,
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+					'a'    => array(
+						'href'  => array(),
+						'rel'   => array(),
+						'class' => array(),
+					),
+					'time' => array(
+						'class'    => array(),
+						'datetime' => array(),
+					),
 
-			'img' => array(
-				'src' => array(),
-				'class' => array(),
-			),
-		) ) );
+					'img'  => array(
+						'src'   => array(),
+						'class' => array(),
+					),
+				)
+			)
+		);
+	}
 
 	return $output;
 }
@@ -120,12 +128,12 @@ function wvc_entry_meta( $echo = true ) {
  */
 function wvc_entry_date( $echo = true, $link = false ) {
 
-	$display_time = get_the_date();
+	$display_time          = get_the_date();
 	$modified_display_time = get_the_modified_date();
 
 	// if ( 'human_diff' == wvc_get_theme_mod( 'date_format' ) ) {
-	// 	$display_time = sprintf( esc_html__( '%s ago', 'wolf-visual-composer' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
-	// 	$modified_display_time = sprintf( esc_html__( '%s ago', 'wolf-visual-composer' ), human_time_diff( get_the_modified_time( 'U' ), current_time( 'timestamp' ) ) );
+	// $display_time = sprintf( esc_html__( '%s ago', 'wolf-visual-composer' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
+	// $modified_display_time = sprintf( esc_html__( '%s ago', 'wolf-visual-composer' ), human_time_diff( get_the_modified_time( 'U' ), current_time( 'timestamp' ) ) );
 	// }
 
 	$date = $display_time;
@@ -170,17 +178,17 @@ function wvc_entry_date( $echo = true, $link = false ) {
  *
  * @param string $size
  */
-function wvc_post_gallery_slider( $size = 'large', $tag_id = null, $class = null, $post_id = null  ) {
+function wvc_post_gallery_slider( $size = 'large', $tag_id = null, $class = null, $post_id = null ) {
 
 	wp_enqueue_script( 'flexslider' );
 	wp_enqueue_script( 'wvc-sliders' );
 
-	$ids = array();
-	$post_id = ( $post_id ) ?  $post_id : get_the_ID();
-	$tag_id = ( $tag_id ) ? esc_attr( $tag_id ) : 'wvc-post-gallery-slider-' . rand( 0, 999 );
+	$ids     = array();
+	$post_id = ( $post_id ) ? $post_id : get_the_ID();
+	$tag_id  = ( $tag_id ) ? esc_attr( $tag_id ) : 'wvc-post-gallery-slider-' . rand( 0, 999 );
 
 	$gallery = get_post_gallery( $post_id, false );
-	$ids = isset( $gallery['ids'] ) ? wvc_list_to_array( $gallery['ids'] ) : array();
+	$ids     = isset( $gallery['ids'] ) ? wvc_list_to_array( $gallery['ids'] ) : array();
 
 	if ( array() != $ids ) {
 		?>
@@ -211,11 +219,12 @@ if ( ! function_exists( 'wvc_the_author' ) ) {
 
 		global $post;
 
-		if ( ! is_object( $post ) )
+		if ( ! is_object( $post ) ) {
 			return;
+		}
 
 		$author_id = $post->post_author;
-		$author = get_the_author_meta( 'user_nicename', $author_id );
+		$author    = get_the_author_meta( 'user_nicename', $author_id );
 
 		if ( get_the_author_meta( 'nickname', $author_id ) ) {
 			$author = get_the_author_meta( 'nickname', $author_id );
@@ -225,23 +234,27 @@ if ( ! function_exists( 'wvc_the_author' ) ) {
 			$author = get_the_author_meta( 'first_name', $author_id );
 
 			if ( get_the_author_meta( 'last_name', $author_id ) ) {
-				$author .= ' ' .  get_the_author_meta( 'last_name', $author_id );
+				$author .= ' ' . get_the_author_meta( 'last_name', $author_id );
 			}
 		}
 
 		$author = sprintf( '<span class="vcard author"><span class="fn">%s</span></span>', $author );
 
-		if ( $echo )
-			echo wp_kses( $author, array(
-				'span' => array(
-					'class' => array()
-				),
-				'a' => array(
-					'href' => array(),
-					'rel' => array(),
-					'class' => array()
-				),
-			) );
+		if ( $echo ) {
+			echo wp_kses(
+				$author,
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+					'a'    => array(
+						'href'  => array(),
+						'rel'   => array(),
+						'class' => array(),
+					),
+				)
+			);
+		}
 
 		return $author;
 
@@ -310,17 +323,17 @@ add_filter( 'wvc_bg_parallax', 'wvc_disable_parallax_if_needed' );
 function wvc_remove_p_tags_around_vc_row( $content ) {
 	$content = str_replace(
 		array(
-			'<p>[vc_row'
+			'<p>[vc_row',
 		),
 		array(
-			'[/vc_row]</p>'
+			'[/vc_row]</p>',
 		),
 		$content
 	);
 
 	return $content;
 }
-//add_filter( 'the_content', 'wvc_remove_p_tags_around_vc_row' );
+// add_filter( 'the_content', 'wvc_remove_p_tags_around_vc_row' );
 
 /**
  * Filter YT and Vimeo oembed URL
@@ -329,29 +342,35 @@ function wvc_remove_p_tags_around_vc_row( $content ) {
  *
  * @param string $provider
  * @param string $url
- * @param array $args
+ * @param array  $args
  * @return string $provider The URL with the added args
  */
 function wvc_oembed_add_args( $provider, $url, $args ) {
 
 	if ( strpos( $provider, 'vimeo.com' ) ) {
-		$provider = add_query_arg( array(
-			'api' => '1',
-			'title' => '0',
-			'portrait' => '0',
-			'badge' => '0',
-			'byline' => '0',
-			'color' => str_replace( '#', '', apply_filters( 'wvc_theme_accent_color', '#0073AA' ) ),
-			'player_id' => isset( $args['player_id'] ) ? esc_attr( $args['player_id'] ) : 'vimeo-iframe-' . rand( 0, 9999 ),
-		), $provider );
+		$provider = add_query_arg(
+			array(
+				'api'       => '1',
+				'title'     => '0',
+				'portrait'  => '0',
+				'badge'     => '0',
+				'byline'    => '0',
+				'color'     => str_replace( '#', '', apply_filters( 'wvc_theme_accent_color', '#0073AA' ) ),
+				'player_id' => isset( $args['player_id'] ) ? esc_attr( $args['player_id'] ) : 'vimeo-iframe-' . rand( 0, 9999 ),
+			),
+			$provider
+		);
 	}
 
 	if ( strpos( $provider, 'youtu' ) ) {
-		$provider = add_query_arg( array(
-			'wmode' => 'transparent'
-		), $provider );
+		$provider = add_query_arg(
+			array(
+				'wmode' => 'transparent',
+			),
+			$provider
+		);
 	}
-	
+
 	return $provider;
 }
 add_filter( 'oembed_fetch_url', 'wvc_oembed_add_args', 99, 3 );
@@ -362,7 +381,7 @@ add_filter( 'oembed_fetch_url', 'wvc_oembed_add_args', 99, 3 );
  * @link http://goo.gl/yl5D3
  */
 function iweb_modest_youtube_player( $html, $url, $args ) {
-	
+
 	debug( $html );
 	debug( $url );
 	debug( $args );
@@ -377,7 +396,7 @@ function iweb_modest_youtube_player( $html, $url, $args ) {
 
 	return $html;
 }
-//add_filter( 'oembed_result', 'iweb_modest_youtube_player', 10, 3 );
+// add_filter( 'oembed_result', 'iweb_modest_youtube_player', 10, 3 );
 
 /**
  * Product images
@@ -395,58 +414,58 @@ function wvc_show_product_images() {
 			 * If gallery
 			 */
 			$attachment_ids = $product->get_gallery_image_ids();
-			
-			if ( is_array( $attachment_ids ) && ! empty( $attachment_ids ) ) {
 
-				echo '<ul class="slides">';
+		if ( is_array( $attachment_ids ) && ! empty( $attachment_ids ) ) {
 
-				if ( has_post_thumbnail( $product_id ) ) {
-					?>
+			echo '<ul class="slides">';
+
+			if ( has_post_thumbnail( $product_id ) ) {
+				?>
 					<li class="slide">
 						<span class="slide-content">
-								<?php echo $product->get_image( 'large' ); ?>
+							<?php echo $product->get_image( 'large' ); ?>
 						</span>
 					</li>
 					<?php
-				}
-				
-				foreach ( $attachment_ids as $attachment_id ) {
-					if ( wp_attachment_is_image( $attachment_id ) ) {
-						?>
+			}
+
+			foreach ( $attachment_ids as $attachment_id ) {
+				if ( wp_attachment_is_image( $attachment_id ) ) {
+					?>
 						<li class="slide">
 							<span class="slide-content">
-								<?php
-										echo wc_get_gallery_image_html( $attachment_id, true );
-								?>
+							<?php
+									echo wc_get_gallery_image_html( $attachment_id, true );
+							?>
 							</span>
 						</li>
 						<?php
-					}
 				}
+			}
 
-				echo '</ul>';
+			echo '</ul>';
 
 			/**
 			 * If featured image only
 			 */
-			} elseif ( has_post_thumbnail( $product_id ) ) {
-				?>
+		} elseif ( has_post_thumbnail( $product_id ) ) {
+			?>
 				<span class="slide-content">
-					<?php echo $product->get_image( 'large' ); ?>
+				<?php echo $product->get_image( 'large' ); ?>
 				</span>
 				<?php
 
-			/**
-			 * Placeholder
-			 */
-			} else {
-				
-				$html  = '<span class="slide-content"><span class="woocommerce-product-gallery__image--placeholder">';
-				$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-				$html .= '</span></span>';
+				/**
+				 * Placeholder
+				 */
+		} else {
 
-				echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $attachment_id );
-			}
+			$html  = '<span class="slide-content"><span class="woocommerce-product-gallery__image--placeholder">';
+			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+			$html .= '</span></span>';
+
+			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $attachment_id );
+		}
 		?>
 	</div>
 	<?php
@@ -463,7 +482,7 @@ function wvc_view_action_template() {
 
 	// Summary
 	add_action( 'wvc_product_summary', 'wvc_single_title', 5 );
-	
+
 	add_action( 'wvc_product_summary', 'woocommerce_template_single_rating', 10 );
 	add_action( 'wvc_product_summary', 'woocommerce_template_single_price', 15 );
 	add_action( 'wvc_product_summary', 'woocommerce_template_single_excerpt', 20 );
@@ -505,7 +524,7 @@ function wvc_single_title() {
  * @return int
  */
 function wvc_bmi( $height, $weight, $unit = 'metric' ) {
-	
+
 	if ( 'imperial' === $unit ) {
 		$weight = $weight / 2.205;
 		$height = $height * 2.54;
@@ -515,9 +534,9 @@ function wvc_bmi( $height, $weight, $unit = 'metric' ) {
 }
 
 /**
- * @param int $height
- * @param int $weight
- * @param int $age
+ * @param int    $height
+ * @param int    $weight
+ * @param int    $age
  * @param string $sex
 
  * @return int
@@ -532,12 +551,12 @@ function wvc_bmr( $height, $weight, $age, $sex, $unit = 'metric' ) {
 	}
 
 	if ( 'female' == $sex ) {
-		
-		$result = 655 + ( 9.6 * absint( $weight ) ) + (1.8 * absint( $height ) ) - ( 4.7  * absint( $age ) );
-	
+
+		$result = 655 + ( 9.6 * absint( $weight ) ) + ( 1.8 * absint( $height ) ) - ( 4.7 * absint( $age ) );
+
 	} elseif ( 'male' == $sex ) {
 
-		$result = 66 + ( 13.7 * absint( $weight ) ) + ( 5 * absint( $height ) ) - ( 6.8  * absint( $age ) );
+		$result = 66 + ( 13.7 * absint( $weight ) ) + ( 5 * absint( $height ) ) - ( 6.8 * absint( $age ) );
 	}
 
 	return $result;
@@ -551,10 +570,10 @@ function wvc_bmr( $height, $weight, $age, $sex, $unit = 'metric' ) {
 function wvc_daily_calorie_needs( $bmr, $af ) {
 
 	$activity_factor = array(
-		'inactive' => 1.2,
-		'low' => 1.375,
-		'moderate' => 1.55,
-		'high' => 1.725,
+		'inactive'  => 1.2,
+		'low'       => 1.375,
+		'moderate'  => 1.55,
+		'high'      => 1.725,
 		'very-high' => 1.9,
 	);
 
@@ -562,9 +581,9 @@ function wvc_daily_calorie_needs( $bmr, $af ) {
 }
 
 /**
- * @param int $height
- * @param int $weight
- * @param int $age
+ * @param int    $height
+ * @param int    $weight
+ * @param int    $age
  * @param string $sex
  * @param string $activity
  * @return int

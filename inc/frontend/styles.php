@@ -27,16 +27,16 @@ function wvc_enqueue_styles() {
 		$suffix = '';
 	}
 
-	/*
-	* animate.css
-	* @link https://daneden.github.io/animate.css/
-	*/
+	/**
+	 * animate.css
+	 * @link https://daneden.github.io/animate.css/
+	 */
 	wp_register_style( 'animate-css', WVC_CSS . '/lib/animate.min.css', array(), '3.3.0' );
 
 	/*
-	* AOS
-	* @link https://github.com/michalsnik/aos
-	*/
+	 * AOS
+	 * @link https://github.com/michalsnik/aos
+	 */
 	wp_register_style( 'aos', WVC_CSS . '/lib/aos.css', array(), '2.3.0' );
 
 	// Lightbox.
