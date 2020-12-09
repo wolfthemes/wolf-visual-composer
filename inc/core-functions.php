@@ -756,7 +756,7 @@ function wvc_get_socials() {
 	sort( $wvc_socials );
 
 	// Insert most used at the beggining.
-	array_unshift( $wvc_socials, 'facebook', 'twitter', 'instagram', 'messenger', 'flickr', 'behance', 'dribbble', 'linkedin', 'youtube', 'vimeo', 'bandcamp', 'spotify', 'soundcloud', 'bandsintown' );
+	array_unshift( $wvc_socials, 'facebook', 'twitter', 'instagram', 'messenger', 'tiktok', 'flickr', 'behance', 'dribbble', 'linkedin', 'youtube', 'vimeo', 'bandcamp', 'spotify', 'soundcloud', 'bandsintown' );
 
 	$wvc_socials[] = 'rss'; // push rss at the end.
 	$wvc_socials[] = 'email'; // push email at the end.
@@ -786,6 +786,7 @@ function wvc_get_team_member_socials() {
 		'vimeo',
 		'github',
 		'tumblr',
+		'tiktok',
 		'email',
 	);
 

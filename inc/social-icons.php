@@ -136,6 +136,7 @@ function wvc_socials( $atts ) {
 	}
 
 	$wolf_icon_array = array( 'bandsintown', 'evernote', 'grooveshark', 'mailchimp' );
+	$wolf_icon2_array = array( 'tiktok' );
 	$socicon_array   = array(
 		'8tracks',
 		'airbnb',
@@ -249,6 +250,10 @@ function wvc_socials( $atts ) {
 		vc_icon_element_fonts_enqueue( 'wolficons' );
 	}
 
+	if ( array_intersect( $services, $wolf_icon2_array ) || array_intersect( array_keys( $services ), $wolf_icon2_array ) ) {
+		vc_icon_element_fonts_enqueue( 'wolficons' );
+	}
+
 	if ( array_intersect( $services, $socicon_array ) || array_intersect( array_keys( $services ), $socicon_array ) ) {
 		vc_icon_element_fonts_enqueue( 'socicon' );
 	}
@@ -259,7 +264,7 @@ function wvc_socials( $atts ) {
 
 		foreach ( $services as $service ) {
 
-			if ( in_array( $service, $wvc_socials ) ) {
+			if ( in_array( $service, $wvc_socials, true ) ) {
 
 				$icon_box_style = 'animation-delay:' . absint( $single_animation_delay ) . 'ms;';
 
@@ -269,10 +274,12 @@ function wvc_socials( $atts ) {
 
 				if ( in_array( $service, $wolf_icon_array ) ) {
 					$prefix = 'wolficon';
+				} elseif ( in_array( $service, $wolf_icon2_array ) ) {
+					$prefix = 'wolficon2';
 				} elseif ( in_array( $service, $socicon_array ) ) {
 					$prefix = 'socicon';
-				} elseif ( in_array( $service, $fab_array ) ) {
-					$prefix = 'fab fa-';
+				// } elseif ( in_array( $service, $fab_array ) ) {
+				// 	$prefix = 'fab fa-';
 				} else {
 					$prefix = 'fa';
 				}

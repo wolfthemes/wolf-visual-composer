@@ -2994,6 +2994,16 @@ cite.wvc-testimonial-cite {
   margin-bottom: 20px;
 }
 
+.wvc-testimonials-text-align-left .star-rating {
+  text-align: left;
+  margin-left: 0;
+}
+
+.wvc-testimonials-text-align-right .star-rating {
+  text-align: right;
+  margin-right: 0;
+}
+
 /**
  * Team members
  */
@@ -7419,7 +7429,7 @@ span.wvc-highlight-green {
   padding: 40px 40px 10px;
   background: #333 no-repeat center center scroll;
   background-size: cover;
-  color: #FFF;
+  color: #fff;
 }
 .wvc-mailchimp-form-container.wvc-mailchimp-has-bg:before {
   content: ' ';
@@ -7432,10 +7442,10 @@ span.wvc-highlight-green {
   opacity: 0.44;
 }
 .wvc-mailchimp-form-container.wvc-mailchimp-has-bg .wvc-mailchimp-title {
-  color: #FFF;
+  color: #fff;
 }
 .wvc-mailchimp-form-container.wvc-mailchimp-has-bg .wvc-mailchimp-email {
-  background: #FFF;
+  background: #fff;
 }
 .wvc-mailchimp-form-container.wvc-mailchimp-has-bg.wvc-mailchimp-size-large {
   padding: 50px 60px 30px;
@@ -7535,6 +7545,10 @@ span.wvc-highlight-green {
 }
 .wolf-popup-overlay .wvc-mailchimp-size-large.wvc-mailchimp-show-name-no .wvc-mailchimp-email-container {
   flex: 1;
+}
+
+.wvc-mailchimp-show-name-yes.wvc-mailchimp-size-large .wvc-mailchimp-input-container {
+  margin-bottom: 15px !important;
 }
 
 /**

@@ -59,11 +59,12 @@ if ( $avatar ) {
 $output .= "<blockquote class='wvc-testimonial-content'><p>";
 $output .= $text;
 $output .= $cite;
-$output .= '<p></blockquote>';
 
 if ( '-1' !== $rating && -1 !== $rating && '' !== $rating && function_exists( 'wc_get_star_rating_html' ) ) {
 	$output .= '<div class="star-rating"><span style="width:' . esc_attr( $rating * 20 ) . '%">' . sprintf( esc_html__( '%s out of 5', 'wolf-visual-composer' ), esc_html( $rating ) ) . '</span></div>';
 }
+
+$output .= '<p></blockquote>';
 
 $output .= '</div>
 </div>';

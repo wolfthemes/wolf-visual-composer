@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 function wvc_vc_remove_frontend_links() {
 	vc_disable_frontend();
 }
-add_action( 'vc_after_init', 'wvc_vc_remove_frontend_links' );
+//add_action( 'vc_after_init', 'wvc_vc_remove_frontend_links' );
 
 /**
  * Filtering template path for each shortcode

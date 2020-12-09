@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.5.0\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.5.1\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-11-06 12:22:38+00:00\n"
+"POT-Creation-Date: 2020-12-09 12:52:30+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -745,7 +745,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: inc/admin/class-options.php:335 inc/core-functions.php:1314
+#: inc/admin/class-options.php:335 inc/core-functions.php:1315
 #: pack/wolf-visual-composer/inc/admin/class-options.php:335
 #: pack/wolf-visual-composer/inc/core-functions.php:1314
 msgid "Attachment"
@@ -1025,7 +1025,7 @@ msgstr ""
 #: inc/elements/showcase-vertical-carousel-item.php:97
 #: inc/elements/showcase-vertical-carousel-item.php:104
 #: inc/elements/testimonial-slide.php:24 inc/params/bigtext-params.php:32
-#: inc/params/button-params.php:70 inc/params/heading-params.php:29
+#: inc/params/button-params.php:70 inc/params/heading-params.php:31
 #: inc/params/icon-params.php:524 inc/params/icon-params.php:532
 #: inc/params/icon-params.php:539 inc/params/icon-params.php:551
 #: inc/params/icon-params.php:567 inc/params/icon-params.php:574
@@ -1063,7 +1063,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/testimonial-slide.php:24
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:32
 #: pack/wolf-visual-composer/inc/params/button-params.php:70
-#: pack/wolf-visual-composer/inc/params/heading-params.php:29
+#: pack/wolf-visual-composer/inc/params/heading-params.php:31
 #: pack/wolf-visual-composer/inc/params/icon-params.php:524
 #: pack/wolf-visual-composer/inc/params/icon-params.php:532
 #: pack/wolf-visual-composer/inc/params/icon-params.php:539
@@ -1084,7 +1084,7 @@ msgstr ""
 #: inc/elements/showcase-vertical-carousel-item.php:102
 #: inc/elements/team-member.php:187 inc/elements/testimonial-slide.php:45
 #: inc/elements/workout-program-exercice.php:52
-#: inc/params/bigtext-params.php:127 inc/params/heading-params.php:178
+#: inc/params/bigtext-params.php:127 inc/params/heading-params.php:182
 #: inc/params/icon-params.php:604
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:42
 #: pack/wolf-visual-composer/inc/elements/album-disc.php:62
@@ -1099,7 +1099,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/testimonial-slide.php:45
 #: pack/wolf-visual-composer/inc/elements/workout-program-exercice.php:52
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:127
-#: pack/wolf-visual-composer/inc/params/heading-params.php:178
+#: pack/wolf-visual-composer/inc/params/heading-params.php:182
 #: pack/wolf-visual-composer/inc/params/icon-params.php:604
 msgid "Link"
 msgstr ""
@@ -1223,7 +1223,7 @@ msgstr ""
 #: inc/elements/interactive-overlays.php:67 inc/elements/pie.php:55
 #: inc/elements/post-slider.php:131 inc/elements/single-image.php:312
 #: inc/elements/team-member.php:203 inc/elements/typed.php:81
-#: inc/params/heading-params.php:38
+#: inc/params/heading-params.php:40
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/fittext.php:29
 #: pack/wolf-visual-composer/inc/elements/breadcrumb.php:46
 #: pack/wolf-visual-composer/inc/elements/countdown.php:76
@@ -1238,19 +1238,19 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/single-image.php:312
 #: pack/wolf-visual-composer/inc/elements/team-member.php:203
 #: pack/wolf-visual-composer/inc/elements/typed.php:81
-#: pack/wolf-visual-composer/inc/params/heading-params.php:38
+#: pack/wolf-visual-composer/inc/params/heading-params.php:40
 msgid "Font Size"
 msgstr ""
 
 #: inc/admin/tinymce/popup/fittext.php:35 inc/elements/advanced-slide.php:372
 #: inc/elements/post-slider.php:139 inc/elements/single-image.php:357
-#: inc/elements/team-member.php:245 inc/params/heading-params.php:150
+#: inc/elements/team-member.php:245 inc/params/heading-params.php:154
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/fittext.php:35
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:372
 #: pack/wolf-visual-composer/inc/elements/post-slider.php:139
 #: pack/wolf-visual-composer/inc/elements/single-image.php:357
 #: pack/wolf-visual-composer/inc/elements/team-member.php:245
-#: pack/wolf-visual-composer/inc/params/heading-params.php:150
+#: pack/wolf-visual-composer/inc/params/heading-params.php:154
 msgid "Letter Spacing"
 msgstr ""
 
@@ -1798,8 +1798,8 @@ msgstr ""
 #: inc/elements/wc-categories.php:119 inc/elements/wc-categories.php:131
 #: inc/params/button-params.php:163 inc/params/column-inner-params.php:37
 #: inc/params/column-inner-params.php:51 inc/params/column-params.php:48
-#: inc/params/column-params.php:62 inc/params/heading-params.php:77
-#: inc/params/heading-params.php:88 inc/params/icon-params.php:487
+#: inc/params/column-params.php:62 inc/params/heading-params.php:79
+#: inc/params/heading-params.php:90 inc/params/icon-params.php:487
 #: inc/params/icon-params.php:498 inc/params/row-params.php:160
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:183
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:406
@@ -1843,8 +1843,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-inner-params.php:51
 #: pack/wolf-visual-composer/inc/params/column-params.php:48
 #: pack/wolf-visual-composer/inc/params/column-params.php:62
-#: pack/wolf-visual-composer/inc/params/heading-params.php:77
-#: pack/wolf-visual-composer/inc/params/heading-params.php:88
+#: pack/wolf-visual-composer/inc/params/heading-params.php:79
+#: pack/wolf-visual-composer/inc/params/heading-params.php:90
 #: pack/wolf-visual-composer/inc/params/icon-params.php:487
 #: pack/wolf-visual-composer/inc/params/icon-params.php:498
 #: pack/wolf-visual-composer/inc/params/row-params.php:160
@@ -1873,7 +1873,7 @@ msgstr ""
 #: inc/elements/wc-categories.php:118 inc/params/button-params.php:165
 #: inc/params/button-params.php:208 inc/params/column-inner-params.php:38
 #: inc/params/column-inner-params.php:50 inc/params/column-params.php:49
-#: inc/params/column-params.php:61 inc/params/heading-params.php:78
+#: inc/params/column-params.php:61 inc/params/heading-params.php:80
 #: inc/params/icon-params.php:473 inc/params/icon-params.php:486
 #: inc/params/icon-params.php:499 inc/params/row-params.php:161
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:184
@@ -1919,7 +1919,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-inner-params.php:50
 #: pack/wolf-visual-composer/inc/params/column-params.php:49
 #: pack/wolf-visual-composer/inc/params/column-params.php:61
-#: pack/wolf-visual-composer/inc/params/heading-params.php:78
+#: pack/wolf-visual-composer/inc/params/heading-params.php:80
 #: pack/wolf-visual-composer/inc/params/icon-params.php:473
 #: pack/wolf-visual-composer/inc/params/icon-params.php:486
 #: pack/wolf-visual-composer/inc/params/icon-params.php:499
@@ -1949,7 +1949,7 @@ msgstr ""
 #: inc/elements/wc-categories.php:120 inc/params/button-params.php:166
 #: inc/params/button-params.php:209 inc/params/column-inner-params.php:39
 #: inc/params/column-inner-params.php:52 inc/params/column-params.php:50
-#: inc/params/column-params.php:63 inc/params/heading-params.php:79
+#: inc/params/column-params.php:63 inc/params/heading-params.php:81
 #: inc/params/icon-params.php:475 inc/params/icon-params.php:488
 #: inc/params/icon-params.php:500 inc/params/row-params.php:162
 #: pack/wolf-visual-composer/inc/class-widget-mailchimp.php:185
@@ -1995,7 +1995,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-inner-params.php:52
 #: pack/wolf-visual-composer/inc/params/column-params.php:50
 #: pack/wolf-visual-composer/inc/params/column-params.php:63
-#: pack/wolf-visual-composer/inc/params/heading-params.php:79
+#: pack/wolf-visual-composer/inc/params/heading-params.php:81
 #: pack/wolf-visual-composer/inc/params/icon-params.php:475
 #: pack/wolf-visual-composer/inc/params/icon-params.php:488
 #: pack/wolf-visual-composer/inc/params/icon-params.php:500
@@ -2311,7 +2311,7 @@ msgstr ""
 #: inc/elements/video-opener.php:77 inc/elements/video-self-hosted.php:40
 #: inc/params/background-params.php:133 inc/params/bigtext-params.php:78
 #: inc/params/button-params.php:186 inc/params/column-inner-params.php:76
-#: inc/params/column-params.php:87 inc/params/heading-params.php:132
+#: inc/params/column-params.php:87 inc/params/heading-params.php:136
 #: inc/params/icon-params.php:372 inc/params/icon-params.php:451
 #: inc/params/icon-params.php:548
 #: pack/wolf-visual-composer/inc/core-functions.php:473
@@ -2351,7 +2351,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/button-params.php:186
 #: pack/wolf-visual-composer/inc/params/column-inner-params.php:76
 #: pack/wolf-visual-composer/inc/params/column-params.php:87
-#: pack/wolf-visual-composer/inc/params/heading-params.php:132
+#: pack/wolf-visual-composer/inc/params/heading-params.php:136
 #: pack/wolf-visual-composer/inc/params/icon-params.php:372
 #: pack/wolf-visual-composer/inc/params/icon-params.php:451
 #: pack/wolf-visual-composer/inc/params/icon-params.php:548
@@ -2366,14 +2366,14 @@ msgstr ""
 #: inc/core-functions.php:499 inc/elements/accordion-tab.php:62
 #: inc/elements/counter.php:139 inc/elements/counter.php:167
 #: inc/elements/counter.php:195 inc/params/bigtext-params.php:45
-#: inc/params/heading-params.php:98
+#: inc/params/heading-params.php:102
 #: pack/wolf-visual-composer/inc/core-functions.php:499
 #: pack/wolf-visual-composer/inc/elements/accordion-tab.php:62
 #: pack/wolf-visual-composer/inc/elements/counter.php:139
 #: pack/wolf-visual-composer/inc/elements/counter.php:167
 #: pack/wolf-visual-composer/inc/elements/counter.php:195
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:45
-#: pack/wolf-visual-composer/inc/params/heading-params.php:98
+#: pack/wolf-visual-composer/inc/params/heading-params.php:102
 msgid "Gradient Red"
 msgstr ""
 
@@ -2385,14 +2385,14 @@ msgstr ""
 #: inc/core-functions.php:501 inc/elements/accordion-tab.php:63
 #: inc/elements/counter.php:140 inc/elements/counter.php:168
 #: inc/elements/counter.php:196 inc/params/bigtext-params.php:46
-#: inc/params/heading-params.php:99
+#: inc/params/heading-params.php:103
 #: pack/wolf-visual-composer/inc/core-functions.php:501
 #: pack/wolf-visual-composer/inc/elements/accordion-tab.php:63
 #: pack/wolf-visual-composer/inc/elements/counter.php:140
 #: pack/wolf-visual-composer/inc/elements/counter.php:168
 #: pack/wolf-visual-composer/inc/elements/counter.php:196
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:46
-#: pack/wolf-visual-composer/inc/params/heading-params.php:99
+#: pack/wolf-visual-composer/inc/params/heading-params.php:103
 msgid "Gradient Green"
 msgstr ""
 
@@ -2621,32 +2621,32 @@ msgstr ""
 msgid "Pattern %1$d (loop of %2$d)"
 msgstr ""
 
-#: inc/core-functions.php:1031
+#: inc/core-functions.php:1032
 #: pack/wolf-visual-composer/inc/core-functions.php:1031
 msgid "Image is missing"
 msgstr ""
 
-#: inc/core-functions.php:1136
+#: inc/core-functions.php:1137
 #: pack/wolf-visual-composer/inc/core-functions.php:1136
 msgid "Home"
 msgstr ""
 
-#: inc/core-functions.php:1183
+#: inc/core-functions.php:1184
 #: pack/wolf-visual-composer/inc/core-functions.php:1183
 msgid "Products tagged &ldquo;"
 msgstr ""
 
-#: inc/core-functions.php:1309
+#: inc/core-functions.php:1310
 #: pack/wolf-visual-composer/inc/core-functions.php:1309
 msgid "Search"
 msgstr ""
 
-#: inc/core-functions.php:1337
+#: inc/core-functions.php:1338
 #: pack/wolf-visual-composer/inc/core-functions.php:1337
 msgid "Search results"
 msgstr ""
 
-#: inc/core-functions.php:1466 inc/elements/content-block.php:33
+#: inc/core-functions.php:1467 inc/elements/content-block.php:33
 #: inc/elements/content-block.php:42
 #: pack/wolf-visual-composer/inc/core-functions.php:1466
 #: pack/wolf-visual-composer/inc/elements/content-block.php:33
@@ -2654,7 +2654,7 @@ msgstr ""
 msgid "Content Block"
 msgstr ""
 
-#: inc/core-functions.php:1473
+#: inc/core-functions.php:1474
 #: pack/wolf-visual-composer/inc/core-functions.php:1473
 msgid "Playlists"
 msgstr ""
@@ -2687,7 +2687,7 @@ msgstr ""
 #: inc/elements/list.php:69 inc/elements/social-icons-custom.php:79
 #: inc/elements/social-icons-custom.php:109 inc/elements/social-icons.php:86
 #: inc/elements/social-icons.php:116 inc/params/bigtext-params.php:44
-#: inc/params/heading-params.php:97 inc/params/icon-params.php:341
+#: inc/params/heading-params.php:101 inc/params/icon-params.php:341
 #: inc/params/icon-params.php:394
 #: pack/wolf-visual-composer/inc/elements/accordion-tab.php:61
 #: pack/wolf-visual-composer/inc/elements/countdown.php:96
@@ -2703,7 +2703,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:86
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:116
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:44
-#: pack/wolf-visual-composer/inc/params/heading-params.php:97
+#: pack/wolf-visual-composer/inc/params/heading-params.php:101
 #: pack/wolf-visual-composer/inc/params/icon-params.php:341
 #: pack/wolf-visual-composer/inc/params/icon-params.php:394
 msgid "Default color"
@@ -2736,7 +2736,7 @@ msgstr ""
 #: inc/elements/zigzag.php:37 inc/params/background-params.php:44
 #: inc/params/background-params.php:300 inc/params/bigtext-params.php:47
 #: inc/params/button-params.php:91 inc/params/button-params.php:99
-#: inc/params/heading-params.php:100 inc/params/icon-params.php:345
+#: inc/params/heading-params.php:104 inc/params/icon-params.php:345
 #: inc/params/icon-params.php:358 inc/params/icon-params.php:398
 #: inc/params/icon-params.php:411 inc/params/icon-params.php:425
 #: inc/params/row-params.php:370 inc/params/row-params.php:562
@@ -2790,7 +2790,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:47
 #: pack/wolf-visual-composer/inc/params/button-params.php:91
 #: pack/wolf-visual-composer/inc/params/button-params.php:99
-#: pack/wolf-visual-composer/inc/params/heading-params.php:100
+#: pack/wolf-visual-composer/inc/params/heading-params.php:104
 #: pack/wolf-visual-composer/inc/params/icon-params.php:345
 #: pack/wolf-visual-composer/inc/params/icon-params.php:358
 #: pack/wolf-visual-composer/inc/params/icon-params.php:398
@@ -2803,12 +2803,12 @@ msgstr ""
 
 #: inc/elements/accordion-tab.php:68 inc/elements/counter.php:173
 #: inc/elements/counter.php:201 inc/params/bigtext-params.php:51
-#: inc/params/heading-params.php:104
+#: inc/params/heading-params.php:108
 #: pack/wolf-visual-composer/inc/elements/accordion-tab.php:68
 #: pack/wolf-visual-composer/inc/elements/counter.php:173
 #: pack/wolf-visual-composer/inc/elements/counter.php:201
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:51
-#: pack/wolf-visual-composer/inc/params/heading-params.php:104
+#: pack/wolf-visual-composer/inc/params/heading-params.php:108
 msgid "Select a text color."
 msgstr ""
 
@@ -3007,9 +3007,9 @@ msgstr ""
 #: inc/elements/anything-slide.php:29 inc/elements/anything-slide.php:69
 #: inc/elements/interactive-link-item.php:45
 #: inc/elements/showcase-vertical-carousel-item.php:44
-#: inc/params/button-params.php:188 inc/params/heading-params.php:195
-#: inc/params/heading-params.php:215 inc/params/heading-params.php:230
-#: inc/params/heading-params.php:244
+#: inc/params/button-params.php:188 inc/params/heading-params.php:202
+#: inc/params/heading-params.php:225 inc/params/heading-params.php:243
+#: inc/params/heading-params.php:260
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:101
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:141
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:29
@@ -3017,10 +3017,10 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/interactive-link-item.php:45
 #: pack/wolf-visual-composer/inc/elements/showcase-vertical-carousel-item.php:44
 #: pack/wolf-visual-composer/inc/params/button-params.php:188
-#: pack/wolf-visual-composer/inc/params/heading-params.php:195
-#: pack/wolf-visual-composer/inc/params/heading-params.php:215
-#: pack/wolf-visual-composer/inc/params/heading-params.php:230
-#: pack/wolf-visual-composer/inc/params/heading-params.php:244
+#: pack/wolf-visual-composer/inc/params/heading-params.php:202
+#: pack/wolf-visual-composer/inc/params/heading-params.php:225
+#: pack/wolf-visual-composer/inc/params/heading-params.php:243
+#: pack/wolf-visual-composer/inc/params/heading-params.php:260
 msgid "Background"
 msgstr ""
 
@@ -3067,12 +3067,12 @@ msgstr ""
 #: inc/params/background-params.php:42 inc/params/bigtext-params.php:88
 #: inc/params/bigtext-params.php:98 inc/params/column-inner-params.php:24
 #: inc/params/column-inner-params.php:49 inc/params/column-params.php:35
-#: inc/params/column-params.php:60 inc/params/heading-params.php:131
-#: inc/params/heading-params.php:143 inc/params/icon-params.php:547
+#: inc/params/column-params.php:60 inc/params/heading-params.php:135
+#: inc/params/heading-params.php:147 inc/params/icon-params.php:547
 #: inc/params/row-params.php:97 inc/params/row-params.php:116
 #: inc/params/row-params.php:279 inc/params/row-params.php:368
 #: inc/params/row-params.php:471 inc/params/row-params.php:560
-#: inc/vc-custom-fields.php:59
+#: inc/vc-custom-fields.php:62
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:116
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:361
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:44
@@ -3105,8 +3105,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-inner-params.php:49
 #: pack/wolf-visual-composer/inc/params/column-params.php:35
 #: pack/wolf-visual-composer/inc/params/column-params.php:60
-#: pack/wolf-visual-composer/inc/params/heading-params.php:131
-#: pack/wolf-visual-composer/inc/params/heading-params.php:143
+#: pack/wolf-visual-composer/inc/params/heading-params.php:135
+#: pack/wolf-visual-composer/inc/params/heading-params.php:147
 #: pack/wolf-visual-composer/inc/params/icon-params.php:547
 #: pack/wolf-visual-composer/inc/params/row-params.php:97
 #: pack/wolf-visual-composer/inc/params/row-params.php:116
@@ -3114,7 +3114,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/row-params.php:368
 #: pack/wolf-visual-composer/inc/params/row-params.php:471
 #: pack/wolf-visual-composer/inc/params/row-params.php:560
-#: pack/wolf-visual-composer/inc/vc-custom-fields.php:59
+#: pack/wolf-visual-composer/inc/vc-custom-fields.php:62
 msgid "Default"
 msgstr ""
 
@@ -3132,92 +3132,92 @@ msgid "Select a background color."
 msgstr ""
 
 #: inc/elements/advanced-slide.php:149 inc/elements/anything-slide.php:77
-#: inc/params/background-params.php:79 inc/params/heading-params.php:201
+#: inc/params/background-params.php:79 inc/params/heading-params.php:208
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:149
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:77
 #: pack/wolf-visual-composer/inc/params/background-params.php:79
-#: pack/wolf-visual-composer/inc/params/heading-params.php:201
+#: pack/wolf-visual-composer/inc/params/heading-params.php:208
 msgid "Background position"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:152 inc/elements/anything-slide.php:80
-#: inc/params/background-params.php:82 inc/params/heading-params.php:204
+#: inc/params/background-params.php:82 inc/params/heading-params.php:211
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:152
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:80
 #: pack/wolf-visual-composer/inc/params/background-params.php:82
-#: pack/wolf-visual-composer/inc/params/heading-params.php:204
+#: pack/wolf-visual-composer/inc/params/heading-params.php:211
 msgid "center center"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:153 inc/elements/anything-slide.php:81
-#: inc/params/background-params.php:83 inc/params/heading-params.php:205
+#: inc/params/background-params.php:83 inc/params/heading-params.php:212
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:153
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:81
 #: pack/wolf-visual-composer/inc/params/background-params.php:83
-#: pack/wolf-visual-composer/inc/params/heading-params.php:205
+#: pack/wolf-visual-composer/inc/params/heading-params.php:212
 msgid "center top"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:154 inc/elements/anything-slide.php:82
-#: inc/params/background-params.php:84 inc/params/heading-params.php:206
+#: inc/params/background-params.php:84 inc/params/heading-params.php:213
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:154
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:82
 #: pack/wolf-visual-composer/inc/params/background-params.php:84
-#: pack/wolf-visual-composer/inc/params/heading-params.php:206
+#: pack/wolf-visual-composer/inc/params/heading-params.php:213
 msgid "left top"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:155 inc/elements/anything-slide.php:83
-#: inc/params/background-params.php:85 inc/params/heading-params.php:207
+#: inc/params/background-params.php:85 inc/params/heading-params.php:214
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:155
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:83
 #: pack/wolf-visual-composer/inc/params/background-params.php:85
-#: pack/wolf-visual-composer/inc/params/heading-params.php:207
+#: pack/wolf-visual-composer/inc/params/heading-params.php:214
 msgid "right top"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:156 inc/elements/anything-slide.php:84
-#: inc/params/background-params.php:86 inc/params/heading-params.php:208
+#: inc/params/background-params.php:86 inc/params/heading-params.php:215
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:156
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:84
 #: pack/wolf-visual-composer/inc/params/background-params.php:86
-#: pack/wolf-visual-composer/inc/params/heading-params.php:208
+#: pack/wolf-visual-composer/inc/params/heading-params.php:215
 msgid "center bottom"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:157 inc/elements/anything-slide.php:85
-#: inc/params/background-params.php:87 inc/params/heading-params.php:209
+#: inc/params/background-params.php:87 inc/params/heading-params.php:216
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:157
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:85
 #: pack/wolf-visual-composer/inc/params/background-params.php:87
-#: pack/wolf-visual-composer/inc/params/heading-params.php:209
+#: pack/wolf-visual-composer/inc/params/heading-params.php:216
 msgid "left bottom"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:158 inc/elements/anything-slide.php:86
-#: inc/params/background-params.php:88 inc/params/heading-params.php:210
+#: inc/params/background-params.php:88 inc/params/heading-params.php:217
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:158
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:86
 #: pack/wolf-visual-composer/inc/params/background-params.php:88
-#: pack/wolf-visual-composer/inc/params/heading-params.php:210
+#: pack/wolf-visual-composer/inc/params/heading-params.php:217
 msgid "right bottom"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:159 inc/elements/anything-slide.php:87
-#: inc/params/background-params.php:89 inc/params/heading-params.php:211
+#: inc/params/background-params.php:89 inc/params/heading-params.php:218
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:159
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:87
 #: pack/wolf-visual-composer/inc/params/background-params.php:89
-#: pack/wolf-visual-composer/inc/params/heading-params.php:211
+#: pack/wolf-visual-composer/inc/params/heading-params.php:218
 msgid "left center"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:160 inc/elements/anything-slide.php:88
-#: inc/params/background-params.php:90 inc/params/heading-params.php:212
+#: inc/params/background-params.php:90 inc/params/heading-params.php:219
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:160
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:88
 #: pack/wolf-visual-composer/inc/params/background-params.php:90
-#: pack/wolf-visual-composer/inc/params/heading-params.php:212
+#: pack/wolf-visual-composer/inc/params/heading-params.php:219
 msgid "right center"
 msgstr ""
 
@@ -3482,7 +3482,7 @@ msgstr ""
 #: inc/elements/cta.php:96 inc/elements/interactive-links.php:91
 #: inc/elements/interactive-overlays.php:88 inc/elements/post-slider.php:111
 #: inc/elements/single-image.php:336 inc/elements/team-member.php:226
-#: inc/params/bigtext-params.php:77 inc/params/heading-params.php:133
+#: inc/params/bigtext-params.php:77 inc/params/heading-params.php:137
 #: inc/params/icon-params.php:549
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:363
 #: pack/wolf-visual-composer/inc/elements/breadcrumb.php:65
@@ -3493,7 +3493,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/single-image.php:336
 #: pack/wolf-visual-composer/inc/elements/team-member.php:226
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:77
-#: pack/wolf-visual-composer/inc/params/heading-params.php:133
+#: pack/wolf-visual-composer/inc/params/heading-params.php:137
 #: pack/wolf-visual-composer/inc/params/icon-params.php:549
 msgid "Uppercase"
 msgstr ""
@@ -4008,72 +4008,72 @@ msgid "Anything Slide"
 msgstr ""
 
 #: inc/elements/anything-slide.php:97 inc/params/background-params.php:100
-#: inc/params/heading-params.php:221
+#: inc/params/heading-params.php:231
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:97
 #: pack/wolf-visual-composer/inc/params/background-params.php:100
-#: pack/wolf-visual-composer/inc/params/heading-params.php:221
+#: pack/wolf-visual-composer/inc/params/heading-params.php:231
 msgid "Background repeat"
 msgstr ""
 
 #: inc/elements/anything-slide.php:100 inc/params/background-params.php:103
-#: inc/params/heading-params.php:224
+#: inc/params/heading-params.php:234
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:100
 #: pack/wolf-visual-composer/inc/params/background-params.php:103
-#: pack/wolf-visual-composer/inc/params/heading-params.php:224
+#: pack/wolf-visual-composer/inc/params/heading-params.php:234
 msgid "no repeat"
 msgstr ""
 
 #: inc/elements/anything-slide.php:101 inc/params/background-params.php:104
-#: inc/params/heading-params.php:225
+#: inc/params/heading-params.php:235
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:101
 #: pack/wolf-visual-composer/inc/params/background-params.php:104
-#: pack/wolf-visual-composer/inc/params/heading-params.php:225
+#: pack/wolf-visual-composer/inc/params/heading-params.php:235
 msgid "repeat"
 msgstr ""
 
 #: inc/elements/anything-slide.php:102 inc/params/background-params.php:105
-#: inc/params/heading-params.php:226
+#: inc/params/heading-params.php:236
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:102
 #: pack/wolf-visual-composer/inc/params/background-params.php:105
-#: pack/wolf-visual-composer/inc/params/heading-params.php:226
+#: pack/wolf-visual-composer/inc/params/heading-params.php:236
 msgid "repeat-x"
 msgstr ""
 
 #: inc/elements/anything-slide.php:103 inc/params/background-params.php:106
-#: inc/params/heading-params.php:227
+#: inc/params/heading-params.php:237
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:103
 #: pack/wolf-visual-composer/inc/params/background-params.php:106
-#: pack/wolf-visual-composer/inc/params/heading-params.php:227
+#: pack/wolf-visual-composer/inc/params/heading-params.php:237
 msgid "repeat-y"
 msgstr ""
 
-#: inc/elements/anything-slide.php:112 inc/params/heading-params.php:236
+#: inc/elements/anything-slide.php:112 inc/params/heading-params.php:249
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:112
-#: pack/wolf-visual-composer/inc/params/heading-params.php:236
+#: pack/wolf-visual-composer/inc/params/heading-params.php:249
 msgid "Background size"
 msgstr ""
 
 #: inc/elements/anything-slide.php:115 inc/params/background-params.php:119
-#: inc/params/heading-params.php:240
+#: inc/params/heading-params.php:253
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:115
 #: pack/wolf-visual-composer/inc/params/background-params.php:119
-#: pack/wolf-visual-composer/inc/params/heading-params.php:240
+#: pack/wolf-visual-composer/inc/params/heading-params.php:253
 msgid "cover"
 msgstr ""
 
 #: inc/elements/anything-slide.php:116 inc/params/background-params.php:120
-#: inc/params/heading-params.php:239
+#: inc/params/heading-params.php:252
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:116
 #: pack/wolf-visual-composer/inc/params/background-params.php:120
-#: pack/wolf-visual-composer/inc/params/heading-params.php:239
+#: pack/wolf-visual-composer/inc/params/heading-params.php:252
 msgid "default"
 msgstr ""
 
 #: inc/elements/anything-slide.php:117 inc/params/background-params.php:121
-#: inc/params/heading-params.php:241
+#: inc/params/heading-params.php:254
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:117
 #: pack/wolf-visual-composer/inc/params/background-params.php:121
-#: pack/wolf-visual-composer/inc/params/heading-params.php:241
+#: pack/wolf-visual-composer/inc/params/heading-params.php:254
 msgid "contain"
 msgstr ""
 
@@ -4201,7 +4201,7 @@ msgstr ""
 #: inc/elements/interactive-overlays.php:27 inc/elements/mailchimp.php:142
 #: inc/elements/team-member.php:146 inc/elements/testimonial-slider.php:27
 #: inc/elements/twitter.php:48 inc/elements/typed.php:63
-#: inc/params/heading-params.php:74
+#: inc/params/heading-params.php:76
 #: pack/wolf-visual-composer/inc/elements/artist-lineup.php:46
 #: pack/wolf-visual-composer/inc/elements/banner-gallery.php:191
 #: pack/wolf-visual-composer/inc/elements/banner-product.php:152
@@ -4216,7 +4216,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/testimonial-slider.php:27
 #: pack/wolf-visual-composer/inc/elements/twitter.php:48
 #: pack/wolf-visual-composer/inc/elements/typed.php:63
-#: pack/wolf-visual-composer/inc/params/heading-params.php:74
+#: pack/wolf-visual-composer/inc/params/heading-params.php:76
 msgid "Text Alignment"
 msgstr ""
 
@@ -4463,7 +4463,7 @@ msgstr ""
 #: inc/elements/counter.php:180 inc/elements/image-link.php:141
 #: inc/elements/service-table.php:129 inc/elements/service-table.php:142
 #: inc/params/bigtext-params.php:41 inc/params/bigtext-params.php:57
-#: inc/params/heading-params.php:94 inc/params/heading-params.php:110
+#: inc/params/heading-params.php:96 inc/params/heading-params.php:114
 #: pack/wolf-visual-composer/inc/elements/bandsintown-tracking-button.php:78
 #: pack/wolf-visual-composer/inc/elements/bandsintown-tracking-button.php:92
 #: pack/wolf-visual-composer/inc/elements/counter.php:163
@@ -4473,8 +4473,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/service-table.php:142
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:41
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:57
-#: pack/wolf-visual-composer/inc/params/heading-params.php:94
-#: pack/wolf-visual-composer/inc/params/heading-params.php:110
+#: pack/wolf-visual-composer/inc/params/heading-params.php:96
+#: pack/wolf-visual-composer/inc/params/heading-params.php:114
 msgid "Text Color"
 msgstr ""
 
@@ -4674,12 +4674,12 @@ msgstr ""
 
 #: inc/elements/breadcrumb.php:37 inc/elements/column-text.php:32
 #: inc/elements/separator.php:73 inc/elements/single-image.php:142
-#: inc/params/heading-params.php:85
+#: inc/params/heading-params.php:87
 #: pack/wolf-visual-composer/inc/elements/breadcrumb.php:37
 #: pack/wolf-visual-composer/inc/elements/column-text.php:32
 #: pack/wolf-visual-composer/inc/elements/separator.php:73
 #: pack/wolf-visual-composer/inc/elements/single-image.php:142
-#: pack/wolf-visual-composer/inc/params/heading-params.php:85
+#: pack/wolf-visual-composer/inc/params/heading-params.php:87
 msgid "Center Align on Mobile"
 msgstr ""
 
@@ -4690,7 +4690,7 @@ msgstr ""
 #: inc/elements/post-slider.php:100 inc/elements/single-image.php:321
 #: inc/elements/team-member.php:212 inc/elements/typed.php:74
 #: inc/params/bigtext-params.php:67 inc/params/button-params.php:232
-#: inc/params/heading-params.php:120
+#: inc/params/heading-params.php:124
 #: pack/wolf-visual-composer/inc/elements/breadcrumb.php:53
 #: pack/wolf-visual-composer/inc/elements/countdown.php:84
 #: pack/wolf-visual-composer/inc/elements/counter.php:78
@@ -4704,7 +4704,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/typed.php:74
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:67
 #: pack/wolf-visual-composer/inc/params/button-params.php:232
-#: pack/wolf-visual-composer/inc/params/heading-params.php:120
+#: pack/wolf-visual-composer/inc/params/heading-params.php:124
 msgid "Font Weight"
 msgstr ""
 
@@ -4713,7 +4713,7 @@ msgstr ""
 #: inc/elements/interactive-overlays.php:83 inc/elements/post-slider.php:108
 #: inc/elements/single-image.php:331 inc/elements/team-member.php:221
 #: inc/elements/typed.php:98 inc/params/bigtext-params.php:74
-#: inc/params/heading-params.php:128 inc/params/icon-params.php:544
+#: inc/params/heading-params.php:132 inc/params/icon-params.php:544
 #: pack/wolf-visual-composer/inc/elements/breadcrumb.php:60
 #: pack/wolf-visual-composer/inc/elements/cta.php:91
 #: pack/wolf-visual-composer/inc/elements/interactive-links.php:86
@@ -4723,7 +4723,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/team-member.php:221
 #: pack/wolf-visual-composer/inc/elements/typed.php:98
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:74
-#: pack/wolf-visual-composer/inc/params/heading-params.php:128
+#: pack/wolf-visual-composer/inc/params/heading-params.php:132
 #: pack/wolf-visual-composer/inc/params/icon-params.php:544
 msgid "Text Transform"
 msgstr ""
@@ -5129,7 +5129,7 @@ msgstr ""
 #: inc/elements/interactive-overlays.php:90 inc/elements/post-slider.php:91
 #: inc/elements/single-image.php:302 inc/elements/team-member.php:194
 #: inc/elements/typed.php:109 inc/params/bigtext-params.php:105
-#: inc/params/heading-params.php:66
+#: inc/params/heading-params.php:68
 #: pack/wolf-visual-composer/inc/elements/countdown.php:68
 #: pack/wolf-visual-composer/inc/elements/counter.php:108
 #: pack/wolf-visual-composer/inc/elements/cta.php:65
@@ -5149,7 +5149,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/team-member.php:194
 #: pack/wolf-visual-composer/inc/elements/typed.php:109
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:105
-#: pack/wolf-visual-composer/inc/params/heading-params.php:66
+#: pack/wolf-visual-composer/inc/params/heading-params.php:68
 msgid "Font"
 msgstr ""
 
@@ -5251,9 +5251,9 @@ msgstr ""
 msgid "Select text alignment in \"Call to Action\" block."
 msgstr ""
 
-#: inc/elements/cta.php:54 inc/params/heading-params.php:20
+#: inc/elements/cta.php:54 inc/params/heading-params.php:22
 #: pack/wolf-visual-composer/inc/elements/cta.php:54
-#: pack/wolf-visual-composer/inc/params/heading-params.php:20
+#: pack/wolf-visual-composer/inc/params/heading-params.php:22
 msgid "Heading"
 msgstr ""
 
@@ -5269,9 +5269,9 @@ msgstr ""
 msgid "Leave empty to use the default heading font sizes."
 msgstr ""
 
-#: inc/elements/cta.php:102 inc/params/heading-params.php:157
+#: inc/elements/cta.php:102 inc/params/heading-params.php:161
 #: pack/wolf-visual-composer/inc/elements/cta.php:102
-#: pack/wolf-visual-composer/inc/params/heading-params.php:157
+#: pack/wolf-visual-composer/inc/params/heading-params.php:161
 msgid "Line Height"
 msgstr ""
 
@@ -6087,11 +6087,11 @@ msgid "Tagline as Button"
 msgstr ""
 
 #: inc/elements/image-link.php:126 inc/elements/typed.php:116
-#: inc/params/bigtext-params.php:113 inc/params/heading-params.php:164
+#: inc/params/bigtext-params.php:113 inc/params/heading-params.php:168
 #: pack/wolf-visual-composer/inc/elements/image-link.php:126
 #: pack/wolf-visual-composer/inc/elements/typed.php:116
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:113
-#: pack/wolf-visual-composer/inc/params/heading-params.php:164
+#: pack/wolf-visual-composer/inc/params/heading-params.php:168
 msgid "Tag"
 msgstr ""
 
@@ -6295,12 +6295,12 @@ msgstr ""
 
 #: inc/elements/interactive-overlay-item.php:30
 #: inc/elements/process-item.php:107 inc/elements/service-table.php:121
-#: inc/params/background-params.php:69 inc/params/heading-params.php:191
+#: inc/params/background-params.php:69 inc/params/heading-params.php:195
 #: pack/wolf-visual-composer/inc/elements/interactive-overlay-item.php:30
 #: pack/wolf-visual-composer/inc/elements/process-item.php:107
 #: pack/wolf-visual-composer/inc/elements/service-table.php:121
 #: pack/wolf-visual-composer/inc/params/background-params.php:69
-#: pack/wolf-visual-composer/inc/params/heading-params.php:191
+#: pack/wolf-visual-composer/inc/params/heading-params.php:195
 msgid "Background Image"
 msgstr ""
 
@@ -7032,21 +7032,21 @@ msgstr ""
 msgid "Enter a value in % or px"
 msgstr ""
 
-#: inc/elements/post-slider.php:120 inc/params/heading-params.php:45
+#: inc/elements/post-slider.php:120 inc/params/heading-params.php:47
 #: pack/wolf-visual-composer/inc/elements/post-slider.php:120
-#: pack/wolf-visual-composer/inc/params/heading-params.php:45
+#: pack/wolf-visual-composer/inc/params/heading-params.php:47
 msgid "Behavior"
 msgstr ""
 
-#: inc/elements/post-slider.php:123 inc/params/heading-params.php:49
+#: inc/elements/post-slider.php:123 inc/params/heading-params.php:51
 #: pack/wolf-visual-composer/inc/elements/post-slider.php:123
-#: pack/wolf-visual-composer/inc/params/heading-params.php:49
+#: pack/wolf-visual-composer/inc/params/heading-params.php:51
 msgid "Responsive"
 msgstr ""
 
-#: inc/elements/post-slider.php:124 inc/params/heading-params.php:48
+#: inc/elements/post-slider.php:124 inc/params/heading-params.php:50
 #: pack/wolf-visual-composer/inc/elements/post-slider.php:124
-#: pack/wolf-visual-composer/inc/params/heading-params.php:48
+#: pack/wolf-visual-composer/inc/params/heading-params.php:50
 msgid "Static"
 msgstr ""
 
@@ -7783,23 +7783,23 @@ msgstr ""
 
 #: inc/elements/single-image.php:345 inc/elements/team-member.php:234
 #: inc/params/bigtext-params.php:85 inc/params/bigtext-params.php:95
-#: inc/params/heading-params.php:140
+#: inc/params/heading-params.php:144
 #: pack/wolf-visual-composer/inc/elements/single-image.php:345
 #: pack/wolf-visual-composer/inc/elements/team-member.php:234
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:85
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:95
-#: pack/wolf-visual-composer/inc/params/heading-params.php:140
+#: pack/wolf-visual-composer/inc/params/heading-params.php:144
 msgid "Font Style"
 msgstr ""
 
 #: inc/elements/single-image.php:349 inc/elements/team-member.php:238
 #: inc/params/bigtext-params.php:89 inc/params/bigtext-params.php:99
-#: inc/params/heading-params.php:144
+#: inc/params/heading-params.php:148
 #: pack/wolf-visual-composer/inc/elements/single-image.php:349
 #: pack/wolf-visual-composer/inc/elements/team-member.php:238
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:89
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:99
-#: pack/wolf-visual-composer/inc/params/heading-params.php:144
+#: pack/wolf-visual-composer/inc/params/heading-params.php:148
 msgid "Italic"
 msgstr ""
 
@@ -8250,10 +8250,10 @@ msgid "An animated typing text"
 msgstr ""
 
 #: inc/elements/typed.php:19 inc/params/bigtext-params.php:24
-#: inc/params/heading-params.php:23
+#: inc/params/heading-params.php:25
 #: pack/wolf-visual-composer/inc/elements/typed.php:19
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:24
-#: pack/wolf-visual-composer/inc/params/heading-params.php:23
+#: pack/wolf-visual-composer/inc/params/heading-params.php:25
 msgid "Typography"
 msgstr ""
 
@@ -8537,43 +8537,43 @@ msgstr ""
 msgid "Video Preview"
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:50
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:50
+#: inc/frontend/frontend-functions.php:51
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:51
 msgid "View all posts by %s"
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:78
-#: inc/frontend/frontend-functions.php:86
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:78
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:86
+#: inc/frontend/frontend-functions.php:79
+#: inc/frontend/frontend-functions.php:87
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:79
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:87
 #. Translators: used between list items, there is a space after the comma.
 msgid ", "
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:445
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:445
+#: inc/frontend/frontend-functions.php:464
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:464
 msgid "Awaiting product image"
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:573
-#: inc/frontend/frontend-functions.php:581
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:573
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:581
+#: inc/frontend/frontend-functions.php:592
+#: inc/frontend/frontend-functions.php:600
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:592
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:600
 msgid "healthy"
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:577
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:577
+#: inc/frontend/frontend-functions.php:596
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:596
 msgid "underweight"
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:585
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:585
+#: inc/frontend/frontend-functions.php:604
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:604
 msgid "overweight"
 msgstr ""
 
-#: inc/frontend/frontend-functions.php:589
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:589
+#: inc/frontend/frontend-functions.php:608
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:608
 msgid "obese"
 msgstr ""
 
@@ -8828,9 +8828,9 @@ msgstr ""
 msgid "You can add several lines of text."
 msgstr ""
 
-#: inc/params/bigtext-params.php:36 inc/params/heading-params.php:33
+#: inc/params/bigtext-params.php:36 inc/params/heading-params.php:35
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:36
-#: pack/wolf-visual-composer/inc/params/heading-params.php:33
+#: pack/wolf-visual-composer/inc/params/heading-params.php:35
 msgid "You can use the %s short tag to display the current page title."
 msgstr ""
 
@@ -9118,23 +9118,23 @@ msgstr ""
 msgid "Custom Z-Index"
 msgstr ""
 
-#: inc/params/heading-params.php:21
-#: pack/wolf-visual-composer/inc/params/heading-params.php:21
+#: inc/params/heading-params.php:23
+#: pack/wolf-visual-composer/inc/params/heading-params.php:23
 msgid "A big title with flexible font size"
 msgstr ""
 
-#: inc/params/heading-params.php:31
-#: pack/wolf-visual-composer/inc/params/heading-params.php:31
+#: inc/params/heading-params.php:33
+#: pack/wolf-visual-composer/inc/params/heading-params.php:33
 msgid "My Headline"
 msgstr ""
 
-#: inc/params/heading-params.php:55
-#: pack/wolf-visual-composer/inc/params/heading-params.php:55
+#: inc/params/heading-params.php:57
+#: pack/wolf-visual-composer/inc/params/heading-params.php:57
 msgid "Minimum Font Size"
 msgstr ""
 
-#: inc/params/heading-params.php:185
-#: pack/wolf-visual-composer/inc/params/heading-params.php:185
+#: inc/params/heading-params.php:189
+#: pack/wolf-visual-composer/inc/params/heading-params.php:189
 msgid "Add Image Background?"
 msgstr ""
 
@@ -9720,9 +9720,9 @@ msgstr ""
 msgid "Css"
 msgstr ""
 
-#: inc/vc-custom-fields.php:173 inc/vc-custom-fields.php:190
-#: pack/wolf-visual-composer/inc/vc-custom-fields.php:173
-#: pack/wolf-visual-composer/inc/vc-custom-fields.php:190
+#: inc/vc-custom-fields.php:176 inc/vc-custom-fields.php:193
+#: pack/wolf-visual-composer/inc/vc-custom-fields.php:176
+#: pack/wolf-visual-composer/inc/vc-custom-fields.php:193
 msgid "Media Library"
 msgstr ""
 
@@ -10007,7 +10007,7 @@ msgid "%d servings"
 msgstr ""
 
 #: pack/wolf-visual-composer/templates/wvc_testimonial_slide.php:65
-#: templates/wvc_testimonial_slide.php:65
+#: templates/wvc_testimonial_slide.php:64
 msgid "%s out of 5"
 msgstr ""
 
@@ -10068,8 +10068,8 @@ msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr ""
 
-#: inc/vc-custom-fields.php:64
-#: pack/wolf-visual-composer/inc/vc-custom-fields.php:64
+#: inc/vc-custom-fields.php:67
+#: pack/wolf-visual-composer/inc/vc-custom-fields.php:67
 msgctxt "placeholder text"
 msgid ""
 "And there was silence over the oceans. When a voice came thundering from "

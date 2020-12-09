@@ -1,5 +1,9 @@
 # Changelog
 
+#### 9th December 2020 - Version 3.5.1
+
+-	Tweak: Added Tiktok icon
+
 #### 6th November 2020 - Version 3.5.0
 
 -	Tweak: Do not output span shortcode ID attribute if empty

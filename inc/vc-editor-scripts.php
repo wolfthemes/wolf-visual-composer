@@ -19,7 +19,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function wvc_enqueue_vc_editor_scripts() {
 
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	$version = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? time() : WVC_VERSION;
 
 	wp_enqueue_script( 'wvc-vc-editor', WVC_JS . '/admin/vc-editor.js', array(), $version, true );

@@ -17,6 +17,17 @@ var WVCMailchimp = function( $ ) {
 		 */
 		init : function () {
 
+			var _this = this;
+
+			this.submitButton();
+
+			// $(window)
+            //     .resize(function () {
+			// 		_this.sizeClasses();
+			// });
+		},
+
+		submitButton : function () {
 			$( '.wvc-mailchimp-submit' ).on( 'click', function( event ) {
 				event.preventDefault();
 
@@ -42,13 +53,13 @@ var WVCMailchimp = function( $ ) {
 				$result.animate( { 'opacity' : 0 } );
 
 				$.post( WVCMailchimpParams.ajaxUrl, data, function( response ) {
-					
+
 					if ( response ) {
 
 						message = response;
 
 						if ( 'OK' === response ) {
-							
+
 							message = WVCMailchimpParams.subscriptionSuccessfulMessage;
 
 							/* Use to track subscription event */
@@ -56,16 +67,27 @@ var WVCMailchimp = function( $ ) {
 						}
 
 					} else {
-						
+
 						message = WVCMailchimpParams.unknownError;
 					}
 
 					$result.html( message ).animate( { 'opacity' : 1 } );
-					
+
 					setTimeout( function() {
 						$result.animate( { 'opacity' : 0 } );
 					}, 3000 );
 				} );
+			} );
+		},
+
+		sizeClasses : function () {
+
+			$( '.wvc-mailchimp-show-name-yes.wvc-mailchimp-size-large' ).each( function() {
+				if ( 600 > $( this ).width() ) {
+					$( this ).addClass( 'wvc-mailchimp-smaller' );
+				} else {
+					$( this ).removeClass( 'wvc-mailchimp-smaller' );
+				}
 			} );
 		}
 	};

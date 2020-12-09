@@ -1261,6 +1261,7 @@ function wvc_add_wolficons_font( $icons ) {
 		array( 'wolficon-bandsintown' => 'Bandsintown' ),
 		array( 'wolficon-wolfthemes' => 'Wolfthemes' ),
 		array( 'wolficon-ampersand' => 'Ampersand' ),
+		array( 'wolficon2-tiktok' => 'tiktok' ),
 	);
 
 	return $wolf_icons;
