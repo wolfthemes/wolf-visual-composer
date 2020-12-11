@@ -1551,7 +1551,7 @@ var WVC = (function ($) {
                 var $this = $(this),
                     classes = $this.attr('class');
 
-                console.log(classes);
+                //console.log(classes);
 
                 if ($this.parent().hasClass('vc_vc_column')) {
                     $this.parent().addClass(classes);

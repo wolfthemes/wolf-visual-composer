@@ -59,6 +59,7 @@ var WVCSliders = function( $ ) {
 				defaultTransition = ( this.isMobile ) ? 'slide' : 'fade';
 
 			$( '.wvc-advanced-slider, .wvc-last-posts-big-slider .flexslider' ).each( function() {
+
 				var $slider = $( this ),
 					transition,
 					dataAutoplay = $slider.data( 'autoplay' ),
@@ -73,6 +74,7 @@ var WVCSliders = function( $ ) {
 				transition = ( 'auto' === dataTransition ) ? defaultTransition : dataTransition;
 
 				$( '#' + $slider.attr( 'id' ) ).wvcSlider( {
+					selector : '#' + $slider.attr( 'id' ),
 					isMobile : isMobile,
 					animation : transition,
 					slideshow : dataAutoplay,

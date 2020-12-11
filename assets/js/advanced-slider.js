@@ -38,11 +38,13 @@ An enhanced version of flexslider that support video background and caption tran
 
 		plugin.settings = {};
 
+
+
 		plugin.init = function() {
 
 			plugin.settings = $.extend( {}, defaults, options );
 
-			$selector.flexslider( {
+			$( plugin.settings.selector ).flexslider( {
 				animation : plugin.settings.animation,
 				slideshow : plugin.settings.slideshow,
 				pauseOnHover : plugin.settings.pauseOnHover,
@@ -57,14 +59,14 @@ An enhanced version of flexslider that support video background and caption tran
 				},
 
 				start : function () {
-					
+
 					/**
 					 * Play first video BG
 					 */
 					setTimeout( function() {
 						ui.playCurrentVideo();
 					}, 500 );
-					
+
 					plugin.settings.start();
 				},
 
@@ -101,7 +103,7 @@ An enhanced version of flexslider that support video background and caption tran
 				var _this = this;
 
 				this.setSliderHeight( value, unit );
-				
+
 				$( window ).resize( function() {
 					_this.setSliderHeight( value, unit );
 				} ).resize();
@@ -132,7 +134,7 @@ An enhanced version of flexslider that support video background and caption tran
 
 				winHeight = winHeight - scrollOffset + bleed;
 
-				$selector.find( '.slide' ).each( function() {
+				$( plugin.settings.selector ).find( '.slide' ).each( function() {
 					$( this ).css( { 'height' : winHeight  } );
 				} );
 			},
@@ -145,7 +147,7 @@ An enhanced version of flexslider that support video background and caption tran
 				var _this = this;
 
 				/* Play current HTML5 video */
-				if ( $selector.find( '.flex-active-slide .wvc-video-bg' ).length ) {
+				if ( $( plugin.settings.selector ).find( '.flex-active-slide .wvc-video-bg' ).length ) {
 
 					var $videoContainer = $( '.flex-active-slide' ),
 						$video = $videoContainer.find( '.wvc-video-bg' ),
@@ -171,13 +173,13 @@ An enhanced version of flexslider that support video background and caption tran
 				}
 
 				/* Play current slide YT video */
-				else if ( $selector.find( '.flex-active-slide .wvc-yt-video-bg-play' ).length ) {
-					$selector.find( '.flex-active-slide .wvc-yt-video-bg-play' ).trigger( 'click' );
+				else if ( $( plugin.settings.selector ).find( '.flex-active-slide .wvc-yt-video-bg-play' ).length ) {
+					$( plugin.settings.selector ).find( '.flex-active-slide .wvc-yt-video-bg-play' ).trigger( 'click' );
 				}
 
 				/* Play current slide Vimeo video */
-				else if ( $selector.find( '.flex-active-slide .wvc-vimeo-bg' ).length ) {
-					$f( $selector.find( '.flex-active-slide .wvc-vimeo-bg' ).get(0) ).api( 'play' );
+				else if ( $( plugin.settings.selector ).find( '.flex-active-slide .wvc-vimeo-bg' ).length ) {
+					$f( $( plugin.settings.selector ).find( '.flex-active-slide .wvc-vimeo-bg' ).get(0) ).api( 'play' );
 				}
 
 				window.dispatchEvent( new Event( 'scroll' ) );
@@ -192,18 +194,18 @@ An enhanced version of flexslider that support video background and caption tran
 					$video;
 
 				/* Pause all HTML videos */
-				if ( $selector.find( '.wvc-video-bg' ).length ) {
-					$selector.find( '.wvc-video-bg' ).each( function () {
+				if ( $( plugin.settings.selector ).find( '.wvc-video-bg' ).length ) {
+					$( plugin.settings.selector ).find( '.wvc-video-bg' ).each( function () {
 						$video = $( this );
 						$video.get(0).pause();
 					} );
 				}
 
 				/* Pause all YT videos */
-				$selector.find( '.wvc-yt-video-bg-pause' ).trigger( 'click' );
+				$( plugin.settings.selector ).find( '.wvc-yt-video-bg-pause' ).trigger( 'click' );
 
 				/* Pause all Vimeo  videos */
-				$selector.find( '.wvc-vimeo-video-bg-container > iframe' ).each( function () {
+				$( plugin.settings.selector ).find( '.wvc-vimeo-video-bg-container > iframe' ).each( function () {
 					$f( this ).api( 'pause' ); // froogaloop
 					$f( this ).api( 'setVolume', 0 );
 				} );
