@@ -21,10 +21,10 @@ var WVCMailchimp = function( $ ) {
 
 			this.submitButton();
 
-			// $(window)
-            //     .resize(function () {
-			// 		_this.sizeClasses();
-			// });
+			$(window)
+                .resize(function () {
+					_this.sizeClasses();
+			});
 		},
 
 		submitButton : function () {

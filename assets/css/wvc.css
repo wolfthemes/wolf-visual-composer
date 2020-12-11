@@ -2994,16 +2994,6 @@ cite.wvc-testimonial-cite {
   margin-bottom: 20px;
 }
 
-.wvc-testimonials-text-align-left .star-rating {
-  text-align: left;
-  margin-left: 0;
-}
-
-.wvc-testimonials-text-align-right .star-rating {
-  text-align: right;
-  margin-right: 0;
-}
-
 /**
  * Team members
  */
@@ -7549,6 +7539,10 @@ span.wvc-highlight-green {
 
 .wvc-mailchimp-show-name-yes.wvc-mailchimp-size-large .wvc-mailchimp-input-container {
   margin-bottom: 15px !important;
+}
+
+.wvc-mailchimp-smaller .wvc-mailchimp-inner {
+  display: block !important;
 }
 
 /**
