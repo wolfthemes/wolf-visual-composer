@@ -626,60 +626,72 @@ var WVC = (function ($) {
 				<div class="wvc-bg-video-mute-equalizer-bar-3 wvc-bg-video-mute-equalizer-bar"></div>\
 				<div class="wvc-bg-video-mute-equalizer-bar-4 wvc-bg-video-mute-equalizer-bar"></div>'
                 );
-            });
+			});
 
-            $(".wvc-row-video-bg-mute-button").on("click", function () {
-                var $button = $(this),
-                    $row = $button.parents(".wvc-parent-row"),
-                    $video,
-                    video,
-                    YTPlayerId,
-                    VimeoPlayerId;
+			$(".wvc-row-video-bg-mute-button").each( function() {
+				 $( this ).on("click", function () {
+	                var $button = $(this),
+	                    $row = $button.parent().parent(),
+	                    $video,
+	                    video,
+	                    YTPlayerId,
+						VimeoPlayerId;
 
-                if ($button.hasClass("wvc-row-v-bg-mute-sh")) {
-                    $video = $row.find(".wvc-video-bg");
-                    video = $video[0];
+					// if ( $button.parent().parent().hasClass( '.wvc-advanced-slide' ) ) {
+					// 	$row = $button.parent().parent();
+					// } else {
+					// 	$row = $button.parent().parent();
+					// }
 
-                    if (video.muted) {
-                        video.muted = false;
-                    } else {
-                        video.muted = true;
-                    }
+	                if ($button.hasClass("wvc-row-v-bg-mute-sh")) {
+	                    $video = $row.find(".wvc-video-bg");
+	                    video = $video[0];
 
-                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
-                } else if ($button.hasClass("wvc-row-v-bg-mute-yt")) {
-                    ($video = $row.find(".wvc-youtube-bg")),
-                        (YTPlayerId = $video.parent().data("yt-bg-element-id"));
+	                    if (video.muted) {
+	                        video.muted = false;
+	                    } else {
+	                        video.muted = true;
+	                    }
 
-                    if ($row.hasClass("wvc-video-bg-is-mute")) {
-                        if ("undefined" !== typeof WVCYTVideoBg) {
-                            WVCYTVideoBg.players[YTPlayerId].unMute();
-                        }
-                    } else {
-                        if ("undefined" !== typeof WVCYTVideoBg) {
-                            WVCYTVideoBg.players[YTPlayerId].mute();
-                        }
-                    }
+	                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
 
-                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
-                } else if ($button.hasClass("wvc-row-v-bg-mute-vimeo")) {
-                    $video = $row.find(".wvc-vimeo-bg");
-                    (video = $video[0]),
-                        (VimeoPlayerId = $video.data("vimeo-bg-element-id"));
+					} else if ($button.hasClass("wvc-row-v-bg-mute-yt")) {
+	                    ($video = $row.find(".wvc-youtube-bg")),
+	                        (YTPlayerId = $video.parent().data("yt-bg-element-id"));
 
-                    if ($row.hasClass("wvc-video-bg-is-mute")) {
-                        if ("undefined" !== typeof WVCVimeo) {
-                            WVCVimeo.players[VimeoPlayerId].setVolume(1);
-                        }
-                    } else {
-                        if ("undefined" !== typeof WVCVimeo) {
-                            WVCVimeo.players[VimeoPlayerId].setVolume(0);
-                        }
-                    }
+	                    if ($row.hasClass("wvc-video-bg-is-mute")) {
 
-                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
-                }
-            });
+							console.log( YTPlayerId );
+
+	                        if ("undefined" !== typeof WVCYTVideoBg) {
+	                            WVCYTVideoBg.players[YTPlayerId].unMute();
+	                        }
+	                    } else {
+	                        if ("undefined" !== typeof WVCYTVideoBg) {
+	                            WVCYTVideoBg.players[YTPlayerId].mute();
+	                        }
+	                    }
+
+	                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
+	                } else if ($button.hasClass("wvc-row-v-bg-mute-vimeo")) {
+	                    $video = $row.find(".wvc-vimeo-bg");
+	                    (video = $video[0]),
+	                        (VimeoPlayerId = $video.data("vimeo-bg-element-id"));
+
+	                    if ($row.hasClass("wvc-video-bg-is-mute")) {
+	                        if ("undefined" !== typeof WVCVimeo) {
+	                            WVCVimeo.players[VimeoPlayerId].setVolume(1);
+	                        }
+	                    } else {
+	                        if ("undefined" !== typeof WVCVimeo) {
+	                            WVCVimeo.players[VimeoPlayerId].setVolume(0);
+	                        }
+	                    }
+
+	                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
+	                }
+	            });
+			} );
         },
 
         /**

@@ -1,5 +1,9 @@
 # Changelog
 
+#### 14th December 2020 - Version 3.5.3
+
+-   Fix: Video mute button in advanced slider with multiple video background slides
+
 #### 11th December 2020 - Version 3.5.2
 
 -	Tweak: Added Tiktok icon
