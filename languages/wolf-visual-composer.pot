@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.5.3\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.5.4\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2020-12-14 13:33:47+00:00\n"
+"POT-Creation-Date: 2020-12-17 13:35:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1466,8 +1466,8 @@ msgstr ""
 #: pack/wolf-visual-composer/templates/wvc_advanced_slide.php:70
 #: pack/wolf-visual-composer/templates/wvc_banner.php:34
 #: templates/vc_button.php:16 templates/vc_cta.php:25
-#: templates/vc_hoverbox.php:58 templates/wvc_advanced_slide.php:53
-#: templates/wvc_advanced_slide.php:70 templates/wvc_banner.php:34
+#: templates/vc_hoverbox.php:58 templates/wvc_advanced_slide.php:55
+#: templates/wvc_advanced_slide.php:72 templates/wvc_banner.php:34
 msgid "My Button"
 msgstr ""
 

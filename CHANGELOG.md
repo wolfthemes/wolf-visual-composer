@@ -1,8 +1,9 @@
 # Changelog
 
-#### 14th December 2020 - Version 3.5.3
+#### 14th December 2020 - Version 3.5.4
 
 -   Fix: Video mute button in advanced slider with multiple video background slides
+-   Fix: Video mute button in advanced slider had to be clicked twice
 
 #### 11th December 2020 - Version 3.5.2
 

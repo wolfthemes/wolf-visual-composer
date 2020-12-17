@@ -661,18 +661,22 @@ var WVC = (function ($) {
 
 	                    if ($row.hasClass("wvc-video-bg-is-mute")) {
 
-							console.log( YTPlayerId );
+							//console.log( YTPlayerId );
 
 	                        if ("undefined" !== typeof WVCYTVideoBg) {
-	                            WVCYTVideoBg.players[YTPlayerId].unMute();
+								WVCYTVideoBg.players[YTPlayerId].unMute();
+								$row.addClass("wvc-video-bg-is-unmute");
+								$row.removeClass("wvc-video-bg-is-mute");
 	                        }
 	                    } else {
 	                        if ("undefined" !== typeof WVCYTVideoBg) {
-	                            WVCYTVideoBg.players[YTPlayerId].mute();
+								WVCYTVideoBg.players[YTPlayerId].mute();
+								$row.addClass("wvc-video-bg-is-mute");
+								$row.removeClass("wvc-video-bg-is-unmute");
 	                        }
 	                    }
 
-	                    $row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
+	                    //$row.toggleClass("wvc-video-bg-is-unmute wvc-video-bg-is-mute");
 	                } else if ($button.hasClass("wvc-row-v-bg-mute-vimeo")) {
 	                    $video = $row.find(".wvc-vimeo-bg");
 	                    (video = $video[0]),
