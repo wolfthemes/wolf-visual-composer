@@ -1,81 +1,81 @@
-.wvc-animation-mask{
+.wvc-animation-mask {
 	position: absolute;
-	content:'';
+	content: '';
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color:white;
+	background-color: white;
 }
 
-.wvc-font-light{
-	.wvc-animation-mask{
-		background-color:black;
+.wvc-font-light {
+	.wvc-animation-mask {
+		background-color: black;
 	}
 }
 
 .uncoverXLeft,
 .uncoverXRight,
 .uncoverYTop,
-.uncoverYBottom{
+.uncoverYBottom {
+	visibility: visible !important;
 	&:not(.wvc-animation-mask) {
 		display: none;
 	}
 }
 
-
-.uncoverXLeft{
+.uncoverXLeft {
 	transform-origin: 100% 50%;
-	animation:uncoverXLeft 1s ease forwards;
+	animation: uncoverXLeft 1s ease forwards;
 }
 
-.uncoverXRight{
+.uncoverXRight {
 	transform-origin: 0 50%;
-	animation:uncoverXRight 1s ease forwards;
+	animation: uncoverXRight 1s ease forwards;
 }
 
-.uncoverYTop{
+.uncoverYTop {
 	transform-origin: 0 0;
-	animation:uncoverYTop 1s ease forwards;
+	animation: uncoverYTop 1s ease forwards;
 }
 
-.uncoverYBottom{
+.uncoverYBottom {
 	transform-origin: 100% 0;
-	animation:uncoverYBottom 1s ease forwards;
+	animation: uncoverYBottom 1s ease forwards;
 }
 
-@keyframes uncoverXLeft{
-	0%{
-		transform:scaleX(1)
+@keyframes uncoverXLeft {
+	0% {
+		transform: scaleX(1);
 	}
-	100%{
-		transform:scaleX(0);
-	}
-}
-
-@keyframes uncoverXRight{
-	0%{
-		transform:scaleX(1)
-	}
-	100%{
-		transform:scaleX(0);
+	100% {
+		transform: scaleX(0);
 	}
 }
 
-@keyframes uncoverYTop{
-	0%{
-		transform:scaleY(1)
+@keyframes uncoverXRight {
+	0% {
+		transform: scaleX(1);
 	}
-	100%{
-		transform:scaleY(0);
+	100% {
+		transform: scaleX(0);
 	}
 }
 
-@keyframes uncoverYBottom{
-	0%{
-		transform:scaleY(1)
+@keyframes uncoverYTop {
+	0% {
+		transform: scaleY(1);
 	}
-	100%{
-		transform:scaleY(0);
+	100% {
+		transform: scaleY(0);
+	}
+}
+
+@keyframes uncoverYBottom {
+	0% {
+		transform: scaleY(1);
+	}
+	100% {
+		transform: scaleY(0);
 	}
 }

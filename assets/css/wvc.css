@@ -10317,6 +10317,12 @@ body.wpb-svg #swipebox-close {
   background-color: black;
 }
 
+.uncoverXLeft,
+.uncoverXRight,
+.uncoverYTop,
+.uncoverYBottom {
+  visibility: visible !important;
+}
 .uncoverXLeft:not(.wvc-animation-mask),
 .uncoverXRight:not(.wvc-animation-mask),
 .uncoverYTop:not(.wvc-animation-mask),
