@@ -712,6 +712,7 @@ function wvc_get_socials() {
 		// 'path',
 		'pinterest',
 		// 'jsfiddle',
+		'tiktok',
 		'tumblr',
 		'tripadvisor',
 		'skype',

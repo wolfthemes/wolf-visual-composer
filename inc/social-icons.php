@@ -339,6 +339,8 @@ function wvc_socials( $atts ) {
 
 			if ( in_array( $service, $wolf_icon_array ) ) {
 				$prefix = 'wolficon';
+			} elseif ( in_array( $service, $wolf_icon2_array ) ) {
+				$prefix = 'wolficon2';
 			} elseif ( in_array( $service, $socicon_array ) ) {
 				$prefix = 'socicon';
 			} else {

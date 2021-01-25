@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.5.5\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.5.7\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2021-01-04 10:00:52+00:00\n"
+"POT-Creation-Date: 2021-01-25 14:19:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -745,9 +745,9 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: inc/admin/class-options.php:335 inc/core-functions.php:1315
+#: inc/admin/class-options.php:335 inc/core-functions.php:1316
 #: pack/wolf-visual-composer/inc/admin/class-options.php:335
-#: pack/wolf-visual-composer/inc/core-functions.php:1314
+#: pack/wolf-visual-composer/inc/core-functions.php:1315
 msgid "Attachment"
 msgstr ""
 
@@ -1462,8 +1462,8 @@ msgstr ""
 #: pack/wolf-visual-composer/templates/vc_button.php:16
 #: pack/wolf-visual-composer/templates/vc_cta.php:25
 #: pack/wolf-visual-composer/templates/vc_hoverbox.php:58
-#: pack/wolf-visual-composer/templates/wvc_advanced_slide.php:53
-#: pack/wolf-visual-composer/templates/wvc_advanced_slide.php:70
+#: pack/wolf-visual-composer/templates/wvc_advanced_slide.php:55
+#: pack/wolf-visual-composer/templates/wvc_advanced_slide.php:72
 #: pack/wolf-visual-composer/templates/wvc_banner.php:34
 #: templates/vc_button.php:16 templates/vc_cta.php:25
 #: templates/vc_hoverbox.php:58 templates/wvc_advanced_slide.php:55
@@ -2621,41 +2621,41 @@ msgstr ""
 msgid "Pattern %1$d (loop of %2$d)"
 msgstr ""
 
-#: inc/core-functions.php:1032
-#: pack/wolf-visual-composer/inc/core-functions.php:1031
+#: inc/core-functions.php:1033
+#: pack/wolf-visual-composer/inc/core-functions.php:1032
 msgid "Image is missing"
 msgstr ""
 
-#: inc/core-functions.php:1137
-#: pack/wolf-visual-composer/inc/core-functions.php:1136
+#: inc/core-functions.php:1138
+#: pack/wolf-visual-composer/inc/core-functions.php:1137
 msgid "Home"
 msgstr ""
 
-#: inc/core-functions.php:1184
-#: pack/wolf-visual-composer/inc/core-functions.php:1183
+#: inc/core-functions.php:1185
+#: pack/wolf-visual-composer/inc/core-functions.php:1184
 msgid "Products tagged &ldquo;"
 msgstr ""
 
-#: inc/core-functions.php:1310
-#: pack/wolf-visual-composer/inc/core-functions.php:1309
+#: inc/core-functions.php:1311
+#: pack/wolf-visual-composer/inc/core-functions.php:1310
 msgid "Search"
 msgstr ""
 
-#: inc/core-functions.php:1338
-#: pack/wolf-visual-composer/inc/core-functions.php:1337
+#: inc/core-functions.php:1339
+#: pack/wolf-visual-composer/inc/core-functions.php:1338
 msgid "Search results"
 msgstr ""
 
-#: inc/core-functions.php:1467 inc/elements/content-block.php:33
+#: inc/core-functions.php:1468 inc/elements/content-block.php:33
 #: inc/elements/content-block.php:42
-#: pack/wolf-visual-composer/inc/core-functions.php:1466
+#: pack/wolf-visual-composer/inc/core-functions.php:1467
 #: pack/wolf-visual-composer/inc/elements/content-block.php:33
 #: pack/wolf-visual-composer/inc/elements/content-block.php:42
 msgid "Content Block"
 msgstr ""
 
-#: inc/core-functions.php:1474
-#: pack/wolf-visual-composer/inc/core-functions.php:1473
+#: inc/core-functions.php:1475
+#: pack/wolf-visual-composer/inc/core-functions.php:1474
 msgid "Playlists"
 msgstr ""
 
@@ -10006,12 +10006,12 @@ msgstr ""
 msgid "%d servings"
 msgstr ""
 
-#: pack/wolf-visual-composer/templates/wvc_testimonial_slide.php:65
+#: pack/wolf-visual-composer/templates/wvc_testimonial_slide.php:64
 #: templates/wvc_testimonial_slide.php:64
 msgid "%s out of 5"
 msgstr ""
 
-#: pack/wolf-visual-composer/templates/wvc_wc_categories.php:370
+#: pack/wolf-visual-composer/templates/wvc_wc_categories.php:380
 #: templates/wvc_wc_categories.php:380
 msgid "%s product"
 msgid_plural "%s products"

@@ -38,8 +38,6 @@ An enhanced version of flexslider that support video background and caption tran
 
 		plugin.settings = {};
 
-
-
 		plugin.init = function() {
 
 			plugin.settings = $.extend( {}, defaults, options );

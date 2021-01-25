@@ -1,5 +1,10 @@
 # Changelog
 
+#### 31th December 2020 - Version 3.5.7
+
+-   Tweak: apply object-fit: cover CSS to video backgorund
+-   Fix: Missing tiktok field option in the social icon custom element
+
 #### 31th December 2020 - Version 3.5.5
 
 -   Tweak: Improved uncover animation effects
