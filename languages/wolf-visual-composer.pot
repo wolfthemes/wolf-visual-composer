@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WPBakery Page Builder Extension 3.5.7\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2021-01-25 14:19:10+00:00\n"
+"POT-Creation-Date: 2021-01-26 15:49:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -747,7 +747,7 @@ msgstr ""
 
 #: inc/admin/class-options.php:335 inc/core-functions.php:1316
 #: pack/wolf-visual-composer/inc/admin/class-options.php:335
-#: pack/wolf-visual-composer/inc/core-functions.php:1315
+#: pack/wolf-visual-composer/inc/core-functions.php:1316
 msgid "Attachment"
 msgstr ""
 
@@ -2622,40 +2622,40 @@ msgid "Pattern %1$d (loop of %2$d)"
 msgstr ""
 
 #: inc/core-functions.php:1033
-#: pack/wolf-visual-composer/inc/core-functions.php:1032
+#: pack/wolf-visual-composer/inc/core-functions.php:1033
 msgid "Image is missing"
 msgstr ""
 
 #: inc/core-functions.php:1138
-#: pack/wolf-visual-composer/inc/core-functions.php:1137
+#: pack/wolf-visual-composer/inc/core-functions.php:1138
 msgid "Home"
 msgstr ""
 
 #: inc/core-functions.php:1185
-#: pack/wolf-visual-composer/inc/core-functions.php:1184
+#: pack/wolf-visual-composer/inc/core-functions.php:1185
 msgid "Products tagged &ldquo;"
 msgstr ""
 
 #: inc/core-functions.php:1311
-#: pack/wolf-visual-composer/inc/core-functions.php:1310
+#: pack/wolf-visual-composer/inc/core-functions.php:1311
 msgid "Search"
 msgstr ""
 
 #: inc/core-functions.php:1339
-#: pack/wolf-visual-composer/inc/core-functions.php:1338
+#: pack/wolf-visual-composer/inc/core-functions.php:1339
 msgid "Search results"
 msgstr ""
 
 #: inc/core-functions.php:1468 inc/elements/content-block.php:33
 #: inc/elements/content-block.php:42
-#: pack/wolf-visual-composer/inc/core-functions.php:1467
+#: pack/wolf-visual-composer/inc/core-functions.php:1468
 #: pack/wolf-visual-composer/inc/elements/content-block.php:33
 #: pack/wolf-visual-composer/inc/elements/content-block.php:42
 msgid "Content Block"
 msgstr ""
 
 #: inc/core-functions.php:1475
-#: pack/wolf-visual-composer/inc/core-functions.php:1474
+#: pack/wolf-visual-composer/inc/core-functions.php:1475
 msgid "Playlists"
 msgstr ""
 
@@ -10011,8 +10011,8 @@ msgstr ""
 msgid "%s out of 5"
 msgstr ""
 
-#: pack/wolf-visual-composer/templates/wvc_wc_categories.php:380
-#: templates/wvc_wc_categories.php:380
+#: pack/wolf-visual-composer/templates/wvc_wc_categories.php:382
+#: templates/wvc_wc_categories.php:382
 msgid "%s product"
 msgid_plural "%s products"
 msgstr[0] ""

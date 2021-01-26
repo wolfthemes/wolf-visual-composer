@@ -246,6 +246,8 @@ foreach ( $terms as $term ) {
 	$description   = $term->description;
 	$count         = $term->count;
 
+	//debug( $img_id );
+
 	if ( ! $img_id || ! wp_attachment_is_image( $img_id ) ) {
 		if ( ! WP_DEBUG ) {
 			continue;
