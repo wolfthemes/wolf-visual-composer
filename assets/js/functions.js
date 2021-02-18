@@ -1785,7 +1785,7 @@ var WVC = (function ($) {
         WVC.init();
     });
 
-    $(window).load(function () {
+    $(window).on('pageshow', function() {
         WVC.pageLoad();
     });
 })(jQuery);

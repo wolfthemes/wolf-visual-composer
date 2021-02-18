@@ -83,7 +83,7 @@ var WVCYTVideoBg = function( $ ) {
 		 */
 		loadPlayer: function( containerId, videoId, startTime, endTime, loop, pauseOnStart, unMute ) {
 
-			var _this = this, 	
+			var _this = this,
 				done = false,
 				elementDataId = $( '#' + containerId ).parent().data( 'yt-bg-element-id' ),
 
@@ -107,7 +107,7 @@ var WVCYTVideoBg = function( $ ) {
 				events: {
 					onReady: function ( event ) {
 						event.target.setLoop( true );
-						
+
 						//event.target.mute();
 						if ( ! unMute ) {
 							event.target.mute();
@@ -131,7 +131,7 @@ var WVCYTVideoBg = function( $ ) {
     						var videoDuration = player.getDuration();
 
     						if ( event.data === YT.PlayerState.PLAYING && ! done && ! loop ) {
-    							
+
 							// pause 0.1 seconds before the end
 							setTimeout( function() {
 
@@ -145,10 +145,10 @@ var WVCYTVideoBg = function( $ ) {
 			} );
 
 			_this.players[elementDataId] = player; // awesome, we can access the player (almost) from anywhere!
-			
+
 			/* Play and pause button */
 			var playButton = document.getElementById( 'wvc-yt-video-bg-play-' + elementDataId );
-			
+
 			//console.log( 'triggered!' );
 			playButton.addEventListener( 'click', function() {
 				if ( typeof player.playVideo === 'function' ) {
@@ -188,7 +188,7 @@ var WVCYTVideoBg = function( $ ) {
 
 	'use strict';
 
-	$( window ).load( function() {
+	$(window).on('pageshow', function() {
 		WVCYTVideoBg.init();
 	} );
 

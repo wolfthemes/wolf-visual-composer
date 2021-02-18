@@ -41,7 +41,7 @@ var WVCVivus = function( $ ) {
 
 	'use strict';
 
-	$( window ).load( function() {
+	$(window).on('pageshow', function() {
 		WVCVivus.init();
 	} );
 

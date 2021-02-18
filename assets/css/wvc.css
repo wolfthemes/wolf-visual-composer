@@ -1261,6 +1261,7 @@ body[data-aos-delay='5000'] [data-aos].aos-animate, [data-aos][data-aos][data-ao
 .wvc-youtube-bg,
 .wvc-video-bg,
 .wvc-vimeo-bg {
+  object-fit: cover;
   position: absolute;
   z-index: 0;
   top: 0;

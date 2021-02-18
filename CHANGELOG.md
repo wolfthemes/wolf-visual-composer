@@ -1,5 +1,9 @@
 # Changelog
 
+#### 18th February 2021 - Version 3.5.8
+
+-   Tweak: Replace $(window).load event by $(window).on('pageshow') in JS files
+
 #### 31th December 2020 - Version 3.5.7
 
 -   Tweak: apply object-fit: cover CSS to video backgorund

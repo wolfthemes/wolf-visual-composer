@@ -25,7 +25,7 @@ var WVCRevSlider = function( $ ) {
 
 	'use strict';
 
-	$( window ).load( function() {
+	$(window).on('pageshow', function() {
 		WVCRevSlider.init();
 	} );
 
