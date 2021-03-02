@@ -88,7 +88,7 @@ function wvc_register_scripts() {
 	wp_register_script( 'swipebox', WVC_JS . '/lib/jquery.swipebox.min.js', array( 'jquery' ), '1.2.9', true );
 
 	// Parallax background.
-	wp_register_script( 'jarallax', WVC_JS . '/lib/jarallax/jarallax.min.js', array(), '1.10.6', false );
+	wp_register_script( 'jarallax', WVC_JS . '/lib/jarallax/jarallax.min.js', array(), '1.12.5', false );
 	wp_register_script( 'jarallax-video', WVC_JS . '/lib/jarallax/jarallax-video.min.js', array(), '1.0.1', false );
 
 	// Parallax element.
