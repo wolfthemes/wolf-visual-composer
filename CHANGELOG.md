@@ -1,8 +1,13 @@
 # Changelog
 
+#### 16th March 2021 - Version 3.6.0
+
+-   Tweak: Changed CSS class prefix (wvc-ad-) misinterpreted as ad by some browsers (Brave)
+
 #### 2nd March 2021 - Version 3.5.9
 
 -   Tweak: Updated jarallax JS script
+
 #### 18th February 2021 - Version 3.5.8
 
 -   Tweak: Replace $(window).load event by $(window).on('pageshow') in JS files

@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.5.9\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.6.0\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2021-03-02 13:32:32+00:00\n"
+"POT-Creation-Date: 2021-03-16 16:19:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -726,7 +726,7 @@ msgstr ""
 #: inc/admin/tinymce/popup/socials.php:37 inc/class-widget-mailchimp.php:178
 #: inc/elements/bandsintown-tracking-button.php:31
 #: inc/elements/mailchimp.php:105 inc/elements/process-container.php:72
-#: inc/elements/social-icons-custom.php:133 inc/elements/social-icons.php:140
+#: inc/elements/social-icons-custom.php:133 inc/elements/social-icons.php:146
 #: inc/elements/spotify-follow-button.php:32 inc/params/button-params.php:144
 #: inc/params/icon-params.php:507
 #: pack/wolf-visual-composer/inc/admin/class-options.php:315
@@ -738,7 +738,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/mailchimp.php:105
 #: pack/wolf-visual-composer/inc/elements/process-container.php:72
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:133
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:140
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:146
 #: pack/wolf-visual-composer/inc/elements/spotify-follow-button.php:32
 #: pack/wolf-visual-composer/inc/params/button-params.php:144
 #: pack/wolf-visual-composer/inc/params/icon-params.php:507
@@ -932,13 +932,13 @@ msgstr ""
 
 #: inc/admin/tinymce/popup/button.php:19 inc/admin/tinymce/popup/socials.php:31
 #: inc/core-functions.php:521 inc/elements/social-icons-custom.php:64
-#: inc/elements/social-icons.php:71 inc/params/button-params.php:117
+#: inc/elements/social-icons.php:77 inc/params/button-params.php:117
 #: inc/params/icon-params.php:374
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:19
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:31
 #: pack/wolf-visual-composer/inc/core-functions.php:521
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:64
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:71
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:77
 #: pack/wolf-visual-composer/inc/params/button-params.php:117
 #: pack/wolf-visual-composer/inc/params/icon-params.php:374
 msgid "Square"
@@ -952,14 +952,14 @@ msgstr ""
 
 #: inc/admin/tinymce/popup/button.php:24 inc/admin/tinymce/popup/socials.php:41
 #: inc/core-functions.php:525 inc/elements/process-container.php:76
-#: inc/elements/social-icons-custom.php:138 inc/elements/social-icons.php:145
+#: inc/elements/social-icons-custom.php:138 inc/elements/social-icons.php:151
 #: inc/params/icon-params.php:511
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:24
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:41
 #: pack/wolf-visual-composer/inc/core-functions.php:525
 #: pack/wolf-visual-composer/inc/elements/process-container.php:76
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:138
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:145
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:151
 #: pack/wolf-visual-composer/inc/params/icon-params.php:511
 msgid "Medium"
 msgstr ""
@@ -968,7 +968,7 @@ msgstr ""
 #: inc/elements/advanced-slide.php:420
 #: inc/elements/bandsintown-tracking-button.php:35
 #: inc/elements/process-container.php:77
-#: inc/elements/social-icons-custom.php:137 inc/elements/social-icons.php:144
+#: inc/elements/social-icons-custom.php:137 inc/elements/social-icons.php:150
 #: inc/params/icon-params.php:510
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:25
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:40
@@ -976,7 +976,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/bandsintown-tracking-button.php:35
 #: pack/wolf-visual-composer/inc/elements/process-container.php:77
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:137
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:144
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:150
 #: pack/wolf-visual-composer/inc/params/icon-params.php:510
 msgid "Small"
 msgstr ""
@@ -987,7 +987,7 @@ msgstr ""
 #: inc/core-functions.php:524 inc/elements/advanced-slide.php:419
 #: inc/elements/bandsintown-tracking-button.php:34
 #: inc/elements/process-container.php:78
-#: inc/elements/social-icons-custom.php:139 inc/elements/social-icons.php:146
+#: inc/elements/social-icons-custom.php:139 inc/elements/social-icons.php:152
 #: inc/elements/spotify-player.php:36 inc/params/icon-params.php:512
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/button.php:26
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/mailchimp.php:27
@@ -998,7 +998,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/bandsintown-tracking-button.php:34
 #: pack/wolf-visual-composer/inc/elements/process-container.php:78
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:139
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:146
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:152
 #: pack/wolf-visual-composer/inc/elements/spotify-player.php:36
 #: pack/wolf-visual-composer/inc/params/icon-params.php:512
 msgid "Large"
@@ -1364,22 +1364,22 @@ msgid ""
 msgstr ""
 
 #: inc/admin/tinymce/popup/socials.php:30 inc/elements/single-image.php:83
-#: inc/elements/social-icons-custom.php:63 inc/elements/social-icons.php:70
+#: inc/elements/social-icons-custom.php:63 inc/elements/social-icons.php:76
 #: inc/params/icon-params.php:373
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:30
 #: pack/wolf-visual-composer/inc/elements/single-image.php:83
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:63
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:70
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:76
 #: pack/wolf-visual-composer/inc/params/icon-params.php:373
 msgid "Circle"
 msgstr ""
 
 #: inc/admin/tinymce/popup/socials.php:43
-#: inc/elements/social-icons-custom.php:140 inc/elements/social-icons.php:147
+#: inc/elements/social-icons-custom.php:140 inc/elements/social-icons.php:153
 #: inc/params/icon-params.php:513
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:43
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:140
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:147
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:153
 #: pack/wolf-visual-composer/inc/params/icon-params.php:513
 msgid "Very Large"
 msgstr ""
@@ -1792,7 +1792,7 @@ msgstr ""
 #: inc/elements/mailchimp.php:157 inc/elements/separator.php:64
 #: inc/elements/separator.php:76 inc/elements/single-image.php:132
 #: inc/elements/single-image.php:145 inc/elements/social-icons-custom.php:40
-#: inc/elements/social-icons.php:43 inc/elements/spotify-follow-button.php:65
+#: inc/elements/social-icons.php:49 inc/elements/spotify-follow-button.php:65
 #: inc/elements/tabs.php:48 inc/elements/team-member.php:149
 #: inc/elements/testimonial-slider.php:30 inc/elements/twitter.php:52
 #: inc/elements/wc-categories.php:119 inc/elements/wc-categories.php:131
@@ -1830,7 +1830,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/single-image.php:132
 #: pack/wolf-visual-composer/inc/elements/single-image.php:145
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:40
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:43
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:49
 #: pack/wolf-visual-composer/inc/elements/spotify-follow-button.php:65
 #: pack/wolf-visual-composer/inc/elements/tabs.php:48
 #: pack/wolf-visual-composer/inc/elements/team-member.php:149
@@ -1866,7 +1866,7 @@ msgstr ""
 #: inc/elements/interactive-overlays.php:30 inc/elements/mailchimp.php:146
 #: inc/elements/mailchimp.php:158 inc/elements/music-network.php:37
 #: inc/elements/separator.php:65 inc/elements/single-image.php:133
-#: inc/elements/social-icons-custom.php:41 inc/elements/social-icons.php:44
+#: inc/elements/social-icons-custom.php:41 inc/elements/social-icons.php:50
 #: inc/elements/spotify-follow-button.php:64 inc/elements/tabs.php:47
 #: inc/elements/team-member.php:150 inc/elements/testimonial-slider.php:31
 #: inc/elements/twitter.php:53 inc/elements/video-opener.php:80
@@ -1905,7 +1905,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/separator.php:65
 #: pack/wolf-visual-composer/inc/elements/single-image.php:133
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:41
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:44
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:50
 #: pack/wolf-visual-composer/inc/elements/spotify-follow-button.php:64
 #: pack/wolf-visual-composer/inc/elements/tabs.php:47
 #: pack/wolf-visual-composer/inc/elements/team-member.php:150
@@ -1942,7 +1942,7 @@ msgstr ""
 #: inc/elements/interactive-overlays.php:32 inc/elements/mailchimp.php:147
 #: inc/elements/mailchimp.php:159 inc/elements/music-network.php:38
 #: inc/elements/separator.php:66 inc/elements/single-image.php:134
-#: inc/elements/social-icons-custom.php:42 inc/elements/social-icons.php:45
+#: inc/elements/social-icons-custom.php:42 inc/elements/social-icons.php:51
 #: inc/elements/spotify-follow-button.php:66 inc/elements/tabs.php:49
 #: inc/elements/team-member.php:151 inc/elements/testimonial-slider.php:32
 #: inc/elements/twitter.php:54 inc/elements/video-opener.php:79
@@ -1981,7 +1981,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/separator.php:66
 #: pack/wolf-visual-composer/inc/elements/single-image.php:134
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:42
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:45
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:51
 #: pack/wolf-visual-composer/inc/elements/spotify-follow-button.php:66
 #: pack/wolf-visual-composer/inc/elements/tabs.php:49
 #: pack/wolf-visual-composer/inc/elements/team-member.php:151
@@ -2306,8 +2306,8 @@ msgstr ""
 #: inc/elements/row.php:169 inc/elements/row.php:196 inc/elements/row.php:229
 #: inc/elements/single-image.php:155 inc/elements/single-image.php:335
 #: inc/elements/social-icons-custom.php:62
-#: inc/elements/social-icons-custom.php:149 inc/elements/social-icons.php:69
-#: inc/elements/social-icons.php:156 inc/elements/team-member.php:225
+#: inc/elements/social-icons-custom.php:149 inc/elements/social-icons.php:75
+#: inc/elements/social-icons.php:162 inc/elements/team-member.php:225
 #: inc/elements/video-opener.php:77 inc/elements/video-self-hosted.php:40
 #: inc/params/background-params.php:133 inc/params/bigtext-params.php:78
 #: inc/params/button-params.php:186 inc/params/column-inner-params.php:76
@@ -2341,8 +2341,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/single-image.php:335
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:62
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:149
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:69
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:156
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:75
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:162
 #: pack/wolf-visual-composer/inc/elements/team-member.php:225
 #: pack/wolf-visual-composer/inc/elements/video-opener.php:77
 #: pack/wolf-visual-composer/inc/elements/video-self-hosted.php:40
@@ -2479,12 +2479,12 @@ msgid "Theme Default"
 msgstr ""
 
 #: inc/core-functions.php:546 inc/elements/single-image.php:177
-#: inc/elements/social-icons-custom.php:150 inc/elements/social-icons.php:157
+#: inc/elements/social-icons-custom.php:150 inc/elements/social-icons.php:163
 #: inc/params/button-params.php:187 inc/params/icon-params.php:452
 #: pack/wolf-visual-composer/inc/core-functions.php:546
 #: pack/wolf-visual-composer/inc/elements/single-image.php:177
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:150
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:157
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:163
 #: pack/wolf-visual-composer/inc/params/button-params.php:187
 #: pack/wolf-visual-composer/inc/params/icon-params.php:452
 msgid "Opacity"
@@ -2685,8 +2685,8 @@ msgstr ""
 #: inc/elements/counter.php:166 inc/elements/counter.php:194
 #: inc/elements/gmaps.php:69 inc/elements/google-maps.php:150
 #: inc/elements/list.php:69 inc/elements/social-icons-custom.php:79
-#: inc/elements/social-icons-custom.php:109 inc/elements/social-icons.php:86
-#: inc/elements/social-icons.php:116 inc/params/bigtext-params.php:44
+#: inc/elements/social-icons-custom.php:109 inc/elements/social-icons.php:92
+#: inc/elements/social-icons.php:122 inc/params/bigtext-params.php:44
 #: inc/params/heading-params.php:101 inc/params/icon-params.php:341
 #: inc/params/icon-params.php:394
 #: pack/wolf-visual-composer/inc/elements/accordion-tab.php:61
@@ -2700,8 +2700,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/list.php:69
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:79
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:109
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:86
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:116
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:92
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:122
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:44
 #: pack/wolf-visual-composer/inc/params/heading-params.php:101
 #: pack/wolf-visual-composer/inc/params/icon-params.php:341
@@ -2730,8 +2730,8 @@ msgstr ""
 #: inc/elements/single-image.php:213 inc/elements/single-image.php:251
 #: inc/elements/social-icons-custom.php:83
 #: inc/elements/social-icons-custom.php:95
-#: inc/elements/social-icons-custom.php:111 inc/elements/social-icons.php:90
-#: inc/elements/social-icons.php:102 inc/elements/social-icons.php:118
+#: inc/elements/social-icons-custom.php:111 inc/elements/social-icons.php:96
+#: inc/elements/social-icons.php:108 inc/elements/social-icons.php:124
 #: inc/elements/team-member.php:65 inc/elements/zigzag.php:29
 #: inc/elements/zigzag.php:37 inc/params/background-params.php:44
 #: inc/params/background-params.php:300 inc/params/bigtext-params.php:47
@@ -2779,9 +2779,9 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:83
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:95
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:111
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:90
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:102
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:118
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:96
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:108
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:124
 #: pack/wolf-visual-composer/inc/elements/team-member.php:65
 #: pack/wolf-visual-composer/inc/elements/zigzag.php:29
 #: pack/wolf-visual-composer/inc/elements/zigzag.php:37
@@ -3716,7 +3716,7 @@ msgstr ""
 #: inc/elements/breadcrumb.php:25 inc/elements/iframe-opener.php:48
 #: inc/elements/mailchimp.php:154 inc/elements/music-network.php:33
 #: inc/elements/separator.php:61 inc/elements/social-icons-custom.php:37
-#: inc/elements/social-icons.php:40 inc/elements/spotify-follow-button.php:61
+#: inc/elements/social-icons.php:46 inc/elements/spotify-follow-button.php:61
 #: inc/elements/video-opener.php:42 inc/params/button-params.php:159
 #: pack/wolf-visual-composer/inc/elements/album-disc.php:24
 #: pack/wolf-visual-composer/inc/elements/audio.php:102
@@ -3727,7 +3727,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/music-network.php:33
 #: pack/wolf-visual-composer/inc/elements/separator.php:61
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:37
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:40
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:46
 #: pack/wolf-visual-composer/inc/elements/spotify-follow-button.php:61
 #: pack/wolf-visual-composer/inc/elements/video-opener.php:42
 #: pack/wolf-visual-composer/inc/params/button-params.php:159
@@ -5614,7 +5614,7 @@ msgid "Animate Image One By One"
 msgstr ""
 
 #: inc/elements/gallery.php:166 inc/elements/instagram-gallery.php:109
-#: inc/elements/social-icons-custom.php:181 inc/elements/social-icons.php:188
+#: inc/elements/social-icons-custom.php:181 inc/elements/social-icons.php:194
 #: inc/elements/wc-categories.php:159 inc/vc-additional-params.php:307
 #: inc/vc-additional-params.php:309 inc/vc-additional-params.php:318
 #: inc/vc-additional-params.php:554 inc/vc-additional-params.php:580
@@ -5622,7 +5622,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/gallery.php:166
 #: pack/wolf-visual-composer/inc/elements/instagram-gallery.php:109
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:181
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:188
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:194
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:159
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:307
 #: pack/wolf-visual-composer/inc/vc-additional-params.php:309
@@ -6450,24 +6450,24 @@ msgid "List with icon"
 msgstr ""
 
 #: inc/elements/list.php:65 inc/elements/social-icons-custom.php:75
-#: inc/elements/social-icons.php:82 inc/params/icon-params.php:337
+#: inc/elements/social-icons.php:88 inc/params/icon-params.php:337
 #: inc/params/icon-params.php:390
 #: pack/wolf-visual-composer/inc/elements/list.php:65
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:75
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:82
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:88
 #: pack/wolf-visual-composer/inc/params/icon-params.php:337
 #: pack/wolf-visual-composer/inc/params/icon-params.php:390
 msgid "Icon color"
 msgstr ""
 
 #: inc/elements/list.php:76 inc/elements/separator.php:90
-#: inc/elements/social-icons-custom.php:86 inc/elements/social-icons.php:93
+#: inc/elements/social-icons-custom.php:86 inc/elements/social-icons.php:99
 #: inc/elements/zigzag.php:31 inc/params/icon-params.php:348
 #: inc/params/icon-params.php:401
 #: pack/wolf-visual-composer/inc/elements/list.php:76
 #: pack/wolf-visual-composer/inc/elements/separator.php:90
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:86
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:93
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:99
 #: pack/wolf-visual-composer/inc/elements/zigzag.php:31
 #: pack/wolf-visual-composer/inc/params/icon-params.php:348
 #: pack/wolf-visual-composer/inc/params/icon-params.php:401
@@ -6475,13 +6475,13 @@ msgid "Select icon color."
 msgstr ""
 
 #: inc/elements/list.php:84 inc/elements/separator.php:98
-#: inc/elements/social-icons-custom.php:97 inc/elements/social-icons.php:104
+#: inc/elements/social-icons-custom.php:97 inc/elements/social-icons.php:110
 #: inc/elements/zigzag.php:39 inc/params/icon-params.php:360
 #: inc/params/icon-params.php:413
 #: pack/wolf-visual-composer/inc/elements/list.php:84
 #: pack/wolf-visual-composer/inc/elements/separator.php:98
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:97
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:104
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:110
 #: pack/wolf-visual-composer/inc/elements/zigzag.php:39
 #: pack/wolf-visual-composer/inc/params/icon-params.php:360
 #: pack/wolf-visual-composer/inc/params/icon-params.php:413
@@ -7234,18 +7234,18 @@ msgid ""
 msgstr ""
 
 #: inc/elements/process-container.php:65
-#: inc/elements/social-icons-custom.php:171 inc/elements/social-icons.php:178
+#: inc/elements/social-icons-custom.php:171 inc/elements/social-icons.php:184
 #: pack/wolf-visual-composer/inc/elements/process-container.php:65
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:171
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:178
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:184
 msgid "Horizontal"
 msgstr ""
 
 #: inc/elements/process-container.php:66
-#: inc/elements/social-icons-custom.php:172 inc/elements/social-icons.php:179
+#: inc/elements/social-icons-custom.php:172 inc/elements/social-icons.php:185
 #: pack/wolf-visual-composer/inc/elements/process-container.php:66
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:172
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:179
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:185
 msgid "Vertical"
 msgstr ""
 
@@ -7723,11 +7723,11 @@ msgid "Shape"
 msgstr ""
 
 #: inc/elements/single-image.php:84 inc/elements/social-icons-custom.php:65
-#: inc/elements/social-icons.php:72 inc/params/button-params.php:118
+#: inc/elements/social-icons.php:78 inc/params/button-params.php:118
 #: inc/params/icon-params.php:375
 #: pack/wolf-visual-composer/inc/elements/single-image.php:84
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:65
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:72
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:78
 #: pack/wolf-visual-composer/inc/params/button-params.php:118
 #: pack/wolf-visual-composer/inc/params/icon-params.php:375
 msgid "Rounded"
@@ -7813,151 +7813,151 @@ msgstr ""
 msgid "A set of icons with custom URLs"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:49 inc/elements/social-icons.php:52
+#: inc/elements/social-icons-custom.php:49 inc/elements/social-icons.php:58
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:49
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:52
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:58
 msgid "Target"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:59 inc/elements/social-icons.php:66
+#: inc/elements/social-icons-custom.php:59 inc/elements/social-icons.php:72
 #: inc/params/icon-params.php:369
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:59
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:66
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:72
 #: pack/wolf-visual-composer/inc/params/icon-params.php:369
 msgid "Background shape"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:66 inc/elements/social-icons.php:73
+#: inc/elements/social-icons-custom.php:66 inc/elements/social-icons.php:79
 #: inc/params/icon-params.php:376
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:66
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:73
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:79
 #: pack/wolf-visual-composer/inc/params/icon-params.php:376
 msgid "Outline Circle"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:67 inc/elements/social-icons.php:74
+#: inc/elements/social-icons-custom.php:67 inc/elements/social-icons.php:80
 #: inc/params/button-params.php:121 inc/params/icon-params.php:377
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:67
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:74
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:80
 #: pack/wolf-visual-composer/inc/params/button-params.php:121
 #: pack/wolf-visual-composer/inc/params/icon-params.php:377
 msgid "Outline Square"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:68 inc/elements/social-icons.php:75
+#: inc/elements/social-icons-custom.php:68 inc/elements/social-icons.php:81
 #: inc/params/button-params.php:122 inc/params/icon-params.php:378
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:68
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:75
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:81
 #: pack/wolf-visual-composer/inc/params/button-params.php:122
 #: pack/wolf-visual-composer/inc/params/icon-params.php:378
 msgid "Outline Rounded"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:70 inc/elements/social-icons.php:77
+#: inc/elements/social-icons-custom.php:70 inc/elements/social-icons.php:83
 #: inc/params/icon-params.php:381
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:70
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:77
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:83
 #: pack/wolf-visual-composer/inc/params/icon-params.php:381
 msgid "Select background shape and style for icon."
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:106 inc/elements/social-icons.php:113
+#: inc/elements/social-icons-custom.php:106 inc/elements/social-icons.php:119
 #: inc/params/icon-params.php:422
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:106
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:113
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:119
 #: pack/wolf-visual-composer/inc/params/icon-params.php:422
 msgid "Background color"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:113 inc/elements/social-icons.php:120
+#: inc/elements/social-icons-custom.php:113 inc/elements/social-icons.php:126
 #: inc/params/icon-params.php:428
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:113
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:120
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:126
 #: pack/wolf-visual-composer/inc/params/icon-params.php:428
 msgid "Select background color for icon."
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:122 inc/elements/social-icons.php:129
+#: inc/elements/social-icons-custom.php:122 inc/elements/social-icons.php:135
 #: inc/params/icon-params.php:437
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:122
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:129
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:135
 #: pack/wolf-visual-composer/inc/params/icon-params.php:437
 msgid "Custom background color"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:124 inc/elements/social-icons.php:131
+#: inc/elements/social-icons-custom.php:124 inc/elements/social-icons.php:137
 #: inc/params/icon-params.php:439
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:124
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:131
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:137
 #: pack/wolf-visual-composer/inc/params/icon-params.php:439
 msgid "Select custom icon background color."
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:136 inc/elements/social-icons.php:143
+#: inc/elements/social-icons-custom.php:136 inc/elements/social-icons.php:149
 #: inc/params/icon-params.php:514
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:136
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:143
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:149
 #: pack/wolf-visual-composer/inc/params/icon-params.php:514
 msgid "Tiny"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:146 inc/elements/social-icons.php:153
+#: inc/elements/social-icons-custom.php:146 inc/elements/social-icons.php:159
 #: inc/params/icon-params.php:448
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:146
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:153
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:159
 #: pack/wolf-visual-composer/inc/params/icon-params.php:448
 msgid "Hover Transition"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:151 inc/elements/social-icons.php:158
+#: inc/elements/social-icons-custom.php:151 inc/elements/social-icons.php:164
 #: inc/params/icon-params.php:453
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:151
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:158
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:164
 #: pack/wolf-visual-composer/inc/params/icon-params.php:453
 msgid "Inset border"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:152 inc/elements/social-icons.php:159
+#: inc/elements/social-icons-custom.php:152 inc/elements/social-icons.php:165
 #: inc/params/icon-params.php:454
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:152
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:159
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:165
 #: pack/wolf-visual-composer/inc/params/icon-params.php:454
 msgid "Sonar"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:153 inc/elements/social-icons.php:160
+#: inc/elements/social-icons-custom.php:153 inc/elements/social-icons.php:166
 #: inc/params/icon-params.php:455
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:153
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:160
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:166
 #: pack/wolf-visual-composer/inc/params/icon-params.php:455
 msgid "Fill"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:154 inc/elements/social-icons.php:161
+#: inc/elements/social-icons-custom.php:154 inc/elements/social-icons.php:167
 #: inc/params/icon-params.php:456
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:154
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:161
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:167
 #: pack/wolf-visual-composer/inc/params/icon-params.php:456
 msgid "Pop"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:155 inc/elements/social-icons.php:162
+#: inc/elements/social-icons-custom.php:155 inc/elements/social-icons.php:168
 #: inc/params/icon-params.php:457
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:155
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:162
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:168
 #: pack/wolf-visual-composer/inc/params/icon-params.php:457
 msgid "Rotate"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:167 inc/elements/social-icons.php:174
+#: inc/elements/social-icons-custom.php:167 inc/elements/social-icons.php:180
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:167
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:174
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:180
 msgid "Direction"
 msgstr ""
 
-#: inc/elements/social-icons-custom.php:179 inc/elements/social-icons.php:186
+#: inc/elements/social-icons-custom.php:179 inc/elements/social-icons.php:192
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:179
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:186
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:192
 msgid "Animate Icons One By One"
 msgstr ""
 
@@ -7979,8 +7979,8 @@ msgid ""
 "target=\"_blank\">customizer</a>."
 msgstr ""
 
-#: inc/elements/social-icons.php:59
-#: pack/wolf-visual-composer/inc/elements/social-icons.php:59
+#: inc/elements/social-icons.php:65
+#: pack/wolf-visual-composer/inc/elements/social-icons.php:65
 msgid "Add %s attribute"
 msgstr ""
 

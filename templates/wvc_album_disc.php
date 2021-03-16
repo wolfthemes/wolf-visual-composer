@@ -58,10 +58,10 @@ $link_target = ( isset( $link['target'] ) ) ? esc_attr( trim( $link['target'] ) 
 $link_title  = ( isset( $link['title'] ) ) ? esc_attr( $link['title'] ) : '';
 $nofollow    = ( isset( $link['rel'] ) && 'nofollow' === $link['rel'] ) ? 'rel="nofollow"' : '';
 
-$class .= " wvc-album-disc wvc-ad-align-$alignment wvc-ad-$type wvc-ad-worn-border-$worn_border wvc-ad-rotate-$rotate wvc-element";
+$class .= " wvc-album-disc wvc-album-disc-align-$alignment wvc-album-disc-$type wvc-album-disc-worn-border-$worn_border wvc-album-disc-rotate-$rotate wvc-element";
 
 if ( $link_url && '#' !== $link_url ) {
-	$class .= ' wvc-ad-has-link';
+	$class .= ' wvc-album-disc-has-link';
 }
 
 $output = '<div class="' . wvc_sanitize_html_classes( $class ) . '" style="' . wvc_esc_style_attr( $inline_style ) . '"';
@@ -70,7 +70,7 @@ $output .= wvc_element_aos_animation_data_attr( $atts );
 $output .= '>';
 
 if ( $link_url ) {
-	$output .= '<a ' . $nofollow . ' class="wvc-ad-link-mask"';
+	$output .= '<a ' . $nofollow . ' class="wvc-album-disc-link-mask"';
 
 	if ( $link_target ) {
 		$output .= ' target="' . esc_attr( $link_target ) . '"';
@@ -78,7 +78,7 @@ if ( $link_url ) {
 	$output .= ' href="' . esc_url( $link_url ) . '" title="' . esc_attr( $link_title ) . '"></a>';
 }
 
-	$output .= '<div class="wvc-ad-cover-container">';
+	$output .= '<div class="wvc-album-disc-cover-container">';
 
 if ( ! $disc_image ) {
 	$disc_image = $cover_image;
@@ -88,7 +88,7 @@ if ( $disc_image ) {
 
 	$disc_animation_delay = ( absint( $css_animation_delay ) + 400 ) / 1000 . 's';
 
-	$output .= '<div class="wvc-ad-disc-container wow wvc-ad-reveal" style="' . wvc_esc_style_attr( 'transition-delay:' . $disc_animation_delay ) . ';">';
+	$output .= '<div class="wvc-album-disc-disc-container wow wvc-album-disc-reveal" style="' . wvc_esc_style_attr( 'transition-delay:' . $disc_animation_delay ) . ';">';
 
 	$inner_style = '';
 	if ( $rotation_speed ) {
@@ -96,7 +96,7 @@ if ( $disc_image ) {
 		$inner_style    = ' style="animation-duration:' . esc_attr( $rotation_speed ) . ';"';
 	}
 
-	$output .= '<div class="wvc-ad-disc-inner" ' . $inner_style . '>';
+	$output .= '<div class="wvc-album-disc-disc-inner" ' . $inner_style . '>';
 
 	if ( wp_attachment_is_image( $disc_image ) ) {
 
@@ -104,18 +104,18 @@ if ( $disc_image ) {
 			array(
 				'attach_id'  => $disc_image,
 				'thumb_size' => $img_size,
-				'class'      => 'wvc-ad-disc-img',
+				'class'      => 'wvc-album-disc-disc-img',
 			)
 		);
 
 		$output .= $img['thumbnail'];
 	} else {
-		$output .= wvc_placeholder_img( $img_size, 'wvc-ad-disc-img' );
+		$output .= wvc_placeholder_img( $img_size, 'wvc-album-disc-disc-img' );
 	}
 
 	if ( 'cd' === $type ) {
-		$output .= '<div class="wvc-ad-disc-text"></div>';
-		$output .= '<div class="wvc-ad-disc-hole"></div>';
+		$output .= '<div class="wvc-album-disc-disc-text"></div>';
+		$output .= '<div class="wvc-album-disc-disc-hole"></div>';
 	}
 
 	if ( 'vinyl' === $type ) {
@@ -129,7 +129,7 @@ if ( $disc_image ) {
 
 if ( $cover_image ) {
 
-	$output .= '<div class="wvc-ad-cover-inner">';
+	$output .= '<div class="wvc-album-disc-cover-inner">';
 
 	if ( wp_attachment_is_image( $cover_image ) ) {
 
@@ -137,21 +137,21 @@ if ( $cover_image ) {
 			array(
 				'attach_id'  => $cover_image,
 				'thumb_size' => $img_size,
-				'class'      => 'wvc-ad-cover-img',
+				'class'      => 'wvc-album-disc-cover-img',
 			)
 		);
 
 		$output .= $img['thumbnail'];
 
 	} else {
-		$output .= wvc_placeholder_img( $img_size, 'wvc-ad-cover-img' );
+		$output .= wvc_placeholder_img( $img_size, 'wvc-album-disc-cover-img' );
 	}
 
-	$output .= '<div class="wvc-ad-cover-border"></div>';
-	$output .= '</div><!-- .wvc-ad-cover-inner -->';
+	$output .= '<div class="wvc-album-disc-cover-border"></div>';
+	$output .= '</div><!-- .wvc-album-disc-cover-inner -->';
 }
 
-$output .= '</div><!-- .wvc-ad-cover-container -->';
+$output .= '</div><!-- .wvc-album-disc-cover-container -->';
 
 $output .= '</div><!-- .wvc-album-disc -->';
 
