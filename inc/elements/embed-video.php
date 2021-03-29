@@ -18,6 +18,7 @@ vc_map(
 		'icon' => 'fa fa-play-circle-o',
 		'category' => esc_html__( 'Media', 'wolf-visual-composer' ),
 		'params' => array(
+
 			array(
 				'type' => 'wvc_textfield',
 				'heading' => esc_html__( 'Video URL', 'wolf-visual-composer' ),
@@ -25,7 +26,7 @@ vc_map(
 				'placeholder' => 'https://www.youtube.com/watch?v=fKBweD2hyf4',
 				'admin_label' => true,
 			),
-			
+
 			array(
 				'type' => 'wvc_textfield',
 				'heading' => esc_html__( 'Title', 'wolf-visual-composer' ),

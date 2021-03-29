@@ -1,0 +1,13 @@
+.fp-scroller {
+	height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+	.fp-scroller .wvc-row-wrapper {
+		height: 100vh;
+	}
+
+	.fp-scroller .wvc-row-content {
+		height: 100%;
+	}
+}

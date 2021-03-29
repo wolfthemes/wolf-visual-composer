@@ -516,8 +516,8 @@ var WVCFullPage = function( $ ) {
 
 			clearTimeout( _this.animationEndTimeOut );
 
-			if ( $currentSlide.find( '.wvc-ad-disc-container' ).length ) {
-				$currentSlide.find( '.wvc-ad-disc-container' ).removeClass( 'animated' );
+			if ( $currentSlide.find( '.wvc-album-disc-disc-container' ).length ) {
+				$currentSlide.find( '.wvc-album-disc-disc-container' ).removeClass( 'animated' );
 			}
 
 			_this.animationEndTimeOut = setTimeout( function() {

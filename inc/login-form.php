@@ -21,13 +21,16 @@ function wvc_login_form( $atts = array() ) {
 		return;
 	}
 
-	$atts = wp_parse_args( $atts, array(
-		'css_animation' => '',
-		'css_animation_delay' => '',
-		'css' => '',
-		'el_class' => '',
-		'inline_style' => '',
-	) );
+	$atts = wp_parse_args(
+		$atts,
+		array(
+			'css_animation'       => '',
+			'css_animation_delay' => '',
+			'css'                 => '',
+			'el_class'            => '',
+			'inline_style'        => '',
+		)
+	);
 
 	$atts = apply_filters( 'wvc_login_form_atts', $atts );
 
@@ -38,24 +41,24 @@ function wvc_login_form( $atts = array() ) {
 	wp_enqueue_script( 'jquery-ui-tabs', true );
 	wp_enqueue_script( 'wvc-loginform' );
 
-	$class = $el_class;
-	$inline_style = wvc_sanitize_css_field( $inline_style );
+	$class         = $el_class;
+	$inline_style  = wvc_sanitize_css_field( $inline_style );
 	$inline_style .= wvc_shortcode_custom_style( $css );
 
 	/*Animate */
 	if ( ! wvc_is_new_animation( $css_animation ) ) {
-		$class .= wvc_get_css_animation( $css_animation );
+		$class        .= wvc_get_css_animation( $css_animation );
 		$inline_style .= wvc_get_css_animation_delay( $css_animation_delay );
 	}
 
-	$class .= " wvc-login-form wvc-login-form-container";
+	$class .= ' wvc-login-form wvc-login-form-container';
 
 	$output .= '<div class="' . wvc_sanitize_html_classes( $class ) . '" style="' . wvc_esc_style_attr( $inline_style ) . '"';
 
 	$output .= wvc_element_aos_animation_data_attr( $atts );
 
 	$output .= '>';
-	
+
 	$output .= '<div class="wvc-login-form-inner">';
 
 	/* Title */
@@ -87,7 +90,7 @@ function wvc_login_form( $atts = array() ) {
 					<input name="rememberme" type="checkbox" id="rememberme" value="forever"><span><?php esc_html_e( 'Remember me', 'wolf-visual-composer' ); ?></span>
 				</label>
 			</p>
-	
+
 			<p class="login-submit">
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 				<input id="wp-submit" type="submit" class="<?php echo apply_filters( 'wvc_login_form_submit_button_class', 'button button-primary' ); ?>" name="login" value="<?php esc_attr_e( 'Log in', 'wolf-visual-composer' ); ?>">
@@ -95,7 +98,7 @@ function wvc_login_form( $atts = array() ) {
 
 			<p class="wvc-login-form-links">
 				<a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ); ?>"><?php esc_html_e( 'I need to register', 'wolf-visual-composer' ); ?></a>
-				
+
 				<?php echo apply_filters( 'wvc_login_form_bottom_link_separator', '|' ); ?>
 
 				<a href="<?php echo esc_url( wc_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'wolf-visual-composer' ); ?></a>

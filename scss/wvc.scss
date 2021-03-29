@@ -1,584 +1,584 @@
-
 @charset "UTF-8";
 /*
 	MAIN STYLESHEET
 	-------------------------
 */
 
-@import "compass";
-@import "var";
-@import "global/mixins";
+@import 'compass';
+@import 'var';
+@import 'global/mixins';
 
 /**
  * Base
  */
-@import "global/containers";
+@import 'global/containers';
 
 /**
  * Lazyload
  */
-@import "global/lazyload";
+@import 'global/lazyload';
 
 /**
  * WOW
  */
-@import "global/wow";
+@import 'global/wow';
 
 /**
  * AOS
  */
-@import "dependencies/aos-duration-delay";
+@import 'dependencies/aos-duration-delay';
 
 /**
  * Helper classes
  */
-@import "global/helpers";
+@import 'global/helpers';
 
 /**
  * Video background
  */
-@import "global/video-bg";
+@import 'global/video-bg';
 //@import "global/video-bg-controls";
 
 /**
  * Fluid videos
  */
-@import "global/fluid-video";
+@import 'global/fluid-video';
 
 /**
  * Slideshow background
  */
-@import "global/slideshow-background";
+@import 'global/slideshow-background';
 
 /**
  * Section
  */
-@import "shortcodes/section";
+@import 'shortcodes/section';
 
 /**
  * Row
  */
-@import "shortcodes/row";
-@import "shortcodes/row-inner";
-@import "shortcodes/fullpage";
+@import 'shortcodes/row';
+@import 'shortcodes/row-inner';
+@import 'shortcodes/fullpage';
 
 /**
  * Column
  */
-@import "shortcodes/column";
+@import 'shortcodes/column';
 
 /**
  * Autotyping
  */
-@import "shortcodes/autotyping";
+@import 'shortcodes/autotyping';
 
 /**
  * Custom  Heading
  */
-@import "shortcodes/custom-heading";
+@import 'shortcodes/custom-heading';
 
 /**
  * Notifications
  */
-@import "shortcodes/notifications";
+@import 'shortcodes/notifications';
 
 /**
  * Blocks
  */
-@import "shortcodes/blocks";
+@import 'shortcodes/blocks';
 
 /**
  * Testimonials
  */
-@import "shortcodes/testimonials";
+@import 'shortcodes/testimonials';
 
 /**
  * Team members
  */
-@import "shortcodes/team-members";
+@import 'shortcodes/team-members';
 
 /**
  * Parallax Holder
  */
-@import "shortcodes/parallax-holder";
+@import 'shortcodes/parallax-holder';
 
 /**
  * Icon box
  */
-@import "shortcodes/icon-box";
+@import 'shortcodes/icon-box';
 
 /**
  * Counter
  */
-@import "shortcodes/counter";
+@import 'shortcodes/counter';
 
 /**
  * Count down
  */
-@import "shortcodes/countdown";
+@import 'shortcodes/countdown';
 
 /**
  * FitText
  */
-@import "shortcodes/fittext";
+@import 'shortcodes/fittext';
 
 /**
  * BigText
  */
-@import "shortcodes/bigtext";
+@import 'shortcodes/bigtext';
 
 /**
  * Separator
  */
-@import "shortcodes/separator";
+@import 'shortcodes/separator';
 
 /**
  * ZigZag
  */
-@import "shortcodes/zigzag";
+@import 'shortcodes/zigzag';
 
 /**
  * Text block
  */
-@import "shortcodes/text-block";
+@import 'shortcodes/text-block';
 
 /**
  * Image
  */
-@import "shortcodes/image";
+@import 'shortcodes/image';
 
 /**
  * Button
  */
-@import "shortcodes/button";
-@import "shortcodes/buttons-hover";
+@import 'shortcodes/button';
+@import 'shortcodes/buttons-hover';
 
 /**
  * Call to action
  */
-@import "shortcodes/call-to-action";
+@import 'shortcodes/call-to-action';
 
 /**
  * Linked image
  */
-@import "shortcodes/image-link";
+@import 'shortcodes/image-link';
 
 /**
  * Images gallery
  */
-@import "shortcodes/image-gallery";
-
+@import 'shortcodes/image-gallery';
 
 /**
  * Images carousel
  */
-@import "shortcodes/image-carousel";
+@import 'shortcodes/image-carousel';
 
 /**
  * Images masonry
  */
-@import "shortcodes/images-masonry";
+@import 'shortcodes/images-masonry';
 
 /**
  * Mosaic image gallery
  */
-@import "shortcodes/image-mosaic";
+@import 'shortcodes/image-mosaic';
 
 /**
  * Metro image gallery
  */
-@import "shortcodes/image-metro";
-@import "global/metro";
+@import 'shortcodes/image-metro';
+@import 'global/metro';
 
 /**
  * Cards gallery
  */
-@import "shortcodes/cards-gallery";
+@import 'shortcodes/cards-gallery';
 
 /**
  * Images slider
  */
-@import "shortcodes/image-device-slider";
-@import "shortcodes/last-posts-big-slider";
-@import "shortcodes/advanced-slider";
-@import "shortcodes/anything-slider";
+@import 'shortcodes/image-device-slider';
+@import 'shortcodes/last-posts-big-slider';
+@import 'shortcodes/advanced-slider';
+@import 'shortcodes/anything-slider';
 
 /**
  * Process
  */
-@import "shortcodes/process";
+@import 'shortcodes/process';
 
 /**
  * Pie
  */
-@import "shortcodes/pie";
+@import 'shortcodes/pie';
 
 /**
  * Serices table
  */
-@import "shortcodes/services-table";
+@import 'shortcodes/services-table';
 
 /**
  * Pricing tables
  */
-@import "shortcodes/pricing-tables";
+@import 'shortcodes/pricing-tables';
 
 /**
  * Tabs
  */
-@import "shortcodes/tabs";
+@import 'shortcodes/tabs';
 
 /**
  * Toggles
  */
-@import "shortcodes/toggles";
+@import 'shortcodes/toggles';
 
 /**
  * Accordion
  */
-@import "shortcodes/accordion";
+@import 'shortcodes/accordion';
 
 /**
  * Breadcrumb
  */
-@import "shortcodes/breadcrumb";
+@import 'shortcodes/breadcrumb';
 
 /**
  * Video opener
  */
-@import "shortcodes/video-opener";
+@import 'shortcodes/video-opener';
 
 /**
  * Iframe opener
  */
-@import "shortcodes/iframe-opener";
+@import 'shortcodes/iframe-opener';
 
 /**
  * Highlight
  */
-@import "shortcodes/highlight";
+@import 'shortcodes/highlight';
 
 /**
  * Dropcap
  */
-@import "shortcodes/dropcap";
+@import 'shortcodes/dropcap';
 
 /**
  * Progress bar
  */
-@import "shortcodes/progress-bar";
+@import 'shortcodes/progress-bar';
 
 /**
  * Socials
  */
-@import "shortcodes/socials";
+@import 'shortcodes/socials';
 
 /**
  * Instagram
  */
-@import "shortcodes/instagram";
+@import 'shortcodes/instagram';
 
 /**
  * Item price
  */
-@import "shortcodes/item-price";
+@import 'shortcodes/item-price';
 
-
-@import "shortcodes/gmaps";
+@import 'shortcodes/gmaps';
 
 /**
  * jPlayer
  */
-@import "shortcodes/jplayer";
+@import 'shortcodes/jplayer';
 
 /**
  * Last posts
  */
-@import "shortcodes/last-posts";
+@import 'shortcodes/last-posts';
 
 /**
  * Mailchimp
  */
-@import "shortcodes/mailchimp";
+@import 'shortcodes/mailchimp';
 
 /**
  * Video carousel
  */
-@import "shortcodes/video-carousel";
+@import 'shortcodes/video-carousel';
 
 /**
  * Spotify
  */
-@import "shortcodes/spotify";
+@import 'shortcodes/spotify';
 
 /**
  * YouTube
  */
-@import "shortcodes/youtube";
-@import "shortcodes/embed-video";
+@import 'shortcodes/youtube';
+@import 'shortcodes/embed-video';
 
 /**
  * Twentytwenty
  */
-@import "shortcodes/twentytwenty";
+@import 'shortcodes/twentytwenty';
 
 /**
  * List
  */
-@import "shortcodes/list";
+@import 'shortcodes/list';
 
 /**
  * Audio
  */
-@import "shortcodes/audio";
+@import 'shortcodes/audio';
 
 /**
  * Audio embed
  */
-@import "shortcodes/audio-embed";
+@import 'shortcodes/audio-embed';
 
 /**
  * Banner
  */
-@import "shortcodes/banner";
+@import 'shortcodes/banner';
 
 /**
  * Floating Element
  */
-@import "shortcodes/floating-element";
+@import 'shortcodes/floating-element';
 
 /**
  * Interactive Links
  */
-@import "shortcodes/interactive-links";
+@import 'shortcodes/interactive-links';
 
 /**
  * Interactive Overlays
  */
-@import "shortcodes/interactive-overlays";
+@import 'shortcodes/interactive-overlays';
 
 /**
  * Album disc
  */
-@import "shortcodes/album-disc";
+@import 'shortcodes/album-disc';
 
 /**
  * Album tracklist
  */
-@import "shortcodes/album-tracklist";
+@import 'shortcodes/album-tracklist';
 
 /**
  * BIT tracking button
  */
-@import "shortcodes/bit_tracking_button";
+@import 'shortcodes/bit_tracking_button';
 
 /**
  * Twitter
  */
-@import "shortcodes/twitter";
+@import 'shortcodes/twitter';
 
 /**
  * Hover Box
  */
-@import "shortcodes/hoverbox";
+@import 'shortcodes/hoverbox';
 
 /**
  * Hours
  */
-@import "shortcodes/hours";
+@import 'shortcodes/hours';
 
 /**
  * Recipe
  */
-@import "shortcodes/recipe";
+@import 'shortcodes/recipe';
 
 /**
  * Meal
  */
-@import "shortcodes/meal";
+@import 'shortcodes/meal';
 
 /**
  * Video Switcher
  */
-@import "shortcodes/video-switcher";
+@import 'shortcodes/video-switcher';
 
 /**
  * Showcase vertical carousel
  */
-@import "shortcodes/showcase-vertical-carousel";
+@import 'shortcodes/showcase-vertical-carousel';
 
 /**
  * Product presentation
  */
-@import "shortcodes/product-presentation";
+@import 'shortcodes/product-presentation';
 
 /**
  * WooCommerce categories
  */
-@import "shortcodes/wc-categories";
+@import 'shortcodes/wc-categories';
 
 /**
  * WooCommerce Search Form
  */
-@import "shortcodes/wc_searchform";
+@import 'shortcodes/wc_searchform';
 
 /**
  * Login form
  */
-@import "shortcodes/login-form";
+@import 'shortcodes/login-form';
 
 /**
  * Artist Line-up
  */
-@import "shortcodes/artist-lineup";
+@import 'shortcodes/artist-lineup';
 
 /**
  * Text Slider
  */
-@import "shortcodes/text-slider";
+@import 'shortcodes/text-slider';
 
 /**
  * BMIC
  */
-@import "shortcodes/bmi-calculator";
+@import 'shortcodes/bmi-calculator';
 
 /**
  * Info table
  */
-@import "shortcodes/info-table";
+@import 'shortcodes/info-table';
 
 /**
  * Workout
  */
-@import "shortcodes/workout_program";
+@import 'shortcodes/workout_program';
 
 /**
  * WP Widgets
  */
-@import "shortcodes/wp-widgets";
+@import 'shortcodes/wp-widgets';
 
 /**
  * Modal window
  */
-@import "inbuilt/modal-window";
+@import 'inbuilt/modal-window';
 
 /**
  * Privacy Policy Message
  */
-@import "inbuilt/privacy-policy-message";
+@import 'inbuilt/privacy-policy-message';
 
 /**
  * Flexslider custom styles
  */
-@import "dependencies/flexslider-custom";
+@import 'dependencies/flexslider-custom';
 
 /**
  * Slider & Carousel dot navigation
  */
-@import "dependencies/dots";
+@import 'dependencies/dots';
 
 /**
  * Slider & Carousel arrow navigation
  */
-@import "dependencies/arrows";
+@import 'dependencies/arrows';
 
 /**
  * Swipebox custom styles
  */
-@import "dependencies/swipebox-custom";
+@import 'dependencies/swipebox-custom';
 
 /**
  * Custom animate
  */
-@import "dependencies/custom-animate";
+@import 'dependencies/custom-animate';
 
 /**
  * Zoomin
  */
-@import "global/zoomin";
+@import 'global/zoomin';
 
 /**
  * Hover effects
  */
-@import "global/hover-effects";
+@import 'global/hover-effects';
 
 /**
  * Skins
  */
-@import "global/skins";
+@import 'global/skins';
 
 /**
  * Colors
  */
-@import "colors/background";
-@import "colors/text";
-@import "colors/button";
-@import "colors/icon";
-@import "colors/border";
+@import 'colors/background';
+@import 'colors/text';
+@import 'colors/button';
+@import 'colors/icon';
+@import 'colors/border';
 
 /**
  * Layout for default WP themes
  */
-@import "compatibility/wp-themes";
+@import 'compatibility/wp-themes';
 
 /**
  * One-Pager
  */
-@import "global/one-pager";
+@import 'global/one-pager';
 
-@import "global/versions";
+@import 'global/versions';
 
 /**
  * Tmp theme fixes
  */
-@import "tmp_fix";
+@import 'tmp_fix';
 
 /**
  * Media Queries
  */
 @media screen and (min-width: 500px) {
-	@import "media-queries/500px";
+	@import 'media-queries/500px';
 }
 
 @media screen and (min-width: 600px) {
-	@import "media-queries/600px";
+	@import 'media-queries/600px';
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
-	@import "global/pre-grid";
+	@import 'global/pre-grid';
 }
 
 @media screen and (min-width: 800px) {
-	@import "media-queries/800px";
+	@import 'media-queries/800px';
 }
 
 @media screen and (min-width: 800px) {
 	/**
 	 * Grid
 	 */
-	@import "global/grid";
+	@import 'global/grid';
 }
 
 @media screen and (min-width: 1050px) {
-	@import "media-queries/1000px";
+	@import 'media-queries/1000px';
 }
 
 @media screen and (min-width: 1200px) {
-	@import "media-queries/1200px";
+	@import 'media-queries/1200px';
 }
 
 @media screen and (min-width: 1600px) {
-	@import "media-queries/1600px";
+	@import 'media-queries/1600px';
 }
 
 @media screen and (max-width: 800px) {
-	.wvc-hide-mobile{
-		display: none!important;
+	.wvc-hide-mobile {
+		display: none !important;
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	.wvc-hide-tablet{
-		display: none!important;
+	.wvc-hide-tablet {
+		display: none !important;
 	}
 }
+
+// HOTFIX
+//@import 'hotfix';

@@ -7030,11 +7030,11 @@ span.wvc-highlight-green {
   z-index: 5;
 }
 .wvc-i-hide_meta-true .wolf-instagram-item {
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   transform: translate3d(0, 0, 0);
 }
 .wvc-i-hide_meta-true .wolf-instagram-item:hover {
-  opacity: .66;
+  opacity: 0.66;
 }
 
 .wvc-i-padding-true .wolf-instagram-gallery {
@@ -7068,8 +7068,8 @@ span.wvc-highlight-green {
 .wolf-gram-follow-button {
   position: absolute;
   display: inline-block;
-  background: #FFF;
-  color: #333333 !important;
+  background: #fff;
+  color: #333 !important;
   font-weight: 400;
   z-index: 999;
   top: 50%;
@@ -7116,7 +7116,7 @@ span.wvc-highlight-green {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   z-index: 10;
 }
 .wvc-wolf-gram-shortcode-container:not(.wvc-sbif-disable-hover-true) .sbi_item:not(.sbi_type_video) .sbi_photo:after {
@@ -7126,12 +7126,12 @@ span.wvc-highlight-green {
   font-variant: normal;
   text-rendering: auto;
   font-family: 'Font Awesome 5 Brands';
-  content: "\f16d";
+  content: '\f16d';
   color: white;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   opacity: 0;
   z-index: 20;
   font-size: 18px;
