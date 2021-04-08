@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.6.0\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.6.1\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2021-03-19 11:09:01+00:00\n"
+"POT-Creation-Date: 2021-04-08 09:32:37+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1486,7 +1486,7 @@ msgstr ""
 #: inc/elements/accordion-tab.php:45 inc/elements/accordion.php:62
 #: inc/elements/advanced-slide.php:311 inc/elements/album-tracklist-item.php:25
 #: inc/elements/banner-gallery.php:213 inc/elements/banner.php:197
-#: inc/elements/embed-video.php:31 inc/elements/item-price.php:25
+#: inc/elements/embed-video.php:32 inc/elements/item-price.php:25
 #: inc/elements/meal.php:27 inc/elements/pricing-table.php:24
 #: inc/elements/process-item.php:70 inc/elements/recipe.php:24
 #: inc/elements/service-table.php:63
@@ -3222,7 +3222,7 @@ msgid "right center"
 msgstr ""
 
 #: inc/elements/advanced-slide.php:169 inc/elements/album-tracklist-item.php:55
-#: inc/elements/anything-slide.php:125 inc/elements/embed-video.php:23
+#: inc/elements/anything-slide.php:125 inc/elements/embed-video.php:24
 #: inc/elements/video-opener.php:66 inc/elements/video.php:25
 #: inc/params/background-params.php:174
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:169
@@ -3745,7 +3745,7 @@ msgid "Vinyl"
 msgstr ""
 
 #: inc/elements/album-disc.php:46 inc/elements/banner-gallery.php:73
-#: inc/elements/embed-video.php:39 inc/elements/youtube.php:40
+#: inc/elements/embed-video.php:40 inc/elements/youtube.php:40
 #: pack/wolf-visual-composer/inc/elements/album-disc.php:46
 #: pack/wolf-visual-composer/inc/elements/banner-gallery.php:73
 #: pack/wolf-visual-composer/inc/elements/embed-video.php:39
@@ -5327,18 +5327,18 @@ msgstr ""
 msgid "A Vimeo or YouTube video with preview"
 msgstr ""
 
-#: inc/elements/embed-video.php:33 inc/elements/youtube.php:34
+#: inc/elements/embed-video.php:34 inc/elements/youtube.php:34
 #: pack/wolf-visual-composer/inc/elements/embed-video.php:33
 #: pack/wolf-visual-composer/inc/elements/youtube.php:34
 msgid "My video title"
 msgstr ""
 
-#: inc/elements/embed-video.php:46
+#: inc/elements/embed-video.php:47
 #: pack/wolf-visual-composer/inc/elements/embed-video.php:46
 msgid "Custom Video Preview (optional)"
 msgstr ""
 
-#: inc/elements/embed-video.php:48 inc/elements/youtube.php:49
+#: inc/elements/embed-video.php:49 inc/elements/youtube.php:49
 #: pack/wolf-visual-composer/inc/elements/embed-video.php:48
 #: pack/wolf-visual-composer/inc/elements/youtube.php:49
 msgid "A short mp4 video file"
@@ -8607,31 +8607,31 @@ msgstr ""
 msgid "An unknown error occured."
 msgstr ""
 
-#: inc/login-form.php:64 pack/wolf-visual-composer/inc/login-form.php:64
+#: inc/login-form.php:67 pack/wolf-visual-composer/inc/login-form.php:64
 msgid "Login"
 msgstr ""
 
-#: inc/login-form.php:75 pack/wolf-visual-composer/inc/login-form.php:75
+#: inc/login-form.php:78 pack/wolf-visual-composer/inc/login-form.php:75
 msgid "Username or email address"
 msgstr ""
 
-#: inc/login-form.php:79 pack/wolf-visual-composer/inc/login-form.php:79
+#: inc/login-form.php:82 pack/wolf-visual-composer/inc/login-form.php:79
 msgid "Password"
 msgstr ""
 
-#: inc/login-form.php:87 pack/wolf-visual-composer/inc/login-form.php:87
+#: inc/login-form.php:90 pack/wolf-visual-composer/inc/login-form.php:87
 msgid "Remember me"
 msgstr ""
 
-#: inc/login-form.php:93 pack/wolf-visual-composer/inc/login-form.php:93
+#: inc/login-form.php:96 pack/wolf-visual-composer/inc/login-form.php:93
 msgid "Log in"
 msgstr ""
 
-#: inc/login-form.php:97 pack/wolf-visual-composer/inc/login-form.php:97
+#: inc/login-form.php:100 pack/wolf-visual-composer/inc/login-form.php:97
 msgid "I need to register"
 msgstr ""
 
-#: inc/login-form.php:101 pack/wolf-visual-composer/inc/login-form.php:101
+#: inc/login-form.php:104 pack/wolf-visual-composer/inc/login-form.php:101
 msgid "Lost your password?"
 msgstr ""
 

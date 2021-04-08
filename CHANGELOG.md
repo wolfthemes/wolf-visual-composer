@@ -1,5 +1,9 @@
 # Changelog
 
+#### 8th April 2021 - Version 3.6.1
+
+-   Tweak: Added wvc-row-mobile-reverse class
+
 #### 16th March 2021 - Version 3.6.0
 
 -   Tweak: Changed CSS class prefix (wvc-ad-) misinterpreted as ad by some browsers (Brave)

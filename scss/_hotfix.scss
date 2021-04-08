@@ -1,21 +1,10 @@
-.fp-scroller {
-	height: 100vh;
-}
-
-@media screen and (min-width: 800px) {
-	.fp-scroller .wvc-row-wrapper {
-		height: 100vh;
+@media screen and (max-width: 800px) {
+	.wvc-row-mobile-reverse .wvc-columns-container {
+		flex-direction: column-reverse;
+		display: flex;
 	}
 
-	.fp-scroller .wvc-row-content {
-		height: 100%;
+	.wvc-row-mobile-reverse .wvc-columns-container .wvc-element {
+		margin-bottom: 35px;
 	}
-}
-.wvc-row-mobile-reverse .wvc-columns-container {
-	flex-direction: column-reverse;
-	display: flex;
-}
-
-.wvc-row-mobile-reverse .wvc-columns-container .wvc-element {
-	margin-bottom: 35px;
 }
