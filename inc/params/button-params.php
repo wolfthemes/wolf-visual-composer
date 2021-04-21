@@ -93,7 +93,7 @@ function wvc_button_params() {
 					'description' => esc_html__( 'Select button color.', 'wolf-visual-composer' ),
 					'param_holder_class' => 'wvc_colored-dropdown',
 				),
-				
+
 				array(
 					'type' => 'colorpicker',
 					'heading' => esc_html__( 'Custom color', 'wolf-visual-composer' ),

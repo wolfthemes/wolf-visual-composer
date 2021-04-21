@@ -71,7 +71,7 @@ function wvc_login_form( $atts = array() ) {
 	ob_start();
 
 	?>
-	<form class="wvc-login-form" action="<?php echo esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ); ?>" method="post">
+	<form class="wvc-login-form" method="post">
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
 
 			<p class="login-usernam">
@@ -82,6 +82,8 @@ function wvc_login_form( $atts = array() ) {
 				<label for="password"><?php esc_html_e( 'Password', 'wolf-visual-composer' ); ?>&nbsp;<span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 			</p>
+
+			<input type="hidden" name="redirect" value="<?php echo esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ); ?>">
 
 			<?php do_action( 'woocommerce_login_form' ); ?>
 

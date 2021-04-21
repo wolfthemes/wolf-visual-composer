@@ -139,7 +139,7 @@ function wvc_generate_button( $atts ) {
 	$output .= '<div class="' . wvc_sanitize_html_classes( $container_class ) . '"';
 
 	$output .= wvc_element_aos_animation_data_attr( $atts );
-	
+
 	$output .= '>';
 
 			$output .= '<a href="' . esc_url( $link_url ) . '" data-text="' . esc_attr( $title ) . '"';

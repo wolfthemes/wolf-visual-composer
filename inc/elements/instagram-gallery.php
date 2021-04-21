@@ -58,7 +58,7 @@ vc_map(
 				'param_name' => 'tag',
 				'admin_label' => true,
 			),
-			
+
 			array(
 				'type' => 'dropdown',
 				'heading' => esc_html__( 'Layout', 'wolf-visual-composer' ),
@@ -121,7 +121,7 @@ vc_map(
 				'group' => esc_html__( 'Carousel Settings', 'wolf-visual-composer' ),
 				'dependency' => array( 'element' => 'type', 'value' => array( 'carousel' ) ),
 			),
-		
+
 			array(
 				'type' => 'dropdown',
 				'heading' => esc_html__( 'Pause on Hover (if autoplay)', 'wolf-visual-composer' ),
@@ -142,7 +142,7 @@ vc_map(
 				'group' => esc_html__( 'Carousel Settings', 'wolf-visual-composer' ),
 				'dependency' => array( 'element' => 'type', 'value' => array( 'carousel' ) ),
 			),
-	
+
 			array(
 				'type' => 'dropdown',
 				'heading' => esc_html__( 'Show Navigation Bullets', 'wolf-visual-composer' ),

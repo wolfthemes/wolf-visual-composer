@@ -1,5 +1,9 @@
 # Changelog
 
+#### 21th April 2021 - Version 3.6.2
+
+-   Fix: WooCommerce login popup redirecting to blank page
+
 #### 8th April 2021 - Version 3.6.1
 
 -   Tweak: Added wvc-row-mobile-reverse class
