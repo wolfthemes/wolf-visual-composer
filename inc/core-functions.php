@@ -807,7 +807,7 @@ function wvc_get_team_member_socials() {
  * @param string $default
  * @return string
  */
-function wolf_vc_get_option( $index = 'settings', $name, $default = null ) {
+function wolf_vc_get_option( $index, $name, $default = null ) {
 
 	global $options;
 
@@ -1572,7 +1572,7 @@ function wvc_get_product_cat_dropdown_options() {
  * @param string $default
  * @return string
  */
-function wvc_update_option( $index = 'settings', $key, $value ) {
+function wvc_update_option( $index, $key, $value ) {
 
 	$wvc_settings = ( get_option( 'wvc_settings' ) && is_array( get_option( 'wvc_settings' ) ) ) ? get_option( 'wvc_settings' ) : array();
 

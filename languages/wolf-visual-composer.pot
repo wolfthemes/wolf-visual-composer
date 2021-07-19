@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.6.2\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.6.3\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2021-04-21 15:57:46+00:00\n"
+"POT-Creation-Date: 2021-07-19 07:53:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -701,7 +701,7 @@ msgstr ""
 
 #: inc/admin/class-options.php:294 inc/params/icon-params.php:471
 #: pack/wolf-visual-composer/inc/admin/class-options.php:294
-#: pack/wolf-visual-composer/inc/params/icon-params.php:469
+#: pack/wolf-visual-composer/inc/params/icon-params.php:471
 msgid "Position"
 msgstr ""
 
@@ -741,7 +741,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:146
 #: pack/wolf-visual-composer/inc/elements/spotify-follow-button.php:32
 #: pack/wolf-visual-composer/inc/params/button-params.php:144
-#: pack/wolf-visual-composer/inc/params/icon-params.php:507
+#: pack/wolf-visual-composer/inc/params/icon-params.php:515
 msgid "Size"
 msgstr ""
 
@@ -960,7 +960,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/process-container.php:76
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:138
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:151
-#: pack/wolf-visual-composer/inc/params/icon-params.php:511
+#: pack/wolf-visual-composer/inc/params/icon-params.php:519
 msgid "Medium"
 msgstr ""
 
@@ -977,7 +977,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/process-container.php:77
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:137
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:150
-#: pack/wolf-visual-composer/inc/params/icon-params.php:510
+#: pack/wolf-visual-composer/inc/params/icon-params.php:518
 msgid "Small"
 msgstr ""
 
@@ -1000,7 +1000,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:139
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:152
 #: pack/wolf-visual-composer/inc/elements/spotify-player.php:36
-#: pack/wolf-visual-composer/inc/params/icon-params.php:512
+#: pack/wolf-visual-composer/inc/params/icon-params.php:520
 msgid "Large"
 msgstr ""
 
@@ -1064,16 +1064,16 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:32
 #: pack/wolf-visual-composer/inc/params/button-params.php:70
 #: pack/wolf-visual-composer/inc/params/heading-params.php:31
-#: pack/wolf-visual-composer/inc/params/icon-params.php:524
 #: pack/wolf-visual-composer/inc/params/icon-params.php:532
-#: pack/wolf-visual-composer/inc/params/icon-params.php:539
-#: pack/wolf-visual-composer/inc/params/icon-params.php:551
-#: pack/wolf-visual-composer/inc/params/icon-params.php:567
-#: pack/wolf-visual-composer/inc/params/icon-params.php:574
-#: pack/wolf-visual-composer/inc/params/icon-params.php:579
+#: pack/wolf-visual-composer/inc/params/icon-params.php:540
+#: pack/wolf-visual-composer/inc/params/icon-params.php:547
+#: pack/wolf-visual-composer/inc/params/icon-params.php:559
+#: pack/wolf-visual-composer/inc/params/icon-params.php:575
 #: pack/wolf-visual-composer/inc/params/icon-params.php:582
-#: pack/wolf-visual-composer/inc/params/icon-params.php:606
-#: pack/wolf-visual-composer/inc/params/icon-params.php:613
+#: pack/wolf-visual-composer/inc/params/icon-params.php:587
+#: pack/wolf-visual-composer/inc/params/icon-params.php:590
+#: pack/wolf-visual-composer/inc/params/icon-params.php:614
+#: pack/wolf-visual-composer/inc/params/icon-params.php:621
 msgid "Text"
 msgstr ""
 
@@ -1100,7 +1100,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/workout-program-exercice.php:52
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:127
 #: pack/wolf-visual-composer/inc/params/heading-params.php:182
-#: pack/wolf-visual-composer/inc/params/icon-params.php:604
+#: pack/wolf-visual-composer/inc/params/icon-params.php:612
 msgid "Link"
 msgstr ""
 
@@ -1380,7 +1380,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/socials.php:43
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:140
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:153
-#: pack/wolf-visual-composer/inc/params/icon-params.php:513
+#: pack/wolf-visual-composer/inc/params/icon-params.php:521
 msgid "Very Large"
 msgstr ""
 
@@ -1513,7 +1513,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/toggle.php:23
 #: pack/wolf-visual-composer/inc/elements/workout-program.php:27
 #: pack/wolf-visual-composer/inc/elements/youtube.php:32
-#: pack/wolf-visual-composer/inc/params/icon-params.php:520
+#: pack/wolf-visual-composer/inc/params/icon-params.php:528
 msgid "Title"
 msgstr ""
 
@@ -1845,8 +1845,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-params.php:62
 #: pack/wolf-visual-composer/inc/params/heading-params.php:79
 #: pack/wolf-visual-composer/inc/params/heading-params.php:90
-#: pack/wolf-visual-composer/inc/params/icon-params.php:487
-#: pack/wolf-visual-composer/inc/params/icon-params.php:498
+#: pack/wolf-visual-composer/inc/params/icon-params.php:489
+#: pack/wolf-visual-composer/inc/params/icon-params.php:503
 #: pack/wolf-visual-composer/inc/params/row-params.php:160
 msgid "Center"
 msgstr ""
@@ -1920,9 +1920,9 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-params.php:49
 #: pack/wolf-visual-composer/inc/params/column-params.php:61
 #: pack/wolf-visual-composer/inc/params/heading-params.php:80
-#: pack/wolf-visual-composer/inc/params/icon-params.php:473
-#: pack/wolf-visual-composer/inc/params/icon-params.php:486
-#: pack/wolf-visual-composer/inc/params/icon-params.php:499
+#: pack/wolf-visual-composer/inc/params/icon-params.php:475
+#: pack/wolf-visual-composer/inc/params/icon-params.php:488
+#: pack/wolf-visual-composer/inc/params/icon-params.php:504
 #: pack/wolf-visual-composer/inc/params/row-params.php:161
 msgid "Left"
 msgstr ""
@@ -1996,9 +1996,9 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-params.php:50
 #: pack/wolf-visual-composer/inc/params/column-params.php:63
 #: pack/wolf-visual-composer/inc/params/heading-params.php:81
-#: pack/wolf-visual-composer/inc/params/icon-params.php:475
-#: pack/wolf-visual-composer/inc/params/icon-params.php:488
-#: pack/wolf-visual-composer/inc/params/icon-params.php:500
+#: pack/wolf-visual-composer/inc/params/icon-params.php:477
+#: pack/wolf-visual-composer/inc/params/icon-params.php:490
+#: pack/wolf-visual-composer/inc/params/icon-params.php:505
 #: pack/wolf-visual-composer/inc/params/row-params.php:162
 msgid "Right"
 msgstr ""
@@ -2353,8 +2353,8 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-params.php:87
 #: pack/wolf-visual-composer/inc/params/heading-params.php:136
 #: pack/wolf-visual-composer/inc/params/icon-params.php:372
-#: pack/wolf-visual-composer/inc/params/icon-params.php:451
-#: pack/wolf-visual-composer/inc/params/icon-params.php:548
+#: pack/wolf-visual-composer/inc/params/icon-params.php:453
+#: pack/wolf-visual-composer/inc/params/icon-params.php:556
 msgid "None"
 msgstr ""
 
@@ -2486,7 +2486,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:150
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:163
 #: pack/wolf-visual-composer/inc/params/button-params.php:187
-#: pack/wolf-visual-composer/inc/params/icon-params.php:452
+#: pack/wolf-visual-composer/inc/params/icon-params.php:454
 msgid "Opacity"
 msgstr ""
 
@@ -2795,7 +2795,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/icon-params.php:358
 #: pack/wolf-visual-composer/inc/params/icon-params.php:398
 #: pack/wolf-visual-composer/inc/params/icon-params.php:411
-#: pack/wolf-visual-composer/inc/params/icon-params.php:425
+#: pack/wolf-visual-composer/inc/params/icon-params.php:427
 #: pack/wolf-visual-composer/inc/params/row-params.php:370
 #: pack/wolf-visual-composer/inc/params/row-params.php:562
 msgid "Custom color"
@@ -3107,7 +3107,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/params/column-params.php:60
 #: pack/wolf-visual-composer/inc/params/heading-params.php:135
 #: pack/wolf-visual-composer/inc/params/heading-params.php:147
-#: pack/wolf-visual-composer/inc/params/icon-params.php:547
+#: pack/wolf-visual-composer/inc/params/icon-params.php:555
 #: pack/wolf-visual-composer/inc/params/row-params.php:97
 #: pack/wolf-visual-composer/inc/params/row-params.php:116
 #: pack/wolf-visual-composer/inc/params/row-params.php:279
@@ -3469,7 +3469,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:349
 #: pack/wolf-visual-composer/inc/elements/banner-gallery.php:221
 #: pack/wolf-visual-composer/inc/elements/banner.php:205
-#: pack/wolf-visual-composer/inc/params/icon-params.php:529
+#: pack/wolf-visual-composer/inc/params/icon-params.php:537
 msgid "Title Font Size"
 msgstr ""
 
@@ -3494,7 +3494,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/team-member.php:226
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:77
 #: pack/wolf-visual-composer/inc/params/heading-params.php:137
-#: pack/wolf-visual-composer/inc/params/icon-params.php:549
+#: pack/wolf-visual-composer/inc/params/icon-params.php:557
 msgid "Uppercase"
 msgstr ""
 
@@ -3616,7 +3616,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/wc-categories.php:132
 #: pack/wolf-visual-composer/inc/params/column-inner-params.php:25
 #: pack/wolf-visual-composer/inc/params/column-params.php:36
-#: pack/wolf-visual-composer/inc/params/icon-params.php:472
+#: pack/wolf-visual-composer/inc/params/icon-params.php:474
 #: pack/wolf-visual-composer/inc/params/row-params.php:99
 #: pack/wolf-visual-composer/inc/params/row-params.php:117
 msgid "Top"
@@ -4581,7 +4581,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/service-table.php:70
 #: pack/wolf-visual-composer/inc/elements/single-image.php:284
 #: pack/wolf-visual-composer/inc/elements/team-member.php:171
-#: pack/wolf-visual-composer/inc/params/icon-params.php:556
+#: pack/wolf-visual-composer/inc/params/icon-params.php:564
 msgid "Title Tag"
 msgstr ""
 
@@ -4724,7 +4724,7 @@ msgstr ""
 #: pack/wolf-visual-composer/inc/elements/typed.php:98
 #: pack/wolf-visual-composer/inc/params/bigtext-params.php:74
 #: pack/wolf-visual-composer/inc/params/heading-params.php:132
-#: pack/wolf-visual-composer/inc/params/icon-params.php:544
+#: pack/wolf-visual-composer/inc/params/icon-params.php:552
 msgid "Text Transform"
 msgstr ""
 
@@ -7266,7 +7266,7 @@ msgstr ""
 
 #: inc/elements/process-item.php:72 inc/params/icon-params.php:530
 #: pack/wolf-visual-composer/inc/elements/process-item.php:72
-#: pack/wolf-visual-composer/inc/params/icon-params.php:522
+#: pack/wolf-visual-composer/inc/params/icon-params.php:530
 msgid "My title"
 msgstr ""
 
@@ -7873,7 +7873,7 @@ msgstr ""
 #: inc/params/icon-params.php:430
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:113
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:126
-#: pack/wolf-visual-composer/inc/params/icon-params.php:428
+#: pack/wolf-visual-composer/inc/params/icon-params.php:430
 msgid "Select background color for icon."
 msgstr ""
 
@@ -7881,7 +7881,7 @@ msgstr ""
 #: inc/params/icon-params.php:439
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:122
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:135
-#: pack/wolf-visual-composer/inc/params/icon-params.php:437
+#: pack/wolf-visual-composer/inc/params/icon-params.php:439
 msgid "Custom background color"
 msgstr ""
 
@@ -7889,7 +7889,7 @@ msgstr ""
 #: inc/params/icon-params.php:441
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:124
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:137
-#: pack/wolf-visual-composer/inc/params/icon-params.php:439
+#: pack/wolf-visual-composer/inc/params/icon-params.php:441
 msgid "Select custom icon background color."
 msgstr ""
 
@@ -7897,7 +7897,7 @@ msgstr ""
 #: inc/params/icon-params.php:522
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:136
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:149
-#: pack/wolf-visual-composer/inc/params/icon-params.php:514
+#: pack/wolf-visual-composer/inc/params/icon-params.php:522
 msgid "Tiny"
 msgstr ""
 
@@ -7905,7 +7905,7 @@ msgstr ""
 #: inc/params/icon-params.php:450
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:146
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:159
-#: pack/wolf-visual-composer/inc/params/icon-params.php:448
+#: pack/wolf-visual-composer/inc/params/icon-params.php:450
 msgid "Hover Transition"
 msgstr ""
 
@@ -7913,7 +7913,7 @@ msgstr ""
 #: inc/params/icon-params.php:455
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:151
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:164
-#: pack/wolf-visual-composer/inc/params/icon-params.php:453
+#: pack/wolf-visual-composer/inc/params/icon-params.php:455
 msgid "Inset border"
 msgstr ""
 
@@ -7921,7 +7921,7 @@ msgstr ""
 #: inc/params/icon-params.php:456
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:152
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:165
-#: pack/wolf-visual-composer/inc/params/icon-params.php:454
+#: pack/wolf-visual-composer/inc/params/icon-params.php:456
 msgid "Sonar"
 msgstr ""
 
@@ -7929,7 +7929,7 @@ msgstr ""
 #: inc/params/icon-params.php:457
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:153
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:166
-#: pack/wolf-visual-composer/inc/params/icon-params.php:455
+#: pack/wolf-visual-composer/inc/params/icon-params.php:457
 msgid "Fill"
 msgstr ""
 
@@ -7937,7 +7937,7 @@ msgstr ""
 #: inc/params/icon-params.php:458
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:154
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:167
-#: pack/wolf-visual-composer/inc/params/icon-params.php:456
+#: pack/wolf-visual-composer/inc/params/icon-params.php:458
 msgid "Pop"
 msgstr ""
 
@@ -7945,7 +7945,7 @@ msgstr ""
 #: inc/params/icon-params.php:459
 #: pack/wolf-visual-composer/inc/elements/social-icons-custom.php:155
 #: pack/wolf-visual-composer/inc/elements/social-icons.php:168
-#: pack/wolf-visual-composer/inc/params/icon-params.php:457
+#: pack/wolf-visual-composer/inc/params/icon-params.php:459
 msgid "Rotate"
 msgstr ""
 
@@ -8619,19 +8619,19 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: inc/login-form.php:92 pack/wolf-visual-composer/inc/login-form.php:90
+#: inc/login-form.php:92 pack/wolf-visual-composer/inc/login-form.php:92
 msgid "Remember me"
 msgstr ""
 
-#: inc/login-form.php:98 pack/wolf-visual-composer/inc/login-form.php:96
+#: inc/login-form.php:98 pack/wolf-visual-composer/inc/login-form.php:98
 msgid "Log in"
 msgstr ""
 
-#: inc/login-form.php:102 pack/wolf-visual-composer/inc/login-form.php:100
+#: inc/login-form.php:102 pack/wolf-visual-composer/inc/login-form.php:102
 msgid "I need to register"
 msgstr ""
 
-#: inc/login-form.php:106 pack/wolf-visual-composer/inc/login-form.php:104
+#: inc/login-form.php:106 pack/wolf-visual-composer/inc/login-form.php:106
 msgid "Lost your password?"
 msgstr ""
 
@@ -8926,7 +8926,7 @@ msgstr ""
 
 #: inc/params/button-params.php:243 inc/params/icon-params.php:619
 #: pack/wolf-visual-composer/inc/params/button-params.php:243
-#: pack/wolf-visual-composer/inc/params/icon-params.php:611
+#: pack/wolf-visual-composer/inc/params/icon-params.php:619
 msgid "Scroll to anchor?"
 msgstr ""
 
@@ -9276,32 +9276,32 @@ msgid "Ban"
 msgstr ""
 
 #: inc/params/icon-params.php:476
-#: pack/wolf-visual-composer/inc/params/icon-params.php:474
+#: pack/wolf-visual-composer/inc/params/icon-params.php:476
 msgid "Left from Title"
 msgstr ""
 
 #: inc/params/icon-params.php:478
-#: pack/wolf-visual-composer/inc/params/icon-params.php:476
+#: pack/wolf-visual-composer/inc/params/icon-params.php:478
 msgid "Right from Title"
 msgstr ""
 
 #: inc/params/icon-params.php:485
-#: pack/wolf-visual-composer/inc/params/icon-params.php:483
+#: pack/wolf-visual-composer/inc/params/icon-params.php:485
 msgid "Container Alignement"
 msgstr ""
 
 #: inc/params/icon-params.php:500
-#: pack/wolf-visual-composer/inc/params/icon-params.php:495
+#: pack/wolf-visual-composer/inc/params/icon-params.php:500
 msgid "Text Alignement"
 msgstr ""
 
 #: inc/params/icon-params.php:545
-#: pack/wolf-visual-composer/inc/params/icon-params.php:537
+#: pack/wolf-visual-composer/inc/params/icon-params.php:545
 msgid "Title Font Family"
 msgstr ""
 
 #: inc/params/icon-params.php:580
-#: pack/wolf-visual-composer/inc/params/icon-params.php:572
+#: pack/wolf-visual-composer/inc/params/icon-params.php:580
 msgid "Title Letter Spacing"
 msgstr ""
 

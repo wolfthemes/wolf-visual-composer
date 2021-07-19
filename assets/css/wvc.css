@@ -28,7 +28,7 @@ body.wolf-visual-composer p:empty {
 /* to prevent flickering for lazyload */
 .wvc-lazyload-bg {
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .lazy-hidden {
@@ -4183,7 +4183,7 @@ cite.wvc-testimonial-cite {
   margin: 0;
   position: absolute;
   top: 50%;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
   transform: translate3d(0, -50%, 0);
 }
 .wvc-button-icon-reveal span {
@@ -8686,7 +8686,7 @@ li.wvc-album-tracklist-item {
 .wvc-ati-duration-cell {
   text-align: left;
   font-weight: 400;
-  opacity: .88;
+  opacity: 0.88;
   font-size: 12px;
   width: 44px;
 }
@@ -8698,7 +8698,7 @@ li.wvc-album-tracklist-item {
 
 .wvc-ati-play,
 .wvc-ati-pause {
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   opacity: 0;
 }
 
@@ -8757,7 +8757,7 @@ li.wvc-album-tracklist-item {
 }
 
 .wvc-ati-add-to-cart-button.loading .wvc-ati-add-to-cart:before {
-  opacity: .66;
+  opacity: 0.66;
 }
 
 .wvc-ati-add-to-cart-button.added .wvc-ati-add-to-cart:before {
@@ -8801,42 +8801,42 @@ li.wvc-album-tracklist-item {
 }
 
 .wvc-ati-play:before {
-  content: "\f04b";
+  content: '\f04b';
 }
 
 .wvc-ati-pause:before {
-  content: "\f04c";
+  content: '\f04c';
 }
 
 .wvc-ati-video:before {
-  content: "\f03d";
+  content: '\f03d';
 }
 
 .wvc-ati-itunes:before {
-  content: "\f179";
+  content: '\f179';
 }
 
 .wvc-ati-amazon:before {
-  content: "\f270";
+  content: '\f270';
   top: 2px;
 }
 
 .wvc-ati-googleplay:before {
   font-family: socicon;
-  content: "\e064";
+  content: '\e0a5';
   top: 1px;
 }
 
 .wvc-ati-buy:before {
-  content: "\f07a";
+  content: '\f07a';
 }
 
 .wvc-ati-add-to-cart:before {
-  content: "\f218";
+  content: '\f218';
 }
 
 .wvc-ati-download:before {
-  content: "\f0ed";
+  content: '\f0ed';
 }
 
 .wvc-font-dark li.wvc-album-tracklist-item {

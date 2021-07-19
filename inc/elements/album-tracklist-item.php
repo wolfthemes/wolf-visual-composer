@@ -19,7 +19,7 @@ vc_map(
 		'category' => esc_html__( 'Content' , 'wolf-visual-composer' ),
 		'icon' => 'fa fa-music',
 		'params' => array(
-			
+
 			array(
 				'type' => 'wvc_textfield',
 				'heading' => esc_html__( 'Title', 'wolf-visual-composer' ),
@@ -84,7 +84,7 @@ vc_map(
 
 			array(
 				'type' => 'wvc_textfield',
-				'heading' => sprintf( esc_html__( '%s URL', 'wolf-visual-composer' ), 'iTunes' ),
+				'heading' => sprintf( esc_html__( '%s URL', 'wolf-visual-composer' ), 'Apple Music' ),
 				'param_name' => 'itunes_url',
 				'placeholder' => 'http://',
 				'dependency' => array( 'element' => 'action', 'value' => array( 'link' ) ),
@@ -92,7 +92,7 @@ vc_map(
 
 			array(
 				'type' => 'wvc_textfield',
-				'heading' => sprintf( esc_html__( '%s URL', 'wolf-visual-composer' ), 'amazon' ),
+				'heading' => sprintf( esc_html__( '%s URL', 'wolf-visual-composer' ), 'Amazon' ),
 				'param_name' => 'amazon_url',
 				'placeholder' => 'http://',
 				'dependency' => array( 'element' => 'action', 'value' => array( 'link' ) ),
@@ -113,7 +113,7 @@ vc_map(
 				'placeholder' => 'http://',
 				'dependency' => array( 'element' => 'action', 'value' => array( 'link' ) ),
 			),
-		
+
 		),
 	)
 );

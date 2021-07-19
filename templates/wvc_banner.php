@@ -122,7 +122,7 @@ $output .= '<div class="wvc-banner-image">';
 if ( ! in_array( $img_size, array( 'thumbnail', 'medium', 'large', 'wvc-XL', 'full' ) ) ) {
 
 	if ( wp_attachment_is_image( $img_id ) ) {
-			
+
 		$img = wpb_getImageBySize( array(
 			'attach_id' => $img_id,
 			'thumb_size' => $img_size,
@@ -199,7 +199,7 @@ if ( $add_button ) {
 	);
 
 	$icon = ( isset( $atts["btn_i_icon_$btn_i_type"] ) ) ? $atts["btn_i_icon_$btn_i_type"] : '';
-	
+
 	$button_params = apply_filters( 'wvc_banner_button_atts', $button_params, $atts );
 
 	$banner_button = wvc_generate_button( array_merge( array( 'icon' => $icon ), $button_params ) );

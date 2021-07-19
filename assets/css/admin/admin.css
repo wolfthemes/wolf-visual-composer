@@ -732,7 +732,7 @@ i.wvc_shortcodes_tiny_mce_button.mce-ico {
   margin: 0;
   position: absolute;
   top: 50%;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
   transform: translate3d(0, -50%, 0);
 }
 .wvc-button-icon-reveal span {

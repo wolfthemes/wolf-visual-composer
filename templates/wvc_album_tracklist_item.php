@@ -28,7 +28,7 @@ extract( shortcode_atts( array(
 ), $atts ) );
 
 $output = '';
-$rand = rand( 0, 99999 );
+$rand = wp_rand( 0, 99999 );
 
 if ( $video_url ) {
 	wp_enqueue_script( 'lity' );
@@ -59,10 +59,10 @@ $output .= '<span class="wvc-ati-cell wvc-ati-audio-cell">';
 
 if ( $mp3 || $ogg ) {
 
-	
+
 	$output .= '<a href="#" class="wvc-ati-play-button">';
 	$output .= '<i class="wvc-ati-icon wvc-ati-play"></i><i class="wvc-ati-icon wvc-ati-pause"></i>';
-	
+
 	$output .= '</a>';
 
 	if ( $mp3 ) {
@@ -103,7 +103,7 @@ if ( 'download' === $action && $mp3 ) {
 	}
 
 	if ( $itunes_url ) {
-		$output .= '<a class="wvc-ati-link" title="' . sprintf( esc_html__( 'Buy on %s', 'wolf-visual-composer' ), 'iTunes' ) . '" href="' . esc_url( $itunes_url ) . '" target="_blank"><i class="wvc-ati-icon wvc-ati-itunes"></i></a>';
+		$output .= '<a class="wvc-ati-link" title="' . sprintf( esc_html__( 'Buy on %s', 'wolf-visual-composer' ), 'Apple Music' ) . '" href="' . esc_url( $itunes_url ) . '" target="_blank"><i class="wvc-ati-icon wvc-ati-itunes"></i></a>';
 	}
 
 	if ( $amazon_url ) {
@@ -111,7 +111,7 @@ if ( 'download' === $action && $mp3 ) {
 	}
 
 	if ( $googleplay_url ) {
-		$output .= '<a class="wvc-ati-link" title="' . sprintf( esc_html__( 'Buy on %s', 'wolf-visual-composer' ), 'Google Play' ) . '" href="' . esc_url( $googleplay_url ) . '" target="_blank"><i class="wvc-ati-icon wvc-ati-googleplay"></i></a>';
+		$output .= '<a class="wvc-ati-link" title="' . sprintf( esc_html__( 'Buy on %s', 'wolf-visual-composer' ), 'YT Music' ) . '" href="' . esc_url( $googleplay_url ) . '" target="_blank"><i class="wvc-ati-icon wvc-ati-googleplay"></i></a>';
 	}
 
 	if ( $buy_url ) {

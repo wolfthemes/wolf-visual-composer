@@ -1,5 +1,9 @@
 # Changelog
 
+#### 19th July 2021 - Version 3.6.3
+
+-   Fix: PHP8 error messages
+
 #### 21th April 2021 - Version 3.6.2
 
 -   Fix: WooCommerce login popup redirecting to blank page
