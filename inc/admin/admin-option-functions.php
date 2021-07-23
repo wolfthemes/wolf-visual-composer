@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
  * @param string $default
  * @return string
  */
-function wvc_update_option_index( $index = 'settings', $options_array ) {
+function wvc_update_option_index( $index, $options_array ) {
 
 	$wvc_settings = ( get_option( 'wvc_settings' ) && is_array( get_option( 'wvc_settings' ) ) ) ? get_option( 'wvc_settings' ) : array();
 
