@@ -1,5 +1,9 @@
 # Changelog
 
+#### 13th August 2021 - Version 3.6.4
+
+-   Fix: wolf_core_is_page_builder_page error messages
+
 #### 19th July 2021 - Version 3.6.3
 
 -   Fix: PHP8 error messages

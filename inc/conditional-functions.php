@@ -163,3 +163,9 @@ function wvc_is_user_mc_sub() {
 function wvc_is_user_admin() {
 	return wvc_current_user_has_role( 'administrator' );
 }
+
+if ( ! function_exists( 'wolf_core_is_page_builder_page' ) ) {
+	function wolf_core_is_page_builder_page() {
+		return false;
+	}
+}
