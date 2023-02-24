@@ -144,7 +144,7 @@ function wvc_is_activated() {
 	if ( ! get_option( 'wvc_activated' ) && ! get_transient( 'wvc_activation_notice' ) && get_option( 'wvc_code' ) && get_option( 'wvc_key' ) ) {
 
 		$remote_url = 'https://api.wolfthemes.com/envato/';
-		$response   = wp_remote_post(
+		$response   = wp_safe_remote_post(
 			$remote_url,
 			array(
 				'method' => 'POST',

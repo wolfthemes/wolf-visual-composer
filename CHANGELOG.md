@@ -1,5 +1,9 @@
 # Changelog
 
+#### 24th February 2023 - Version 3.6.5
+
+-   Tweak: Replaced wp_remote_post function by wp_safe_remote_post for plugin activation
+
 #### 13th August 2021 - Version 3.6.4
 
 -   Fix: wolf_core_is_page_builder_page error messages
