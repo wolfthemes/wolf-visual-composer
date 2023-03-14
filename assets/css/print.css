@@ -1,11 +1,9 @@
 /* border box everything */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 *:after, *:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -44,8 +42,7 @@ h6 {
 img.wp-smiley, img.emoji {
   display: inline !important;
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   height: 1em !important;
   width: 1em !important;
   margin: 0 .07em !important;
@@ -119,19 +116,13 @@ img.wp-smiley, img.emoji {
 }
 
 .wvc-workout-program-exercice {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .wvc-wpe-media {
   text-align: right;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .wvc-wpe-thumbnail {
@@ -146,8 +137,7 @@ img.wp-smiley, img.emoji {
 .wvc-wpe-link {
   display: inline-block;
   position: relative;
-  -webkit-transition: opacity .2s ease;
-          transition: opacity .2s ease;
+  transition: opacity .2s ease;
   margin-left: 5px;
 }
 .wvc-wpe-link:hover {
@@ -167,8 +157,7 @@ img.wp-smiley, img.emoji {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   font-family: FontAwesome;
   color: white;
 }
@@ -183,8 +172,7 @@ img.wp-smiley, img.emoji {
   position: absolute;
   right: 33px;
   top: 50%;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
 }
 
 .wvc-is-mobile .wvc-wpe-print-button {
@@ -262,19 +250,13 @@ img.wp-smiley, img.emoji {
 }
 
 .wvc-meal-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .wvc-mi-media {
   text-align: right;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .wvc-mi-thumbnail {
@@ -289,8 +271,7 @@ img.wp-smiley, img.emoji {
 .wvc-mi-link {
   display: inline-block;
   position: relative;
-  -webkit-transition: opacity .2s ease;
-          transition: opacity .2s ease;
+  transition: opacity .2s ease;
   margin-left: 5px;
 }
 .wvc-mi-link:hover {
@@ -301,8 +282,7 @@ img.wp-smiley, img.emoji {
   position: absolute;
   right: 33px;
   top: 50%;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
 }
 
 .wvc-is-mobile .wvc-mi-print-button {
@@ -356,8 +336,7 @@ img.wp-smiley, img.emoji {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 .wvc-recipe .wvc-counter {
   color: white !important;
@@ -381,12 +360,8 @@ img.wp-smiley, img.emoji {
   margin-top: 35px;
   max-width: 800px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .wvc-recipe-meta {

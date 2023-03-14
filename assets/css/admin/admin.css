@@ -10,11 +10,11 @@
 .vc_ui-panel-header-container {
   background-image: none !important;
   background: #f1f1f1 !important;
-  color: #ececec !important;
+  color: #ECECEC !important;
 }
 
 .vc_ui-panel-header {
-  color: #444444 !important;
+  color: #444 !important;
 }
 
 .vc_ui-panel-window-inner {
@@ -104,7 +104,7 @@
 
 /* Buttons */
 .vc_ui-button.vc_ui-button-action {
-  background-color: #0073aa !important;
+  background-color: #0073AA !important;
 }
 .vc_ui-button.vc_ui-button-action:hover {
   opacity: .88;
@@ -114,7 +114,7 @@
 .composer-switch .logo-icon,
 .composer-switch .vc_spacer,
 .composer-switch a {
-  background-color: #0073aa !important;
+  background-color: #0073AA !important;
 }
 
 .vc_child-element-move .vc_btn-content:hover, .vc_element-move .vc_btn-content:hover,
@@ -134,20 +134,20 @@
 .wpb_vc_row > .vc_controls .column_delete:hover,
 .wpb_vc_row_inner > .vc_controls .column_delete:hover,
 .wpb_vc_section > .vc_controls .column_delete:hover {
-  background-color: #0073aa !important;
-  color: white !important;
+  background-color: #0073AA !important;
+  color: #fff !important;
 }
 .wpb_vc_row > .vc_controls .column_delete:hover .vc-composer-icon,
 .wpb_vc_row_inner > .vc_controls .column_delete:hover .vc-composer-icon,
 .wpb_vc_section > .vc_controls .column_delete:hover .vc-composer-icon {
-  color: white !important;
+  color: #fff !important;
 }
 
 .vc_element-icon {
-  background: #0473aa !important;
-  border: 1px solid #0473aa !important;
+  background: #0473AA !important;
+  border: 1px solid #0473AA !important;
   font-size: 15px !important;
-  color: #ececec !important;
+  color: #ECECEC !important;
   -webkit-border-radius: 2px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 2px;
@@ -367,22 +367,22 @@
 .wvc-images-set .wvc-image .wvc-remove-img:before {
   content: '\00D7';
   font-size: 24px;
-  color: white !important;
+  color: #FFF !important;
 }
 
 .wvc_colored-dropdown {
   color: #444;
 }
 .wvc_colored-dropdown .gradient-color-105898 {
-  background: linear-gradient(to bottom right, #75d69c 0%, #3452ff 100%) !important;
+  background: linear-gradient(to bottom right, #75d69c 0, #3452ff 100%) !important;
   color: #fff;
 }
 .wvc_colored-dropdown .gradient-color-111420 {
-  background: radial-gradient(center top, circle cover, #0cb4ce 17%, #1080d0 79%) !important;
+  background: radial-gradient(circle cover at center top, #0cb4ce 17%, #1080d0 79%) !important;
   color: #fff;
 }
 .wvc_colored-dropdown .gradient-color-3452ff {
-  background: linear-gradient(to bottom right, #ff1053 0%, #3452ff 100%) !important;
+  background: linear-gradient(to bottom right, #ff1053 0, #3452ff 100%) !important;
   color: #fff;
 }
 .wvc_colored-dropdown .gradient-color-588694 {
@@ -390,16 +390,16 @@
   color: #fff;
 }
 .wvc_colored-dropdown .black {
-  background-color: black !important;
+  background-color: #000000 !important;
   color: #fff;
 }
 .wvc_colored-dropdown .white {
-  background-color: white !important;
-  color: #444444 !important;
+  background-color: #ffffff !important;
+  color: #444 !important;
 }
 .wvc_colored-dropdown .lightergrey {
   background-color: #f7f7f7 !important;
-  color: #444444 !important;
+  color: #444 !important;
 }
 .wvc_colored-dropdown .darkgrey {
   background-color: #444444 !important;
@@ -495,7 +495,7 @@
 }
 
 #wvc-popup a.close {
-  color: red !important;
+  color: #ff0000 !important;
   text-decoration: none;
 }
 
@@ -504,7 +504,7 @@
 }
 
 #wvc-popup .help {
-  color: #333333 !important;
+  color: #333 !important;
 }
 
 #wvc-popup .button-primary,
