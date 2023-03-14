@@ -11735,3 +11735,9 @@ body.wpb-svg #swipebox-close {
 #mobile-bar .flex-mobile-wrap {
 	width: 100%;
 }
+
+/* Variation swatch width */
+.swatch {
+	width: 30px !important;
+	height: 30px !important;
+}
