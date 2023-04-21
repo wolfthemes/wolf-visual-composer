@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.6.7\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.6.8\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2023-03-14 15:04:33+00:00\n"
+"POT-Creation-Date: 2023-04-21 11:34:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -745,7 +745,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: inc/admin/class-options.php:335 inc/core-functions.php:1316
+#: inc/admin/class-options.php:335 inc/core-functions.php:1317
 #: pack/wolf-visual-composer/inc/admin/class-options.php:335
 #: pack/wolf-visual-composer/inc/core-functions.php:1316
 msgid "Attachment"
@@ -2621,32 +2621,32 @@ msgstr ""
 msgid "Pattern %1$d (loop of %2$d)"
 msgstr ""
 
-#: inc/core-functions.php:1033
+#: inc/core-functions.php:1034
 #: pack/wolf-visual-composer/inc/core-functions.php:1033
 msgid "Image is missing"
 msgstr ""
 
-#: inc/core-functions.php:1138
+#: inc/core-functions.php:1139
 #: pack/wolf-visual-composer/inc/core-functions.php:1138
 msgid "Home"
 msgstr ""
 
-#: inc/core-functions.php:1185
+#: inc/core-functions.php:1186
 #: pack/wolf-visual-composer/inc/core-functions.php:1185
 msgid "Products tagged &ldquo;"
 msgstr ""
 
-#: inc/core-functions.php:1311
+#: inc/core-functions.php:1312
 #: pack/wolf-visual-composer/inc/core-functions.php:1311
 msgid "Search"
 msgstr ""
 
-#: inc/core-functions.php:1339
+#: inc/core-functions.php:1340
 #: pack/wolf-visual-composer/inc/core-functions.php:1339
 msgid "Search results"
 msgstr ""
 
-#: inc/core-functions.php:1468 inc/elements/content-block.php:33
+#: inc/core-functions.php:1469 inc/elements/content-block.php:33
 #: inc/elements/content-block.php:42
 #: pack/wolf-visual-composer/inc/core-functions.php:1468
 #: pack/wolf-visual-composer/inc/elements/content-block.php:33
@@ -2654,7 +2654,7 @@ msgstr ""
 msgid "Content Block"
 msgstr ""
 
-#: inc/core-functions.php:1475
+#: inc/core-functions.php:1476
 #: pack/wolf-visual-composer/inc/core-functions.php:1475
 msgid "Playlists"
 msgstr ""

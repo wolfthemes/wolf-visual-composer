@@ -222,6 +222,7 @@ function wvc_socials( $atts ) {
 		'teamviewer',
 		'technorati',
 		'telegram',
+		'tidal',
 		'twitch',
 		'tripit',
 		'triplej',
@@ -242,7 +243,7 @@ function wvc_socials( $atts ) {
 		'zynga',
 	);
 
-	$fab_array = array( 'tiktok' );
+	$fab_array = array( 'tiktok', 'tidal' );
 
 	vc_icon_element_fonts_enqueue( 'fontawesome' );
 

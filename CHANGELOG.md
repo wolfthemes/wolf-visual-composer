@@ -1,5 +1,9 @@
 # Changelog
 
+#### 21th April 2023 - Version 3.6.8
+
+-   Tweak: Added Tidal in social services
+
 #### 14th March 2023 - Version 3.6.7
 
 -   Fix: Hotfix for all themes to hide the social icons on mobile bar to avoid overlapping. This fix will be added in all themes in the next month theme updates.
