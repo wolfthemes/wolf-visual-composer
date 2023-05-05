@@ -1585,3 +1585,49 @@ function wvc_update_option( $index, $key, $value ) {
 
 	update_option( 'wvc_settings', $wvc_settings );
 }
+
+/**
+ * MailChimp add subscriber
+ *
+ * @param array $data
+ * @return void
+ * @link https://stackoverflow.com/questions/30481979/adding-subscribers-to-a-list-using-mailchimps-api-v3
+ */
+function wvc_sync_mailchimp( $data ) {
+
+	$api_key = apply_filters( 'wvc_mailchimp_api_key', wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' ) );
+	$list_id = esc_attr($data['list_id']);
+	$email = $data['email'];
+
+	$status = 'subscribed'; // we are going to talk about it in just a little bit
+	$merge_fields = array( 'FNAME' => $data['firstname'], 'LNAME' => $data['lastname'] ); // FNAME, LNAME or something else
+
+	// start our Mailchimp connection
+	$connection = curl_init();
+	curl_setopt(
+		$connection,
+		CURLOPT_URL,
+		'https://' . substr( $api_key, strpos( $api_key, '-' ) + 1 ) . '.api.mailchimp.com/3.0/lists/' . $list_id . '/members/' . md5( strtolower( $email ) )
+	);
+	curl_setopt( $connection, CURLOPT_HTTPHEADER, array( 'Content-Type: application/json', 'Authorization: Basic '. base64_encode( 'user:'.$api_key ) ) );
+	curl_setopt( $connection, CURLOPT_RETURNTRANSFER, true );
+	curl_setopt( $connection, CURLOPT_CUSTOMREQUEST, 'PUT' );
+	curl_setopt( $connection, CURLOPT_POST, true );
+	curl_setopt( $connection, CURLOPT_SSL_VERIFYPEER, false );
+	curl_setopt(
+		$connection,
+		CURLOPT_POSTFIELDS,
+		json_encode( array(
+			'apikey'        => $api_key,
+			'email_address' => $email,
+			'status'        => $status,
+			'merge_fields'  => $merge_fields,
+			//'tags' => array( 'Coffee', 'Snowboard' ) // you can specify some tags here as well
+		) )
+	);
+
+	$result = curl_exec( $connection );
+
+	//var_dump( $result );
+}
+

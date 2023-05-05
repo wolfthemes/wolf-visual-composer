@@ -1,5 +1,9 @@
 # Changelog
 
+#### 5th May 2023 - Version 3.6.9
+
+-   Tweak: Update MailChimp API to version 3
+
 #### 21th April 2023 - Version 3.6.8
 
 -   Tweak: Added Tidal in social services

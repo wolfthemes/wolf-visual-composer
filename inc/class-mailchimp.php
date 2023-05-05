@@ -133,4 +133,4 @@ function WVCM() {
 	return WVC_Mailchimp::instance();
 }
 
-WVCM(); // Go
+//WVCM(); // Go

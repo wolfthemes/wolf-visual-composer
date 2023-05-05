@@ -84,7 +84,8 @@ function wvc_mailchimp_ajax() {
 			esc_html_e( 'Please insert a valid email', 'wolf-visual-composer' );
 
 		} else {
-			WVCM()->subscribe( $list_id, $email, $f_name, $l_name );
+			//WVCM()->subscribe( $list_id, $email, $f_name, $l_name );
+			wvc_sync_mailchimp( $data );
 			echo 'OK';
 		}
 	}
