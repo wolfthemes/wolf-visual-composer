@@ -1,5 +1,9 @@
 # Changelog
 
+#### 5th May 2023 - Version 3.7.0
+
+-   Tweak: Fix warning message with PHP 8.1
+
 #### 5th May 2023 - Version 3.6.9
 
 -   Tweak: Update MailChimp API to version 3

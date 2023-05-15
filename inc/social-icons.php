@@ -311,6 +311,7 @@ function wvc_socials( $atts ) {
 						$output .= ' rel="noreferrer, noopener"';
 					}
 
+					$link = ( $link ) ? $link : '#';
 					$output .= ' href="' . esc_url( $link ) . '"></a></i>';
 
 				} else {
