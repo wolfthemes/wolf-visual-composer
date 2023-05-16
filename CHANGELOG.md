@@ -1,8 +1,9 @@
 # Changelog
 
-#### 5th May 2023 - Version 3.7.0
+#### 16th May 2023 - Version 3.7.1
 
--   Tweak: Fix warning message with PHP 8.1
+-   Fix: No icon service table bug
+-   Fix: warning message with PHP 8.1
 
 #### 5th May 2023 - Version 3.6.9
 
