@@ -119,7 +119,7 @@ if ( $title )
 		</' . esc_attr( $title_tag ) .'>
 		</li>';
 
-if ( $icon )
+if ( $icon && $add_icon )
 	$output .= '<li class="wvc-service-icon-container"><i class="fa fa-3x ' . esc_attr( $icon ) . '" style="' . wvc_esc_style_attr( $icon_style ) . '" class="' . wvc_sanitize_html_classes( $icon_class ) . '"></i></li>';
 
 if ( $services ) {
