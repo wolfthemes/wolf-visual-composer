@@ -48,27 +48,27 @@ add_action( 'wvc_license_tab', 'wvc_output_license_tab' );
 function wvc_output_license_tab_content() {
 	?>
 	<?php
-		if ( isset( $_POST['wvc_reset_purchase_code'] ) ) :
-			delete_option( 'wvc_activation_notice_set' );
-			delete_transient( 'wvc_activation_notice' );
-			delete_option( 'wvc_activated' );
-			delete_option( 'wvc_code' );
-			delete_option( 'wvc_key' );
+	if ( isset( $_POST['wvc_reset_purchase_code'] ) ) :
+		delete_option( 'wvc_activation_notice_set' );
+		delete_transient( 'wvc_activation_notice' );
+		delete_option( 'wvc_activated' );
+		delete_option( 'wvc_code' );
+		delete_option( 'wvc_key' );
 		endif;
 	?>
 	<div id="license" class="wvc-options-panel">
 	<?php
-		$activated = wvc_activate_theme();
+		$activated  = wvc_activate_theme();
 		$theme_name = wvc_get_theme_name();
 		$theme_slug = wvc_get_theme_slug();
-		?>
+	?>
 		<ul class="wvc-license-info">
 			<li>
 			<?php
 				echo sprintf(
-					wp_kses_post( __( '%s theme works with <strong>%s</strong> plugin to offer all its features.', 'wolf-visual-composer' ) ),
+					wp_kses_post( __( '%1$s theme works with <strong>%2$s</strong> plugin to offer all its features.', 'wolf-visual-composer' ) ),
 					$theme_name,
-					//'https://wolfthemes.com/wolf-wpbakery-page-builder-extension/',
+					// 'https://wolfthemes.com/wolf-wpbakery-page-builder-extension/',
 					'Wolf WPBakery Page Builder Extension'
 				);
 			?>
@@ -76,25 +76,25 @@ function wvc_output_license_tab_content() {
 			<li>
 				<?php
 				echo sprintf(
-					wp_kses_post( __( 'This is an extension of <a href="%s" target="_blank">%s</a> plugin.', 'wolf-visual-composer' ) ),
+					wp_kses_post( __( 'This is an extension of <a href="%1$s" target="_blank">%2$s</a> plugin.', 'wolf-visual-composer' ) ),
 					'https://wlfthm.es/wpbpb',
 					'WPBakery Page Builder'
 				);
-			?>
+				?>
 			</li>
 			<li>
 				<?php
 				echo sprintf(
-					wp_kses_post( __( 'This extension is available only to users who purchased their theme from <a href="%s" target="_blank">%s</a>.', 'wolf-visual-composer' ) ),
+					wp_kses_post( __( 'This extension is available only to users who purchased their theme from <a href="%1$s" target="_blank">%2$s</a>.', 'wolf-visual-composer' ) ),
 					'https://wolfthemes.com',
 					'WolfThemes'
 				);
-			?>
+				?>
 			</li>
 			<li>
 			<?php
 				echo sprintf(
-					wp_kses_post( __( 'You <strong>do not need to activate %s</strong> as the full version is already included in the theme (<a href="%s" target="_blank">more infos</a>).', 'wolf-visual-composer' ) ),
+					wp_kses_post( __( 'You <strong>do not need to activate %1$s</strong> as the full version is already included in the theme (<a href="%2$s" target="_blank">more infos</a>).', 'wolf-visual-composer' ) ),
 					'WPBakery Page Builder',
 					'https://wolfthemes.ticksy.com/article/12629/'
 				);
@@ -117,18 +117,20 @@ function wvc_output_license_tab_content() {
 			<a target="_blank" href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Can-I-Find-my-Purchase-Code-"><?php esc_html_e( 'How to find your purchase code', 'wolf-visual-composer' ); ?></a>
 		</p>
 		<?php else : ?>
-		<p><?php
+		<p>
+			<?php
 			echo sprintf(
 				wp_kses_post( __( 'The %s is activated.', 'wolf-visual-composer' ) ),
 				'WPBakery Page Builder Extension'
 			);
-		?></p>
+			?>
+		</p>
 		<form method="post" action="<?php echo esc_url( admin_url( 'themes.php?page=' . $theme_slug . '-about' ) ); ?>"><input name="wvc_reset_purchase_code" value="<?php esc_html_e( 'Reset purchase code', 'wolf-visual-composer' ); ?>" type="submit" class="button button-secondary">
 			</form>
-		<?php
+			<?php
 		endif;
 
-	?>
+		?>
 	</div><!-- #license -->
 	<?php
 }
@@ -136,46 +138,48 @@ add_action( 'wvc_license_tab_content', 'wvc_output_license_tab_content' );
 
 /**
  * Output the last new feature if set in the changelog XML
- *
  */
 function wvc_activate_theme() {
 
-	$activated = get_option( 'wvc_key' );
-	$is_error = false;
+	$activated     = get_option( 'wvc_key' );
+	$is_error      = false;
 	$error_message = esc_html__( 'Something went wrong. It way be due to a temporary Envato API outage. Please try again in a few minutes.', 'wolf-visual-composer' );
 
 	if ( ! $activated && isset( $_POST['theme_purchase_code'] ) ) {
-		
+
 		/* Verifiy purchase */
 		if ( isset( $_POST['theme_purchase_code'] ) && ! empty( $_POST['theme_purchase_code'] ) ) {
 
-			$code = esc_attr( $_POST['theme_purchase_code'] );
+			$code       = esc_attr( $_POST['theme_purchase_code'] );
 			$remote_url = 'https://api.wolfthemes.com/envato/';
-			//$remote_url = 'http://localhost/api/envato/';
+			// $remote_url = 'http://localhost/api/envato/';
 
 			$url = $remote_url . '?code=' . $code;
 
 			// send request
-			$response = wp_remote_post( $url, array(
-				'method' => 'POST',
-				'body' => array(
-					'action' => 'activation',
-					'purchase_code' => $_POST['theme_purchase_code'],
-				),
-			) );
+			$response = wp_remote_post(
+				$url,
+				array(
+					'method' => 'POST',
+					'body'   => array(
+						'action'        => 'activation',
+						'purchase_code' => $_POST['theme_purchase_code'],
+					),
+				)
+			);
 
 			// get result if no error
 			if ( ! is_wp_error( $response ) && is_array( $response ) ) {
-				
+
 				$body = wp_remote_retrieve_body( $response ); // use the content
-				
+
 				if ( $body ) {
 
 					$data = json_decode( $body );
 
 					if ( $data && is_object( $data ) && isset( $data->code ) && isset( $data->key ) ) {
 
-						//set_transient( 'wvc_activated', true, 365 * DAY_IN_SECONDS );
+						// set_transient( 'wvc_activated', true, 365 * DAY_IN_SECONDS );
 						update_option( 'wvc_activated', true );
 						add_option( 'wvc_code', $data->code );
 						add_option( 'wvc_key', $data->key );
@@ -190,24 +194,21 @@ function wvc_activate_theme() {
 
 					} else {
 						$is_error = true;
-						$error = $error_message;
+						$error    = $error_message;
 					}
-
 				} else {
 					$is_error = true;
-					$error = $error_message;
+					$error    = $error_message;
 				}
-
 			} else {
 				$is_error = true;
-				$error = $error_message;
+				$error    = $error_message;
 			}
 		} else {
 			$is_error = true;
-			$error = esc_html__( 'Purchase code can not be empty', 'wolf-visual-composer' );
+			$error    = esc_html__( 'Purchase code can not be empty', 'wolf-visual-composer' );
 		}
-
-	} else if ( $activated ) {
+	} elseif ( $activated ) {
 
 		return true;
 	}
@@ -226,11 +227,13 @@ function wvc_activate_theme() {
 
 function wvc_get_transient_timeout( $transient ) {
 	global $wpdb;
-		$transient_timeout = $wpdb->get_col( "
+		$transient_timeout = $wpdb->get_col(
+			"
 		SELECT option_value
 		FROM $wpdb->options
 		WHERE option_name
 		LIKE '%_transient_timeout_$transient%'
-		" );
+		"
+		);
 	return ( isset( $transient_timeout[0] ) ) ? absint( ( $transient_timeout[0] - time() ) / DAY_IN_SECONDS ) : false;
 }

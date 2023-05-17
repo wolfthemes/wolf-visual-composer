@@ -105,17 +105,6 @@ function wvc_show_wrong_theme_notice() {
  */
 function wvc_is_activated() {
 
-	// set_transient( 'wvc_activation_notice', true, 31 * DAY_IN_SECONDS );
-	// delete_option( 'wvc_activated' );
-
-	// delete_option( 'wvc_activation_notice_set' );
-	// delete_transient( 'wvc_activation_notice' );
-	// delete_option( 'wvc_activated' );
-	// delete_option( 'wvc_code' );
-	// delete_option( 'wvc_key' );
-
-	// var_dump( get_transient( 'wvc_activation_notice' ) );
-
 	// new.
 	if ( ! get_transient( 'wvc_activation_notice' ) && ! get_option( 'wvc_activation_notice_set' ) ) {
 		set_transient( 'wvc_activation_notice', true, 31 * DAY_IN_SECONDS );
