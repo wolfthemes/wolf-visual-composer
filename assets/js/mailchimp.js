@@ -41,7 +41,6 @@ var WVCMailchimp = function( $ ) {
 					hasName = $form.find( '.wvc-mailchimp-has-name' ).val(),
 					email = $form.find( '.wvc-mailchimp-email' ).val(),
 					data = {
-
 						action : 'wvc_mailchimp_ajax',
 						list_id : list_id,
 						firstName : firstName,

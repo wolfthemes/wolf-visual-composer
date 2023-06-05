@@ -1,5 +1,9 @@
 # Changelog
 
+#### 5th May 2023 - Version 3.7.2
+
+-   Fix: MailChimp form from last update (working on MC official API integration)
+
 #### 16th May 2023 - Version 3.7.1
 
 -   Fix: No icon service table bug
@@ -7,7 +11,7 @@
 
 #### 5th May 2023 - Version 3.6.9
 
--   Tweak: Update MailChimp API to version 3
+-   Fix: MailChimp form
 
 #### 21th April 2023 - Version 3.6.8
 

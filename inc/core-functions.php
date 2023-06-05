@@ -1586,6 +1586,67 @@ function wvc_update_option( $index, $key, $value ) {
 	update_option( 'wvc_settings', $wvc_settings );
 }
 
+if ( ! function_exists( 'dd' ) ) {
+	function dd( $var ) {
+		echo '<br><pre class="wvc-debug">';
+		print_r( $var );
+		echo '</pre>';
+		die();
+	}
+}
+
+/**
+ * New MailChimp API wrapper
+ */
+function wvc_mailchimp_add_subscriber( $data ) {
+
+	require_once WVC_DIR . '/vendor/autoload.php';
+
+	$return = '';
+
+	$mailchimp = new MailchimpMarketing\ApiClient();
+	$api_key   = apply_filters( 'wvc_mailchimp_api_key', wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' ) );
+
+	$list_id   = isset( $data['list_id'] ) ? esc_attr( $data['list_id'] ) : '';
+	$email     = isset( $data['email'] ) ? esc_attr( $data['email'] ) : '';
+	$firstname = isset( $data['firstname'] ) ? esc_attr( $data['firstname'] ) : '';
+	$lastname  = isset( $data['lastname'] ) ? esc_attr( $data['lastname'] ) : '';
+
+	$server_prefix = substr( $api_key, strpos( $api_key, '-' ) + 1 );
+
+	if ( $firstname || $lastname ) {
+		$send['merge_fields'] = array(
+			'FNAME' => $firstname,
+			'LNAME' => $lastname,
+		);
+	}
+
+	$send = array(
+		'apiKey' => esc_attr( $api_key ),
+		'server' => esc_attr( $server_prefix ),
+	);
+
+	$mailchimp->setConfig( $send ); // Throws an Error object in PHP 7 or higger.
+	try {
+		$response = $mailchimp->lists->addListMember(
+			$list_id,
+			array(
+				'email_address' => $email,
+				'status'        => 'pending',
+			)
+		);
+	} catch (MailchimpMarketing\ApiException $e) {
+		//dd($e);
+	}
+}
+
+// wvc_mailchimp_add_subscriber(
+// array(
+// 'email' => 'constantin.saguin@protonmail.com',
+// 'list_id' => 'eb6ab49cd8',
+// )
+// );
+
 /**
  * MailChimp add subscriber
  *
@@ -1596,11 +1657,14 @@ function wvc_update_option( $index, $key, $value ) {
 function wvc_sync_mailchimp( $data ) {
 
 	$api_key = apply_filters( 'wvc_mailchimp_api_key', wolf_vc_get_option( 'mailchimp', 'mailchimp_api_key' ) );
-	$list_id = esc_attr($data['list_id']);
-	$email = $data['email'];
+	$list_id = esc_attr( $data['list_id'] );
+	$email   = $data['email'];
 
-	$status = 'subscribed'; // we are going to talk about it in just a little bit
-	$merge_fields = array( 'FNAME' => $data['firstname'], 'LNAME' => $data['lastname'] ); // FNAME, LNAME or something else
+	$status       = 'subscribed'; // we are going to talk about it in just a little bit
+	$merge_fields = array(
+		'FNAME' => $data['firstname'],
+		'LNAME' => $data['lastname'],
+	); // FNAME, LNAME or something else
 
 	// start our Mailchimp connection
 	$connection = curl_init();
@@ -1609,7 +1673,7 @@ function wvc_sync_mailchimp( $data ) {
 		CURLOPT_URL,
 		'https://' . substr( $api_key, strpos( $api_key, '-' ) + 1 ) . '.api.mailchimp.com/3.0/lists/' . $list_id . '/members/' . md5( strtolower( $email ) )
 	);
-	curl_setopt( $connection, CURLOPT_HTTPHEADER, array( 'Content-Type: application/json', 'Authorization: Basic '. base64_encode( 'user:'.$api_key ) ) );
+	curl_setopt( $connection, CURLOPT_HTTPHEADER, array( 'Content-Type: application/json', 'Authorization: Basic ' . base64_encode( 'user:' . $api_key ) ) );
 	curl_setopt( $connection, CURLOPT_RETURNTRANSFER, true );
 	curl_setopt( $connection, CURLOPT_CUSTOMREQUEST, 'PUT' );
 	curl_setopt( $connection, CURLOPT_POST, true );
@@ -1617,16 +1681,20 @@ function wvc_sync_mailchimp( $data ) {
 	curl_setopt(
 		$connection,
 		CURLOPT_POSTFIELDS,
-		json_encode( array(
-			'apikey'        => $api_key,
-			'email_address' => $email,
-			'status'        => $status,
-			'merge_fields'  => $merge_fields,
-			//'tags' => array( 'Coffee', 'Snowboard' ) // you can specify some tags here as well
-		) )
+		json_encode(
+			array(
+				'apikey'        => $api_key,
+				'email_address' => $email,
+				'status'        => $status,
+				'merge_fields'  => $merge_fields,
+			// 'tags' => array( 'Coffee', 'Snowboard' ) // you can specify some tags here as well
+			)
+		)
 	);
 
 	$result = curl_exec( $connection );
+
+	//echo 'OK';
 
 	//var_dump( $result );
 }

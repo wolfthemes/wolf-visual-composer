@@ -75,6 +75,14 @@ function wvc_mailchimp_ajax() {
 		$email    = sanitize_email( esc_attr( $_POST['email'] ) );
 		$list_id  = esc_attr( $_POST['list_id'] );
 
+		$data = array(
+			'list_id' => $list_id,
+			'email'     => $email,
+			'status'    => 'subscribed',
+			'firstname' => $f_name,
+			'lastname'  => $l_name,
+		);
+
 		if ( $has_name && ( ! $f_name || ! $l_name ) ) {
 
 			esc_html_e( 'Please insert your name', 'wolf-visual-composer' );
@@ -86,6 +94,7 @@ function wvc_mailchimp_ajax() {
 		} else {
 			//WVCM()->subscribe( $list_id, $email, $f_name, $l_name );
 			wvc_sync_mailchimp( $data );
+			//wvc_mailchimp_add_subscriber( $data );
 			echo 'OK';
 		}
 	}
