@@ -1,6 +1,10 @@
 # Changelog
 
-#### 5th May 2023 - Version 3.7.2
+#### 7th May 2023 - Version 3.7.3
+
+-   Fix: PHP preg match error message
+
+#### 6th June 2023 - Version 3.7.2
 
 -   Fix: MailChimp form from last update (working on MC official API integration)
 

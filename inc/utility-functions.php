@@ -363,8 +363,8 @@ function wvc_get_first_video_url( $post_id = null ) {
 
 	$has_video_url =
 	// youtube
-	preg_match( '#(https|http)?://(?:\www.)?\youtube.com/watch\?v=([A-Za-z0-9\-_]+)#', $content, $match )
-	|| preg_match( '#(https|http)?://(?:\www.)?\youtu.be/([A-Za-z0-9\-_]+)#', $content, $match )
+	preg_match( '#(https|http)?://(?:\www.)?youtube.com/watch\?v=([A-Za-z0-9\-_]+)#', $content, $match )
+	|| preg_match( '#(https|http)?://(?:\www.)?youtu.be/([A-Za-z0-9\-_]+)#', $content, $match )
 
 	// vimeo
 	|| preg_match( '#vimeo\.com/([0-9]+)#', $content, $match )
