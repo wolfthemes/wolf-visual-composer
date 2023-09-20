@@ -1,6 +1,10 @@
 # Changelog
 
-#### 7th May 2023 - Version 3.7.3
+#### 20th September 2023 - Version 3.7.4
+
+-   Tweak: Added wvc_advanced_slide_params filter
+
+#### 7th June 2023 - Version 3.7.3
 
 -   Fix: PHP preg match error message
 

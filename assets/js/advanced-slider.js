@@ -7,6 +7,7 @@ Author URL: https://wolfthemes.com
 
 An enhanced version of flexslider that support video background and caption transition effects
 */
+
 ;( function ( window, document, $, undefined ) {
 
 	$.wvcSlider = function( elem, options ) {
@@ -29,7 +30,7 @@ An enhanced version of flexslider that support video background and caption tran
 				after: function(){}, //Callback: function(slider) - Fires after each slider animation completes
 				end: function(){}, //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
 				added: function(){}, //{NEW} Callback: function(slider) - Fires after a slide is added
-				removed: function(){} //{NEW} Callback: function(slider) - Fires after a slide is removed
+				removed: function(){} //{NEW} Callback: function(slider) - Fires after a slide is removed,
 			},
 
 			plugin = this,
@@ -49,6 +50,7 @@ An enhanced version of flexslider that support video background and caption tran
 				slideshowSpeed : plugin.settings.slideshowSpeed,
 				controlNav : plugin.settings.controlNav,
 				directionNav : plugin.settings.directionNav,
+				//startAt : 1,
 
 				init : function () {
 					ui.init( plugin.settings.sliderHeight, plugin.settings.sliderHeightUnit ); // set dimensions
@@ -153,14 +155,24 @@ An enhanced version of flexslider that support video background and caption tran
 
 					if ( ! plugin.settings.isMobile ) {
 
-						$video.get(0).play();
+						video.play();
 
 						if ( video.readyState >= video.HAVE_FUTURE_DATA ) {
-							// console.log('video can play!');
+							console.log('video can play 1!');
+
+							if ( $video.hasClass( 'wvc-video-bg-default-unmute' ) ) {
+
+								video.muted = false;
+
+							}
+
 							$videoContainer.find( '.wvc-slide-video-container' ).css( { 'opacity' : 1 } );
 						} else {
+
+							if ( $video.hasClass( 'wvc-video-bg-default-unmute' ) ) {
+								video.muted = false;
+							}
 							video.addEventListener( 'canplay', function () {
-								// console.log('video can play!');
 								$videoContainer.find( '.wvc-slide-video-container' ).css( { 'opacity' : 1 } );
 							}, false );
 						}

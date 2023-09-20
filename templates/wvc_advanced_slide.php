@@ -29,7 +29,7 @@ extract(
 			'video_bg_img'            => '',
 			'video_bg_controls'       => '',
 			'video_bg_mute_button'    => '',
-			'video_bg_unmute'         => '',
+			'video_bg_unmute'         => false,
 			'add_effect'              => '', // custom theme effect
 			'add_overlay'             => '',
 			'overlay_color'           => 'black',
@@ -106,7 +106,7 @@ if ( 'custom' !== $background_color ) {
 	$class .= " wvc-background-color-$background_color";
 }
 
-//$class .= ( $video_bg_unmute ) ? ' wvc-video-bg-is-unmute' : 'wvc-video-bg-is-mute';
+$class .= ( $video_bg_unmute ) ? ' wvc-video-bg-is-unmute' : 'wvc-video-bg-is-mute';
 
 if ( 'video' === $background_type ) {
 	$class .= ' wvc-video-bg-is-mute';
@@ -134,7 +134,7 @@ if ( 'image' === $background_type ) {
 		'video_bg_url'         => $video_bg_url,
 		'video_bg_img'         => $video_bg_img,
 		'video_bg_mute_button' => $video_bg_mute_button,
-		'video_bg_unmute'      => false,
+		'video_bg_unmute'      => $video_bg_unmute,
 		// 'video_bg_pause_on_start' => true,
 		// 'video_bg_controls' => $video_bg_controls,
 	);

@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.7.3\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.7.4\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2023-06-07 09:11:03+00:00\n"
+"POT-Creation-Date: 2023-09-20 12:55:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -450,8 +450,8 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/admin/admin-options.php:397 inc/elements/advanced-slide.php:113
-#: inc/elements/advanced-slide.php:129 inc/elements/anything-slide.php:41
+#: inc/admin/admin-options.php:397 inc/elements/advanced-slide.php:114
+#: inc/elements/advanced-slide.php:130 inc/elements/anything-slide.php:41
 #: inc/elements/anything-slide.php:57
 #: inc/elements/bandsintown-tracking-button.php:54
 #: inc/elements/bandsintown-tracking-button.php:68 inc/elements/hoverbox.php:99
@@ -474,7 +474,7 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: inc/admin/admin-options.php:403 inc/elements/advanced-slide.php:263
+#: inc/admin/admin-options.php:403 inc/elements/advanced-slide.php:264
 #: inc/elements/row-inner.php:37
 #: pack/wolf-visual-composer/inc/admin/admin-options.php:403
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:263
@@ -661,8 +661,8 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: inc/admin/class-options.php:251 inc/elements/advanced-slide.php:279
-#: inc/elements/advanced-slide.php:287 inc/elements/audio.php:32
+#: inc/admin/class-options.php:251 inc/elements/advanced-slide.php:280
+#: inc/elements/advanced-slide.php:288 inc/elements/audio.php:32
 #: inc/elements/banner-product.php:46 inc/elements/banner.php:63
 #: inc/elements/google-maps.php:135 inc/elements/image-link.php:24
 #: inc/elements/interactive-link-item.php:30
@@ -967,7 +967,7 @@ msgid "Medium"
 msgstr ""
 
 #: inc/admin/tinymce/popup/button.php:25 inc/admin/tinymce/popup/socials.php:40
-#: inc/elements/advanced-slide.php:420
+#: inc/elements/advanced-slide.php:421
 #: inc/elements/bandsintown-tracking-button.php:35
 #: inc/elements/process-container.php:77
 #: inc/elements/social-icons-custom.php:137 inc/elements/social-icons.php:150
@@ -986,7 +986,7 @@ msgstr ""
 #: inc/admin/tinymce/popup/button.php:26
 #: inc/admin/tinymce/popup/mailchimp.php:27
 #: inc/admin/tinymce/popup/socials.php:42 inc/class-widget-mailchimp.php:176
-#: inc/core-functions.php:524 inc/elements/advanced-slide.php:419
+#: inc/core-functions.php:524 inc/elements/advanced-slide.php:420
 #: inc/elements/bandsintown-tracking-button.php:34
 #: inc/elements/process-container.php:78
 #: inc/elements/social-icons-custom.php:139 inc/elements/social-icons.php:152
@@ -1244,7 +1244,7 @@ msgstr ""
 msgid "Font Size"
 msgstr ""
 
-#: inc/admin/tinymce/popup/fittext.php:35 inc/elements/advanced-slide.php:372
+#: inc/admin/tinymce/popup/fittext.php:35 inc/elements/advanced-slide.php:373
 #: inc/elements/post-slider.php:139 inc/elements/single-image.php:357
 #: inc/elements/team-member.php:245 inc/params/heading-params.php:154
 #: pack/wolf-visual-composer/inc/admin/tinymce/popup/fittext.php:35
@@ -1486,7 +1486,7 @@ msgstr ""
 
 #: inc/class-widget-mailchimp.php:143 inc/class-widget-socials.php:101
 #: inc/elements/accordion-tab.php:45 inc/elements/accordion.php:62
-#: inc/elements/advanced-slide.php:311 inc/elements/album-tracklist-item.php:25
+#: inc/elements/advanced-slide.php:312 inc/elements/album-tracklist-item.php:25
 #: inc/elements/banner-gallery.php:213 inc/elements/banner.php:197
 #: inc/elements/embed-video.php:32 inc/elements/item-price.php:25
 #: inc/elements/meal.php:27 inc/elements/pricing-table.php:24
@@ -1541,7 +1541,7 @@ msgid ""
 msgstr ""
 
 #: inc/class-widget-mailchimp.php:159 inc/class-widget-mailchimp.php:167
-#: inc/elements/advanced-slide.php:205 inc/elements/album-disc.php:71
+#: inc/elements/advanced-slide.php:206 inc/elements/album-disc.php:71
 #: inc/elements/album-tracklist.php:29 inc/elements/anything-slide.php:147
 #: inc/elements/bandsintown-events.php:43
 #: inc/elements/bandsintown-events.php:52 inc/elements/events.php:39
@@ -1667,7 +1667,7 @@ msgid "Yes"
 msgstr ""
 
 #: inc/class-widget-mailchimp.php:160 inc/class-widget-mailchimp.php:168
-#: inc/elements/advanced-slide.php:204 inc/elements/album-disc.php:72
+#: inc/elements/advanced-slide.php:205 inc/elements/album-disc.php:72
 #: inc/elements/album-tracklist.php:30 inc/elements/anything-slide.php:146
 #: inc/elements/bandsintown-events.php:42
 #: inc/elements/bandsintown-events.php:53 inc/elements/events.php:38
@@ -1779,8 +1779,8 @@ msgstr ""
 msgid "Show Default Label"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:183 inc/elements/advanced-slide.php:406
-#: inc/elements/advanced-slide.php:432 inc/elements/album-disc.php:29
+#: inc/class-widget-mailchimp.php:183 inc/elements/advanced-slide.php:407
+#: inc/elements/advanced-slide.php:433 inc/elements/album-disc.php:29
 #: inc/elements/artist-lineup.php:49 inc/elements/audio.php:107
 #: inc/elements/bandsintown-tracking-button.php:45
 #: inc/elements/banner-gallery.php:109 inc/elements/banner-gallery.php:194
@@ -1853,8 +1853,8 @@ msgstr ""
 msgid "Center"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:184 inc/elements/advanced-slide.php:407
-#: inc/elements/advanced-slide.php:433 inc/elements/album-disc.php:28
+#: inc/class-widget-mailchimp.php:184 inc/elements/advanced-slide.php:408
+#: inc/elements/advanced-slide.php:434 inc/elements/album-disc.php:28
 #: inc/elements/artist-lineup.php:50 inc/elements/audio.php:106
 #: inc/elements/bandsintown-tracking-button.php:46
 #: inc/elements/banner-gallery.php:110 inc/elements/banner-gallery.php:195
@@ -1929,8 +1929,8 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: inc/class-widget-mailchimp.php:185 inc/elements/advanced-slide.php:408
-#: inc/elements/advanced-slide.php:434 inc/elements/album-disc.php:30
+#: inc/class-widget-mailchimp.php:185 inc/elements/advanced-slide.php:409
+#: inc/elements/advanced-slide.php:435 inc/elements/album-disc.php:30
 #: inc/elements/artist-lineup.php:51 inc/elements/audio.php:108
 #: inc/elements/bandsintown-tracking-button.php:47
 #: inc/elements/banner-gallery.php:111 inc/elements/banner-gallery.php:196
@@ -2295,7 +2295,7 @@ msgstr ""
 msgid "Zoom Out Right"
 msgstr ""
 
-#: inc/core-functions.php:473 inc/elements/advanced-slide.php:362
+#: inc/core-functions.php:473 inc/elements/advanced-slide.php:363
 #: inc/elements/album-disc.php:85 inc/elements/album-tracklist-item.php:78
 #: inc/elements/audio.php:60 inc/elements/breadcrumb.php:64
 #: inc/elements/column-inner.php:42 inc/elements/column-inner.php:69
@@ -2582,7 +2582,7 @@ msgstr ""
 msgid "Ascending"
 msgstr ""
 
-#: inc/core-functions.php:594 inc/elements/advanced-slide.php:215
+#: inc/core-functions.php:594 inc/elements/advanced-slide.php:216
 #: inc/elements/anything-slide.php:157 inc/elements/audio.php:61
 #: inc/elements/banner-gallery.php:137 inc/elements/banner-gallery.php:161
 #: inc/elements/banner-product.php:98 inc/elements/banner-product.php:122
@@ -2711,8 +2711,8 @@ msgstr ""
 msgid "Default color"
 msgstr ""
 
-#: inc/elements/accordion-tab.php:64 inc/elements/advanced-slide.php:117
-#: inc/elements/advanced-slide.php:218 inc/elements/anything-slide.php:45
+#: inc/elements/accordion-tab.php:64 inc/elements/advanced-slide.php:118
+#: inc/elements/advanced-slide.php:219 inc/elements/anything-slide.php:45
 #: inc/elements/anything-slide.php:160
 #: inc/elements/bandsintown-tracking-button.php:58
 #: inc/elements/bandsintown-tracking-button.php:82
@@ -3005,7 +3005,7 @@ msgstr ""
 msgid "Advanced Slide"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:101 inc/elements/advanced-slide.php:141
+#: inc/elements/advanced-slide.php:102 inc/elements/advanced-slide.php:142
 #: inc/elements/anything-slide.php:29 inc/elements/anything-slide.php:69
 #: inc/elements/interactive-link-item.php:45
 #: inc/elements/showcase-vertical-carousel-item.php:44
@@ -3026,7 +3026,7 @@ msgstr ""
 msgid "Background"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:104 inc/elements/anything-slide.php:32
+#: inc/elements/advanced-slide.php:105 inc/elements/anything-slide.php:32
 #: inc/params/background-params.php:25
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:104
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:32
@@ -3034,7 +3034,7 @@ msgstr ""
 msgid "Image and Color"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:105 inc/elements/anything-slide.php:33
+#: inc/elements/advanced-slide.php:106 inc/elements/anything-slide.php:33
 #: inc/elements/interactive-link-item.php:31 inc/elements/post-slider.php:17
 #: inc/elements/showcase-vertical-carousel-item.php:30
 #: inc/elements/video-self-hosted.php:24 inc/elements/video.php:16
@@ -3052,7 +3052,7 @@ msgstr ""
 msgid "Video"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:116 inc/elements/advanced-slide.php:361
+#: inc/elements/advanced-slide.php:117 inc/elements/advanced-slide.php:362
 #: inc/elements/anything-slide.php:44
 #: inc/elements/bandsintown-tracking-button.php:57
 #: inc/elements/bandsintown-tracking-button.php:81
@@ -3120,7 +3120,7 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:121 inc/elements/anything-slide.php:49
+#: inc/elements/advanced-slide.php:122 inc/elements/anything-slide.php:49
 #: inc/elements/bandsintown-tracking-button.php:62
 #: inc/elements/bandsintown-tracking-button.php:86
 #: inc/elements/hoverbox.php:107 inc/params/background-params.php:48
@@ -3133,7 +3133,7 @@ msgstr ""
 msgid "Select a background color."
 msgstr ""
 
-#: inc/elements/advanced-slide.php:149 inc/elements/anything-slide.php:77
+#: inc/elements/advanced-slide.php:150 inc/elements/anything-slide.php:77
 #: inc/params/background-params.php:79 inc/params/heading-params.php:208
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:149
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:77
@@ -3142,7 +3142,7 @@ msgstr ""
 msgid "Background position"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:152 inc/elements/anything-slide.php:80
+#: inc/elements/advanced-slide.php:153 inc/elements/anything-slide.php:80
 #: inc/params/background-params.php:82 inc/params/heading-params.php:211
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:152
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:80
@@ -3151,7 +3151,7 @@ msgstr ""
 msgid "center center"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:153 inc/elements/anything-slide.php:81
+#: inc/elements/advanced-slide.php:154 inc/elements/anything-slide.php:81
 #: inc/params/background-params.php:83 inc/params/heading-params.php:212
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:153
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:81
@@ -3160,7 +3160,7 @@ msgstr ""
 msgid "center top"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:154 inc/elements/anything-slide.php:82
+#: inc/elements/advanced-slide.php:155 inc/elements/anything-slide.php:82
 #: inc/params/background-params.php:84 inc/params/heading-params.php:213
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:154
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:82
@@ -3169,7 +3169,7 @@ msgstr ""
 msgid "left top"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:155 inc/elements/anything-slide.php:83
+#: inc/elements/advanced-slide.php:156 inc/elements/anything-slide.php:83
 #: inc/params/background-params.php:85 inc/params/heading-params.php:214
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:155
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:83
@@ -3178,7 +3178,7 @@ msgstr ""
 msgid "right top"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:156 inc/elements/anything-slide.php:84
+#: inc/elements/advanced-slide.php:157 inc/elements/anything-slide.php:84
 #: inc/params/background-params.php:86 inc/params/heading-params.php:215
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:156
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:84
@@ -3187,7 +3187,7 @@ msgstr ""
 msgid "center bottom"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:157 inc/elements/anything-slide.php:85
+#: inc/elements/advanced-slide.php:158 inc/elements/anything-slide.php:85
 #: inc/params/background-params.php:87 inc/params/heading-params.php:216
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:157
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:85
@@ -3196,7 +3196,7 @@ msgstr ""
 msgid "left bottom"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:158 inc/elements/anything-slide.php:86
+#: inc/elements/advanced-slide.php:159 inc/elements/anything-slide.php:86
 #: inc/params/background-params.php:88 inc/params/heading-params.php:217
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:158
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:86
@@ -3205,7 +3205,7 @@ msgstr ""
 msgid "right bottom"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:159 inc/elements/anything-slide.php:87
+#: inc/elements/advanced-slide.php:160 inc/elements/anything-slide.php:87
 #: inc/params/background-params.php:89 inc/params/heading-params.php:218
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:159
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:87
@@ -3214,7 +3214,7 @@ msgstr ""
 msgid "left center"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:160 inc/elements/anything-slide.php:88
+#: inc/elements/advanced-slide.php:161 inc/elements/anything-slide.php:88
 #: inc/params/background-params.php:90 inc/params/heading-params.php:219
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:160
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:88
@@ -3223,7 +3223,7 @@ msgstr ""
 msgid "right center"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:169 inc/elements/album-tracklist-item.php:55
+#: inc/elements/advanced-slide.php:170 inc/elements/album-tracklist-item.php:55
 #: inc/elements/anything-slide.php:125 inc/elements/embed-video.php:24
 #: inc/elements/video-opener.php:66 inc/elements/video.php:25
 #: inc/params/background-params.php:174
@@ -3237,13 +3237,13 @@ msgstr ""
 msgid "Video URL"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:171 inc/elements/anything-slide.php:127
+#: inc/elements/advanced-slide.php:172 inc/elements/anything-slide.php:127
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:171
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:127
 msgid "A YouTube or mp4 URL."
 msgstr ""
 
-#: inc/elements/advanced-slide.php:178 inc/elements/anything-slide.php:134
+#: inc/elements/advanced-slide.php:179 inc/elements/anything-slide.php:134
 #: inc/params/background-params.php:237
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:178
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:134
@@ -3251,19 +3251,19 @@ msgstr ""
 msgid "Video Image Fallback"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:180 inc/elements/anything-slide.php:136
+#: inc/elements/advanced-slide.php:181 inc/elements/anything-slide.php:136
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:180
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:136
 msgid "Used in case the video can't be displayed."
 msgstr ""
 
-#: inc/elements/advanced-slide.php:187 inc/elements/row.php:98
+#: inc/elements/advanced-slide.php:188 inc/elements/row.php:98
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:187
 #: pack/wolf-visual-composer/inc/elements/row.php:98
 msgid "Video mute button (beta)"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:201 inc/elements/anything-slide.php:143
+#: inc/elements/advanced-slide.php:202 inc/elements/anything-slide.php:143
 #: inc/elements/single-image.php:201 inc/params/background-params.php:283
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:201
 #: pack/wolf-visual-composer/inc/elements/anything-slide.php:143
@@ -3272,7 +3272,7 @@ msgstr ""
 msgid "Add Overlay"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:212 inc/elements/anything-slide.php:154
+#: inc/elements/advanced-slide.php:213 inc/elements/anything-slide.php:154
 #: inc/elements/banner-gallery.php:134 inc/elements/banner-product.php:95
 #: inc/elements/banner.php:118 inc/elements/image-link.php:147
 #: inc/elements/single-image.php:207 inc/elements/team-member.php:59
@@ -3289,7 +3289,7 @@ msgstr ""
 msgid "Overlay Color"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:221 inc/elements/anything-slide.php:163
+#: inc/elements/advanced-slide.php:222 inc/elements/anything-slide.php:163
 #: inc/elements/banner-gallery.php:143 inc/elements/banner-gallery.php:167
 #: inc/elements/banner-product.php:104 inc/elements/banner-product.php:128
 #: inc/elements/banner.php:127 inc/elements/banner.php:151
@@ -3312,7 +3312,7 @@ msgstr ""
 msgid "Select an overlay color."
 msgstr ""
 
-#: inc/elements/advanced-slide.php:230 inc/elements/anything-slide.php:172
+#: inc/elements/advanced-slide.php:231 inc/elements/anything-slide.php:172
 #: inc/elements/banner-gallery.php:150 inc/elements/banner-product.php:111
 #: inc/elements/banner.php:134 inc/elements/single-image.php:225
 #: inc/elements/team-member.php:76 inc/params/background-params.php:312
@@ -3327,7 +3327,7 @@ msgstr ""
 msgid "Overlay Custom Color"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:243 inc/elements/anything-slide.php:185
+#: inc/elements/advanced-slide.php:244 inc/elements/anything-slide.php:185
 #: inc/elements/banner-gallery.php:183 inc/elements/banner-product.php:144
 #: inc/elements/banner.php:167 inc/elements/image-link.php:153
 #: inc/elements/single-image.php:235 inc/elements/team-member.php:110
@@ -3344,7 +3344,7 @@ msgstr ""
 msgid "Overlay Opacity in Percent"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:266 inc/elements/column-inner.php:28
+#: inc/elements/advanced-slide.php:267 inc/elements/column-inner.php:28
 #: inc/elements/column.php:28 inc/elements/gallery.php:244
 #: inc/elements/gallery.php:256 inc/elements/gmaps.php:51
 #: inc/elements/google-maps.php:86 inc/elements/instagram-gallery.php:187
@@ -3373,7 +3373,7 @@ msgstr ""
 msgid "Light"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:267 inc/elements/column-inner.php:29
+#: inc/elements/advanced-slide.php:268 inc/elements/column-inner.php:29
 #: inc/elements/column.php:29 inc/elements/gallery.php:245
 #: inc/elements/gallery.php:257 inc/elements/gmaps.php:53
 #: inc/elements/google-maps.php:88 inc/elements/instagram-gallery.php:188
@@ -3402,14 +3402,14 @@ msgstr ""
 msgid "Dark"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:269 inc/elements/advanced-slide.php:281
-#: inc/elements/advanced-slide.php:293 inc/elements/advanced-slide.php:320
-#: inc/elements/advanced-slide.php:334 inc/elements/advanced-slide.php:343
-#: inc/elements/advanced-slide.php:352 inc/elements/advanced-slide.php:366
-#: inc/elements/advanced-slide.php:375 inc/elements/advanced-slide.php:387
-#: inc/elements/advanced-slide.php:397 inc/elements/advanced-slide.php:410
-#: inc/elements/advanced-slide.php:423 inc/elements/advanced-slide.php:436
-#: inc/elements/advanced-slide.php:449 inc/elements/advanced-slide.php:461
+#: inc/elements/advanced-slide.php:270 inc/elements/advanced-slide.php:282
+#: inc/elements/advanced-slide.php:294 inc/elements/advanced-slide.php:321
+#: inc/elements/advanced-slide.php:335 inc/elements/advanced-slide.php:344
+#: inc/elements/advanced-slide.php:353 inc/elements/advanced-slide.php:367
+#: inc/elements/advanced-slide.php:376 inc/elements/advanced-slide.php:388
+#: inc/elements/advanced-slide.php:398 inc/elements/advanced-slide.php:411
+#: inc/elements/advanced-slide.php:424 inc/elements/advanced-slide.php:437
+#: inc/elements/advanced-slide.php:450 inc/elements/advanced-slide.php:462
 #: inc/elements/iframe-opener.php:72 inc/elements/video-opener.php:87
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:269
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:281
@@ -3432,22 +3432,22 @@ msgstr ""
 msgid "Caption"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:275
+#: inc/elements/advanced-slide.php:276
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:275
 msgid "Title Type"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:278
+#: inc/elements/advanced-slide.php:279
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:278
 msgid "Textfield"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:313
+#: inc/elements/advanced-slide.php:314
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:313
 msgid "My Awesome Title"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:326 inc/elements/team-member.php:198
+#: inc/elements/advanced-slide.php:327 inc/elements/team-member.php:198
 #: inc/elements/team-member.php:207 inc/elements/team-member.php:216
 #: inc/elements/team-member.php:229 inc/elements/team-member.php:240
 #: inc/elements/team-member.php:248
@@ -3461,12 +3461,12 @@ msgstr ""
 msgid "Title Font"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:340
+#: inc/elements/advanced-slide.php:341
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:340
 msgid "Title Font Weight"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:349 inc/elements/banner-gallery.php:221
+#: inc/elements/advanced-slide.php:350 inc/elements/banner-gallery.php:221
 #: inc/elements/banner.php:205 inc/params/icon-params.php:537
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:349
 #: pack/wolf-visual-composer/inc/elements/banner-gallery.php:221
@@ -3475,12 +3475,12 @@ msgstr ""
 msgid "Title Font Size"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:358
+#: inc/elements/advanced-slide.php:359
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:358
 msgid "Title Text Transform"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:363 inc/elements/breadcrumb.php:65
+#: inc/elements/advanced-slide.php:364 inc/elements/breadcrumb.php:65
 #: inc/elements/cta.php:96 inc/elements/interactive-links.php:91
 #: inc/elements/interactive-overlays.php:88 inc/elements/post-slider.php:111
 #: inc/elements/single-image.php:336 inc/elements/team-member.php:226
@@ -3500,42 +3500,42 @@ msgstr ""
 msgid "Uppercase"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:381
+#: inc/elements/advanced-slide.php:382
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:381
 msgid "Caption Type"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:384
+#: inc/elements/advanced-slide.php:385
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:384
 msgid "Standard text"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:385
+#: inc/elements/advanced-slide.php:386
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:385
 msgid "Bigger text with semi-transparent background"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:393
+#: inc/elements/advanced-slide.php:394
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:393
 msgid "Caption Text"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:403
+#: inc/elements/advanced-slide.php:404
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:403
 msgid "Caption Text Alignment"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:416
+#: inc/elements/advanced-slide.php:417
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:416
 msgid "Caption Width"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:421
+#: inc/elements/advanced-slide.php:422
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:421
 msgid "Full Width"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:429 inc/elements/iframe-opener.php:59
+#: inc/elements/advanced-slide.php:430 inc/elements/iframe-opener.php:59
 #: inc/elements/video-opener.php:74
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:429
 #: pack/wolf-visual-composer/inc/elements/iframe-opener.php:59
@@ -3543,12 +3543,12 @@ msgstr ""
 msgid "Caption Position"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:442
+#: inc/elements/advanced-slide.php:443
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:442
 msgid "Caption Vertical Position"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:445 inc/elements/banner-gallery.php:205
+#: inc/elements/advanced-slide.php:446 inc/elements/banner-gallery.php:205
 #: inc/elements/banner-product.php:166 inc/elements/banner.php:189
 #: inc/elements/image-link.php:71 inc/elements/interactive-links.php:42
 #: inc/elements/interactive-overlays.php:41 inc/elements/row.php:128
@@ -3571,7 +3571,7 @@ msgstr ""
 msgid "Middle"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:446 inc/elements/banner-gallery.php:206
+#: inc/elements/advanced-slide.php:447 inc/elements/banner-gallery.php:206
 #: inc/elements/banner-product.php:167 inc/elements/banner.php:190
 #: inc/elements/iframe-opener.php:63 inc/elements/interactive-links.php:43
 #: inc/elements/interactive-overlays.php:42 inc/elements/row.php:130
@@ -3597,7 +3597,7 @@ msgstr ""
 msgid "Bottom"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:447 inc/elements/banner-gallery.php:207
+#: inc/elements/advanced-slide.php:448 inc/elements/banner-gallery.php:207
 #: inc/elements/banner-product.php:168 inc/elements/banner.php:191
 #: inc/elements/iframe-opener.php:66 inc/elements/interactive-links.php:44
 #: inc/elements/interactive-overlays.php:43 inc/elements/row.php:129
@@ -3624,27 +3624,27 @@ msgstr ""
 msgid "Top"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:455
+#: inc/elements/advanced-slide.php:456
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:455
 msgid "Caption Order"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:458
+#: inc/elements/advanced-slide.php:459
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:458
 msgid "After Title"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:459
+#: inc/elements/advanced-slide.php:460
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:459
 msgid "Before Title"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:467
+#: inc/elements/advanced-slide.php:468
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:467
 msgid "Add a First Button"
 msgstr ""
 
-#: inc/elements/advanced-slide.php:473
+#: inc/elements/advanced-slide.php:474
 #: pack/wolf-visual-composer/inc/elements/advanced-slide.php:473
 msgid "Add a Second Button"
 msgstr ""

@@ -495,8 +495,16 @@ function wvc_video_bg( $args ) {
 	$autoplay_attr = ( $video_bg_pause_on_start ) ? '' : 'autoplay';
 
 	$muted = ( $video_bg_unmute ) ? '' : 'muted';
+	$muted = 'muted';
 
-	$output .= '<video class="wvc-video-bg" id="wvc-video-bg-' . absint( $rand ) . '"
+	$video_bg_class = 'wvc-video-bg';
+
+	if ( $video_bg_unmute ) {
+		//$autoplay_attr = '';
+		$video_bg_class .= ' wvc-video-bg-default-unmute';
+	}
+
+	$output .= '<video class="' . esc_attr( $video_bg_class ) . '" id="wvc-video-bg-' . absint( $rand ) . '"
 	preload="auto" ' . $autoplay_attr . ' loop="loop" ' . $muted . '>';
 
 	if ( $video_bg_webm ) {
