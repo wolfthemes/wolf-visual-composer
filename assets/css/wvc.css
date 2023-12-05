@@ -11741,3 +11741,39 @@ body.wpb-svg #swipebox-close {
   width: 30px !important;
   height: 30px !important;
 }
+
+i.fab.fa-twitter,
+i.fab.fa-x {
+  cursor: pointer;
+  color: inherit;
+  margin: 0 auto;
+}
+
+.fa-twitter:before {
+  display: none;
+}
+
+.fa-twitter svg {
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-1x .fa-twitter svg {
+  top: 2px;
+}
+
+.fa-2x .fa-twitter svg {
+  top: 2px;
+}
+
+.fa-3x .fa-twitter svg {
+  top: 5px;
+}
+
+.fa-4x .fa-twitter svg {
+  top: 6px;
+}
+
+.fa-5x .fa-twitter svg {
+  top: 6px;
+}

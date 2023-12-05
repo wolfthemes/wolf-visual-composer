@@ -46,7 +46,7 @@ var WVCCarousels = function( $ ) {
 		carouselGallery : function () {
 
 			$( '.wvc-gallery-carousel' ).each( function() {
-				
+
 				var $carousel = $( this ),
 					dataAutoplay = $carousel.data( 'autoplay' ),
 					dataSpeed = $carousel.data( 'slideshow-speed' ),

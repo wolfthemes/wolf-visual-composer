@@ -1,5 +1,9 @@
 # Changelog
 
+#### 5th December 2023 - Version 3.7.5
+
+-   Tweak: Replace twitter logo by X logo
+
 #### 20th September 2023 - Version 3.7.4
 
 -   Tweak: Added wvc_advanced_slide_params filter
