@@ -1,5 +1,9 @@
 # Changelog
 
+#### 15th December 2023 - Version 3.7.6
+
+-   Tweak: Updated Flickity and Owl Carousel scripts
+
 #### 5th December 2023 - Version 3.7.5
 
 -   Tweak: Replace twitter logo by X logo

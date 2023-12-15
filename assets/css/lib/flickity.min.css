@@ -1,4 +1,4 @@
-/*! Flickity v2.2.1
+/*! Flickity v2.3.0
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 
@@ -59,7 +59,7 @@ https://flickity.metafizzy.co
 
 .flickity-button:focus {
 	outline: none;
-	box-shadow: 0 0 0 5px #19f;
+	box-shadow: 0 0 0 5px #19F;
 }
 
 .flickity-button:active {
@@ -91,14 +91,17 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button.previous {
 	left: 10px;
 }
+
 .flickity-prev-next-button.next {
 	right: 10px;
 }
+
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
 	left: auto;
 	right: 10px;
 }
+
 .flickity-rtl .flickity-prev-next-button.next {
 	right: auto;
 	left: 10px;

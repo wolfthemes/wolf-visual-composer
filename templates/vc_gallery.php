@@ -87,7 +87,7 @@ if ( 'custom' === $img_size ) {
 }
 
 if ( 'carousel' === $type ) {
-
+	wp_enqueue_script( 'imagesloaded' );
 	wp_enqueue_script( 'flickity' );
 	wp_enqueue_script( 'wvc-carousels' );
 }

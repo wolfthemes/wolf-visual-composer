@@ -44,7 +44,7 @@ function wvc_enqueue_styles() {
 
 	// Libraries.
 	wp_enqueue_style( 'flexslider' ); // be sure that flexslider CSS file is enqueue BEFORE our plugin styles.
-	wp_enqueue_style( 'flickity', WVC_CSS . '/lib/flickity.min.css', array(), '2.2.1' );
+	wp_enqueue_style( 'flickity', WVC_CSS . '/lib/flickity.min.css', array(), '2.3.0' );
 	wp_enqueue_style( 'lity', WVC_CSS . '/lib/lity.min.css', array(), '2.2.2' );
 
 	// Font awesome back compat.

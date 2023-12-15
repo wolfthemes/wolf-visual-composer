@@ -59,26 +59,30 @@ var WVCCarousels = function( $ ) {
 					dataAutoplay = dataSpeed;
 				}
 
-				$carousel.flickity( {
-					autoPlay : dataAutoplay,
-					pauseAutoPlayOnHover: dataPauseonHover,
-					prevNextButtons: dataArrows,
-					pageDots: dataNavbullets,
-					groupCells: dataGroupCells,
-					wrapAround: true,
-					cellSelector: '.wvc-img-carousel'
+				$carousel.imagesLoaded( function() {
+					//console.log( 'imagesloaded' );
 
-				// Disable lightbox on drag
-				} ).on( 'dragStart.flickity', function() {
+					$carousel.flickity( {
+						autoPlay : dataAutoplay,
+						pauseAutoPlayOnHover: dataPauseonHover,
+						prevNextButtons: dataArrows,
+						pageDots: dataNavbullets,
+						groupCells: dataGroupCells,
+						wrapAround: true,
+						cellSelector: '.wvc-img-carousel'
 
-					$carousel.find( 'a' ).addClass( 'wvc-disabled' );
+					// Disable lightbox on drag
+					} ).on( 'dragStart.flickity', function() {
 
-				} ).on( 'dragEnd.flickity', function() {
+						$carousel.find( 'a' ).addClass( 'wvc-disabled' );
 
-					setTimeout( function() {
-						$carousel.find( 'a' ).removeClass( 'wvc-disabled' );
-					}, 1000 ); // wait before re-enabling lightbox
-				} );
+					} ).on( 'dragEnd.flickity', function() {
+
+						setTimeout( function() {
+							$carousel.find( 'a' ).removeClass( 'wvc-disabled' );
+						}, 1000 ); // wait before re-enabling lightbox
+					} );
+				});
 			} );
 		},
 
