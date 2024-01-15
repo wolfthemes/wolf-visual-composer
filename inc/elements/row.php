@@ -243,7 +243,7 @@ if ( class_exists( 'Wolf_Playlist_Manager' ) ) {
 			'param_name' => 'sticky_player_playlist_id',
 			'value' => array_flip( $playlist ),
 			'group' => esc_html__( 'Player Bar', 'wolf-visual-composer' ),
-			'weight' => -1000
+			//'weight' => -10
 		),
 
 		array(
@@ -257,7 +257,7 @@ if ( class_exists( 'Wolf_Playlist_Manager' ) ) {
 				esc_html__( 'Transparent Dark', 'wolf-visual-composer' ) => 'transparent-dark',
 			),
 			'group' => esc_html__( 'Player Bar', 'wolf-visual-composer' ),
-			'weight' => -1000
+			//'weight' => -10
 		),
 	) );
 }

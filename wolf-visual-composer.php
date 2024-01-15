@@ -3,7 +3,7 @@
  * Plugin Name: WPBakery Page Builder Extension
  * Plugin URI: http://wolfthemes.com/plugin/wolf-visual-composer
  * Description: A WordPress plugin that extends WPBakery Page Builder for Wolf Themes.
- * Version: 3.7.6
+ * Version: 3.7.7
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
  * Requires at least: 5.0
@@ -30,7 +30,7 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 	 * Contains the main functions for Wolf_Visual_Composer
 	 *
 	 * @class Wolf_Visual_Composer
-	 * @version 3.7.6
+	 * @version 3.7.7
 	 * @since 1.0.0
 	 */
 	class Wolf_Visual_Composer {
@@ -38,7 +38,7 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '3.7.6';
+		public $version = '3.7.7';
 
 		/**
 		 * @var WPBakery Page Builder Extension The single instance of the class

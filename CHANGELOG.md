@@ -1,5 +1,9 @@
 # Changelog
 
+#### 15th January 2024 - Version 3.7.6
+
+-   Fix: Missing Row settings "Player Bar" tab (Playlist plugin compatibility)
+
 #### 15th December 2023 - Version 3.7.6
 
 -   Tweak: Updated Flickity and Owl Carousel scripts
