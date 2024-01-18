@@ -77,7 +77,20 @@ if ( $video_preview ) {
 	);
 }
 
-$output .= '<span class="wvc-embed-video-play-button"><i class="fa fa-youtube-play" aria-hidden="true"></i>';
+$output .= '<span class="wvc-embed-video-play-button">';
+
+$icon_class = 'fa-youtube-play';
+
+if ( preg_match( '/vimeo/', $url ) ) {
+	$icon_class = 'fa-brands fa-vimeo';
+} elseif ( preg_match( '/youtu/', $url ) ) {
+	$icon_class = 'fa-brands fa-youtube-play';
+} else {
+	$icon_class = 'fa-regular fa-play';
+}
+
+$output .= '<i class="' . esc_attr( $icon_class ) . '" aria-hidden="true">
+</i>';
 
 if ( $title ) {
 

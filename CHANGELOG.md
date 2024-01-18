@@ -1,5 +1,9 @@
 # Changelog
 
+#### 18th January 2024 - Version 3.7.8
+
+-   Tweak: Accurate icon depending URL in Custom Embed Video element
+
 #### 15th January 2024 - Version 3.7.7
 
 -   Fix: Missing Row settings "Player Bar" tab (Playlist plugin compatibility)

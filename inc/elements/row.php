@@ -252,7 +252,7 @@ if ( class_exists( 'Wolf_Playlist_Manager' ) ) {
 			'param_name' => 'sticky_player_playlist_skin',
 			'value' => array(
 				esc_html__( 'Dark', 'wolf-visual-composer' ) => 'dark',
-				esc_html__( 'Light', 'wolf-visual-composer' ) => 'dark',
+				esc_html__( 'Light', 'wolf-visual-composer' ) => 'light',
 				esc_html__( 'Transparent Light', 'wolf-visual-composer' ) => 'transparent-light',
 				esc_html__( 'Transparent Dark', 'wolf-visual-composer' ) => 'transparent-dark',
 			),
