@@ -1,5 +1,9 @@
 # Changelog
 
+#### 14th August 2024 - Version 3.7.9
+
+-   Fix: Undefined variable $icon_filler_style PHP error debug message
+
 #### 18th January 2024 - Version 3.7.8
 
 -   Tweak: Accurate icon depending URL in Custom Embed Video element

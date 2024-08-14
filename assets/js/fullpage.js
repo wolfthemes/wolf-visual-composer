@@ -207,7 +207,6 @@ var WVCFullPage = function( $ ) {
 				toIndex;
 
 			$( document ).on( 'click', '.wvc-fp-nav', function( event ) {
-
 				event.preventDefault();
 
 				if ( _this.isScrolling ) {

@@ -48,6 +48,8 @@ function wvc_generate_button( $atts ) {
 
 	$output = $container_class = $button_filler_style = $before_text = $after_text = '';
 
+	$icon_filler_style = '';
+
 	$class = $el_class;
 	$inline_style = wvc_sanitize_css_field( $inline_style );
 	$inline_style .= wvc_shortcode_custom_style( $css );
