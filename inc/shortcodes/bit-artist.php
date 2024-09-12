@@ -19,7 +19,7 @@ if ( ! function_exists( 'wvc_shortcode_bit_artist' ) ) {
 	 */
 	function wvc_shortcode_bit_artist( $atts ) {
 
-		return 'Rammstein';
+		return 'korn';
 	}
 	add_shortcode( 'wvc_bit_artist', 'wvc_shortcode_bit_artist' );
 }
