@@ -1,5 +1,10 @@
 # Changelog
 
+#### 4th October 2024 - Version 3.7.10
+
+-   Tweak: Added rating invite notification message
+-   Tweak: Added about me tab
+
 #### 14th August 2024 - Version 3.7.9
 
 -   Fix: Undefined variable $icon_filler_style PHP error debug message

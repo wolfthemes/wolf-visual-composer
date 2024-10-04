@@ -74,6 +74,7 @@ class WVC_Admin {
 		include_once( 'admin-utility-functions.php' );
 		include_once( 'admin-option-functions.php' );
 		include_once( 'admin-scripts.php' );
+		include_once( 'admin-notices.php' );
 		include_once( 'admin-update.php' );
 
 		// Settings

@@ -156,6 +156,7 @@ function wvc_is_activated() {
 				return false;
 			} else {
 				// set_transient( 'wvc_activated', true, 365 * DAY_IN_SECONDS );
+				update_option( 'wvc_activation_time', time() );
 				update_option( 'wvc_activated', true );
 				return true;
 			}

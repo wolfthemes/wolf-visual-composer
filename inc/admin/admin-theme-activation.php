@@ -33,6 +33,62 @@ if ( ! function_exists( 'wvc_get_theme_slug' ) ) {
 }
 
 /**
+ * About Me tab
+ */
+function wvc_output_about_me_tab() {
+	?>
+	<a href="#about-me" class="nav-tab"><?php esc_html_e( 'About me', 'wolf-core' ); ?></a>
+	<?php
+}
+add_action( 'wvc_about_me_tab', 'wvc_output_about_me_tab' );
+
+/**
+ * Theme about_me tab content
+ */
+function wvc_output_about_me_tab_content() {
+	?>
+	<div id="about-me" class="wolf-core-options-panel">
+		<div class="about-me-text wolftheme-about-me-text">
+			<div class="row wolftheme-about-columns">
+				<div class="col col-12">
+					<h3>About Me</h3>
+
+<img style="float:right; padding-left:40px;" src="https://assets.wolfthemes.com/me.jpg" alt="WolfThemes avatar">
+
+<p>Hi there! I’m Constantin, the creator behind WolfThemes. With over 12 years of experience in designing WordPress themes, I’m passionate about crafting stunning, modern websites that help creative professionals, musicians, and artists showcase their work.</p>
+
+<p>At WolfThemes, we’re all about helping you build beautiful, functional websites with ease. From drag-and-drop customization to seamless performance, my goal is to ensure every theme meets your needs while delivering a smooth user experience.</p>
+
+<p>I'm truly grateful to have over 34,000 customers who trust my themes for their websites. Whether you're a band, musician, or part of a creative agency, it’s an honor to be part of your journey.</p>
+
+<p><strong>I wish you all the best with your project!</strong></p>
+
+<p><img style="max-width:150px" src="https://assets.wolfthemes.com/logo-dark.png" alt="WolfThemes logo"></p>
+
+<h3>Want to Help?</h3>
+
+<p>If you love the theme and it’s working well for you, please take a minute to leave a rating on <a href="https://themeforest.net/downloads" target="_blank">ThemeForest</a>. It would be greatly appreciated! 😉</p>
+
+<p>Thank you for being part of the WolfThemes family!</p>
+
+<p><em>— Constantin</em></p>
+
+<p>
+	<a href="https://themeforest.net/downloads"  target="_blank">
+		<img style="max-width:150px; margin:15px 0;" src="https://assets.wolfthemes.com/5-stars.png" alt="5-stars">
+	</a>
+</p>
+<p><a class="button-primary" href="https://themeforest.net/downloads"  target="_blank">Leave a rating</a></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php
+}
+add_action( 'wvc_about_me_tab_content', 'wvc_output_about_me_tab_content' );
+
+/**
  * Theme license tab
  */
 function wvc_output_license_tab() {
@@ -52,6 +108,7 @@ function wvc_output_license_tab_content() {
 		delete_option( 'wvc_activation_notice_set' );
 		delete_transient( 'wvc_activation_notice' );
 		delete_option( 'wvc_activated' );
+		delete_option( 'wvc_activation_time' );
 		delete_option( 'wvc_code' );
 		delete_option( 'wvc_key' );
 		endif;
@@ -181,6 +238,7 @@ function wvc_activate_theme() {
 
 						// set_transient( 'wvc_activated', true, 365 * DAY_IN_SECONDS );
 						update_option( 'wvc_activated', true );
+						update_option( 'wvc_activation_time', time() );
 						add_option( 'wvc_code', $data->code );
 						add_option( 'wvc_key', $data->key );
 						delete_transient( 'wvc_activation_notice' );
@@ -191,6 +249,9 @@ function wvc_activate_theme() {
 						esc_html_e( 'Extension activated', 'wolf-visual-composer' );
 						echo '</p>';
 						echo '</div>';
+
+						wp_safe_redirect( admin_url( 'themes.php?page=' . wvc_get_theme_slug() . '-about' ) );
+						exit;
 
 					} else {
 						$is_error = true;

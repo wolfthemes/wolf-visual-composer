@@ -35,7 +35,7 @@ extract( shortcode_atts( array(
 	'button_text' => '',
 
 	'disable_default_hover' => '',
-	
+
 	'el_class' => '',
 	'css' => '',
 	'inline_style' => '',
