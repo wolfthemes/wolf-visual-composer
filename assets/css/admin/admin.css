@@ -636,6 +636,12 @@ i.wvc_shortcodes_tiny_mce_button.mce-ico {
   flex-direction: column;
 }
 
+.wvc-activation-error {
+  padding: 20px;
+  background: antiquewhite;
+  border: 1px solid #dbc011;
+}
+
 .wvc-debug, .xdebug-var-dump {
   margin-left: 200px;
   margin-top: 50px;

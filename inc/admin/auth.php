@@ -152,6 +152,7 @@ function wvc_is_activated() {
 			if ( '' === $body ) {
 				delete_option( 'wvc_code' );
 				delete_option( 'wvc_key' );
+				delete_option( 'wvc_supported_until' );
 				update_option( 'wvc_activation_notice_set', true );
 				return false;
 			} else {
@@ -163,6 +164,7 @@ function wvc_is_activated() {
 		} else {
 			delete_option( 'wvc_code' );
 			delete_option( 'wvc_key' );
+			delete_option( 'wvc_supported_until' );
 			update_option( 'wvc_activation_notice_set', true );
 			return false;
 		}

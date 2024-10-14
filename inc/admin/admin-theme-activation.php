@@ -37,7 +37,7 @@ if ( ! function_exists( 'wvc_get_theme_slug' ) ) {
  */
 function wvc_output_about_me_tab() {
 	?>
-	<a href="#about-me" class="nav-tab"><?php esc_html_e( 'About me', 'wolf-core' ); ?></a>
+	<a href="#about-me" class="nav-tab"><?php esc_html_e( 'About me', 'wolf-visual-composer' ); ?></a>
 	<?php
 }
 add_action( 'wvc_about_me_tab', 'wvc_output_about_me_tab' );
@@ -180,6 +180,36 @@ function wvc_output_license_tab_content() {
 				wp_kses_post( __( 'The %s is activated.', 'wolf-visual-composer' ) ),
 				'WPBakery Page Builder Extension'
 			);
+
+			$support_end_date = get_option( 'wvc_supported_until' );
+
+			if ( $support_end_date ) {
+				echo '<br>';
+				echo '<strong>';
+
+				if ( wvc_support_expired() ) {
+					// If support has expired, show the renewal message
+					echo wp_sprintf(
+						wp_kses_post( __( 'Your support for %s has expired. You can renew it <a target="_blank" href="%s">HERE</a>.', 'wolf-visual-composer' ) ),
+						esc_html( wvc_get_theme_name() ),
+						esc_url( 'https://themeforest.net/downloads' )
+					);
+				} else {
+					// Convert the ISO 8601 formatted date to a timestamp
+					$support_end_timestamp = strtotime( $support_end_date );
+					// Format the timestamp into a more readable date
+					$formatted_date = date( 'F j, Y', $support_end_timestamp ); // E.g., December 8, 2024
+
+					// Show the valid support message with the expiration date
+					echo wp_sprintf(
+						wp_kses_post( __( 'Your support for %s is valid until <span style="color: #28a745;">%s</span>.', 'wolf-visual-composer' ) ),
+						esc_html( wvc_get_theme_name() ),
+						esc_html( $formatted_date )
+					);
+				}
+
+				echo '</strong>';
+			}
 			?>
 		</p>
 		<form method="post" action="<?php echo esc_url( admin_url( 'themes.php?page=' . $theme_slug . '-about' ) ); ?>"><input name="wvc_reset_purchase_code" value="<?php esc_html_e( 'Reset purchase code', 'wolf-visual-composer' ); ?>" type="submit" class="button button-secondary">
@@ -194,92 +224,112 @@ function wvc_output_license_tab_content() {
 add_action( 'wvc_license_tab_content', 'wvc_output_license_tab_content' );
 
 /**
- * Output the last new feature if set in the changelog XML
+ * Activate the theme
  */
 function wvc_activate_theme() {
 
 	$activated     = get_option( 'wvc_key' );
 	$is_error      = false;
-	$error_message = esc_html__( 'Something went wrong. It way be due to a temporary Envato API outage. Please try again in a few minutes.', 'wolf-visual-composer' );
+	$error_message = esc_html__( 'Something went wrong. It may be due to a temporary Envato API outage. Please try again in a few minutes.', 'wolf-visual-composer' );
+	$error         = '';
 
-	if ( ! $activated && isset( $_POST['theme_purchase_code'] ) ) {
+	// Check if cURL is enabled on the server
+	if ( ! function_exists( 'curl_init' ) ) {
+		$is_error = true;
+		$error = esc_html__( 'The server does not support cURL, which is required for theme activation. Please contact your hosting provider.', 'wolf-visual-composer' );
+	}
 
-		/* Verifiy purchase */
-		if ( isset( $_POST['theme_purchase_code'] ) && ! empty( $_POST['theme_purchase_code'] ) ) {
+	// Check if the theme is not already activated
+	if ( ! $activated && ! $is_error ) {
+
+		/* Verify purchase */
+		if ( ! empty( $_POST['theme_purchase_code'] ) ) {
 
 			$code       = esc_attr( $_POST['theme_purchase_code'] );
 			$remote_url = 'https://api.wolfthemes.com/envato/';
-			// $remote_url = 'http://localhost/api/envato/';
+			$url        = $remote_url . '?code=' . $code;
 
-			$url = $remote_url . '?code=' . $code;
-
-			// send request
-			$response = wp_remote_post(
+			// Send request
+			$response = wp_safe_remote_post(
 				$url,
 				array(
 					'method' => 'POST',
 					'body'   => array(
-						'action'        => 'activation',
-						'purchase_code' => $_POST['theme_purchase_code'],
+						'timeout'        => 30,
+						'action'         => 'activation',
+						'purchase_code'  => $code,
 					),
 				)
 			);
 
-			// get result if no error
-			if ( ! is_wp_error( $response ) && is_array( $response ) ) {
+			// Check for WP errors first
+			if ( is_wp_error( $response ) ) {
+				$is_error = true;
+				$error    = $response->get_error_message();
 
-				$body = wp_remote_retrieve_body( $response ); // use the content
+				// Handle specific cURL errors
+				if ( strpos( $error, 'cURL' ) !== false ) {
+					$error = esc_html__( 'The request failed due to a cURL error. This may be caused by firewall or DNS blocking. Please check with your hosting provider to ensure that outgoing requests to api.wolfthemes.com are allowed.', 'wolf-visual-composer' );
+				}
 
-				if ( $body ) {
+			} elseif ( is_array( $response ) ) {
 
+				// Retrieve the response body
+				$body = wp_remote_retrieve_body( $response );
+
+				// Check if the body is empty
+				if ( ! $body ) {
+					$is_error = true;
+					$error    = esc_html__( 'No response body received from the server. Please try again later.', 'wolf-visual-composer' );
+				} else {
+					// Decode the JSON response
 					$data = json_decode( $body );
 
+					// Validate the response data
 					if ( $data && is_object( $data ) && isset( $data->code ) && isset( $data->key ) ) {
 
-						// set_transient( 'wvc_activated', true, 365 * DAY_IN_SECONDS );
+						// Save activation details
 						update_option( 'wvc_activated', true );
 						update_option( 'wvc_activation_time', time() );
+						update_option( 'wvc_supported_until', $data->supported_until );
 						add_option( 'wvc_code', $data->code );
 						add_option( 'wvc_key', $data->key );
 						delete_transient( 'wvc_activation_notice' );
 						$activated = true;
 
-						echo '<div class="notice-success notice">';
-						echo '<p>';
-						esc_html_e( 'Extension activated', 'wolf-visual-composer' );
-						echo '</p>';
+						// Display success message
+						echo '<div class="wvc-activation-success wvc-notice-warning wvc-admin-notice">';
+						echo '<p>' . esc_html__( 'Extension activated', 'wolf-visual-composer' ) . '</p>';
 						echo '</div>';
 
+						// Redirect after activation
 						wp_safe_redirect( admin_url( 'themes.php?page=' . wvc_get_theme_slug() . '-about' ) );
 						exit;
 
+					} elseif ( isset( $data->error ) ) {
+						$is_error = true;
+						$error    = esc_html__( 'Error: ' . $data->error, 'wolf-visual-composer' );
 					} else {
 						$is_error = true;
-						$error    = $error_message;
+						$error    = esc_html__( 'Invalid or incomplete data received from the server. Please try again.', 'wolf-visual-composer' );
 					}
-				} else {
-					$is_error = true;
-					$error    = $error_message;
 				}
 			} else {
 				$is_error = true;
-				$error    = $error_message;
+				$error    = esc_html__( 'Unexpected error during the request. Please try again later.', 'wolf-visual-composer' );
 			}
 		} else {
 			$is_error = true;
-			$error    = esc_html__( 'Purchase code can not be empty', 'wolf-visual-composer' );
+			$error    = esc_html__( 'Purchase code cannot be empty', 'wolf-visual-composer' );
 		}
 	} elseif ( $activated ) {
-
 		return true;
 	}
 
-	if ( $is_error && $error ) {
-
-		echo '<div class="notice-error notice">';
-		echo '<p>';
-		echo sanitize_text_field( $error );
-		echo '</p>';
+	// Display error message if there was an error
+	if ( $is_error && $error && isset( $_POST['theme_purchase_code'] ) ) {
+		echo '<div class="wvc-activation-error wvc-notice-warning wvc-admin-notice">';
+		echo '<p>' . esc_attr( $error ) . '</p>';
 		echo '</div>';
 	}
 

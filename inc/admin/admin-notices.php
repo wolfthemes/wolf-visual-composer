@@ -166,3 +166,63 @@ function wvc_is_35_days_after_activation() {
 	//return true; // debug
     return false; // Not yet 35 days
 }
+
+/**
+ * Check if support is expired
+ *
+ * @return bool
+ */
+function wvc_support_expired() {
+
+	//return true;
+
+	 // Retrieve the support end date from the options table
+    $support_end_date = get_option( 'wvc_supported_until' );
+
+    // If there's no support end date saved, return early
+    if ( ! $support_end_date ) {
+        return;
+    }
+
+    // Convert the ISO 8601 formatted date to a timestamp
+    $support_end_timestamp = strtotime( $support_end_date );
+
+    // Get the current timestamp
+    $current_timestamp = time();
+
+    // Check if the support period has expired
+    if ( $support_end_timestamp < $current_timestamp ) {
+		return true;
+	}
+}
+
+/**
+ * Display admin notice for support renewal
+ */
+function wvc_display_support_renewal_notice() {
+	ob_start();
+	?>
+	<p>
+		<?php
+		echo wp_sprintf(
+			__( '<strong>Need help? Your support for %s has expired.</strong> Renew now to continue receiving expert assistance and updates whenever you need it. Stay worry-free with full support—renew today.', 'wolf-visual-composer' ),
+			esc_attr( wvc_get_theme_name() )
+		);
+		?>
+	</p>
+	<p>
+	<a class="button button-primary button-hero" href="<?php echo esc_url( 'https://themeforest.net/downloads' ); ?>" target="_blank">
+		<?php esc_html_e( 'Renew support now for continued assistance.', 'wolf-visual-composer' ); ?>
+	</a>
+	</p>
+    <?php
+	$hide_message = esc_html__( 'I’ll renew later. Hide this notice.', 'wolf-visual-composer' );
+	$message = ob_get_clean();
+
+	if ( wvc_support_expired() ) {
+		wvc_admin_notice( $message, 'warning', '_wolf_support_expired', $hide_message );
+	}
+}
+
+// Hook the support expiration check into the admin area
+add_action( 'admin_init', 'wvc_display_support_renewal_notice' );

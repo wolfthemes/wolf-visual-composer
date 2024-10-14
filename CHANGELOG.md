@@ -1,5 +1,9 @@
 # Changelog
 
+#### 14th October 2024 - Version 3.7.11
+
+-   Tweak: Added more info message for activation error
+
 #### 4th October 2024 - Version 3.7.10
 
 -   Tweak: Added rating invite notification message
