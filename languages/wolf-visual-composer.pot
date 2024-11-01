@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.7.11\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.7.12\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2024-10-14 10:12:47+00:00\n"
+"POT-Creation-Date: 2024-11-01 07:16:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -630,11 +630,11 @@ msgstr ""
 msgid "Invalid or incomplete data received from the server. Please try again."
 msgstr ""
 
-#: inc/admin/admin-theme-activation.php:319
+#: inc/admin/admin-theme-activation.php:321
 msgid "Unexpected error during the request. Please try again later."
 msgstr ""
 
-#: inc/admin/admin-theme-activation.php:323
+#: inc/admin/admin-theme-activation.php:325
 msgid "Purchase code cannot be empty"
 msgstr ""
 

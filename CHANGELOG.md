@@ -1,5 +1,9 @@
 # Changelog
 
+#### 1rst November 2024 - Version 3.7.12
+
+-   Improvement: Added error log to be able to debug issue with activation
+
 #### 14th October 2024 - Version 3.7.11
 
 -   Tweak: Added more info message for activation error
