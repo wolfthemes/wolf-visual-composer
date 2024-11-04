@@ -1,5 +1,9 @@
 # Changelog
 
+#### 4th November 2024 - Version 3.7.13
+
+-   Improvement: Display admin notices only on admin home page
+
 #### 1rst November 2024 - Version 3.7.12
 
 -   Improvement: Added error log to be able to debug issue with activation

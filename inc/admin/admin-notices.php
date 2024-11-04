@@ -20,6 +20,12 @@ add_action( 'admin_init', function() {
  */
 function wvc_rating_request_admin_notice() {
 
+	global $pagenow;
+
+	if ( 'index.php' !== $pagenow ) {
+		return;
+	}
+
 	//delete_option( 'wvc_theme_review_dismissed_date' );
 	//delete_option( 'wvc_theme_review_dismissed_permanently' );
 
@@ -200,6 +206,13 @@ function wvc_support_expired() {
  * Display admin notice for support renewal
  */
 function wvc_display_support_renewal_notice() {
+
+	global $pagenow;
+
+	if ( 'index.php' !== $pagenow ) {
+		return;
+	}
+
 	ob_start();
 	?>
 	<p>

@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.7.12\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.7.13\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2024-11-01 07:16:27+00:00\n"
+"POT-Creation-Date: 2024-11-04 09:28:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,23 +61,26 @@ msgstr ""
 msgid "B"
 msgstr ""
 
-#: inc/admin/admin-notices.php:127
+#: inc/admin/admin-notices.php:133
 #: pack/wolf-visual-composer/inc/admin/admin-notices.php:127
 msgid "Hide permanently"
 msgstr ""
 
-#: inc/admin/admin-notices.php:208
+#: inc/admin/admin-notices.php:221
+#: pack/wolf-visual-composer/inc/admin/admin-notices.php:208
 msgid ""
 "<strong>Need help? Your support for %s has expired.</strong> Renew now to "
 "continue receiving expert assistance and updates whenever you need it. Stay "
 "worry-free with full support—renew today."
 msgstr ""
 
-#: inc/admin/admin-notices.php:215
+#: inc/admin/admin-notices.php:228
+#: pack/wolf-visual-composer/inc/admin/admin-notices.php:215
 msgid "Renew support now for continued assistance."
 msgstr ""
 
-#: inc/admin/admin-notices.php:219
+#: inc/admin/admin-notices.php:232
+#: pack/wolf-visual-composer/inc/admin/admin-notices.php:219
 msgid "I’ll renew later. Hide this notice."
 msgstr ""
 
@@ -582,35 +585,40 @@ msgid "The %s is activated."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:193
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:193
 msgid ""
 "Your support for %s has expired. You can renew it <a target=\"_blank\" "
 "href=\"%s\">HERE</a>."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:205
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:205
 msgid ""
 "Your support for %s is valid until <span style=\"color: "
 "#28a745;\">%s</span>."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:215
-#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:185
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:215
 msgid "Reset purchase code"
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:233
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:233
 msgid ""
 "Something went wrong. It may be due to a temporary Envato API outage. "
 "Please try again in a few minutes."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:239
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:239
 msgid ""
 "The server does not support cURL, which is required for theme activation. "
 "Please contact your hosting provider."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:272
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:272
 msgid ""
 "The request failed due to a cURL error. This may be caused by firewall or "
 "DNS blocking. Please check with your hosting provider to ensure that "
@@ -618,23 +626,27 @@ msgid ""
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:283
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:283
 msgid "No response body received from the server. Please try again later."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:302
-#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:249
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:302
 msgid "Extension activated"
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:314
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:314
 msgid "Invalid or incomplete data received from the server. Please try again."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:321
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:321
 msgid "Unexpected error during the request. Please try again later."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:325
+#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:325
 msgid "Purchase code cannot be empty"
 msgstr ""
 
@@ -9790,16 +9802,6 @@ msgstr ""
 
 #: inc/vc-presets.php:21 pack/wolf-visual-composer/inc/vc-presets.php:21
 msgid "Wolf Row Presets"
-msgstr ""
-
-#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:203
-msgid ""
-"Something went wrong. It way be due to a temporary Envato API outage. "
-"Please try again in a few minutes."
-msgstr ""
-
-#: pack/wolf-visual-composer/inc/admin/admin-theme-activation.php:270
-msgid "Purchase code can not be empty"
 msgstr ""
 
 #: pack/wolf-visual-composer/templates/rev_slider.php:49
