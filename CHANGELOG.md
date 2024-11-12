@@ -1,5 +1,9 @@
 # Changelog
 
+#### 12th November 2024 - Version 3.7.14
+
+-   Improvement: Added attribute parameters to wolf_core_sb_instagram_feed_shortcode filter
+
 #### 4th November 2024 - Version 3.7.13
 
 -   Improvement: Display admin notices only on admin home page

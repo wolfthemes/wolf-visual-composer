@@ -103,7 +103,7 @@ foreach ( $atts as $key => $value ) {
 //debug( $atts );
 //debug( $inline_atts );
 
-$output .= apply_filters( 'wvc_sb_instagram_feed_shortcode', do_shortcode( '[instagram-feed ' . $inline_atts . ']' ) );
+$output .= apply_filters( 'wvc_sb_instagram_feed_shortcode', do_shortcode( '[instagram-feed ' . $inline_atts . ']' ), $atts );
 
 $output .= '</div><!-- .wvc-sb-instagram-feed-shortcode-container -->';
 

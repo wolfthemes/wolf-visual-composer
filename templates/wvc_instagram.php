@@ -40,7 +40,7 @@ extract( shortcode_atts( array(
 	'follow_button' => '',
 	'button_text' => '',
 	'hide_meta' => '',
-	'add_padding' => '', 
+	'add_padding' => '',
 	'el_class' => '',
 	'css' => '',
 	'inline_style' => '',
@@ -83,9 +83,9 @@ if ( function_exists( 'sb_instagram_feed_init' ) ) {
 		$atts['imagepadding'] = '5px';
 
 	} elseif ( $imagepadding ) {
-		
+
 		$atts['imagepadding'] = '5px';
-	
+
 	} else {
 		$atts['imagepadding'] = '0px';
 	}
@@ -129,7 +129,7 @@ if ( function_exists( 'sb_instagram_feed_init' ) ) {
 //debug( $atts );
 //debug( $inline_atts );
 
-$output .= apply_filters( 'wvc_sb_instagram_feed_shortcode', do_shortcode( '[instagram-feed ' . $inline_atts . ']' ) );
+$output .= apply_filters( 'wvc_sb_instagram_feed_shortcode', do_shortcode( '[instagram-feed ' . $inline_atts . ']' ), $atts );
 
 
 } else {
