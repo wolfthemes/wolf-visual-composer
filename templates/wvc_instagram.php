@@ -134,8 +134,7 @@ $output .= apply_filters( 'wvc_sb_instagram_feed_shortcode', do_shortcode( '[ins
 
 } else {
 
-	$output .= apply_filters( 'wvc_instagram_shortcode', do_shortcode( '[wolf_instagram_gallery count="' . $count . '" columns="' . $columns . '" button="' . $follow_button . '" button_text="' . $button_text . '" username="' . $username . '" api_key="' . $api_key . '" tag="' . $tag . '"]' ) );
-
+	$output .= apply_filters( 'wvc_instagram_shortcode', do_shortcode( '[wolf_instagram_gallery count="' . $count . '" columns="' . $columns . '" button="' . $follow_button . '" button_text="' . $button_text . '" username="' . $username . '" api_key="' . $api_key . '" tag="' . $tag . '"]' ), $atts );
 }
 
 $output .= '</div><!-- .wvc-wolf-gram-shortcode-container -->';

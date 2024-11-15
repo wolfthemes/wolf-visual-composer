@@ -1,5 +1,9 @@
 # Changelog
 
+#### 15th November 2024 - Version 3.7.15
+
+-   Fix: WPBakery Amdin Panel Widget Icon Position
+
 #### 12th November 2024 - Version 3.7.14
 
 -   Improvement: Added attribute parameters to wolf_core_sb_instagram_feed_shortcode filter
