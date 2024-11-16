@@ -2,7 +2,7 @@
 
 #### 15th November 2024 - Version 3.7.15
 
--   Fix: WPBakery Amdin Panel Widget Icon Position
+-   Fix: WPBakery Amdin Panel Widget Icon Position with WPBakery Page Builder v8.0
 
 #### 12th November 2024 - Version 3.7.14
 
