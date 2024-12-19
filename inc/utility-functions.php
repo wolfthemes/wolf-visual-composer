@@ -920,18 +920,27 @@ function wvc_get_woocommerce_shop_page_id() {
  */
 function wvc_get_color_tone( $hex, $index = 215 ) {
 
-	$hex = str_replace( '#', '', sanitize_hex_color( $hex ) ); // remove #
+	// Sanitize the color
+    $hex = sanitize_hex_color( $hex );
 
-	$c_r        = hexdec( substr( $hex, 0, 2 ) );
-	$c_g        = hexdec( substr( $hex, 2, 2 ) );
-	$c_b        = hexdec( substr( $hex, 4, 2 ) );
-	$brightness = ( ( $c_r * 299 ) + ( $c_g * 587 ) + ( $c_b * 114 ) ) / 1000;
+    // If sanitize_hex_color returns null, default to a fallback value (e.g., '#000000').
+    if ( is_null( $hex ) ) {
+        $hex = '#ffffff';
+    }
 
-	if ( $index < $brightness ) {
-		return 'light';
-	} else {
-		return 'dark';
-	}
+    // Remove #
+    $hex = str_replace( '#', '', $hex );
+
+    // Convert hex to RGB
+    $c_r        = hexdec( substr( $hex, 0, 2 ) );
+    $c_g        = hexdec( substr( $hex, 2, 2 ) );
+    $c_b        = hexdec( substr( $hex, 4, 2 ) );
+
+    // Calculate brightness
+    $brightness = ( ( $c_r * 299 ) + ( $c_g * 587 ) + ( $c_b * 114 ) ) / 1000;
+
+    // Return light or dark
+    return ( $index < $brightness ) ? 'light' : 'dark';
 }
 
 /**

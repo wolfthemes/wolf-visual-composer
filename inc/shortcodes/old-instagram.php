@@ -23,7 +23,7 @@ if ( ! class_exists( 'Wofl_Gram' ) ) {
 		foreach ( $atts   as $key => $value) {
 			$inline_atts .= ' ' . $key . '="' . $value . '"';
 		}
-		return do_shortcode( '[wvc_instagram_gallery ' . $inline_atts . ']' );
+		return apply_filters( 'wvc_instagram_shortcode', do_shortcode( '[wvc_instagram_gallery ' . $inline_atts . ']' ) );
 	}
 	add_shortcode( 'wolf_instagram_gallery', 'wolf_instagram_gallery_backup' );
 }
