@@ -1,5 +1,9 @@
 # Changelog
 
+#### 7th February 2025 - Version 3.7.16
+
+-   Improvement: Added CSS classes to WooCommerce login popup links
+
 #### 15th November 2024 - Version 3.7.15
 
 -   Fix: WPBakery Amdin Panel Widget Icon Position with WPBakery Page Builder v8.0
