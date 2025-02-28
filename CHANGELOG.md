@@ -1,5 +1,9 @@
 # Changelog
 
+#### 28th February 2025 - Version 3.7.17
+
+-   Fix: Album tracklist play button not working if one of the track does not have a mp3 file set
+
 #### 7th February 2025 - Version 3.7.16
 
 -   Improvement: Added CSS classes to WooCommerce login popup links

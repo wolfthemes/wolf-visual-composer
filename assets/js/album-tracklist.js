@@ -26,7 +26,7 @@ var WVCAlbumTracklist = function( $ ) {
 		},
 
 		playButton : function() {
-			
+
 			var _this = this;
 
 			$( document ).on( 'click', '.wvc-ati-play-button', function( event ) {
@@ -37,17 +37,17 @@ var WVCAlbumTracklist = function( $ ) {
 					$audio = $btn.next( '.wvc-ati-audio' ),
 					audioId = $audio.attr( 'id' ),
 					audio = document.getElementById( audioId );
-				
+
 				if ( ! $btn.hasClass( 'wvc-ati-track-playing' ) ) {
-					
+
 					_this.pauseAllPlayers();
 					$container.find( '.wvc-album-tracklist-item' ).removeClass( 'wvc-album-tracklist-item-active' );
 					$btn.closest( '.wvc-album-tracklist-item' ).addClass( 'wvc-album-tracklist-item-active' );
 					$btn.addClass( 'wvc-ati-track-playing' );
 					audio.play();
-			
+
 				} else {
-					
+
 					$btn.removeClass( 'wvc-ati-track-playing' );
 					audio.pause();
 				}
@@ -59,14 +59,19 @@ var WVCAlbumTracklist = function( $ ) {
 		},
 
 		pauseAllPlayers : function() {
+
 			$( '.wvc-ati-audio-cell' ).each( function() {
 				var $btn = $( this ).find( '.wvc-ati-play-button' ),
 					$audio = $btn.next( '.wvc-ati-audio' ),
 					audioId = $audio.attr( 'id' ),
 					audio = document.getElementById( audioId );
-				
+
 				$btn.removeClass( 'wvc-ati-track-playing' );
-				audio.pause();
+
+				if ( audio ) {
+					audio.pause();
+				}
+
 			} );
 		},
 
