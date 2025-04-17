@@ -126,6 +126,8 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 			// Includes element after init hook to allow filtering by theme.
 			add_action( 'init', array( $this, 'include_elements' ) );
 
+			add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
+
 			// Plugin update notifications.
 			add_action( 'admin_init', array( $this, 'plugin_update' ) );
 		}
@@ -343,9 +345,6 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 		 * Init WPBakery Page Builder Extension when WordPress Initialises.
 		 */
 		public function init() {
-
-			// Set up localisation.
-			$this->load_plugin_textdomain();
 
 			$this->template_url = apply_filters( 'wolf_vc_url', 'views/' );
 
