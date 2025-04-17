@@ -21,6 +21,7 @@
  * https://wlfthm.es/help/
  */
 
+
 defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
@@ -100,7 +101,9 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 			}
 
 			$this->define_constants();
+
 			$this->includes();
+
 			$this->init_hooks();
 
 			if ( get_transient( 'wvc_activation_notice' ) ) {
@@ -117,6 +120,7 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 			register_activation_hook( __FILE__, array( $this, 'activate' ) );
 
 			add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
+
 			add_action( 'init', array( $this, 'init' ), 0 );
 
 			// Includes element after init hook to allow filtering by theme.
