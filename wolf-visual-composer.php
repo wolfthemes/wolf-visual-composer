@@ -6,8 +6,8 @@
  * Version: 3.7.17
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
- * Requires at least: 5.0
- * Tested up to: 5.5
+ * Requires at least: 6.5
+ * Tested up to: 6.8
  *
  * Text Domain: wolf-visual-composer
  * Domain Path: /languages/
@@ -100,7 +100,9 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 			}
 
 			$this->define_constants();
-			$this->includes();
+
+			// $this->includes(); <- must be fired later in the init function
+
 			$this->init_hooks();
 
 			if ( get_transient( 'wvc_activation_notice' ) ) {
@@ -116,7 +118,10 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 		private function init_hooks() {
 			register_activation_hook( __FILE__, array( $this, 'activate' ) );
 
+			add_action( 'init', array( $this, 'includes' ), 0 );
+
 			add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
+
 			add_action( 'init', array( $this, 'init' ), 0 );
 
 			// Includes element after init hook to allow filtering by theme.
