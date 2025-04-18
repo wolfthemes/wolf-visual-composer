@@ -1,5 +1,9 @@
 # Changelog
 
+#### 18th April 2025 - Version 3.7.18
+
+-   Fix: load_textdomain debug notice
+
 #### 28th February 2025 - Version 3.7.17
 
 -   Fix: Album tracklist play button not working if one of the track does not have a mp3 file set
