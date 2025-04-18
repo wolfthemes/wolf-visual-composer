@@ -28,11 +28,8 @@ class WVC_Admin {
 		// Update
 		add_action( 'admin_init', array( $this, 'update' ), 0 );
 
-		// Includes necessary files
-		add_action( 'init', array( $this, 'includes' ), 0 );
-
-		// Plugin update notifications
-		//add_action( 'admin_init', array( $this, 'plugin_update' ) );
+		// Includes necessary admin files
+		add_action( 'admin_init', array( $this, 'admin_includes' ), 0 );
 	}
 
 	/**
@@ -67,7 +64,7 @@ class WVC_Admin {
 	/**
 	 * Include any classes we need within admin.
 	 */
-	public function includes() {
+	public function admin_includes() {
 
 		// Functions
 		include_once( 'admin-author-functions.php' );
@@ -101,6 +98,7 @@ class WVC_Admin {
 
 	/**
 	 * Plugin update
+	 * deprecated
 	 */
 	public function plugin_update() {
 		$plugin_slug = WVC_SLUG;

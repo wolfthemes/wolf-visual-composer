@@ -6,7 +6,7 @@
  * Version: 3.7.17
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
- * Requires at least: 6.5
+ * Requires at least: 5.0
  * Tested up to: 6.8
  *
  * Text Domain: wolf-visual-composer
@@ -118,10 +118,13 @@ if ( ! class_exists( 'Wolf_Visual_Composer' ) ) {
 		private function init_hooks() {
 			register_activation_hook( __FILE__, array( $this, 'activate' ) );
 
-			add_action( 'init', array( $this, 'includes' ), 0 );
+			// Includes param files early (previously directly in __construct)
+			add_action( 'after_setup_theme', array( $this, 'includes' ), 0 );
 
+			// Template functions
 			add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
 
+			// Main init hook
 			add_action( 'init', array( $this, 'init' ), 0 );
 
 			// Includes element after init hook to allow filtering by theme.

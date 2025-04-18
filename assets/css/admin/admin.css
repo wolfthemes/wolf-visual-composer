@@ -163,8 +163,14 @@
   content: "\f07a";
 }
 
-.icon-wpb-wp:before {
-  content: "\f19a";
+.wolficon-bandsintown {
+  background-image: url(../../img/admin/icons/bandsintown.svg) !important;
+  border: none !important;
+}
+
+.icon-wpb-wp {
+  background: url(../../../../js_composer/assets/vc/vc-element-icons/element-icon-wordpress.svg) !important;
+  border: none !important;
 }
 
 .icon-wpb-contactform7:before {
