@@ -6,7 +6,7 @@
  * Version: 3.7.17
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
- * Requires at least: 5.0
+ * Requires at least: 6.0
  * Tested up to: 6.8
  *
  * Text Domain: wolf-visual-composer
