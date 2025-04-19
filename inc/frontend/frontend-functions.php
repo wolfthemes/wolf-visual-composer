@@ -13,6 +13,17 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Force to dequeue swipebox (HOTFIX)
+ */
+function wvc_dequeue_swipebox() {
+	wp_dequeue_style( 'swipebox' );
+	wp_deregister_style( 'swipebox' );
+	wp_dequeue_script( 'swipebox' );
+	wp_deregister_script( 'swipebox' );
+}
+add_action( 'wp_enqueue_scripts', 'wvc_dequeue_swipebox', 999 );
+
+/**
  * Ouptut additional post attributes
  */
 function wvc_post_attr( $post_attr = '' ) {

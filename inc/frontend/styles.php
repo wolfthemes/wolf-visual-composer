@@ -40,7 +40,7 @@ function wvc_enqueue_styles() {
 	wp_register_style( 'aos', WVC_CSS . '/lib/aos.css', array(), '2.3.0' );
 
 	// Lightbox.
-	wp_enqueue_style( 'swipebox', WVC_CSS . '/lib/swipebox.min.css', array(), '1.3.0' );
+	//wp_enqueue_style( 'swipebox', WVC_CSS . '/lib/swipebox.min.css', array(), '1.3.0' );
 
 	// Libraries.
 	wp_enqueue_style( 'flexslider' ); // be sure that flexslider CSS file is enqueue BEFORE our plugin styles.

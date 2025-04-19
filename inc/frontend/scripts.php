@@ -26,7 +26,7 @@ function wvc_get_js_params() {
 		'themeSlug'                 => wvc_get_theme_slug(),
 		'ajaxUrl'                   => esc_url( WVC()->ajax_url() ),
 		'WvcUrl'                    => esc_url( WVC_URI ),
-		'lightbox'                  => apply_filters( 'wvc_lightbox', 'swipebox' ),
+		'lightbox'                  => apply_filters( 'wvc_lightbox', 'fancybox' ),
 		'isMobile'                  => wp_is_mobile(),
 		'WOWAnimationOffset'        => apply_filters( 'wvc_wow_animation_offset', 0 ),
 		'forceAnimationMobile'      => apply_filters( 'wvc_force_animation_mobile', false ),
@@ -85,7 +85,7 @@ function wvc_register_scripts() {
 	}
 
 	/* Lightbox */
-	wp_register_script( 'swipebox', WVC_JS . '/lib/jquery.swipebox.min.js', array( 'jquery' ), '1.2.9', true );
+	//wp_register_script( 'swipebox', WVC_JS . '/lib/jquery.swipebox.min.js', array( 'jquery' ), '1.2.9', true );
 
 	// Parallax background.
 	wp_register_script( 'jarallax', WVC_JS . '/lib/jarallax/jarallax.min.js', array(), '1.12.5', false );
@@ -257,7 +257,7 @@ function wvc_enqueue_common_scripts() {
 	}
 
 	if ( 'swipebox' === apply_filters( 'wvc_lightbox', 'swipebox' ) ) {
-		wp_enqueue_script( 'swipebox' );
+		//wp_enqueue_script( 'swipebox' );
 	}
 
 	wp_enqueue_script( 'lazyloadxt' );
@@ -315,7 +315,7 @@ function wvc_force_enqueue_scripts() {
 
 		// Lightbox
 		if ( 'swipebox' === apply_filters( 'wvc_lightbox', 'swipebox' ) ) {
-			wp_enqueue_script( 'swipebox' );
+			//wp_enqueue_script( 'swipebox' );
 		}
 
 		wp_enqueue_script( 'jquery-ui-accordion' );

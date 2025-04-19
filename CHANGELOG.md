@@ -1,8 +1,9 @@
 # Changelog
 
-#### 18th April 2025 - Version 3.7.18
+#### 19th April 2025 - Version 3.7.19
 
 -   Fix: load_textdomain debug notice
+-   Fix: Force not enqueuing Swipebox scripts (legacy lightbox)
 
 #### 28th February 2025 - Version 3.7.17
 
