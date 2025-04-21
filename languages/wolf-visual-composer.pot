@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPBakery Page Builder Extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Page Builder Extension 3.7.19\n"
+"Project-Id-Version: WPBakery Page Builder Extension 3.7.20\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/wolf-visual-composer\n"
-"POT-Creation-Date: 2025-04-19 11:15:14+00:00\n"
+"POT-Creation-Date: 2025-04-21 08:03:19+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -7267,7 +7267,7 @@ msgstr ""
 
 #: inc/elements/pricing-table.php:127 inc/frontend/frontend-functions.php:44
 #: pack/wolf-visual-composer/inc/elements/pricing-table.php:127
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:33
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:44
 msgid "Featured"
 msgstr ""
 
@@ -8612,42 +8612,42 @@ msgid "Video Preview"
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:62
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:51
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:62
 msgid "View all posts by %s"
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:90
 #: inc/frontend/frontend-functions.php:98
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:79
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:87
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:90
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:98
 #. Translators: used between list items, there is a space after the comma.
 msgid ", "
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:475
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:464
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:475
 msgid "Awaiting product image"
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:603
 #: inc/frontend/frontend-functions.php:611
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:592
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:600
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:603
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:611
 msgid "healthy"
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:607
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:596
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:607
 msgid "underweight"
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:615
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:604
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:615
 msgid "overweight"
 msgstr ""
 
 #: inc/frontend/frontend-functions.php:619
-#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:608
+#: pack/wolf-visual-composer/inc/frontend/frontend-functions.php:619
 msgid "obese"
 msgstr ""
 
