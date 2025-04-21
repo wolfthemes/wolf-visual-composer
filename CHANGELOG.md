@@ -1,8 +1,12 @@
 # Changelog
 
+#### 21th April 2025 - Version 3.7.20
+
+-   Fix: Missing appearance menu items (since last WP 6.7 compatilibity release - 3.7.19)
+
 #### 19th April 2025 - Version 3.7.19
 
--   Fix: load_textdomain debug notice
+-   Fix: load_textdomain debug notice (WP 6.7)
 -   Fix: Force not enqueuing Swipebox scripts (legacy lightbox)
 
 #### 28th February 2025 - Version 3.7.17
