@@ -25,11 +25,11 @@ class WVC_Admin {
 		// plugin row meta
 		//add_filter( 'plugin_action_links_' . plugin_basename( WVC_PATH ), array( $this, 'settings_action_links' ) );
 
-		// Update
-		add_action( 'admin_init', array( $this, 'update' ), 0 );
-
 		// Includes necessary admin files
-		add_action( 'admin_init', array( $this, 'admin_includes' ), 0 );
+		$this->admin_includes();
+
+		// Update - Depcrecated
+		//$this->update();
 	}
 
 	/**
