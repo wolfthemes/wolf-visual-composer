@@ -1,5 +1,9 @@
 # Changelog
 
+#### 1st May 2025 - Version 3.7.21
+
+-   Improvement: Changed WolfThemes API remote URL to .cloud domain
+
 #### 21th April 2025 - Version 3.7.20
 
 -   Fix: Missing appearance menu items (since last WP 6.7 compatilibity release - 3.7.19)

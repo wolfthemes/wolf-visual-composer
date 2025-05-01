@@ -622,7 +622,7 @@ msgstr ""
 msgid ""
 "The request failed due to a cURL error. This may be caused by firewall or "
 "DNS blocking. Please check with your hosting provider to ensure that "
-"outgoing requests to api.wolfthemes.com are allowed."
+"outgoing requests to api.wolfthemes.cloud are allowed."
 msgstr ""
 
 #: inc/admin/admin-theme-activation.php:283

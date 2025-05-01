@@ -246,7 +246,7 @@ function wvc_activate_theme() {
 		if ( ! empty( $_POST['theme_purchase_code'] ) ) {
 
 			$code       = esc_attr( $_POST['theme_purchase_code'] );
-			$remote_url = 'https://api.wolfthemes.com/envato/';
+			$remote_url = 'https://api.wolfthemes.cloud/envato/';
 			$url        = $remote_url . '?code=' . $code;
 
 			// Send request
@@ -269,7 +269,7 @@ function wvc_activate_theme() {
 
 				// Handle specific cURL errors
 				if ( strpos( $error, 'cURL' ) !== false ) {
-					$error = esc_html__( 'The request failed due to a cURL error. This may be caused by firewall or DNS blocking. Please check with your hosting provider to ensure that outgoing requests to api.wolfthemes.com are allowed.', 'wolf-visual-composer' );
+					$error = esc_html__( 'The request failed due to a cURL error. This may be caused by firewall or DNS blocking. Please check with your hosting provider to ensure that outgoing requests to api.wolfthemes.cloud are allowed.', 'wolf-visual-composer' );
 				}
 
 			} elseif ( is_array( $response ) ) {
