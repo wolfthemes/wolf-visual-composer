@@ -1,0 +1,44 @@
+{
+  "name": "wolfthemes/wolf-visual-composer",
+  "description": "A WordPress plugin that extends WPBakery Page Builder for Wolf Themes.",
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/wolfthemes/wolf-visual-composer",
+  "authors": [
+    {
+      "name": "WolfThemes",
+      "email": "contact@wolfthemes.com",
+      "homepage": "https://wolfthemes.com"
+    }
+  ],
+
+	"autoload": {
+        "psr-4": {
+            "Wolf_Visual_Composer\\": "Functions/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wolf_Visual_Composer\\Tests\\": "tests/"
+        }
+    },
+	"require": {
+		"php": ">=7.4",
+        "wp-coding-standards/wpcs": "^3.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.13",
+        "phpunit/phpunit": "*"
+    },
+	"scripts": {
+      "format": "./vendor/bin/phpcbf --standard=phpcs.xml.dist --report-summary --report-source || true",
+      "lint": "./vendor/bin/phpcs --standard=phpcs.xml.dist"
+  }
+}
+
